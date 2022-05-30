@@ -27,6 +27,7 @@ sphereii - Kindly developed the 0-Score, along with the team. Also provided the 
 Oakraven - Kindly provided support for the 1-NMMCore and the 2-NMMOakCore content, consisting of multiple released and NMM standalone modlets. (Full list below)
 Magejosh - Kindly supported background development, such as Biome modification, xml updates, loading screen and Escape Menu logo/hyperlinking.
 mplogue - Kindly provided custom Prefabs that match the theme of the NMM. POI creator extraordinaire.
+KhaineGB - Thank you for sharing Lockable Inventory Slots for mod use.
 Guppycur - Kindly provided resources, and a venue for the NMM development.
 Darkstardragon - NMM Creator and Overseer. Bought and brought all entities, and some models, into the NMM along with a host of other critical tasks.
 Compo Pack Team - Kindly allowed 'Medieval' type Prefab submissions to support the NMM. Stallionsden brought them all together into tiled Medieval townships. (Full list below)

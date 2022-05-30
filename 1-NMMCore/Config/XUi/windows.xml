@@ -3,7 +3,6 @@
 
 <append xpath="/windows" >
 
-
 		<window name="btnNMM" controller="ServerInfo" anchor="CenterCenter" pos="0,0" width="800" height="671" depth="-2">
 			<texture depth="3" color="[white]" texture="@modfolder:UIAtlases/ItemIconAtlas/NMMnpcLogo.png" name="NMMnpcLogo" anchor_left="#cam,0.5,-20" anchor_bottom="#cam,0.5,70" anchor_right="#cam,0.5,-20" anchor_top="#cam,0.5,490" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="2.1" />
 			<label name="ServerDescription" />
@@ -11,5 +10,16 @@
 		</window>
 
 </append>
+
+	<!-- KhaineGB's Inventory Lockable Slots Mod - Much thanks -->
+
+	<!-- Since A20 already has the combo box, we're just enabling it -->
+	<append xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']"> 		
+		<combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />
+	</append>
+	
+	<append xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect[@controller='ContainerStandardControls']">		
+		<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
+	</append>
 
 </configs>
