@@ -1,4 +1,8 @@
-﻿<configs>	
+﻿<configs>
+
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='RequiredModlet']/@value">1-NMMCore</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='AdvancedLocks']/@value">true</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='LockPrefab']/@value">#@modfolder:Resources/Locks.unity3d?Lockset01</set>
 
 	<append xpath="/blocks">
 
