@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="2-NMMCP48 Medievil Village Modded" /> 
+        <Description value="Adds NMM Medievil Village to the game." />
+        <Author value="Compopack with NMM modifications" />
+        <Version value="A20" />
+    </ModInfo>
+</xml>

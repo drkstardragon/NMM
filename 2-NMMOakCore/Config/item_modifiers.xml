@@ -1,0 +1,78 @@
+<configs>
+
+	<append xpath="/item_modifiers">
+	
+	<!-- Very experimental and not ready. The attachment models are not removing from entity. These aren't hooked up beyond CM access. -->
+	
+	<item_modifier name="FireflyPlayerLamp" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+        <property name="CustomIcon" value="fireflyjar"/>
+		<property name="DescriptionKey" value="FireflyPlayerLampDesc"/>		
+        <property name="Stacknumber" value="1"/>
+            <property name="Group" value="Mods"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="EconomicValue" value="440"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/MushroomsNight.unity3d?jar3_firefly" parent_transform="Head" local_offset="-0.12,-0.02,-0.2" local_rotation="0,0,90">
+                    <requirement name="!IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="#@modfolder:Resources/MushroomsNight.unity3d?jar3_firefly">
+                    <requirement name="IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="#@modfolder:Resources/MushroomsNight.unity3d?jar3_firefly"/>
+        </effect_group>
+			<effect_group tiered="false">
+			<passive_effect name="BarteringBuying" operation="base_add" value=".05"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".05"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".05" tags="running"/><display_value name="dStaminaRegen" value=".05"/>
+		</effect_group>
+    </item_modifier>
+	
+	<item_modifier name="GlowingOrangeFlowerPlayerLamp" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+        <property name="CustomIcon" value="OrangeFlower"/>
+		<property name="DescriptionKey" value="GlowingOrangeFlowerPlayerLampDesc"/>		
+        <property name="Stacknumber" value="1"/>
+            <property name="Group" value="Mods"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="EconomicValue" value="440"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder(1-NMMCore):Resources/NotMedModBlocks.unity3d?OrangeFlowerPrefab" parent_transform="Head" local_offset="-0.4,-0.02,-0.1" local_rotation="0,0,-90">
+                    <requirement name="!IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="#@modfolder(1-NMMCore):Resources/NotMedModBlocks.unity3d?OrangeFlowerPrefab">
+                    <requirement name="IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="#@modfolder(1-NMMCore):Resources/NotMedModBlocks.unity3d?OrangeFlowerPrefab"/>
+        </effect_group>
+			<effect_group tiered="false">
+			<passive_effect name="BarteringBuying" operation="base_add" value=".05"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".05"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".05" tags="running"/><display_value name="dStaminaRegen" value=".05"/>
+		</effect_group>
+    </item_modifier>
+	
+	<item_modifier name="DragonRoundShieldWield" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+        <property name="CustomIcon" value="dragonroundshield"/>
+		<property name="DescriptionKey" value="DragonRoundShieldWieldDesc"/>		
+        <property name="Stacknumber" value="1"/>
+            <property name="Group" value="Mods"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="EconomicValue" value="440"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/DragonShields.unity3d?DragonRoundShield" parent_transform="LeftHand" local_offset="0,-0.1,0.57" local_rotation="0,0,-90"> <!-- U/D B/F L/R -->
+                    <requirement name="!IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="#@modfolder:Resources/DragonShields.unity3d?DragonRoundShield">
+                    <requirement name="IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="#@modfolder:Resources/DragonShields.unity3d?DragonRoundShield"/>
+        </effect_group>
+			<effect_group tiered="false">
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="1"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="1" tags="heat,electrical"/>
+		</effect_group>
+    </item_modifier>	
+		
+	</append>
+</configs>

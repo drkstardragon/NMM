@@ -1,0 +1,55 @@
+<configs>
+  <append xpath="npc">
+
+    <npc_info
+      id="traderbakernmm"
+      name="Trader Baker NMM"
+      name_key="npc_traderBakernmm"
+      faction="whiteriver"
+      portrait="npc_baker"
+      greeting_type="nearby"
+      stance="Like" voice_set="trader"
+      trader_id="51" dialog_id="trader" quest_faction="1"/>
+	  
+    <npc_info
+      id="traderblacksmithnmm"
+      name="Trader Blacksmith NMM"
+      name_key="npc_traderBlacksmithnmm"
+      faction="whiteriver"
+      portrait="npc_hugh"
+      greeting_type="nearby"
+      stance="Like" voice_set="trader"
+      trader_id="7" dialog_id="trader" quest_faction="4"/>
+	  
+    <npc_info
+      id="traderalchemistnmm"
+      name="Trader Alchemist NMM"
+      name_key="npc_traderAlchemistnmm"
+      faction="whiteriver"
+      portrait="npc_jen"
+      greeting_type="nearby"
+      stance="Like" voice_set="trader_jen"
+      trader_id="2" dialog_id="trader" quest_faction="2"/>
+
+    <npc_info
+      id="tradertavernmasternmm"
+      name="Trader Tavern Master NMM"
+      name_key="npc_traderTavernMasternmm"
+      faction="whiteriver"
+      portrait="npc_bob"
+      greeting_type="nearby"
+      stance="Like" voice_set="trader"
+      trader_id="6" dialog_id="trader" quest_faction="3"/>
+
+    <npc_info
+      id="traderarmorkeepernmm"
+      name="Trader Armor Keeper NMM"
+      name_key="npc_traderArmorKeepernmm"
+      faction="whiteriver"
+      portrait="npc_joel"
+      greeting_type="nearby"
+      stance="Like" voice_set="trader"
+      trader_id="1" dialog_id="trader" quest_faction="1"/>		  
+      
+  </append>
+</configs>

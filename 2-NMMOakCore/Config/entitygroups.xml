@@ -1,0 +1,21 @@
+<configs>
+
+	<append xpath="/entitygroups">
+	
+		<!-- Beehives -->
+	
+		<entitygroup name="BeeLog">
+			<entity name="animalBeeStump" prob="0.1"/>
+			<entity name="animalBeeStump2" prob="0.1"/>
+			<entity name="animalBeeStump3" prob="0.1"/>
+		</entitygroup>
+		
+        <!-- Night Group pine_forest Fireflies -->
+
+	<entitygroup name="Fireflies">
+		<entity name="animalFireFlyStump" prob="0.1"/>
+	</entitygroup>	
+		
+	</append>
+
+</configs>

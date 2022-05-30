@@ -1,0 +1,2065 @@
+<configs>
+
+	<append xpath="/blocks">
+	
+		<!-- BeeHives -->	
+	
+		<block name="SquareHiveEmpty">
+		<property name="DescriptionKey" value="SquareHiveEmptyDesc"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="CustomIcon" value="squarebeehive3Gold"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?squareBeeHiveGold1"/>	
+		<property name="CreativeMode" value="Player"/>
+		<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+		<property class="UpgradeBlock">
+		<property name="ToBlock" value="SquareBeeHiveQueen"/>
+		<property name="Item" value="QueenBee"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="CanPickup" value="true"/>
+                <property name="EconomicValue" value="500"/>
+		</block>
+	
+		<block name="SquareBeeHiveQueen">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?squareBeeHiveGold2"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45"/>  <!-- Needs changing to 45 when happy -->
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="SquareHiveWithHoney"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="SquareHiveWithHoney">
+		<property name="Extends" value="cntToolBoxClosed"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?squareBeeHiveGold3"/>
+		<property name="LootList" value="Honey"/>
+		<property name="CreativeMode" value="Player"/>
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="SquareBeeHiveQueen"/>
+		</block>
+
+		<block name="BeeHiveEmpty">
+		<property name="DescriptionKey" value="BeeHiveEmptyDesc"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="CustomIcon" value="beehive3gold"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?OaksBeeHiveGOLD1"/>	
+		<property name="CreativeMode" value="Player"/>
+		<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+		<property class="UpgradeBlock">
+		<property name="ToBlock" value="BeeHiveQueen"/>
+		<property name="Item" value="QueenBee"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="CanPickup" value="true"/>
+                <property name="EconomicValue" value="500"/>
+		</block>
+	
+		<block name="BeeHiveQueen">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?OaksBeeHiveGold2"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45"/>  <!-- Needs changing to 45 when happy -->
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="BeeHiveWithHoney"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="BeeHiveWithHoney">
+		<property name="Extends" value="cntToolBoxClosed"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?OaksBeeHiveGold3"/>
+		<property name="LootList" value="Honey"/>
+		<property name="CreativeMode" value="Player"/>
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="BeeHiveQueen"/>
+		</block>
+
+		<block name="OldBeeStump">
+		<property name="Material" value="Mwood_weak"/>
+		<property name="CustomIcon" value="logwithbeesoak"/>
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?LogWithBeesOak" />
+		<property name="MultiBlockDim" value="3,1,1"/>
+		<property name="LootList" value="Honey"/>
+		<property name="Buff" value="buffShocked"/>
+		<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="foodHoney" count="1" prob="1"/>
+		<drop event="Destroy" name="QueenBee" count="1" prob="0.3"/>
+		</block>
+
+		<block name="WoodBeeHiveEmpty">
+		<property name="DescriptionKey" value="BeeHiveEmptyDesc"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="CustomIcon" value="beehivewood"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?BeeHiveWood_A"/>	
+		<property name="CreativeMode" value="Player"/>
+		<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+		<property class="UpgradeBlock">
+		<property name="ToBlock" value="WoodBeeHiveQueen"/>
+		<property name="Item" value="QueenBee"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="CanPickup" value="true"/>
+                <property name="EconomicValue" value="500"/>
+		</block>
+	
+		<block name="WoodBeeHiveQueen">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?BeeHiveWood_B"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45"/>   <!-- Needs changing to 45 when happy -->
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="WoodBeeHiveWithHoney"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="WoodBeeHiveWithHoney">
+		<property name="Extends" value="cntToolBoxClosed"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?BeeHiveWood_C"/>
+		<property name="LootList" value="Honey"/>
+		<property name="CreativeMode" value="Player"/>
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="WoodBeeHiveQueen"/>
+		</block>
+
+		<block name="BeeStump">
+		<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="" /> 
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?LogWithBeesOak"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="3,1,1"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="DescriptionKey" value=""/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="600"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Place" value="TowardsPlacer"/>
+		<property name="Class" value="PlantGrowing"/>
+		<property name="PlantGrowing.FertileLevel" value="1"/>
+		<property name="PlantGrowing.Next" value="treeBrownGrassDiagonal"/>
+		<property name="PlantGrowing.GrowthRate" value="10"/>   <!-- Needs changing to 10 when happy -->
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="foodHoney" count="1" prob="1"/>
+		<drop event="Destroy" name="QueenBee" count="1" prob="1"/>
+		</block>
+
+		<block name="BeeStump2">
+        <property name="Extends" value="BeeStump"/>
+        <property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?LogWithBeesOak2"/>       
+		</block>
+
+		<block name="BeeStump3">
+        <property name="Extends" value="BeeStump"/>
+        <property name="Model" value="#@modfolder:Resources/BeeHivesA20.unity3d?LogWithBeesOak3"/>       
+		</block>
+
+		<!-- ChickenCoops -->
+		
+		<block name="ChickenCoopEmpty">
+		<property name="DescriptionKey" value="ChickenCoopEmptyDesc"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="CustomIcon" value="chickencoop"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>		
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?OaksChickenCoop"/>		
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+		<property class="UpgradeBlock">	
+		<property name="ToBlock" value="ChickenCoopChicks"/>
+		<property name="Item" value="CaughtChick"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="1"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="CanPickup" value="true"/>
+                <property name="EconomicValue" value="500"/>
+		</block>
+
+		<block name="ChickenCoopChicks">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?OaksChickenCoop1"/>		
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45.0"/>
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="ChickenCoopLaying"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+	
+		<block name="ChickenCoopLaying">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?OaksChickenCoop2"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45.0"/>
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="ChickenCoopWithEggs"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="ChickenCoopWithEggs">
+		<property name="Extends" value="cntToolBoxClosed"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?OaksChickenCoop3"/>
+		<property name="LootList" value="EggsReady"/>
+		<property name="CreativeMode" value="Player"/>
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="ChickenCoopLaying"/>
+		</block>
+
+		<block name="GrownChicken">
+		<property name="Material" value="Morganic"/>
+		<property name="DescriptionKey" value="GrownChickenDesc"/>		
+		<property name="MaxDamage" value="80"/>
+		<property name="CustomIcon" value="chickengrown"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?Chickenchop2"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FallDamage" value=".9"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="ImposterDontBlock" value="true"/>		
+		<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+		<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalChicken -->
+		<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="23"/>
+		<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
+		<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+		<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+		<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+		<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+		<drop event="Destroy" count="0"/>		
+		<property name="FilterTags" value="fdecor,fother"/>
+		</block>
+
+		<block name="TinCoopEmpty">
+		<property name="DescriptionKey" value="ChickenCoopEmptyDesc"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="CustomIcon" value="tincoop"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>		
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?Chicken_CoopA"/>		
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+		<property class="UpgradeBlock">	
+		<property name="ToBlock" value="TinCoopChicks"/>
+		<property name="Item" value="CaughtChick"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="1"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="CanPickup" value="true"/>
+                <property name="EconomicValue" value="500"/>
+		</block>
+ 
+		<block name="TinCoopChicks">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?Chicken_CoopChicksA"/>		
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45.0"/>
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="TinCoopLaying"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+	
+		<block name="TinCoopLaying">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?Chicken_CoopNestingA"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45.0"/> 
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="TinCoopWithEggs"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="TinCoopWithEggs">
+		<property name="Extends" value="cntToolBoxClosed"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?Chicken_CoopWoodTakeA"/>
+		<property name="LootList" value="EggsReady"/>
+		<property name="CreativeMode" value="Player"/>
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="TinCoopLaying"/>
+		</block>
+
+		<block name="WoodCoopEmpty">
+		<property name="DescriptionKey" value="ChickenCoopEmptyDesc"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="CustomIcon" value="woodcoop"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>		
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?CickenShed1A"/>		
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+		<property class="UpgradeBlock">	
+		<property name="ToBlock" value="WoodCoopChicks"/>
+		<property name="Item" value="CaughtChick"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="1"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="CanPickup" value="true"/>
+                <property name="EconomicValue" value="500"/>
+		</block>
+
+		<block name="WoodCoopChicks">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?CickenShed2A"/>		
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45.0"/>
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="WoodCoopLaying"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+	
+		<block name="WoodCoopLaying">
+		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?CickenShed3A"/>
+		<property name="PlantGrowing.FertileLevel" value="0"/>
+		<property name="PlantGrowing.LightLevelGrow" value="0"/>
+		<property name="PlantGrowing.GrowthRate" value="45.0"/> 
+		<property name="PlantGrowing.IsRandom" value="false"/>
+		<property name="PlantGrowing.LightLevelStay" value="0"/>
+		<property name="PlantGrowing.Next" value="WoodCoopWithEggs"/>
+		<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="WoodCoopWithEggs">
+		<property name="Extends" value="cntToolBoxClosed"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/ChickenCoop.unity3d?CickenShed4A"/>
+		<property name="LootList" value="EggsReady"/>
+		<property name="CreativeMode" value="Player"/>
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="WoodCoopLaying"/>
+		</block>
+
+		<!-- CookingStations -->
+
+	<block name="OaksCooker">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="DescriptionKey" value="OaksCookerDesc"/>	
+	<property name="CustomIcon" value="cookerbigoak"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?CookerBigoak"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?CookerFX"/>
+	<property name="ParticleOffset" value="0,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="PotStove">
+    <property name="Extends" value="OaksCooker"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="CustomIcon" value="potstove"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?PotStove"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?potstoveFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="OaksCooker"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="IronStove">
+    <property name="Extends" value="OaksCooker"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="CustomIcon" value="ironstove"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?Ironstove"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?IronstoveFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="OaksCooker"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="StoneStove">
+    <property name="Extends" value="OaksCooker"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="CustomIcon" value="stonestove"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?StoneStove"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?StoneStoveFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="CraftingAreaRecipes" value="OaksCooker"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="MeatGrinder">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="CustomIcon" value="meatgrinder"/>
+	<property name="DescriptionKey" value="MeatGrinderDesc"/>	
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Blenders.unity3d?MeatGrinder"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Blenders.unity3d?ConnectionShaft1"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>	
+	
+
+	<property class="Workstation">
+		<property name="Modules" value="output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="cement_mixer_open"/>
+	<property name="CloseSound" value="cement_mixer_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>		
+	
+		<!-- DragonBed -->	
+
+		<block name="DragonBed1">
+			<property name="Extends" value="gurneyBed"/>
+			<property name="CustomIcon" value="dragonbed1"/>
+			<property name="Model" value="#@modfolder:Resources/DragonBeds.unity3d?OaksBedprefab"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="FallDamage" value=".6"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Class" value="SleepingBag"/>
+			<drop name="terrStone" count="0" event="Harvest" tool_category="Disassemble"/>
+			<drop name="resourceMetalPipe" count="2,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceElectricParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceMechanicalParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceScrapPolymers" count="3,6" event="Harvest" tag="allHarvest"/>
+			<drop name="resourceScrapIron" count="5,20" event="Destroy"/>
+			<property name="CanPickup" value="true"/>
+                        <property name="EconomicValue" value="250"/>
+		</block>
+
+		<block name="DragonBed2">
+			<property name="Extends" value="gurneyBed"/>
+			<property name="CustomIcon" value="dragonbed2"/>
+			<property name="Model" value="#@modfolder:Resources/DragonBeds.unity3d?OakBeds2"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="FallDamage" value=".6"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Class" value="SleepingBag"/>
+			<drop name="terrStone" count="0" event="Harvest" tool_category="Disassemble"/>
+			<drop name="resourceMetalPipe" count="2,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceElectricParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceMechanicalParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceScrapPolymers" count="3,6" event="Harvest" tag="allHarvest"/>
+			<drop name="resourceScrapIron" count="5,20" event="Destroy"/>
+				<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CanPickup" value="true"/>
+                        <property name="EconomicValue" value="250"/>
+		</block>
+
+		<block name="DragonBed3">
+			<property name="Extends" value="gurneyBed"/>
+			<property name="CustomIcon" value="dragonbed3"/>
+			<property name="Model" value="#@modfolder:Resources/DragonBeds.unity3d?OakBeds3"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="FallDamage" value=".6"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Class" value="SleepingBag"/>
+			<drop name="terrStone" count="0" event="Harvest" tool_category="Disassemble"/>
+			<drop name="resourceMetalPipe" count="2,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceElectricParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceMechanicalParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceScrapPolymers" count="3,6" event="Harvest" tag="allHarvest"/>
+			<drop name="resourceScrapIron" count="5,20" event="Destroy"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CanPickup" value="true"/>
+                        <property name="EconomicValue" value="250"/>
+		</block>
+
+		<block name="DragonBed4">
+			<property name="Extends" value="gurneyBed"/>
+			<property name="CustomIcon" value="dragonbed4"/>
+			<property name="Model" value="#@modfolder:Resources/DragonBeds.unity3d?OakBeds4"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="FallDamage" value=".6"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Class" value="SleepingBag"/>
+			<drop name="terrStone" count="0" event="Harvest" tool_category="Disassemble"/>
+			<drop name="resourceMetalPipe" count="2,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceElectricParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceMechanicalParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceScrapPolymers" count="3,6" event="Harvest" tag="allHarvest"/>
+			<drop name="resourceScrapIron" count="5,20" event="Destroy"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CanPickup" value="true"/>			
+                        <property name="EconomicValue" value="250"/>
+		</block>
+
+		<block name="DragonBed5">
+			<property name="Extends" value="gurneyBed"/>
+			<property name="CustomIcon" value="dragonbed5"/>
+			<property name="Model" value="#@modfolder:Resources/DragonBeds.unity3d?Oaks4PostBed"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="FallDamage" value=".6"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Class" value="SleepingBag"/>
+			<drop name="terrStone" count="0" event="Harvest" tool_category="Disassemble"/>
+			<drop name="resourceMetalPipe" count="2,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceElectricParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceMechanicalParts" count="1,3" event="Harvest" tag="salvageHarvest"/>
+			<drop name="resourceScrapPolymers" count="3,6" event="Harvest" tag="allHarvest"/>
+			<drop name="resourceScrapIron" count="5,20" event="Destroy"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="CanPickup" value="true"/>			
+                        <property name="EconomicValue" value="250"/>
+		</block>
+
+		<block name="OldVendingMachine">
+			<property name="Extends" value="cntVendingMachine"/>
+			<property name="CustomIcon" value="vendingmachineold"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="#@modfolder:Resources/OldVendingMachine.unity3d?VendingMachineOld"/>
+			<property name="TraderID" value="3"/>
+			<property name="FilterTags" value="MC_building,SC_electrical"/>
+                        <property name="EconomicValue" value="1000"/>
+		</block>
+
+		<block name="Dragonworkbench">
+			<property name="Class" value="Workstation"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>			
+			<property name="CustomIcon" value="dragonworkbench"/>			
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Weight" value="0"/>			
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DragonWorkBench.unity3d?DragonWorkBench"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ModelOffset" value=".5,.5,0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+			<property name="Modules" value="output"/>
+			<property name="CraftingAreaRecipes" value="player,workbench"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="WorkstationJournalTip" value="workbenchTip"/>
+			<property class="RepairItems">
+			<property name="resourceForgedIron" value="25"/>
+			<property name="resourceMechanicalParts" value="20"/>
+			<property name="resourceWood" value="50"/>			
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="DragonworkbenchDesc"/>			
+			<property name="EconomicValue" value="2000"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
+
+		<block name="DragonKiteShield">
+			<property name="CustomIcon" value="dragonkiteshield"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?DragonKiteShield"/>
+			<property name="Path" value="solid"/>
+			<property class="RepairItems">
+			<property name="resourceForgedIron" value="3"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="17" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="EconomicValue" value="18"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+                        <property name="EconomicValue" value="100"/>
+		</block>
+
+		<block name="DragonKnightlyShield">
+			<property name="Extends" value="DragonKiteShield"/>
+			<property name="CustomIcon" value="dragonKnightlyshield"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?DragonKnightlyShield"/>
+		</block>
+
+		<block name="DragonRoundShield">
+			<property name="Extends" value="DragonKiteShield"/>
+			<property name="CustomIcon" value="dragonroundshield"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?DragonRoundShield"/>
+		</block>
+
+		<block name="DragonShieldBlue">
+			<property name="Extends" value="DragonKiteShield"/>
+			<property name="CustomIcon" value="dragonshieldblue"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?DragonShieldBlue"/>
+		</block>
+
+		<block name="DragonShieldGold">
+			<property name="Extends" value="DragonKiteShield"/>
+			<property name="CustomIcon" value="dragonshieldgold"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?DragonShieldGold"/>
+		</block>
+
+		<block name="DragonWoodShield">
+			<property name="Extends" value="DragonKiteShield"/>
+			<property name="CustomIcon" value="dragonwoodshield"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?DragonWoodShield"/>
+		</block>
+
+		<block name="LionShield">
+			<property name="Extends" value="DragonKiteShield"/>
+			<property name="CustomIcon" value="lionshield"/>
+			<property name="DescriptionKey" value="ShieldsDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="#@modfolder:Resources/DragonShields.unity3d?LionShield"/>
+		</block>
+		
+		<!-- DragonCart -->
+
+<block name="CartChest">
+	<property name="Extends" value="cementMixer"/>
+	<property name="CustomIcon" value="carriage"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="shoppingCart"/>
+	<property name="Model" value="#@modfolder:Resources/CartChest.unity3d?CartChest"/>
+	<property name="MultiBlockDim" value="4,2,2"/>
+	<property name="ActivationDistance" value="8"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="60"/>
+		<property name="resourceScrapIron" value="16"/>
+		<property name="resourceCloth" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGlue" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="1" prob="0.5" tag="allHarvest"/>	
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="casinoCoin" count="5,30" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="1,2" prob="0.2" tag="allHarvest"/>		
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="cartComplete">
+	<property name="Extends" value="cementMixer"/>
+	<property name="CustomIcon" value="carriage"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="shoppingCart"/>
+	<property name="Model" value="#@modfolder:Resources/cartComplete.unity3d?cartComplete"/>
+	<property name="MultiBlockDim" value="4,2,2"/>
+	<property name="ActivationDistance" value="8"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="60"/>
+		<property name="resourceScrapIron" value="16"/>
+		<property name="resourceCloth" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGlue" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="1" tag="allHarvest"/>	
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="casinoCoin" count="5,30" tag="allHarvest"/>	
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="cartcorpes">
+	<property name="Extends" value="cementMixer"/>
+	<property name="CustomIcon" value="carriage"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="shoppingCart"/>
+	<property name="Model" value="#@modfolder:Resources/cartcorpes.unity3d?cartcorpes"/>
+	<property name="MultiBlockDim" value="3,2,2"/>
+	<property name="ActivationDistance" value="8"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="60"/>
+		<property name="resourceScrapIron" value="16"/>
+		<property name="resourceCloth" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGlue" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="1" prob="0.5" tag="allHarvest"/>	
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="foodRawMeat" count="3,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="3,7" prob="0.5" tag="allHarvest"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="SmallSackCart">
+	<property name="Extends" value="cementMixer"/>
+	<property name="CustomIcon" value="carriage"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="shoppingCart"/>
+	<property name="Model" value="#@modfolder:Resources/SmallSackCart.unity3d?SmallSackCart"/>
+	<property name="MultiBlockDim" value="3,2,2"/>
+	<property name="ActivationDistance" value="8"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="60"/>
+		<property name="resourceScrapIron" value="16"/>
+		<property name="resourceCloth" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGlue" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="1" prob="0.5" tag="allHarvest"/>	
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="casinoCoin" count="5,25" tag="allHarvest"/>
+	<drop event="Harvest" name="foodCornMeal" count="2,5" tag="allHarvest"/>
+	<drop event="Harvest" name="foodCropGraceCorn" count="1,2" prob="0.2" tag="allHarvest"/>	
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="WeaponCart">
+	<property name="Extends" value="cementMixer"/>
+	<property name="CustomIcon" value="carriage"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="shoppingCart"/>
+	<property name="Model" value="#@modfolder:Resources/WeaponCart.unity3d?WeaponCart"/>
+	<property name="MultiBlockDim" value="4,2,2"/>
+	<property name="ActivationDistance" value="8"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="60"/>
+		<property name="resourceScrapIron" value="16"/>
+		<property name="resourceCloth" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGlue" count="1" prob="0.25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="1" prob="0.25" tag="allHarvest"/>	
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="FlintlockPistolSlug" count="2,8" tag="allHarvest"/>
+	<drop event="Harvest" name="ArramusBlunderbussSlug" count="2,8" tag="allHarvest"/>
+	<drop event="Harvest" name="ArramusIronArrow" count="2,8" tag="allHarvest"/>
+	<drop event="Harvest" name="ArramusSteelArrow" count="1,5" prob="0.2" tag="allHarvest"/>
+	<drop event="Harvest" name="ArramusArrowFire" count="1,5" prob="0.2" tag="allHarvest"/>
+	<drop event="Harvest" name="ArramusArrowBoom" count="1,5" prob="0.2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,10" prob="0.5" tag="allHarvest"/>	
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="OldFruitCart">
+	<property name="Extends" value="cementMixer"/>
+	<property name="CustomIcon" value="carriage"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="shoppingCart"/>
+	<property name="Model" value="#@modfolder:Resources/OldFruitCart.unity3d?OldFruitCart"/>
+	<property name="MultiBlockDim" value="3,3,2"/>
+	<property name="ModelOffset" value="-1,0.5,0"/>
+	<property name="ActivationDistance" value="8"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="60"/>
+		<property name="resourceScrapIron" value="16"/>
+		<property name="resourceCloth" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGlue" count="1" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="1" prob="0.5" tag="allHarvest"/>	
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="foodHoneyPumpkinPie" count="1" prob="0.25" tag="allHarvest"/>
+	<drop event="Harvest" name="foodCropPumpkin" count="1" prob="0.5" tag="allHarvest"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>		
+		
+		<!-- Fireflies -->		
+
+	<block name="FireFlyJar">
+	<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+	<property name="CustomIcon" value="fireflyjar"/>
+    <property name="DescriptionKey" value="FireFlyJarDesc"/>	
+	<property name="Material" value="Mglass"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Model" value="#@modfolder:Resources/MushroomsNight.unity3d?jar3_firefly"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<drop event="Harvest" name="resourceBrokenGlass" count="2,4" tag="allHarvest"/>
+	<property name="CanPickup" value="true"/>
+        <property name="EconomicValue" value="100"/>
+	</block>
+	
+	<block name="PlantTemplate">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Class" value="CropsGrown"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="Tag" value="TreeTrunk" />
+	<property name="Model" value="#@modfolder:Resources/MushroomsNight.unity3d?shroomRed" />
+	<property name="Collide" value="melee" />
+	<property name="CanDecorateOnSlopes" value="true" />
+	<property name="Stacknumber" value="10"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.Next" value="treeBrownGrassDiagonal"/>
+	<property name="PlantGrowing.GrowthRate" value="10"/>   <!-- Needs changing to 10 when happy -->
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	</block>	
+	
+	<block name="FireFlyStump">
+	<property name="Extends" value="PlantTemplate"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="fireflystump" />
+        <property name="DescriptionKey" value="FireFlyStumpDesc"/>		
+        <property name="Material" value="Mwood_regular"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Model" value="#@modfolder:Resources/MushroomsNight.unity3d?FireFlyStump1"/>       
+        <property name="Collide" value="movement,melee"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="600"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.Next" value="treeBrownGrassDiagonal"/>
+	<property name="PlantGrowing.GrowthRate" value="20"/>   <!-- Needs changing to 20 when happy -->
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+	    <drop event="Destroy" name="FireFlyBug" count="1" prob="1"/>
+	</block>
+	
+		<!-- FishFarm -->
+
+	<block name="FishOven">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="DescriptionKey" value="FishOvenDesc"/>	
+	<property name="CustomIcon" value="fishoven"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ModelOffset" value="-0.5,0.5,0"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishBench.unity3d?FishOven"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/FishBench.unity3d?FishOvenFX"/>
+	<property name="ParticleOffset" value="-0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>	
+
+	<property class="Workstation">
+		<property name="Modules" value="output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+	<block name="FishFarmEmpty">
+	<property name="DescriptionKey" value="FishFarmEmptyDesc"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="CustomIcon" value="fishempty"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?x1FishTank"/>	
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ModelOffset" value="-0.5,0.5,0"/>
+	<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">	
+		<property name="ToBlock" value="FishFarmEggs"/>
+		<property name="Item" value="FishGrowingKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanPickup" value="true"/>
+        <property name="EconomicValue" value="500"/>
+</block>
+
+	<block name="FishFarmEggs">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ModelOffset" value="-0.5,0.5,0"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?x2FishTank"/>	
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>         <!-- When happy change to 30 -->
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.Next" value="FishFarmHatched"/>
+	<property name="Group" value="Food/Cooking"/>
+</block>
+
+<block name="FishFarmHatched">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ModelOffset" value="-0.5,0.5,0"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?x3FishTank"/>	
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>           <!-- When happy change to 30 -->
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.Next" value="FishFarmBreeding"/>
+	<property name="Group" value="Food/Cooking"/>
+</block>
+	
+		<block name="FishFarmBreeding">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ModelOffset" value="-0.5,0.5,0"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?x4FishTank"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="40"/>           <!-- When happy change to 40 -->
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.Next" value="FishFarmFishGrown"/>
+	<property name="Group" value="Food/Cooking"/>
+</block>
+
+<block name="FishFarmFishGrown">
+	<property name="Extends" value="cntToolBoxClosed"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ModelOffset" value="-0.5,0.5,0"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?x5FishTank"/>
+	<property name="LootList" value="FishReady"/>
+	<property name="CreativeMode" value="Player"/>
+	<drop event="Destroy" count="0" />
+	<property name="DowngradeBlock" value="FishFarmBreeding"/>
+</block>
+
+<block name="Salmon">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="SalmonDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="fishgrown"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?GrownFish"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FreshSalmonFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FreshSalmonFillet" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="FreshSalmonFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="Barramundi">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="BarramundiDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="barramundi"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?barramundi"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="Tangfish">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="TangfishDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="tangfish"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?tangfish"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="MutantPiranha">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="MutantPiranhaDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="mutantpiranha"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?mutantpiranha"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="PerchFish">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="PerchFishDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="perchfish"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?PerchFish"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="ShinerFish">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="ShinerFishDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="shinerfish"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?ShinerFish"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="ArramusFish">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="ArramusFishDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="arramusfish"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?ArramusFish"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>
+
+<block name="BlueFinTuna">
+	<property name="Material" value="Morganic"/>
+	<property name="DescriptionKey" value="BlueFinTunaDesc"/>	
+	<property name="MaxDamage" value="80"/>
+	<property name="CustomIcon" value="bluefintuna"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FishStuff.unity3d?bluefintuna"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value=".9"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>	
+	<drop event="Harvest" name="FreshTunaFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="FreshTunaFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="FreshTunaFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Destroy" count="0"/>	
+	<property name="FilterTags" value="fdecor,fother"/>
+</block>		
+	
+		<!-- TorchesLights -->
+		
+	<block name="BigStandingBrazier">
+	<property name="Class" value="Campfire"/>
+	<property name="CustomIcon" value="LargeBrazier"/>
+	<property name="DescriptionKey" value="BigStandingBrazierDesc"/>	
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?BigStandingTorch"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?BigStandingTorchFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+	<block name="Brazier">
+	<property name="Extends" value="BigStandingBrazier"/>
+	<property name="CustomIcon" value="brazier"/>
+	<property name="DescriptionKey" value="BrazierDesc"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?brazier"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?BrazierFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="ColumnBrazierGold">
+	<property name="Extends" value="BigStandingBrazier"/>
+	<property name="CustomIcon" value="ColumnGold"/>
+	<property name="DescriptionKey" value="ColumnBrazierGoldDesc"/>	
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?ColumnGold"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?ColumnGoldFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="ColumnBrazierStone">
+	<property name="Extends" value="BigStandingBrazier"/>
+	<property name="CustomIcon" value="LightColumnStone"/>
+	<property name="DescriptionKey" value="ColumnBrazierStoneDesc"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?LightColumnStone"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?LightColumnStoneFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="PoleTorch">
+	<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+	<property name="DescriptionKey" value="PoleTorchDesc"/>
+    <property name="CustomIcon" value="streetLightClassic"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?StandingTorch"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<drop event="Harvest" name="resourceScrapIron" count="1,4" tag="allHarvest"/>
+        <property name="EconomicValue" value="100"/>
+	</block>
+
+	<block name="WallHandTorch">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="WallHandTorch"/>
+	<property name="DescriptionKey" value="WallHandTorchDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?WallHandTorch"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?WallHandTorchFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="WallMedievalTorch">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="MedievalTorch"/>
+	<property name="DescriptionKey" value="WallMedievalTorchDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?MedievalTorch"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?MedievalTorchFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="WallhangerCage">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="WallhangerCage"/>
+	<property name="DescriptionKey" value="WallhangerCageDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?WallhangerCage"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?WallhangerCageFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="WallTorch">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="WallhangerCage"/>
+	<property name="DescriptionKey" value="WallTorchDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?Wall_Torch"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?Wall_TorchFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+	
+		<!-- WaterWells -->
+		
+ <block name="WaterWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wishingwell" />
+		<property name="DescriptionKey" value="WaterWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?WaterWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1000"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="OldWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wishingwell" />
+		<property name="DescriptionKey" value="OldWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?OldWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1000"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="StoneWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="stonewell" />
+		<property name="DescriptionKey" value="StoneWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?StoneWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1000"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="WoodWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wishingwell" />
+		<property name="DescriptionKey" value="WoodWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?WellWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1000"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="StoneStandPipe">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="2standpipe" />
+		<property name="DescriptionKey" value="StoneStandPipeDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells2.unity3d?2Standpipe"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1000"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="Stone2StandPipe">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="1standpipe" />
+		<property name="DescriptionKey" value="Stone2StandPipeDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells2.unity3d?1Standpipe"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="1000"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+		<!-- WorkStations -->
+		
+	<block name="OakChemistryStation">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="Miron_scrap"/>
+	<property name="DescriptionKey" value="OakChemistryStationDesc"/>	
+	<property name="MaxDamage" value="800"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ParticleName" value="#@modfolder:Resources/HammerForge.unity3d?ParticalChemFire"/>
+	<property name="ParticleOffset" value="0,0.5,0.5"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/HammerForge.unity3d?OakChemistryStation"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="UnlockedBy" value="perkPhysician"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="Modules" value="output,fuel,input"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_chemistry"/>
+	<property name="CraftActionName" value="lblContextActionMix"/>
+	<property name="CraftIcon" value="ui_game_symbol_chemistry"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="chem_station_complete_item"/>
+	<property name="WorkstationJournalTip" value="chemistryStationTip"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMetalPipe" value="10"/>
+		<property name="resourceWood" value="40"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="allHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="15" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="Group" value="Science,Building,advBuilding"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+<block name="OakForge">
+	<property name="Class" value="Forge"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="Material" value="Mstone_scrap"/>
+	<property name="DescriptionKey" value="OakForgeDesc"/>	
+	<property name="CustomIcon" value="ForgeBigOak2"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/HammerForge.unity3d?ForgeBigOak2"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/HammerForge.unity3d?ForgeFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="6"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="forge"/>
+		<property name="Modules" value="tools,output,fuel,material_input"/>
+		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+	<property name="OpenSound" value="forge_open"/>
+	<property name="CloseSound" value="forge_close"/>
+	<property name="CraftSound" value="forge_smelt_click"/>
+	<property name="CraftCompleteSound" value="forge_item_complete"/>
+	<property name="WorkstationJournalTip" value="forgeTip"/>
+
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="50"/>
+		<property name="resourceClayLump" value="60"/>
+		<property name="resourceLeather" value="20"/>
+	</property>
+	<drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+	</append>
+
+</configs>

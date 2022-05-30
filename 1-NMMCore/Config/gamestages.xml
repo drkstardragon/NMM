@@ -1,0 +1,189 @@
+<configs>
+
+<!-- NMM Sleeper Groups for the Medieval Undead Entities which are the equivelant of Zombies.
+They are separated from Orc Type Entities as they are the equivelant of Bandits and are hostile
+to each other. They can be grouped in the same POI for those very special occasions. -->
+
+	<append xpath="/gamestages">
+		<!-- Undead Gamestage Groups hooked up for entitygroups.xml lists -->
+		<group name="S_-Group_NMM_Undead_All" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMUndeadAllHorde" count="5,6" />
+		</group>
+		<group name="S_-Group_NMM_Undead_Melee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMUndeadMeleeHorde" count="5,6" />
+		</group>
+		<group name="S_-Group_NMM_Undead_Ranged" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMUndeadRangedHorde" count="5,6" />
+		</group>
+		<group name="S_-Group_NMM_Undead_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMUndeadBossHorde" count="5,6" />
+		</group>
+		<!-- King & Queen Gamestage Groups hooked up for entitygroups.xml lists -->
+		<group name="S_-Group_NMM_KQ_All" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMM_KQAllHorde" count="5,6" />
+		</group>
+		<!-- Beast Slayer POI Quest Group/Boss/Lord Spawns -->
+		<group name="S_-Group_NMM_Beasts_Quest_Grunt" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMBeastsGruntHorde" count="5,6" />
+		</group>		
+		<group name="S_-Group_NMM_Beasts_Quest_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMBeastsBossHorde" count="5,6" />
+		</group>		
+		<group name="NMM_Beasts_Demon_Lord" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMM_DemonLord" count="1" />
+		</group>		
+	</append>
+
+<!-- NMM Spawners can be used as standalone, or identical to Vanilla Game Stage groups (GS1/50/100/200/400/800). -->
+
+	<append xpath="/gamestages">
+		<!-- Undead Spawners with a custom non GS name for a single entry or with the GS attribute for multiple. -->
+		<spawner name="NMMUndeadAllHorde">
+			<gamestage stage="1">
+				<spawn group="nmmUndeadAllGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmUndeadAllGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmUndeadAllGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmUndeadAllGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmUndeadAllGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmUndeadAllGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMUndeadMeleeHorde">
+			<gamestage stage="1">
+				<spawn group="nmmUndeadMeleeGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmUndeadMeleeGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmUndeadMeleeGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmUndeadMeleeGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmUndeadMeleeGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmUndeadMeleeGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMUndeadRangedHorde">
+			<gamestage stage="1">
+				<spawn group="nmmUndeadRangedGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmUndeadRangedGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmUndeadRangedGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmUndeadRangedGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmUndeadRangedGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmUndeadRangedGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMUndeadBossHorde">
+			<gamestage stage="1">
+				<spawn group="nmmUndeadBossGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmUndeadBossGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmUndeadBossGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmUndeadBossGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmUndeadBossGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmUndeadBossGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<!-- King & Queen with a custom non GS name for a single entry or with the GS attribute for multiple. -->
+		<spawner name="NMM_KQAllHorde">
+			<gamestage stage="1">
+				<spawn group="nmmKQAllGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmKQAllGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmKQAllGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmKQAllGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmKQAllGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmKQAllGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<!-- Beast Slayer POI Quest Group/Boss/Lord Spawns. -->
+		<spawner name="NMMBeastsGruntHorde">
+			<gamestage stage="1">
+				<spawn group="nmmBeastsGruntGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmBeastsGruntGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmBeastsGruntGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmBeastsGruntGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmBeastsGruntGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmBeastsGruntGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMBeastsBossHorde">
+			<gamestage stage="1">
+				<spawn group="nmmBeastsBossGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmBeastsBossGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmBeastsBossGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmBeastsBossGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmBeastsBossGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmBeastsBossGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>		
+		<spawner name="NMM_DemonLord">
+			<gamestage stage="1">
+				<spawn group="NMM_DemonLord" num="1" maxAlive="1" duration="10" />
+			</gamestage>
+		</spawner>		
+	</append>
+</configs>

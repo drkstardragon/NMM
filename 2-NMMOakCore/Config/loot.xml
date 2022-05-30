@@ -1,0 +1,46 @@
+<configs>
+
+	<append xpath="/lootcontainers">
+	
+	<!-- Beehives -->
+	
+	<lootcontainer id="771" name="Honey" count="1" size="7,2" destroy_on_close="true" sound_open="UseActions/BeeHiveOpen" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="HoneyComb" count="2,3" prob="1" />
+	</lootcontainer>
+	
+	<!-- ChickenCoops -->
+
+	<lootcontainer id="772" name="EggsReady" count="1" size="6,2" destroy_on_close="true" sound_open="UseActions/Chicken6Sounds" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="foodEgg" count="3,5" prob="1"/>
+		<item name="resourceFeather" count="2,5" prob="1"/>
+		<item name="GrownChicken" count="1" prob="0.5"/>
+	</lootcontainer>
+	
+	<!-- FishFarm -->	
+
+	<lootcontainer id="779" name="FishReady" count="2" size="6,2" destroy_on_close="true" sound_open="UseActions/FishSounds" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="Salmon" count="1,2" prob="1"/>
+		<item name="Barramundi" count="1" prob="0.1"/>
+		<item name="Tangfish" count="1" prob="0.1"/>
+		<item name="MutantPiranha" count="1" prob="0.1"/>
+		<item name="PerchFish" count="1" prob="0.1"/>
+		<item name="ShinerFish" count="1" prob="0.1"/>
+		<item name="ArramusFish" count="1" prob="0.1"/>
+		<item name="BlueFinTuna" count="1" prob="0.1"/>
+	</lootcontainer>	
+	
+	</append>
+	
+	<!-- ChickenCoops Existing Groups -->	
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupBirdNest']">	
+	<lootgroup name="groupBirdNest03" count="0,1">
+		<item name="CaughtChick" loot_prob_template="veryLow"/>
+	</lootgroup>
+	</insertBefore>	
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupBirdNest']" >
+		<item group="groupBirdNest03" loot_prob_template="veryLow"/>
+	</append>	
+	
+</configs>

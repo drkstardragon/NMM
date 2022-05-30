@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="Zoning" value="ResidentialNew, ResdentialOld, downtown" />
+  <property name="AllowedTownships" value="city,town" />
+  <property name="TraderArea" value="False" />
+  <property name="YOffset" value="-23" />
+  <property name="EditorGroups" value="government, commercial" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="Tags" value="wilderness" />
+  <property name="PrefabSize" value="60, 68, 60" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="SleeperVolumeSize" value="3, 5, 28#2, 4, 25#3, 4, 28" />
+  <property name="SleeperVolumeStart" value="26, 21, 12#29, 22, 15#31, 22, 12" />
+  <property name="SleeperVolumeGroupId" value="0,0,0" />
+  <property name="SleeperVolumeGroup" value="S_-Group_NPC_Friendly_Boss,1,2,S_-Group_NMM_KQ_All,2,2,S_-Group_NPC_Friendly_Boss,1,2" />
+  <property name="SleeperIsLootVolume" value="False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0" />
+  <property name="POIMarkerSize" value="2, 1, 1" />
+  <property name="POIMarkerStart" value="29, 22, -1" />
+  <property name="POIMarkerGroup" value="Church" />
+  <property name="POIMarkerTags" value="friendly" />
+  <property name="POIMarkerType" value="RoadExit" />
+  <property name="POIMarkerPartToSpawn" value="" />
+  <property name="POIMarkerPartRotations" value="2" />
+  <property name="POIMarkerPartSpawnChance" value="1" />
+  <property class="Stats">
+    <property name="TotalVertices" value="751959" />
+    <property name="TotalTriangles" value="658437" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="406767" />
+      <property name="Triangles" value="447410" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="308993" />
+      <property name="Triangles" value="164477" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="1928" />
+      <property name="Triangles" value="1124" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="144" />
+      <property name="Triangles" value="72" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="10447" />
+      <property name="Triangles" value="7306" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="1200" />
+      <property name="Triangles" value="600" />
+    </property>
+    <property class="ChunkMeshes6">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes7">
+      <property name="Vertices" value="22480" />
+      <property name="Triangles" value="37448" />
+    </property>
+    <property class="ChunkMeshes8">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes9">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="TraderOnOff">
+      <property name="0" value="40, 11, 34" />
+      <property name="1" value="40, 17, 34" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="30, 39, 43" />
+    </property>
+  </property>
+</prefab>

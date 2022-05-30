@@ -1,0 +1,16 @@
+<configs>
+
+	<!-- Beehives -->
+
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="BeeLog" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="BeeLog" />
+	</append>
+	
+	<!-- Fireflies -->	
+	
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="Fireflies" />
+	</append>	
+
+</configs>

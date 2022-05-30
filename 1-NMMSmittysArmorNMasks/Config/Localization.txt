@@ -1,0 +1,15 @@
+Key,English
+Helmet002,Elvish Helmet
+Helmet003,Horned Helmet
+Armor6CrusaderHelmet,Crusader Helmet
+Armor8PaladinHelmet,Paladin Helmet
+Armor9Helmet,Silver Open Face Helmet
+Armor10Helmet,Berserker Helmet
+SmittyArmorDesc,High quality armor forged by blacksmiths. 
+SmittyArmorChest_Model_1,Berseker Curiass
+SmittyArmorChest_Model_3,Paladin Curiass
+SmittyArmorChest_Model_4,Crusader Curiass
+Mask4,Macabre Mask
+Mask6,Clay Golem Mask
+Mask9,Evil Groot Mask
+SmittyMaskDesc,This is a purely cosmetic mask that goes into the dye slot of a helmet. This replaces the entire helmet. You can't see it in character preview. Other players see it. You can also see it on a bike or in third person view.

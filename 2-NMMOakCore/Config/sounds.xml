@@ -1,0 +1,98 @@
+
+<configs>
+
+	<append xpath="/Sounds">
+  
+	<!-- Beehives -->
+
+	<SoundDataNode name="BeeHiveOpen">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/BeeSounds.unity3d?zBeeSound2" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+	
+	<!-- ChickenCoops -->	
+	
+	<SoundDataNode name="Chicken6Sounds">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/ChickenCoop.unity3d?Chicken1" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+	
+	<!-- DragonBlunderBuss -->
+
+	<SoundDataNode name="BlunderBuss1">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/DragonBlunderBuss.unity3d?shot" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+  
+	<SoundDataNode name="CannonFire">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="45" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/DragonBlunderBuss.unity3d?CannonFire" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+  
+	<SoundDataNode name="ShotgunShot">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="45" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/DragonBlunderBuss.unity3d?ShotgunShot" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+
+	<!-- DragonFlintLocks -->
+	
+	<SoundDataNode name="FlintShot2">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="45" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/FlintLocks.unity3d?FlintShot2" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+	
+	<!-- FishFarm -->	
+
+	<SoundDataNode name="FishSounds">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/FishStuff.unity3d?Deepwater" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>	
+  
+	</append>
+
+</configs>
+
+
+

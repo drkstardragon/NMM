@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="2-NMMOakCore" />
+		<Description value="Adds Oakraven Forest Collection Mods to Non Medieval Mod." />
+		<Author value="oakraven for the superb Oakraven Forest Collection. Modifications, with permission, by the NMM team for NMM." />
+		<Version value="1.0" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

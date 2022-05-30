@@ -1,0 +1,332 @@
+<configs>
+	<append xpath="/items">
+		<item name="SmittyArmorMaster1">
+			<property name="CreativeMode" value="None" />
+			<property name="DisplayType" value="armorHeavy" />
+			<property name="Material" value="MarmorSteelSet" />
+			<property name="Weight" value="4" />
+			<property name="RepairTools" value="resourceRepairKit" />
+			<property name="DegradationBreaksAfter" value="false" />
+			<property name="HoldType" value="45" />
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab" />
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
+			<property name="DescriptionKey" value="SmittyArmorDesc" />
+			<property name="Group" value="Clothing" />
+			<property name="RepairExpMultiplier" value="10.8" />
+			<property name="EconomicValue" value="1000" />
+			<property name="ShowQuality" value="true" />
+		</item>
+		<item name="SmittyArmorHelmet_Base1">
+			<property name="CreativeMode" value="None" />
+			<property name="Extends" value="SmittyArmorMaster1" />
+			<property name="Tags" value="head,armor,armorHead,heavyArmor,canHaveCosmetic" />
+			<property name="EquipSlot" value="Head" />
+			<property class="UMA">
+				<property name="Mesh" value="" />
+				<property name="Overlay0" value="" />
+				<property name="Layer" value="middle" />
+				<property name="UISlot" value="Headgear" />
+				<property name="Mask1" value="Head" param1="inner" />
+				<property name="Mask3" value="Face" param1="inner" />
+				<property name="Mask4" value="Face" param1="middle" />
+				<property name="Mask5" value="Face" param1="outer" />
+				<property name="Mask7" value="Eyes" param1="inner" />
+				<property name="Mask8" value="Eyes" param1="middle" />
+				<property name="Mask9" value="Eyes" param1="outer" />
+				<property name="UMA.ShowAltHair" value="true" />
+			</property>
+		</item>
+		<item name="Helmet002">
+			<property name="CustomIcon" value="Helmet002" />
+			<property name="Extends" value="SmittyArmorHelmet_Base1" />
+	<effect_group name="Helmet002">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9.21,12.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Helmet002" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Helmet002" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyHelmets.unity3d?Helmet002" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="-0.07,0,0.03" local_rotation="0,0,90" />
+			</effect_group>
+		</item>
+		<item name="Helmet003">
+			<property name="CustomIcon" value="Helmet003" />
+			<property name="Extends" value="SmittyArmorHelmet_Base1" />
+	<effect_group name="Helmet003">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9.21,12.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Helmet003" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Helmet003" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyHelmets.unity3d?Helmet003" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="-0.07,0,0.02" local_rotation="0,0,90" />
+			</effect_group>
+		</item>
+		<item name="Armor6CrusaderHelmet">
+			<property name="CustomIcon" value="Armor6CrusaderHelmet" />
+			<property name="Extends" value="SmittyArmorHelmet_Base1" />
+	<effect_group name="Armor6CrusaderHelmet">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9.21,12.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor6CrusaderHelmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor6CrusaderHelmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyHelmets.unity3d?Armor6CrusaderHelmet" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="1.61,0,0.01" local_rotation="0,0,90" />
+			</effect_group>
+		</item>
+		<item name="Armor8PaladinHelmet">
+			<property name="CustomIcon" value="Armor8PaladinHelmet" />
+			<property name="Extends" value="SmittyArmorHelmet_Base1" />
+	<effect_group name="Armor8PaladinHelmet">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9.21,12.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor8PaladinHelmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor8PaladinHelmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyHelmets.unity3d?Armor8PaladinHelmet" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="1.68,0,0.01" local_rotation="0,0,90" />
+			</effect_group>
+		</item>
+		<item name="Armor9Helmet">
+			<property name="CustomIcon" value="Armor9Helmet" />
+			<property name="Extends" value="SmittyArmorHelmet_Base1" />
+	<effect_group name="Armor9Helmet">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9.21,12.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor9Helmet" />  
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor9Helmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyHelmets.unity3d?Armor9Helmet" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="1.68,0,0.01" local_rotation="0,0,90" />
+			</effect_group>
+		</item>
+		<item name="Armor10Helmet">
+			<property name="CustomIcon" value="Armor10Helmet" />
+			<property name="Extends" value="SmittyArmorHelmet_Base1" />
+	<effect_group name="Armor10Helmet">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9.21,12.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor10Helmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor10Helmet" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyHelmets.unity3d?Armor10Helmet" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="1.68,0,0.01" local_rotation="0,0,90" />
+			</effect_group>
+		</item>
+		
+		<item name="SmittyArmorChest_Base1">
+			<property name="CreativeMode" value="None" />
+			<property name="Extends" value="SmittyArmorMaster1" />
+			<property name="Tags" value="upperbody,chest,armor,armorChest,canHaveCosmetic" />
+			<property name="EquipSlot" value="Chest" />
+			<property class="UMA">
+				<property name="Mesh" value="plant_fiber_shirt" />
+				<property name="Overlay0" value="fiberCloth_chest" />
+				<property name="Layer" value="2" />
+				<property name="UISlot" value="ChestArmor" />
+			</property>
+		</item>
+		<item name="SmittyArmorChest_Model_1">
+			<property name="CustomIcon" value="SmittyArmorChest_Model_1" />
+			<property name="Extends" value="SmittyArmorChest_Base1" />
+	<effect_group name="SmittyArmorChest_Model_1">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor10Curiass" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor10Curiass" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmithVests.unity3d?Armor10Curiass" parent_transform="Hips/LowerBack/Spine/Spine1" local_offset="1.4,0,0.05" local_rotation="1,0,90" />
+			</effect_group>
+		</item>
+		<item name="SmittyArmorChest_Model_3">
+			<property name="CustomIcon" value="SmittyArmorChest_Model_3" />
+			<property name="Extends" value="SmittyArmorChest_Base1" />
+	<effect_group name="SmittyArmorChest_Model_3">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor8Curiass" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor8Curiass" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmithVests.unity3d?Armor8Curiass" parent_transform="Hips/LowerBack/Spine/Spine1" local_offset="1.4,0,0.05" local_rotation="1,0,90" />
+			</effect_group>
+		</item>
+		<item name="SmittyArmorChest_Model_4">
+			<property name="CustomIcon" value="SmittyArmorChest_Model_4" />
+			<property name="Extends" value="SmittyArmorChest_Base1" />
+	<effect_group name="SmittyArmorChest_Model_4">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.21,12.71"/> <!-- Original 8.21,11.71 -->
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/> <!-- Original 250,500 -->
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/> <!-- Original -.06 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.03" tags="walking"/> <!-- Original -.045 -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.075" tags="running"/> <!-- Original -.09 -->
+		<display_value name="dStaminaChangeOT" value="-.75"/> <!-- Original -.9 -->
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".1"/> <!-- Original .2 -->
+	</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Armor6Curiass" />
+			</effect_group>
+			<effect_group>
+				<requirement name="IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Armor6Curiass" />
+			</effect_group>
+			<effect_group>
+				<requirement name="!IsFPV" />
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmithVests.unity3d?Armor6Curiass" parent_transform="Hips/LowerBack/Spine/Spine1" local_offset="1.4,0,0.05" local_rotation="1,0,90" />
+			</effect_group>
+		</item>
+	</append>
+</configs>

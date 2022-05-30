@@ -1,0 +1,27 @@
+<configs>
+
+	<append xpath="/buffs">
+	
+		<!-- BeeHives -->
+
+		<buff name="KillMe" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".5"/>
+			<effect_group name="Deal Damage">
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="subtract" value="1000"/>
+			</effect_group>
+		</buff>
+		
+		<!-- Fireflies -->		
+		
+		<buff name="KillMe2" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".5"/>
+			<effect_group name="Deal Damage">
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="subtract" value="1000"/>
+			</effect_group>
+		</buff>	
+	
+	</append>
+
+</configs>
