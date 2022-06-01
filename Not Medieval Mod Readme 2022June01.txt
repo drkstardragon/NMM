@@ -109,3 +109,21 @@ Eko
 Eihwaz
 Ataxia78
 arramus
+
+============
+INSTALLATION
+============
+For Players and Server Admin/Hosts who have never installed a mod before, here are some simple step by step instructions:
+
+1. If you've never installed a mod before, it is necessary to create a Mods folder in the main directory, typically inside
+\SteamLibrary\steamapps\common\7 Days To Die. In the future, this location may change and we'll update instructions at that time.
+If you have a custom install or your server host has modified the installation location, then you may have to explore.
+
+2. Simply make a new folder called Mods (with a capital M to reflect standard nomenclature) in your '7 Days To Die' main directory folder.
+
+3. You can now drag all of the mod folders directly out of the zipped file, and it can be placed directly into the Mods folder.
+It should look like the list of folders and file in the image on the introductory post for this mod on the 7 Days forum.
+https://community.7daystodie.com/topic/28810-not-medieval-mod-a-fantasy-modpack/
+
+Does this Mod need to be installed in the server/client host? = YES
+Do players also need to install this Mod? = YES (because it contains custom content that cannot be downloaded from the server).
