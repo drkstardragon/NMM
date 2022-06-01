@@ -110,6 +110,12 @@ Eihwaz
 Ataxia78
 arramus
 
+Additional POI submissions for CP49 are joining Medievil Village Modded.
+
+Prefab creators from Z - A include:
+
+Shema
+
 ============
 INSTALLATION
 ============
