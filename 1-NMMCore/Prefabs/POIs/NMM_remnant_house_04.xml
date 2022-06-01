@@ -24,11 +24,11 @@
   <property name="PrefabSize" value="42, 12, 42" />
   <property name="Zoning" value="none" />
   <property class="Stats">
-    <property name="TotalVertices" value="247526" />
-    <property name="TotalTriangles" value="194677" />
+    <property name="TotalVertices" value="248736" />
+    <property name="TotalTriangles" value="196677" />
     <property class="BlockEntities">
-      <property name="Vertices" value="190979" />
-      <property name="Triangles" value="155847" />
+      <property name="Vertices" value="192189" />
+      <property name="Triangles" value="157847" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="45434" />
