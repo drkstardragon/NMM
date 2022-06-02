@@ -2,9 +2,9 @@
 
 	<!-- Vanilla Tweaks -->
 	<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/FantasticBeastz.unity3d?DragonDark</set>		
-	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteDuke01,noteNMMZombieSlayer</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteDuke01,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
 	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>
 	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>
 	
@@ -4698,7 +4698,84 @@
 		    <property name="LookAtAngle" value="0"/> 			
 			<property name="Mesh" value="#@modfolder:Resources/NMMAddon.unity3d?DarkElfArcherDark"/>
 			<property name="IsEnemyEntity" value="true"/>			
-		</entity_class> 		
+		</entity_class>
+		
+		<!-- Laz Man - Eliminate the Hordes Starter Entities -->		
+
+        <entity_class name="qc_OrcBanditBMFeral" extends="zombieFemaleTutorial"><!-- ADDED TO Laz Man Quest -->
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/HordeNightz.unity3d?OrcHorde1Zombie"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+        <entity_class name="qc_AxeZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieAxeDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	        <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	        <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	        <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+         <entity_class name="qc_FungusZombie" extends="zombieFatCop">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo"/>
+			<property name="Faction" value="undead"/>
+                        <property name="LookAtAngle" value="0"/> 	
+                        <property name="Mesh" value="#@modfolder(1-NMMCore):Resources/NMMAddon.unity3d?FungusZombieDark"/> 		
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieCopFeral"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+                        <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+                        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+                        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+                        <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+                        <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+                        <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+                        <property name="DismemberMultiplierHead" value="0"/>
+	                <property name="DismemberMultiplierArms" value="0"/>
+	                <property name="DismemberMultiplierLegs" value="0"/>
+                <effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	        </effect_group>
+		</entity_class>		
 	
 	</append>		
 

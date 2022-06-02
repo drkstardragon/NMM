@@ -4,7 +4,7 @@
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='AdvancedLocks']/@value">true</set>
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='LockPrefab']/@value">#@modfolder:Resources/Locks.unity3d?Lockset01</set>
 
-	<append xpath="/blocks">
+	<append xpath="/blocks">	
 
      <block name="Manacle">
 	<property name="Material" value="Mmetal"/>
@@ -1715,5 +1715,10 @@
 	<set xpath="/blocks/block[@name='cntCar03SedanDamage2v08']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/SmallSackCart.unity3d?SmallSackCart</set>
 <!-- There are additional vehicles for flat bed trailers and buses, etc. They may need changing if they appear -->
 	<set xpath="/blocks/block[@name='decoCarTireSmallFlat']/property[@name='Model']/@value">Entities/OutdoorDecor/wildWestWagonWheelFrontPrefab</set>
+
+<!-- Laz Man Eliminate Wandering Hordes -->
+ 	<append xpath="/blocks/block[contains(@name,'flagPoleWhiteRiver')]">
+		<property name="OnlySimpleRotations" value="true"/>
+	</append>
 
 </configs>

@@ -1709,6 +1709,19 @@
 			<property name="Delay" value="1"/>
 		</property>		
 	</item>
+	
+	<!-- Laz Man - Elimintate the Hordes -->	
+	
+		<!-- Adds the "Eliminate Horde" note -->
+		<item name="qc_eliminatehorde">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_eliminatehordeDesc"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_eliminatehorde01"/>
+			</property>
+		</item>	
 
 		<!-- Lock Mini Game -->
 	

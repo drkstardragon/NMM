@@ -1434,7 +1434,249 @@
 			<reward type="Item" id="medicalFirstAidBandage" ischosen="true" value="25"/>
 			<reward type="Item" id="resourceGunPowder" ischosen="true" value="300"/>
 			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>			
-		</quest>	
+		</quest>
+		
+	<!-- Laz Man - Elimintate the Hordes -->		
+
+		<quest id="challenge_eliminatehorde01">
+
+			<property name="name_key" value="challenge_eliminatehorde01"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde01_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde01_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="challenge_eliminatehorde01_offer"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde01_completion"/>
+			<action type="TrackQuest"/>
+			<action type="ShowTip" value="tutorialTip_eliminatehorde">
+					<property name="delay" value="3"/>
+			</action>
+
+			<objective type="Goto" id="trader" value="5" phase="1"/>
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<reward type="Exp" value="500"/>
+			<reward type="Quest" id="challenge_eliminatehorde02"/>
+			<reward type="Item" id="resourceWood" value="300"/>			
+			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
+			
+		</quest>
+			
+		<quest id="challenge_eliminatehorde02">
+
+			<property name="name_key" value="challenge_eliminatehorde02"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde02_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde02_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="challenge_eliminatehorde02_description"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde02_completion"/>
+			<action type="TrackQuest"/>
+<!--		<action type="ShowTip" value="tutorialTip_eliminatehorde"/> -->
+		
+			<!-- Phase 1: Travel -->  
+			<objective type="RandomGoto" value="500-600" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			
+			<!-- Phase 2: Start Quest -->
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<!-- Phase 3: Build and Fortify -->
+			
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="frameShapes:VariantHelper"/>
+				<property name="count" value="10"/>
+			</objective>
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="trapSpikesWoodDmg0"/>
+				<property name="count" value="10"/>
+			</objective>		
+			
+			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="10" phase="3"/>
+			<objective type="BlockUpgrade" id="frameShapes" value="10" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="10" phase="3"/>
+			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
+		
+			<!-- Phase 4: Defend Against Horde -->		
+			
+			<action type="SpawnEnemy" id="qc_OrcBanditBMFeral,OrcRaiderBM,OrcBerzerkerBM,GoblinSpearBM,GoblinChiefBM,MedievalZombie,Skeleton" value="20" phase="4"/>
+			<action type="SpawnEnemy" id="qc_OrcBanditBMFeral,OrcRaiderBMFeral" value="4" phase="4"/>
+			<objective type="ZombieKill" id="qc_OrcBanditBMFeral,OrcRaiderBM,OrcBerzerkerBM,GoblinSpearBM,GoblinChiefBM,MedievalZombie,Skeleton,OrcBanditBMFeral,OrcRaiderBMFeral" value="16" phase="4"/>
+			
+			<!-- Phase 5: Quest turn in -->
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+			</objective>
+			
+			<reward type="Item" id="casinoCoin" value="1000"/>
+
+			
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+			<reward type="Quest" id="challenge_eliminatehorde03"/>
+			<reward type="Item" id="resourceWood" value="500"/>
+			<reward type="Item" id="resourceCobblestones" value="200"/>				
+			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
+
+			
+		</quest>
+		
+		<quest id="challenge_eliminatehorde03">
+
+			<property name="name_key" value="challenge_eliminatehorde03"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde03_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde03_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="challenge_eliminatehorde03_description"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde03_completion"/>
+			<action type="TrackQuest"/>
+
+			<!-- Phase 1: Travel -->
+			
+			<objective type="RandomGoto" value="400-500" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			
+			<!-- Phase 2: Start Quest --> 
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<!-- Phase 3: Build and Fortify -->
+			
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="cobblestoneShapes:VariantHelper"/>
+				<property name="count" value="20"/>
+			</objective>
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="trapSpikesWoodDmg0"/>
+				<property name="count" value="20"/>
+			</objective>		
+			
+			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="20" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="20" phase="3"/>
+			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
+		
+			<!-- Phase 4: Defend Against Horde -->		
+			
+			<action type="SpawnEnemy" id="qc_AxeZombieFeral,MedievalZombieFeral,MaceZombieFeral,SwordZombieFeral,HelmetZombieFeral,ArmorZombieFeral,SkeletonFeral" value="20" phase="4"/>
+			<action type="SpawnEnemy" id="DeathKnight,ChaosMarauderBM" value="4" phase="4"/>
+			<objective type="ZombieKill" id="qc_AxeZombieFeral,MedievalZombieFeral,MaceZombieFeral,SwordZombieFeral,HelmetZombieFeral,ArmorZombieFeral,SkeletonFeral,DeathKnight,ChaosMarauderBM" value="16" phase="4"/>
+			
+			<!-- Phase 5: Quest turn in --> 
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+			</objective>
+			
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+			<reward type="Quest" id="challenge_eliminatehorde04"/>
+			<reward type="Item" id="resourceWood" value="500"/>
+			<reward type="Item" id="resourceCobblestones" value="400"/>				
+			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
+
+		</quest>
+ 
+		<quest id="challenge_eliminatehorde04">
+
+			<property name="name_key" value="challenge_eliminatehorde04"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde04_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde04_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="insane"/>
+			<property name="offer_key" value="challenge_eliminatehorde04_description"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde04_completion"/>
+			<action type="TrackQuest"/>
+
+			<!-- Phase 1: Travel -->
+
+			<objective type="RandomGoto" value="250-400" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			
+			<!-- Phase 2: Start Quest -->
+			
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<!-- Phase 3: Build and Fortify -->
+			
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="cobblestoneShapes:VariantHelper"/>
+				<property name="count" value="40"/>
+			</objective>
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="trapSpikesWoodDmg0"/>
+				<property name="count" value="20"/>
+			</objective>		
+			
+			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="40" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="20" phase="3"/>
+			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
+	
+			<!-- Phase 4: Defend Against Horde --> 		
+			
+			<action type="SpawnEnemy" id="qc_FungusZombie,FungusZombieFeral,OgreAxeBM,OgreMaceBM,OgreSwordBM,DarkElfSwordBMFeral,SkeletonMonkFeral" value="20" phase="4"/>
+			<action type="SpawnEnemy" id="DeathKnightFeral,ChaosMarauderBMFeral" value="4" phase="4"/>
+			<objective type="ZombieKill" id="qc_FungusZombie,FungusZombieFeral,OgreAxeBM,OgreMaceBM,OgreSwordBM,DarkElfSwordBMFeral,SkeletonMonkFeral,DeathKnightFeral,ChaosMarauderBMFeral" value="16" phase="4"/>
+			
+			<!-- Phase 5: Quest turn in -->
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+			</objective>
+			
+			<reward type="SkillPoints" value="1" chainreward="true"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+						
+		</quest>		
 
 	</append>
 
