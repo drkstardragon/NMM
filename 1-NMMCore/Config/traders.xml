@@ -1077,7 +1077,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		
 <!-- Custom Group for Quest Scrolls -->
 		
-		<trader_item_group name="questScrolls" count="1,2">
+		<trader_item_group name="questScrolls" count="1,3">
 			<!-- item name="noteNMMZombieSlayer" count="1"/--> <!-- Given on player spawn -->
 			<item name="noteNMMTrollSlayer"/>
 			<item name="noteNMMBeastSlayer"/>
@@ -1089,8 +1089,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="noteNMMOrcSlayer"/>
 			<item name="noteNMMElfSlayer"/>
 			<item name="noteNMMManSlayer"/>
-			<item name="qc_eliminatehorde"/> <!-- Laz Man - Elimintate the Hordes -->			
-			
+			<item name="qc_eliminatehorde"/> <!-- Laz Man - Elimintate the Hordes -->
+			<!-- item name="challenge_bloodmoonvanguard" prob="0.5"/ --> <!-- Laz Man - Blood Moon Vanguard - Monitoring... -->					
 		</trader_item_group>		
 
 

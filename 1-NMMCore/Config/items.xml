@@ -1721,7 +1721,21 @@
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_eliminatehorde01"/>
 			</property>
-		</item>	
+		</item>
+		
+	<!-- Laz Man - Blood Moon Vanguard -->		
+
+		<!-- Admin item to restart the challenge_bloodmoonvanguard quest if bugged/lost  -->
+		<item name="challenge_bloodmoonvanguard">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DescriptionKey" value="challenge_bloodmoonvanguardDesc"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_bloodmoonvanguard"/>
+			</property>
+		</item>		
 
 		<!-- Lock Mini Game -->
 	

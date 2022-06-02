@@ -2,7 +2,7 @@
 
 	<!-- Vanilla Tweaks -->
 	<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/FantasticBeastz.unity3d?DragonDark</set>		
-	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteDuke01,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
 	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
 	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
 	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>

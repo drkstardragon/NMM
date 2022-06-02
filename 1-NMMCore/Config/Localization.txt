@@ -288,9 +288,22 @@ challenge_eliminatehorde04_completion,Challenge,Challenge Info,,,"Well done Surv
 tutorialTip_eliminatehorde,Journal,,,,"Tips:\n\n1) Bring all rewarded crafting resources to the Rally Point.  They will be required to CRAFT/PLACE/UPGRADE fortifications.\n\n2) You can CRAFT/PLACE/UPGRADE more fortifications than the required minimum.\n\n3) The Horde will approach after all CRAFT/PLACE/UPGRADE objectives are complete.\n\n4) Additional contracts to eliminate hordes can be found at the traders.",,,,,,,,,,,,,
 tutorialTip_eliminatehorde_title,Journal,,,,"Contract - Eliminate Horde",,,,,,,,,,,,,
 
-qc_OrcBanditBMFeral,entityclasses,Entity,,,Horde Meanies
-qc_AxeZombieFeral,entityclasses,Entity,,,Meaner Horde Meanies
-qc_FungusZombie,entityclasses,Entity,,,Even Meaner Horde Meanies
+qc_OrcBanditBMFeral,entityclasses,Entity,,,Horde Meanies,,,,,,,,,,,,,
+qc_AxeZombieFeral,entityclasses,Entity,,,Meaner Horde Meanies,,,,,,,,,,,,,
+qc_FungusZombie,entityclasses,Entity,,,Even Meaner Horde Meanies,,,,,,,,,,,,,
+
+challenge_bloodmoonvanguard,Quest,Quest Info,,,"Blood Moon Vanguard",,,,,,,,,,,,,
+challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full and the sky turns blood red, there is nowhere to hide. They will find you...",,,,,,,,,,,,,
+challenge_bloodmoonvanguard_subtitle,Quest,Quest Info,,,Blood Moon Defense,,,,,,,,,,,,,
+challenge_bloodmoonvanguard_completion,Quest,Quest Info,,,"Well I'll be danged. That blood moon horde didn't stand a chance! Take this silver as your reward. Hell, I'll even throw in an item of your choosing from my stash. You have our gratitude.",,,,,,,,,,,,,
+
+OrcBanditBM,entityclasses,Entity,,,Blood Moon Meanies,,,,,,,,,,,,,
+
+BloodmoonVanguardTip,Journal,,,,"When the moon is full and the sky turns blood red there is nowhere to hide. They will find you...\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 Blood Moon Meanies \nReward: 1 Skill Point",,,,,,,,,,,,,
+BloodmoonVanguardTip_title,Journal,,,,Blood Moon Vanguard,,,,,,,,,,,,,
+
+challenge_bloodmoonvanguard,items,Quest - Challenge,,,"Blood Moon Vanguard",,,,,,,,,,,,,
+challenge_bloodmoonvanguardDesc,items,Quest - Challenge,,,"Item to restart the Blood Moon Vanguard quest.",,,,,,,,,,,,,
 
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

@@ -12,6 +12,13 @@
 	<!-- Uncomment to reduce quests per tier to 1, or a value you want to test -->
 	<!-- <set xpath="/quests/@quests_per_tier">1</set> -->
 	
+	<!-- Quest is given to player after completing basic survival questline 8/8 for Laz Man's Blood Moon Vanguard -->
+	<insertAfter xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']" >
+		<reward type="Quest" id="challenge_bloodmoonvanguard">
+			<property name="chainquest" value="false"/>
+		</reward>
+	</insertAfter>	
+	
 	<!-- Adding Quest Completion Back - NMM Tier Completion Changes to Vanilla -->
 
 	<insertAfter xpath="/quests/quest[@id='test_nexttrader']">
@@ -1676,6 +1683,42 @@
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
 						
+		</quest>
+		
+	<!-- Laz Man - Blood Moon Vanguard -->
+
+		<quest id="challenge_bloodmoonvanguard">
+
+			<property name="name_key" value="challenge_bloodmoonvanguard"/>
+			<property name="subtitle_key" value="challenge_bloodmoonvanguard_subtitle"/>
+			<property name="description_key" value="challenge_bloodmoonvanguard_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="challenge_bloodmoonvanguard_description"/>
+
+			<action type="ShowTip" value="BloodmoonVanguardTip">
+				<property name="delay" value="15"/>
+			</action>
+			
+			<objective type="ZombieKill" id="OrcBanditBM,OrcBanditBMFeral,OrcRaiderBM,OrcRaiderBMFeral,
+                                                         OrcBerzerkerBM,OrcBerzerkerBMFeral,FungusZombie,FungusZombieFeral,
+                                                         GoblinChiefBM,GoblinChiefBMFeral,GoblinSpearBM,GoblinSpearBMFeral,
+                                                         MedievalZombie,MedievalZombieFeral,AxeZombie,AxeZombieFeral,MaceZombie,
+                                                         MaceZombieFeral,SwordZombie,SwordZombieFeral,HelmetZombie,HelmetZombieFeral,
+                                                         ArmorZombie,ArmorZombieFeral,DeathKnight,DeathKnightFeral,Skeleton,SkeletonFeral,
+                                                         SkeletonMonk,SkeletonMonkFeral,SkeletonAxe,SkeletonAxeFeral,
+                                                         ChaosMarauderBM,ChaosMarauderBMFeral,OgreSwordBM,OgreSwordBMFeral,OgreAxeBM,
+                                                         OgreAxeBMFeral,OgreMaceBM,OgreMaceBMFeral,DarkElfSwordBM,DarkElfSwordBMFeral"
+                                                         value="222" phase="1"/>
+			
+			<!-- Rewards -->
+			<reward type="Quest" id="challenge_bloodmoonvanguard">
+				<property name="chainquest" value="false"/>
+			</reward>
+			<reward type="SkillPoints" value="1"/>
+
 		</quest>		
 
 	</append>
