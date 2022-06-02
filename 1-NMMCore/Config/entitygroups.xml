@@ -4908,6 +4908,229 @@
         <entity name="FungusZombie"/>
         <entity name="FungusZombieFeral"/>		
 	</entitygroup>
+	
+	<!-- Goblins Sleepers - ALL -->
+	<entitygroup name="nmmGoblinsAllGroupGS01">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>     
+        <entity name="GoblinArcher" prob="0.1"/>
+		<entity name="GoblinCrossbowman" prob="0.1"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsAllGroupGS50">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>     
+        <entity name="GoblinArcher" prob="0.2"/>
+		<entity name="GoblinCrossbowman" prob="0.2"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsAllGroupGS100">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>     
+        <entity name="GoblinArcher" prob="0.4"/>
+		<entity name="GoblinCrossbowman" prob="0.4"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsAllGroupGS200">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsAllGroupGS400">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsAllGroupGS800">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<!-- Goblins Sleepers - MELEE -->	
+	<entitygroup name="nmmGoblinsMeleeGroupGS01">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsMeleeGroupGS50">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsMeleeGroupGS100">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsMeleeGroupGS200">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsMeleeGroupGS400">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsMeleeGroupGS800">
+		<!-- 2-GoblinzPack -->
+		<entity name="GoblinClub"/>
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+		<entity name="GoblinSpear"/>
+		<entity name="GoblinKnife"/>
+		<entity name="GoblinGurl"/>     
+        <entity name="GoblinCook"/>
+		<entity name="GoblinBaker"/>		
+	</entitygroup>
+	
+	<!-- Goblins Sleepers - RANGED -->	
+	<entitygroup name="nmmGoblinsRangedGroupGS01">
+		<!-- 2-GoblinzPack -->     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsRangedGroupGS50">
+		<!-- 2-GoblinzPack -->     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>	
+	</entitygroup>	
+	<entitygroup name="nmmGoblinsRangedGroupGS100">
+		<!-- 2-GoblinzPack -->     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsRangedGroupGS200">
+		<!-- 2-GoblinzPack -->     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>	
+	<entitygroup name="nmmGoblinsRangedGroupGS400">
+		<!-- 2-GoblinzPack -->     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsRangedGroupGS800">
+		<!-- 2-GoblinzPack -->     
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	
+	<!-- Goblins Sleepers - BOSS -->	
+	<entitygroup name="nmmGoblinsBossGroupGS01">
+		<!-- 2-GoblinzPack -->
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsBossGroupGS50">
+		<!-- 2-GoblinzPack -->
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>	
+	</entitygroup>
+	<entitygroup name="nmmGoblinsBossGroupGS100">
+		<!-- 2-GoblinzPack -->
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsBossGroupGS200">
+		<!-- 2-GoblinzPack -->
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsBossGroupGS400">
+		<!-- 2-GoblinzPack -->
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
+	<entitygroup name="nmmGoblinsBossGroupGS800">
+		<!-- 2-GoblinzPack -->
+        <entity name="GoblinShaman"/>
+		<entity name="GoblinChief"/>
+        <entity name="GoblinArcher"/>
+		<entity name="GoblinCrossbowman"/>		
+	</entitygroup>
 
 		<!-- 1-KnightzNPeasantzPackAlpha - Hireable NPCs -->
 

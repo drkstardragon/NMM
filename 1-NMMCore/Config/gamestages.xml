@@ -18,6 +18,19 @@ to each other. They can be grouped in the same POI for those very special occasi
 		<group name="S_-Group_NMM_Undead_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="NMMUndeadBossHorde" count="5,6" />
 		</group>
+		<!-- Goblins Gamestage Groups hooked up for entitygroups.xml lists -->
+		<group name="S_-Group_NMM_Goblins_All" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMGoblinsAllHorde" count="5,6" />
+		</group>
+		<group name="S_-Group_NMM_Goblins_Melee" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMGoblinsMeleeHorde" count="5,6" />
+		</group>
+		<group name="S_-Group_NMM_Goblins_Ranged" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMGoblinsRangedHorde" count="5,6" />
+		</group>
+		<group name="S_-Group_NMM_Goblins_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMGoblinsBossHorde" count="5,6" />
+		</group>		
 		<!-- King & Queen Gamestage Groups hooked up for entitygroups.xml lists -->
 		<group name="S_-Group_NMM_KQ_All" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="NMM_KQAllHorde" count="5,6" />
@@ -118,6 +131,87 @@ to each other. They can be grouped in the same POI for those very special occasi
 				<spawn group="nmmUndeadBossGroupGS800" num="1" maxAlive="1" duration="1" />
 			</gamestage>
 		</spawner>
+		<!-- Goblins Spawners with a custom non GS name for a single entry or with the GS attribute for multiple. -->
+		<spawner name="NMMGoblinsAllHorde">
+			<gamestage stage="1">
+				<spawn group="nmmGoblinsAllGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmGoblinsAllGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmGoblinsAllGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmGoblinsAllGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmGoblinsAllGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmGoblinsAllGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMGoblinsMeleeHorde">
+			<gamestage stage="1">
+				<spawn group="nmmGoblinsMeleeGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmGoblinsMeleeGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmGoblinsMeleeGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmGoblinsMeleeGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmGoblinsMeleeGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmGoblinsMeleeGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMGoblinsRangedHorde">
+			<gamestage stage="1">
+				<spawn group="nmmGoblinsRangedGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmGoblinsRangedGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmGoblinsRangedGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmGoblinsRangedGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmGoblinsRangedGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmGoblinsRangedGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMGoblinsBossHorde">
+			<gamestage stage="1">
+				<spawn group="nmmGoblinsBossGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmGoblinsBossGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmGoblinsBossGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmGoblinsBossGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmGoblinsBossGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmGoblinsBossGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>		
 		<!-- King & Queen with a custom non GS name for a single entry or with the GS attribute for multiple. -->
 		<spawner name="NMM_KQAllHorde">
 			<gamestage stage="1">
