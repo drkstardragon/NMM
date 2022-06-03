@@ -1499,9 +1499,13 @@
 			<objective type="RallyPoint">
 				<property name="start_mode" value="Create"/>
 				<property name="phase" value="2"/>
-			</objective>
+			</objective>			
 
-			<!-- Phase 3: Build and Fortify -->
+			<!-- Phase 3: Build and Fortify -->			
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>			
 			
 			<objective type="Craft">
 				<property name="phase" value="3"/>
@@ -1519,7 +1523,7 @@
 			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="10" phase="3"/>
 			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
 		
-			<!-- Phase 4: Defend Against Horde -->		
+			<!-- Phase 4: Defend Against Horde -->			
 			
 			<action type="SpawnEnemy" id="qc_OrcBanditBMFeral,OrcRaiderBM,OrcBerzerkerBM,GoblinSpearBM,GoblinChiefBM,MedievalZombie,Skeleton" value="20" phase="4"/>
 			<action type="SpawnEnemy" id="qc_OrcBanditBMFeral,OrcRaiderBMFeral" value="4" phase="4"/>
@@ -1576,6 +1580,10 @@
 			</objective>
 
 			<!-- Phase 3: Build and Fortify -->
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>			
 			
 			<objective type="Craft">
 				<property name="phase" value="3"/>
@@ -1646,6 +1654,10 @@
 			</objective>
 
 			<!-- Phase 3: Build and Fortify -->
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>			
 			
 			<objective type="Craft">
 				<property name="phase" value="3"/>

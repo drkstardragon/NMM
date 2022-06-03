@@ -3047,6 +3047,7 @@ If there is no hit the default quality is used.
 	<item name="modMeleeFortifyingGripSchematic"/>
 	<item name="modMeleeIronBreakerSchematic"/>
 	<item name="modMeleeSerratedBladeSchematic"/>
+	<item name="modVehicleSuperChargerSchematic"/>  <!-- Vehicle Mod for Horse Speed --> 	
 </lootgroup>
 
 <!-- *** T2_Schematics -->
