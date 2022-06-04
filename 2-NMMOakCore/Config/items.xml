@@ -964,7 +964,7 @@
 	<property name="Material" value="MBowCrossbowParts"/> <property name="Weight" value="6"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="FuelValue" value="200"/>
-	<property name="EconomicValue" value="1500"/>
+	<property name="EconomicValue" value="1000"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
@@ -1234,6 +1234,7 @@
 			<display_value name="dEntityDamageSneak" value="2"/>
 	</effect_group>
 </item>
+
 		
 		<item name="ArramusArrowFire">
 		<property name="ItemTypeIcon" value="star"/>
@@ -1242,14 +1243,13 @@
 	<property name="DescriptionKey" value="ArramusArrowFireDesc"/>	
 	<property name="DisplayType" value="ammoArrowFlaming"/>
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?FireArrow"/>
-	<property name="StickyMeshFile" value="#@modfolder:Resources/DragonCrossBows.unity3d?FireArrow"/>
 	<property name="UsableUnderwater" value="false"/>
 	<property name="FuelValue" value="27"/>
-    <property name="Stacknumber" value="300"/>	
+	<property name="Stacknumber" value="300"/>	
 	<property name="EconomicValue" value="45"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="Damage_type" value="Heat"/>
-	<property name="StickyOffset" value=".7"/>
+	<property name="IsSticky" value="false"/>
 	<property class="Action1">
 		<property name="Gravity" value="-5"/>
 		<property name="DamageBonus.wood" value="2"/>
@@ -1283,7 +1283,7 @@
 		<property name="DescriptionKey" value="ArramusArrowBoomDesc"/>		
         <property name="DisplayType" value="ammoLauncher"/>
 		<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
-		<property name="HoldType" value="22"/>
+		<property name="HoldType" value="45"/>
         <property name="HandMeshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
         <property name="DropMeshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
         <property name="Material" value="Mlead_scrap"/>
@@ -1291,7 +1291,7 @@
 		<property name="EconomicValue" value="81"/>
 		<property name="EconomicBundleSize" value="1"/>
         <property name="Group" value="Ammo/Weapons"/>
-        <property name="IsSticky" value="true"/>
+        <property name="IsSticky" value="false"/>
         <property class="Action1">
         <property name="Class" value="Projectile"/>
         <property name="Explosion.ParticleIndex" value="13"/>
@@ -1302,12 +1302,14 @@
         <property name="FlyTime" value=".2"/>
         <property name="LifeTime" value="20"/>
         </property>
-        <effect_group name="ammoRocketHE" tiered="false">
+        <effect_group name="ArramusArrowBoom" tiered="false">
         <passive_effect name="BlockDamage" value="10" operation="base_set"/>
         <passive_effect name="EntityDamage" value="225" operation="base_set"/>
         <passive_effect name="ProjectileVelocity" value="40" operation="base_set"/>
         </effect_group>
 		</item>
+
+
 
 <item name="ArramusSteelArrow">
 <property name="ItemTypeIcon" value="star"/>
@@ -1315,11 +1317,14 @@
 	<property name="DescriptionKey" value="ArramusSteelArrowDesc"/>
 	<property name="Extends" value="ammoArrowIron"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?SteelArrow"/>
-	<property name="StickyMeshFile" value="#@modfolder:Resources/DragonCrossBows.unity3d?SteelArrow"/>
-        <property name="Stacknumber" value="300"/>	
+    <property name="Stacknumber" value="300"/>	
 	<property name="EconomicValue" value="58"/>
 	<property name="EconomicBundleSize" value="5"/>
-	<property name="StickyOffset" value=".5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
 	<effect_group name="ArramusSteelArrow" tiered="false"> <!-- ammoArrowSteelAP -->
 		<passive_effect name="EntityDamage" operation="base_set" value="55"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
@@ -1335,13 +1340,16 @@
 	<property name="ItemTypeIcon" value="star"/>
 <property name="CustomIcon" value="ironarrow"/>
 	<property name="DescriptionKey" value="ArramusIronArrowDesc"/>
-	<property name="Extends" value="ammoArrowIron"/>
-	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?IronArrow"/>
-	<property name="StickyMeshFile" value="#@modfolder:Resources/DragonCrossBows.unity3d?IronArrow"/>
+	<property name="Extends" value="ammoArrowIron"/>	
     <property name="Stacknumber" value="300"/>	
 	<property name="EconomicValue" value="26"/>
+	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?IronArrow2"/>
 	<property name="EconomicBundleSize" value="5"/>
-	<property name="StickyOffset" value=".5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".9"/>
 	<effect_group name="ArramusIronArrow" tiered="false"> <!-- ammoArrowSteelAP -->
 		<passive_effect name="EntityDamage" operation="base_set" value="49"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
@@ -1351,6 +1359,7 @@
 		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 	</effect_group>
+
 </item>
 
 		<!-- DragonFlintLocks -->
