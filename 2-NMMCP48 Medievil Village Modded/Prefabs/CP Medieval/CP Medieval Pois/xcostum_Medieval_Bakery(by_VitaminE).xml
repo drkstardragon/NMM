@@ -25,8 +25,8 @@
   <property name="Tags" value="nmmmedieval,nmmmedieval25x25" />
   <property name="PrefabSize" value="25, 25, 25" />
   <property class="Stats">
-    <property name="TotalVertices" value="263137" />
-    <property name="TotalTriangles" value="227653" />
+    <property name="TotalVertices" value="263049" />
+    <property name="TotalTriangles" value="227609" />
     <property class="BlockEntities">
       <property name="Vertices" value="171093" />
       <property name="Triangles" value="167377" />
@@ -48,8 +48,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="1332" />
-      <property name="Triangles" value="866" />
+      <property name="Vertices" value="1244" />
+      <property name="Triangles" value="822" />
     </property>
     <property class="ChunkMeshes5">
       <property name="Vertices" value="128" />

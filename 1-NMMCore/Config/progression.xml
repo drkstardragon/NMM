@@ -1651,7 +1651,7 @@
 			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkAdvancedEngineering"/><!-- fake crafting perk that is used to scale resources -->
 
 				<!-- Engineer use x% less material on all recipes in the forge... by adding it to non engineers T3 10% .9, T4 15% .85, T5 20% .8 -->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="OakForge"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="OakForge,forge"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2" tags="perkAdvancedEngineering"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="Dragonworkbench"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="2,5" value="-0.2" tags="workbenchCrafting,cementMixerCrafting"/>

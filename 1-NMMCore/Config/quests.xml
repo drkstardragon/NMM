@@ -1715,14 +1715,14 @@
 			</action>
 			
 			<objective type="ZombieKill" id="OrcBanditBM,OrcBanditBMFeral,OrcRaiderBM,OrcRaiderBMFeral,
-                                                         OrcBerzerkerBM,OrcBerzerkerBMFeral,FungusZombie,FungusZombieFeral,
+                                                         OrcBerzerkerBM,OrcBerzerkerBMFeral,
                                                          GoblinChiefBM,GoblinChiefBMFeral,GoblinSpearBM,GoblinSpearBMFeral,
-                                                         MedievalZombie,MedievalZombieFeral,AxeZombie,AxeZombieFeral,MaceZombie,
-                                                         MaceZombieFeral,SwordZombie,SwordZombieFeral,HelmetZombie,HelmetZombieFeral,
-                                                         ArmorZombie,ArmorZombieFeral,DeathKnight,DeathKnightFeral,Skeleton,SkeletonFeral,
-                                                         SkeletonMonk,SkeletonMonkFeral,SkeletonAxe,SkeletonAxeFeral,
                                                          ChaosMarauderBM,ChaosMarauderBMFeral,OgreSwordBM,OgreSwordBMFeral,OgreAxeBM,
-                                                         OgreAxeBMFeral,OgreMaceBM,OgreMaceBMFeral,DarkElfSwordBM,DarkElfSwordBMFeral"
+                                                         OgreAxeBMFeral,OgreMaceBM,OgreMaceBMFeral,DarkElfSwordBM,DarkElfSwordBMFeral,
+														 ManticoreBM,DemonLordBM,GiantSpiderBM,GiantSpiderFeralBM,GiantSpiderChaosBM,
+														 GiantRatBM,GiantRatFeralBM,GiantRatChaosBM,ChaosMarauderBM,ChaosMarauderBMFeral,
+														 TrollBM,OgreSwordBM,OgreSwordBMFeral,OgreAxeBM,OgreAxeBMFeral,OgreMaceBM,
+														 OgreMaceBMFeral,DarkElfSwordBM,DarkElfSwordBMFeral"
                                                          value="222" phase="1"/>
 			
 			<!-- Rewards -->

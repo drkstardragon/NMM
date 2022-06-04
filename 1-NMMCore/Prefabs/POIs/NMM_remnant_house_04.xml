@@ -24,8 +24,8 @@
   <property name="PrefabSize" value="42, 12, 42" />
   <property name="Zoning" value="none" />
   <property class="Stats">
-    <property name="TotalVertices" value="248736" />
-    <property name="TotalTriangles" value="196677" />
+    <property name="TotalVertices" value="249824" />
+    <property name="TotalTriangles" value="197221" />
     <property class="BlockEntities">
       <property name="Vertices" value="192189" />
       <property name="Triangles" value="157847" />
@@ -35,8 +35,8 @@
       <property name="Triangles" value="26033" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
+      <property name="Vertices" value="1088" />
+      <property name="Triangles" value="544" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="96" />
