@@ -4700,6 +4700,38 @@
 			<property name="IsEnemyEntity" value="true"/>			
 		</entity_class>
 		
+               <!-- Chaos Helmets by keyforcez CC Attribution -->
+
+        <entity_class name="ChaosChampion" extends="zombieFatCop">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder(1-NMMCore):Resources/NMMBoss.unity3d?ChaosChampionDark"/> 		
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandChaosChampion"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+            <property name="DismemberMultiplierHead" value="0"/>
+	        <property name="DismemberMultiplierArms" value="0"/>
+	        <property name="DismemberMultiplierLegs" value="0"/>
+            <effect_group name="Base Effects">
+                <passive_effect name="HealthMax" operation="base_set" value="4000"/>
+                <passive_effect name="HealthMax" operation="perc_set" value="1"/>
+                <passive_effect name="PhysicalDamageResist" operation="base_set" value="90"/>
+                <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="2.5"/>
+                <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+            </effect_group>
+		</entity_class>		
+		
 		<!-- Laz Man - Eliminate the Hordes Starter Entities -->		
 
         <entity_class name="qc_OrcBanditBMFeral" extends="zombieFemaleTutorial"><!-- ADDED TO Laz Man Quest -->

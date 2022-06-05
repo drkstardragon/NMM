@@ -9041,4 +9041,33 @@ If there is no hit the default quality is used.
 
 </set>
 
+	<append xpath="/lootcontainers">
+
+		<lootgroup name="MainQuestPart1" count="all">
+			<item name="noteTheAbbey" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="MainQuestPart2" count="all">
+			<item name="noteTheRuins" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="MainQuestPart3" count="all">
+			<item name="noteKarakUngol" count="1"/>
+		</lootgroup>
+
+	<!-- Main Quest Containers -->
+		<lootcontainer id="405" name="mqPart1" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template">
+			<item group="MainQuestPart1"/>
+		</lootcontainer>
+
+		<lootcontainer id="406" name="mqPart2" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template">
+			<item group="MainQuestPart2"/>
+		</lootcontainer>
+
+		<lootcontainer id="407" name="mqPart3" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template">
+			<item group="MainQuestPart3"/>
+		</lootcontainer>
+
+	</append>
+
 </configs>

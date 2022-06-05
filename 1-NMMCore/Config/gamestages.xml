@@ -44,6 +44,16 @@ to each other. They can be grouped in the same POI for those very special occasi
 		</group>		
 		<group name="NMM_Beasts_Demon_Lord" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="NMM_DemonLord" count="1" />
+		</group>
+		<!-- Blood Moon POI Quest Group/Boss/Lord Spawns -->
+		<group name="S_-Group_NMM_BloodMoon_Quest_Grunt" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMBloodMoonGruntHorde" count="5,6" />
+		</group>		
+		<group name="S_-Group_NMM_BloodMoon_Quest_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMMBloodMoonBossHorde" count="5,6" />
+		</group>		
+		<group name="NMM_BloodMoon_Chaos_Champion" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMM_ChaosChampion" count="1" />
 		</group>		
 	</append>
 
@@ -277,6 +287,52 @@ to each other. They can be grouped in the same POI for those very special occasi
 		<spawner name="NMM_DemonLord">
 			<gamestage stage="1">
 				<spawn group="NMM_DemonLord" num="1" maxAlive="1" duration="10" />
+			</gamestage>
+		</spawner>
+		<!-- Blood Moon POI Quest Group/Boss/Lord Spawns -->
+		<spawner name="NMMBloodMoonGruntHorde">
+			<gamestage stage="1">
+				<spawn group="nmmBloodMoonGruntGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmBloodMoonGruntGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmBloodMoonGruntGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmBloodMoonGruntGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmBloodMoonGruntGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmBloodMoonGruntGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMMBloodMoonBossHorde">
+			<gamestage stage="1">
+				<spawn group="nmmBloodMoonBossGroupGS01" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="nmmBloodMoonBossGroupGS50" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="nmmBloodMoonBossGroupGS100" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="nmmBloodMoonBossGroupGS200" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="nmmBloodMoonBossGroupGS400" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+			<gamestage stage="800">
+				<spawn group="nmmBloodMoonBossGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>		
+		<spawner name="NMM_ChaosChampion">
+			<gamestage stage="1">
+				<spawn group="NMM_ChaosChampion" num="1" maxAlive="1" duration="10" />
 			</gamestage>
 		</spawner>		
 	</append>

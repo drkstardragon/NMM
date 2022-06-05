@@ -5695,6 +5695,353 @@
 		<entity name="DemonLord"/>		
 	</entitygroup>
 	
+		<!-- Blood Moon POI Quest Group/Boss/Lord Spawns -->
+	<entitygroup name="nmmBloodMoonGruntGroupGS01">
+		<entity name="MedievalZombie"/>
+		<entity name="AxeZombie"/>
+		<entity name="MaceZombie"/>
+		<entity name="SwordZombie"/>
+		<entity name="HelmetZombie"/>
+		<entity name="ArmorZombie"/>
+		<entity name="DeathKnight"/>
+		<entity name="Skeleton"/>
+		<entity name="SkeletonMonk"/>
+		<entity name="SkeletonAxe"/>
+		<entity name="MedievalZombieFeral"/>
+		<entity name="AxeZombieFeral"/>
+		<entity name="MaceZombieFeral"/>
+		<entity name="SwordZombieFeral"/>
+		<entity name="HelmetZombieFeral"/>
+		<entity name="ArmorZombieFeral"/>
+		<entity name="DeathKnightFeral"/>
+		<entity name="SkeletonFeral"/>
+		<entity name="SkeletonMonkFeral"/>
+		<entity name="SkeletonAxeFeral"/>
+		<entity name="FungusZombie"/>
+		<entity name="FungusZombieFeral"/>
+		<entity name="OrcBanditBM"/>
+		<entity name="OrcBanditBMFeral"/>
+		<entity name="OrcRaiderBM"/>
+		<entity name="OrcRaiderBMFeral"/>
+		<entity name="OrcBerzerkerBM"/>
+		<entity name="OrcBerzerkerBMFeral"/>
+		<entity name="GoblinChiefBM"/>
+		<entity name="GoblinChiefBMFeral"/>
+		<entity name="GoblinSpearBM"/>
+		<entity name="GoblinSpearBMFeral"/>
+		<entity name="GiantSpiderBM"/>
+		<entity name="GiantSpiderFeralBM" prob="0.3"/>
+		<entity name="GiantSpiderChaosBM" prob="0.15"/>
+		<entity name="GiantRatBM"/>
+		<entity name="GiantRatFeralBM" prob="0.3"/>
+		<entity name="GiantRatChaosBM" prob="0.15"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="OgreSwordBM"/>
+		<entity name="OgreSwordBMFeral"/>
+		<entity name="OgreAxeBM"/>
+		<entity name="OgreAxeBMFeral"/>
+		<entity name="OgreMaceBM"/>
+		<entity name="OgreMaceBMFeral"/>
+		<entity name="DarkElfSwordBM"/>
+		<entity name="DarkElfSwordBMFeral"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonGruntGroupGS50">
+		<entity name="MedievalZombie"/>
+		<entity name="AxeZombie"/>
+		<entity name="MaceZombie"/>
+		<entity name="SwordZombie"/>
+		<entity name="HelmetZombie"/>
+		<entity name="ArmorZombie"/>
+		<entity name="DeathKnight"/>
+		<entity name="Skeleton"/>
+		<entity name="SkeletonMonk"/>
+		<entity name="SkeletonAxe"/>
+		<entity name="MedievalZombieFeral"/>
+		<entity name="AxeZombieFeral"/>
+		<entity name="MaceZombieFeral"/>
+		<entity name="SwordZombieFeral"/>
+		<entity name="HelmetZombieFeral"/>
+		<entity name="ArmorZombieFeral"/>
+		<entity name="DeathKnightFeral"/>
+		<entity name="SkeletonFeral"/>
+		<entity name="SkeletonMonkFeral"/>
+		<entity name="SkeletonAxeFeral"/>
+		<entity name="FungusZombie"/>
+		<entity name="FungusZombieFeral"/>
+		<entity name="OrcBanditBM"/>
+		<entity name="OrcBanditBMFeral"/>
+		<entity name="OrcRaiderBM"/>
+		<entity name="OrcRaiderBMFeral"/>
+		<entity name="OrcBerzerkerBM"/>
+		<entity name="OrcBerzerkerBMFeral"/>
+		<entity name="GoblinChiefBM"/>
+		<entity name="GoblinChiefBMFeral"/>
+		<entity name="GoblinSpearBM"/>
+		<entity name="GoblinSpearBMFeral"/>
+		<entity name="GiantSpiderBM"/>
+		<entity name="GiantSpiderFeralBM" prob="0.4"/>
+		<entity name="GiantSpiderChaosBM" prob="0.25"/>
+		<entity name="GiantRatBM"/>
+		<entity name="GiantRatFeralBM" prob="0.4"/>
+		<entity name="GiantRatChaosBM" prob="0.25"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="OgreSwordBM"/>
+		<entity name="OgreSwordBMFeral"/>
+		<entity name="OgreAxeBM"/>
+		<entity name="OgreAxeBMFeral"/>
+		<entity name="OgreMaceBM"/>
+		<entity name="OgreMaceBMFeral"/>
+		<entity name="DarkElfSwordBM"/>
+		<entity name="DarkElfSwordBMFeral"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonGruntGroupGS100">
+		<entity name="MedievalZombie"/>
+		<entity name="AxeZombie"/>
+		<entity name="MaceZombie"/>
+		<entity name="SwordZombie"/>
+		<entity name="HelmetZombie"/>
+		<entity name="ArmorZombie"/>
+		<entity name="DeathKnight"/>
+		<entity name="Skeleton"/>
+		<entity name="SkeletonMonk"/>
+		<entity name="SkeletonAxe"/>
+		<entity name="MedievalZombieFeral"/>
+		<entity name="AxeZombieFeral"/>
+		<entity name="MaceZombieFeral"/>
+		<entity name="SwordZombieFeral"/>
+		<entity name="HelmetZombieFeral"/>
+		<entity name="ArmorZombieFeral"/>
+		<entity name="DeathKnightFeral"/>
+		<entity name="SkeletonFeral"/>
+		<entity name="SkeletonMonkFeral"/>
+		<entity name="SkeletonAxeFeral"/>
+		<entity name="FungusZombie"/>
+		<entity name="FungusZombieFeral"/>
+		<entity name="OrcBanditBM"/>
+		<entity name="OrcBanditBMFeral"/>
+		<entity name="OrcRaiderBM"/>
+		<entity name="OrcRaiderBMFeral"/>
+		<entity name="OrcBerzerkerBM"/>
+		<entity name="OrcBerzerkerBMFeral"/>
+		<entity name="GoblinChiefBM"/>
+		<entity name="GoblinChiefBMFeral"/>
+		<entity name="GoblinSpearBM"/>
+		<entity name="GoblinSpearBMFeral"/>
+		<entity name="GiantSpiderBM"/>
+		<entity name="GiantSpiderFeralBM" prob="0.5"/>
+		<entity name="GiantSpiderChaosBM" prob="0.35"/>
+		<entity name="GiantRatBM"/>
+		<entity name="GiantRatFeralBM" prob="0.5"/>
+		<entity name="GiantRatChaosBM" prob="0.35"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="OgreSwordBM"/>
+		<entity name="OgreSwordBMFeral"/>
+		<entity name="OgreAxeBM"/>
+		<entity name="OgreAxeBMFeral"/>
+		<entity name="OgreMaceBM"/>
+		<entity name="OgreMaceBMFeral"/>
+		<entity name="DarkElfSwordBM"/>
+		<entity name="DarkElfSwordBMFeral"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonGruntGroupGS200">
+		<entity name="MedievalZombie"/>
+		<entity name="AxeZombie"/>
+		<entity name="MaceZombie"/>
+		<entity name="SwordZombie"/>
+		<entity name="HelmetZombie"/>
+		<entity name="ArmorZombie"/>
+		<entity name="DeathKnight"/>
+		<entity name="Skeleton"/>
+		<entity name="SkeletonMonk"/>
+		<entity name="SkeletonAxe"/>
+		<entity name="MedievalZombieFeral"/>
+		<entity name="AxeZombieFeral"/>
+		<entity name="MaceZombieFeral"/>
+		<entity name="SwordZombieFeral"/>
+		<entity name="HelmetZombieFeral"/>
+		<entity name="ArmorZombieFeral"/>
+		<entity name="DeathKnightFeral"/>
+		<entity name="SkeletonFeral"/>
+		<entity name="SkeletonMonkFeral"/>
+		<entity name="SkeletonAxeFeral"/>
+		<entity name="FungusZombie"/>
+		<entity name="FungusZombieFeral"/>
+		<entity name="OrcBanditBM"/>
+		<entity name="OrcBanditBMFeral"/>
+		<entity name="OrcRaiderBM"/>
+		<entity name="OrcRaiderBMFeral"/>
+		<entity name="OrcBerzerkerBM"/>
+		<entity name="OrcBerzerkerBMFeral"/>
+		<entity name="GoblinChiefBM"/>
+		<entity name="GoblinChiefBMFeral"/>
+		<entity name="GoblinSpearBM"/>
+		<entity name="GoblinSpearBMFeral"/>
+		<entity name="GiantSpiderBM"/>
+		<entity name="GiantSpiderFeralBM" prob="0.6"/>
+		<entity name="GiantSpiderChaosBM" prob="0.5"/>
+		<entity name="GiantRatBM"/>
+		<entity name="GiantRatFeralBM" prob="0.6"/>
+		<entity name="GiantRatChaosBM" prob="0.5"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="OgreSwordBM"/>
+		<entity name="OgreSwordBMFeral"/>
+		<entity name="OgreAxeBM"/>
+		<entity name="OgreAxeBMFeral"/>
+		<entity name="OgreMaceBM"/>
+		<entity name="OgreMaceBMFeral"/>
+		<entity name="DarkElfSwordBM"/>
+		<entity name="DarkElfSwordBMFeral"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonGruntGroup400">
+		<entity name="MedievalZombie"/>
+		<entity name="AxeZombie"/>
+		<entity name="MaceZombie"/>
+		<entity name="SwordZombie"/>
+		<entity name="HelmetZombie"/>
+		<entity name="ArmorZombie"/>
+		<entity name="DeathKnight"/>
+		<entity name="Skeleton"/>
+		<entity name="SkeletonMonk"/>
+		<entity name="SkeletonAxe"/>
+		<entity name="MedievalZombieFeral"/>
+		<entity name="AxeZombieFeral"/>
+		<entity name="MaceZombieFeral"/>
+		<entity name="SwordZombieFeral"/>
+		<entity name="HelmetZombieFeral"/>
+		<entity name="ArmorZombieFeral"/>
+		<entity name="DeathKnightFeral"/>
+		<entity name="SkeletonFeral"/>
+		<entity name="SkeletonMonkFeral"/>
+		<entity name="SkeletonAxeFeral"/>
+		<entity name="FungusZombie"/>
+		<entity name="FungusZombieFeral"/>
+		<entity name="OrcBanditBM"/>
+		<entity name="OrcBanditBMFeral"/>
+		<entity name="OrcRaiderBM"/>
+		<entity name="OrcRaiderBMFeral"/>
+		<entity name="OrcBerzerkerBM"/>
+		<entity name="OrcBerzerkerBMFeral"/>
+		<entity name="GoblinChiefBM"/>
+		<entity name="GoblinChiefBMFeral"/>
+		<entity name="GoblinSpearBM"/>
+		<entity name="GoblinSpearBMFeral"/>
+		<entity name="GiantSpiderBM"/>
+		<entity name="GiantSpiderFeralBM" prob="0.7"/>
+		<entity name="GiantSpiderChaosBM" prob="0.6"/>
+		<entity name="GiantRatBM"/>
+		<entity name="GiantRatFeralBM" prob="0.7"/>
+		<entity name="GiantRatChaosBM" prob="0.6"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="OgreSwordBM"/>
+		<entity name="OgreSwordBMFeral"/>
+		<entity name="OgreAxeBM"/>
+		<entity name="OgreAxeBMFeral"/>
+		<entity name="OgreMaceBM"/>
+		<entity name="OgreMaceBMFeral"/>
+		<entity name="DarkElfSwordBM"/>
+		<entity name="DarkElfSwordBMFeral"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonGruntGroupGS800">
+		<entity name="MedievalZombie"/>
+		<entity name="AxeZombie"/>
+		<entity name="MaceZombie"/>
+		<entity name="SwordZombie"/>
+		<entity name="HelmetZombie"/>
+		<entity name="ArmorZombie"/>
+		<entity name="DeathKnight"/>
+		<entity name="Skeleton"/>
+		<entity name="SkeletonMonk"/>
+		<entity name="SkeletonAxe"/>
+		<entity name="MedievalZombieFeral"/>
+		<entity name="AxeZombieFeral"/>
+		<entity name="MaceZombieFeral"/>
+		<entity name="SwordZombieFeral"/>
+		<entity name="HelmetZombieFeral"/>
+		<entity name="ArmorZombieFeral"/>
+		<entity name="DeathKnightFeral"/>
+		<entity name="SkeletonFeral"/>
+		<entity name="SkeletonMonkFeral"/>
+		<entity name="SkeletonAxeFeral"/>
+		<entity name="FungusZombie"/>
+		<entity name="FungusZombieFeral"/>
+		<entity name="OrcBanditBM"/>
+		<entity name="OrcBanditBMFeral"/>
+		<entity name="OrcRaiderBM"/>
+		<entity name="OrcRaiderBMFeral"/>
+		<entity name="OrcBerzerkerBM"/>
+		<entity name="OrcBerzerkerBMFeral"/>
+		<entity name="GoblinChiefBM"/>
+		<entity name="GoblinChiefBMFeral"/>
+		<entity name="GoblinSpearBM"/>
+		<entity name="GoblinSpearBMFeral"/>
+		<entity name="GiantSpiderBM"/>
+		<entity name="GiantSpiderFeralBM" prob="0.8"/>
+		<entity name="GiantSpiderChaosBM" prob="0.7"/>
+		<entity name="GiantRatBM"/>
+		<entity name="GiantRatFeralBM" prob="0.8"/>
+		<entity name="GiantRatChaosBM" prob="0.7"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="OgreSwordBM"/>
+		<entity name="OgreSwordBMFeral"/>
+		<entity name="OgreAxeBM"/>
+		<entity name="OgreAxeBMFeral"/>
+		<entity name="OgreMaceBM"/>
+		<entity name="OgreMaceBMFeral"/>
+		<entity name="DarkElfSwordBM"/>
+		<entity name="DarkElfSwordBMFeral"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonBossGroupGS01">
+		<entity name="ManticoreBM" prob="0.2"/>
+		<entity name="DemonLordBM" prob="0.2"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="TrollBM"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonBossGroupGS50">
+		<entity name="ManticoreBM" prob="0.3"/>
+		<entity name="DemonLordBM" prob="0.3"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="TrollBM"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonBossGroupGS100">
+		<entity name="ManticoreBM" prob="0.4"/>
+		<entity name="DemonLordBM" prob="0.4"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="TrollBM"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonBossGroupGS200">
+		<entity name="ManticoreBM" prob="0.5"/>
+		<entity name="DemonLordBM" prob="0.5"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="TrollBM"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonBossGroupGS400">
+		<entity name="ManticoreBM" prob="0.6"/>
+		<entity name="DemonLordBM" prob="0.6"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="TrollBM"/>		
+	</entitygroup>
+	<entitygroup name="nmmBloodMoonBossGroupGS800">
+		<entity name="ManticoreBM" prob="0.8"/>
+		<entity name="DemonLordBM" prob="0.8"/>
+		<entity name="ChaosMarauderBM"/>
+		<entity name="ChaosMarauderBMFeral"/>
+		<entity name="TrollBM"/>		
+	</entitygroup>	
+	<entitygroup name="NMM_ChaosChampion">
+		<entity name="ChaosChampion"/>		
+	</entitygroup>	
+	
 	</append>	
 	
 </config>

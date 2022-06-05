@@ -21,15 +21,15 @@
   <property name="DifficultyTier" value="0" />
   <property name="ShowQuestClearCount" value="1" />
   <property class="Stats">
-    <property name="TotalVertices" value="581432" />
-    <property name="TotalTriangles" value="472319" />
+    <property name="TotalVertices" value="585527" />
+    <property name="TotalTriangles" value="475341" />
     <property class="BlockEntities">
-      <property name="Vertices" value="313624" />
-      <property name="Triangles" value="286753" />
+      <property name="Vertices" value="317469" />
+      <property name="Triangles" value="289649" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="257597" />
-      <property name="Triangles" value="169752" />
+      <property name="Vertices" value="257847" />
+      <property name="Triangles" value="169878" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />

@@ -1564,6 +1564,59 @@
 		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 		<property name="CreativeMode" value="Player"/>
     </block>
+	
+	<!-- NMM Main Quest Parts -->	
+	
+    <block name="MainQuestPart1">
+		<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mqPart1"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="5"/>
+		<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    </block>
+
+    <block name="MainQuestPart2">
+		<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mqPart2"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		</property>
+        <drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="5"/>
+        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    </block>
+
+    <block name="MainQuestPart3">
+		<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mqPart3"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		</property>
+        <drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="5"/>
+        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    </block>	
 
 	<!-- NMM Trader Baker -->
 	

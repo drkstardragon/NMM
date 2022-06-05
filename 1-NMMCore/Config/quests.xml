@@ -1731,6 +1731,68 @@
 			</reward>
 			<reward type="SkillPoints" value="1"/>
 
+		</quest>
+
+        <!-- Main Quest -->
+
+	<quest id="questFindRoseAbbey">
+			<property name="offer_key" value="The King commands you to reach the Abbey and find out what the monks have discovered."/>
+			<property name="name_key" value="Find the Abbey."/>
+			<property name="subtitle_key" value="Find the Abbey."/>
+			<property name="description_key" value="The monks have likely perished. You need to purge the Abbey and find the Abbot's quarters. If there is any information, that is where you will find it."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="_Rose_Abby_byMPLogue"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+		</quest>
+
+		<quest id="questFindPetraTemple">
+			<property name="offer_key" value="The King commands you to reach the Ruins and find the source of the Chaos incursion."/>
+			<property name="name_key" value="Find the Elven Ruins."/>
+			<property name="subtitle_key" value="Find the Elven Ruins."/>
+			<property name="description_key" value="The monks gave their lives finding this information. Purge the ruins and find more information, else their deaths be for naught."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="_Petra_Indiana_Jones_by_MPLogue"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+		</quest>
+
+		<quest id="questFindKarakUngol">
+			<property name="offer_key" value="It is fitting that Karak Ungol be the lair of our enemy. The Dwarven Hold was the first to perish in the Chaos incursion."/>
+			<property name="name_key" value="Find Karak Ungol."/>
+			<property name="subtitle_key" value="Find Karak Ungol."/>
+			<property name="description_key" value="Find this faceless master. Cut the head from the snake."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="NMM_Chicken_Itza(by_Mexico664)"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
 		</quest>		
 
 	</append>
