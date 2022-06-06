@@ -51,6 +51,9 @@ to each other. They can be grouped in the same POI for those very special occasi
 		</group>		
 		<group name="S_-Group_NMM_BloodMoon_Quest_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="NMMBloodMoonBossHorde" count="5,6" />
+		</group>
+		<group name="NMM_BloodMoon_Demon_Lord_BM" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="NMM_DemonLordBM" count="1" />
 		</group>		
 		<group name="NMM_BloodMoon_Chaos_Champion" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 			<spawner name="NMM_ChaosChampion" count="1" />
@@ -328,6 +331,11 @@ to each other. They can be grouped in the same POI for those very special occasi
 			</gamestage>
 			<gamestage stage="800">
 				<spawn group="nmmBloodMoonBossGroupGS800" num="1" maxAlive="1" duration="1" />
+			</gamestage>
+		</spawner>
+		<spawner name="NMM_DemonLordBM">
+			<gamestage stage="1">
+				<spawn group="NMM_DemonLordBM" num="1" maxAlive="1" duration="10" />
 			</gamestage>
 		</spawner>		
 		<spawner name="NMM_ChaosChampion">

@@ -1002,9 +1002,10 @@ A few more road blocks have been added for decorations and cars switched to cart
 								<decoration type="block" blockname="emberPileDeco4" prob="0.0005" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".0004" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".0004" rotatemax="7"/>
-			<!--	<decoration type="prefab" name="deco_remnant_stone_01" prob=".003"/>
-				<decoration type="prefab" name="deco_remnant_stone_02" prob=".003"/>
-				<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_01" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_02" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_05" prob=".0005"/>			
+		<!--	<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_04" prob=".002"/>
 				<decoration type="prefab" name="deco_remnant_stone_05" prob=".002"/>
 				<decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
@@ -1078,9 +1079,10 @@ A few more road blocks have been added for decorations and cars switched to cart
 								<decoration type="block" blockname="emberPileDeco4" prob="0.0005" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".0004" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".0004" rotatemax="7"/>								
-			<!--	<decoration type="prefab" name="deco_remnant_stone_01" prob=".003"/>
-				<decoration type="prefab" name="deco_remnant_stone_02" prob=".003"/>
-				<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_01" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_02" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_05" prob=".0005"/>
+		<!--	<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_04" prob=".002"/>
 				<decoration type="prefab" name="deco_remnant_stone_05" prob=".002"/>
 				<decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
@@ -1153,9 +1155,10 @@ A few more road blocks have been added for decorations and cars switched to cart
 								<decoration type="block" blockname="emberPileDeco4" prob="0.0005" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".0004" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".0004" rotatemax="7"/>
-			<!--	<decoration type="prefab" name="deco_remnant_stone_01" prob=".003"/>
-				<decoration type="prefab" name="deco_remnant_stone_02" prob=".003"/>
-				<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_01" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_02" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_05" prob=".0005"/>
+		<!--	<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
 				<decoration type="prefab" name="deco_remnant_stone_04" prob=".002"/>
 				<decoration type="prefab" name="deco_remnant_stone_05" prob=".002"/>
 				<decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
@@ -1235,9 +1238,10 @@ A few more road blocks have been added for decorations and cars switched to cart
 								<decoration type="block" blockname="emberPileDeco4" prob="0.0005" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".0004" rotatemax="7"/>
 								<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".0004" rotatemax="7"/>
-		<!--	<decoration type="prefab" name="deco_remnant_stone_01" prob=".003"/>
-			<decoration type="prefab" name="deco_remnant_stone_02" prob=".003"/>
-			<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_01" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_02" prob=".0005"/>
+			<decoration type="prefab" name="deco_NMM_remnant_stone_05" prob=".0005"/>
+		<!--	<decoration type="prefab" name="deco_remnant_stone_03" prob=".003"/>
 			<decoration type="prefab" name="deco_remnant_stone_04" prob=".002"/>
 			<decoration type="prefab" name="deco_remnant_stone_05" prob=".002"/>
 			<decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>

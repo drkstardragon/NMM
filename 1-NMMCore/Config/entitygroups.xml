@@ -6037,6 +6037,9 @@
 		<entity name="ChaosMarauderBM"/>
 		<entity name="ChaosMarauderBMFeral"/>
 		<entity name="TrollBM"/>		
+	</entitygroup>
+	<entitygroup name="NMM_DemonLordBM">
+		<entity name="DemonLordBM"/>		
 	</entitygroup>	
 	<entitygroup name="NMM_ChaosChampion">
 		<entity name="ChaosChampion"/>		

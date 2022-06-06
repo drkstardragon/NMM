@@ -13,7 +13,7 @@
   <property name="SleeperVolumeSize" value="36, 4, 16#36, 3, 6#19, 3, 14#9, 3, 14#28, 3, 11#28, 4, 12#15, 3, 37#42, 19, 42#18, 3, 16#20, 3, 48#31, 3, 31#24, 5, 19#23, 4, 11#10, 3, 38#6, 3, 8#36, 4, 7" />
   <property name="SleeperVolumeStart" value="9, 1, 82#21, 7, 65#21, 7, 28#12, 7, 27#12, 7, 42#12, 7, 53#40, 7, 28#5, 20, 8#3, 7, 65#0, 20, 60#28, 26, 80#33, 20, 60#34, 21, 79#2, 7, 27#47, 7, 71#9, 1, 98" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="S_-Group_NMM_BloodMoon_Quest_Grunt,10,13,S_-Group_NMM_BloodMoon_Quest_Boss,2,2,S_-Group_NMM_BloodMoon_Quest_Grunt,6,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,3,S_-Group_NMM_BloodMoon_Quest_Grunt,4,6,S_-Group_NMM_BloodMoon_Quest_Boss,3,5,S_-Group_NMM_BloodMoon_Quest_Grunt,4,5,S_-Group_NMM_BloodMoon_Quest_Grunt,8,12,S_-Group_NMM_BloodMoon_Quest_Grunt,4,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,5,S_-Group_NMM_BloodMoon_Quest_Grunt,5,9,S_-Group_NMM_BloodMoon_Quest_Grunt,4,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,5,NMM_Beasts_Demon_Lord,1,1,NMM_BloodMoon_Chaos_Champion,1,1" />
+  <property name="SleeperVolumeGroup" value="S_-Group_NMM_BloodMoon_Quest_Grunt,10,13,S_-Group_NMM_BloodMoon_Quest_Boss,2,2,S_-Group_NMM_BloodMoon_Quest_Grunt,6,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,3,S_-Group_NMM_BloodMoon_Quest_Grunt,4,6,S_-Group_NMM_BloodMoon_Quest_Boss,3,5,S_-Group_NMM_BloodMoon_Quest_Grunt,4,5,S_-Group_NMM_BloodMoon_Quest_Grunt,8,12,S_-Group_NMM_BloodMoon_Quest_Grunt,4,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,5,S_-Group_NMM_BloodMoon_Quest_Grunt,5,9,S_-Group_NMM_BloodMoon_Quest_Grunt,4,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,6,S_-Group_NMM_BloodMoon_Quest_Grunt,3,5,NMM_BloodMoon_Demon_Lord_BM,1,1,NMM_BloodMoon_Chaos_Champion,1,1" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,2,2,2,0,0,2,0,0,0,0,0,0,0,0" />
@@ -32,19 +32,19 @@
   <property name="DifficultyTier" value="0" />
   <property name="ShowQuestClearCount" value="1" />
   <property class="Stats">
-    <property name="TotalVertices" value="1466655" />
-    <property name="TotalTriangles" value="1441571" />
+    <property name="TotalVertices" value="1476979" />
+    <property name="TotalTriangles" value="1452011" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1253517" />
-      <property name="Triangles" value="1275810" />
+      <property name="Vertices" value="1263873" />
+      <property name="Triangles" value="1286210" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="140037" />
-      <property name="Triangles" value="76694" />
+      <property name="Vertices" value="140029" />
+      <property name="Triangles" value="76690" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="16384" />
-      <property name="Triangles" value="8192" />
+      <property name="Vertices" value="16320" />
+      <property name="Triangles" value="8160" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="0" />
@@ -67,8 +67,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes7">
-      <property name="Vertices" value="43170" />
-      <property name="Triangles" value="71640" />
+      <property name="Vertices" value="43210" />
+      <property name="Triangles" value="71716" />
     </property>
     <property class="ChunkMeshes8">
       <property name="Vertices" value="0" />

@@ -1748,6 +1748,8 @@
 	                <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
 	                <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 			<property name="ExperienceGain" value="2700"/>
+			<property name="LootDropProb" value="1.0"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>			
             <property class="Boundary" >
             <property name="BoundaryBox" value="3.0,4.0,3.0" />
             <property name="Center" value="0.0,12.0,0.0"/>
@@ -2279,6 +2281,8 @@
 	        <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
 	        <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 			<property name="ExperienceGain" value="2700"/>
+			<property name="LootDropProb" value="1.0"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>			
             <property class="Boundary" >
             <property name="BoundaryBox" value="3.0,4.0,3.0" />
             <property name="Center" value="0.0,12.0,0.0"/>
@@ -4712,8 +4716,8 @@
 			<property name="MoveSpeedAggro" value=".5, 1.35"/>
 			<property name="HandItem" value="meleeHandChaosChampion"/>
 			<property name="ExperienceGain" value="750"/>
-			<property name="LootDropProb" value=".03"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value="1.0"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
             <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
             <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
             <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
