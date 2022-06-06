@@ -830,7 +830,33 @@
 			<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="MedievalZombieRadiated" extends="MedievalZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP GiantRatChaos x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	        <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	        <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	        <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>			
 
         <entity_class name="AxeZombie" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
