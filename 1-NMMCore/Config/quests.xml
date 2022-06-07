@@ -1714,7 +1714,7 @@
 				<property name="delay" value="15"/>
 			</action>
 			
-			<objective type="ZombieKill" id="OrcBanditBM,OrcBanditBMFeral,OrcRaiderBM,OrcRaiderBMFeral,
+			<objective type="ZombieKill" id="qc_OrcBanditBM,OrcBanditBMFeral,OrcRaiderBM,OrcRaiderBMFeral,
                                                          OrcBerzerkerBM,OrcBerzerkerBMFeral,
                                                          GoblinChiefBM,GoblinChiefBMFeral,GoblinSpearBM,GoblinSpearBMFeral,
                                                          ChaosMarauderBM,ChaosMarauderBMFeral,OgreSwordBM,OgreSwordBMFeral,OgreAxeBM,

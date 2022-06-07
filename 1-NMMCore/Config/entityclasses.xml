@@ -842,15 +842,9 @@
 			<property name="MoveSpeedAggro" value=".6, 1.4"/>
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
-			<property name="ExperienceGain" value="1200"/><!-- XP GiantRatChaos x 1.6 based on default -->
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
 			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
-            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
-	        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
-	        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
-	        <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
-	        <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
-	        <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
@@ -901,7 +895,27 @@
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-		</entity_class>	
+		</entity_class>
+		
+        <entity_class name="AxeZombieRadiated" extends="AxeZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieAxeDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="MaceZombie" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -945,7 +959,27 @@
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="MaceZombieRadiated" extends="MaceZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieMaceDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="SwordZombie" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -989,7 +1023,27 @@
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="SwordZombieRadiated" extends="SwordZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieSwordDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="HelmetZombie" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -1033,7 +1087,27 @@
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="HelmetZombieRadiated" extends="HelmetZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieHelmetDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="ArmorZombie" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -1077,7 +1151,27 @@
 				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="ArmorZombieRadiated" extends="ArmorZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieArmorDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="DeathKnight" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -1128,7 +1222,27 @@
 		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 	        </effect_group>  
             <property name="SurfaceCategory" value="stone"/>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="DeathKnightRadiated" extends="DeathKnightFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?DeathKnightDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="Skeleton" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -1182,7 +1296,27 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 	        </effect_group>
             <property name="SurfaceCategory" value="stone"/>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="SkeletonRadiated" extends="SkeletonFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="SkeletonMonk" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -1236,7 +1370,27 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 	        </effect_group>
             <property name="SurfaceCategory" value="stone"/>
-		</entity_class>	
+		</entity_class>
+
+        <entity_class name="SkeletonMonkRadiated" extends="SkeletonMonkFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonMonkDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
         <entity_class name="SkeletonAxe" extends="zombieRegularTemplate">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
@@ -1291,6 +1445,26 @@
 	        </effect_group>
             <property name="SurfaceCategory" value="stone"/>
 		</entity_class>
+		
+        <entity_class name="SkeletonAxeRadiated" extends="SkeletonAxeFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonAxeDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
 
                 <!-- models by Protofactor Inc Purchased for use in NPC Mod  -->
 				
@@ -4004,6 +4178,26 @@
 	        </effect_group>
 		</entity_class>
 
+                <entity_class name="FungusZombieRadiated" extends="FungusZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+                        <property name="LookAtAngle" value="0"/> 	
+                        <property name="Mesh" value="#@modfolder(1-NMMCore):Resources/NMMAddon.unity3d?FungusZombieDark"/> 		
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".6"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandzombieMutatedFeral"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
                 <entity_class name="DwarvenSlayer" extends="npcAdvancedClubTemplate"> 
 			<property name="Tags" value="entity,male,npc,melee,DRMid"/>
 			<property name="Faction" value="whiteriver"/>
@@ -4838,6 +5032,28 @@
 				<passive_effect name="HealthMax" operation="base_set" value="200"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 	        </effect_group>
+		</entity_class>
+
+		<!-- Laz Man - Blood Moon Invaders Starter Entity -->
+
+        <entity_class name="qc_OrcBanditBM" extends="zombieRegularTemplate"><!-- ADDED TO BM INVADERS AS STARTER -->
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>	
+            <property name="LookAtAngle" value="0"/> 			
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/HordeNightz.unity3d?OrcHorde1Zombie"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+            <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+            <property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+            <property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+            <property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+            <property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/> 
 		</entity_class>		
 	
 	</append>		

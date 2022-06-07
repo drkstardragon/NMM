@@ -1,5 +1,6 @@
 <configs>
 
+	<!--set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set--> <!-- Set in Score -->
 
 <append xpath="/windows" >
 

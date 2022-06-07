@@ -1,8 +1,12 @@
 ﻿<configs>
 
+	<!-- Score Tweaks and Toggles -->
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='RequiredModlet']/@value">1-NMMCore</set>
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='AdvancedLocks']/@value">true</set>
-	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='LockPrefab']/@value">#@modfolder:Resources/Locks.unity3d?Lockset01</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='OneBlockCrouch']/@value">false</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='DisableTraderProtection']/@value">true</set>
+
 
 	<append xpath="/blocks">	
 
