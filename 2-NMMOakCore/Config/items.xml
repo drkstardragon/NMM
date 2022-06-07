@@ -3833,5 +3833,16 @@
 </item>
 
 	</append>
-		
+	
+     </append>
+	<append xpath="/items/item[starts-with(@name, 'food') and not(contains(@name, 'foodCan')) and not(contains(@name, 'Schematic'))]">
+        <property name="Spoilable" value="true" />
+        <property name="ShowQuality" value="false" />
+        <property name="QualityTierColor" value="1" />
+        <property name="SpoiledItem" value="foodRottingFlesh" />
+        <property name="TickPerLoss" value="168" />
+        <property name="SpoilageMax" value="1000" />
+        <property name="SpoilagePerTick" value="3" />
+    </append>
+
 </configs>
