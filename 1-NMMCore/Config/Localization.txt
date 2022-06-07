@@ -147,6 +147,8 @@ drugVitaminsDesc,items,Medical,,,"These Mage Spores cure Fatigue and prevent you
 modGunMeleeRadRemover,item_modifiers,mod,,,Regeneration Remover Mod,,,,,,,,,,,,,
 modGunMeleeRadRemoverDesc,item_modifiers,mod,,,"Will disable the regeneration ability of NMM entities for 90 seconds.",,,,,,,,,,,,,
 modArmorHelmetLight,item_modifiers,mod,,,Mage Light Mod,,,,,,,,,,,,,
+modMeleeStunBatonRepulsor,item_modifiers,Mod,,,Firefly Staff Repulsor Mod,,,,,,,,,,,,,
+modMeleeStunBatonRepulsorDesc,item_modifiers,Mod,,,"Install this mod into a Firefly Staff and send hostiles flying on the charged hit.",,,,,,,,,,,,,
 buffLacerationDesc,buffs,Buff,,,"A deep laceration can only be properly treated with a First Aid Bandage or Sewing Kit but a simple bandage will stop the bleeding.\n\nYour max health is lowered by {cvar(.lacerationHealthBlockage:0.0)}.\nCritical Hit Resistance against\nBleeding: -15%.",,,,,,,,,,,,,
 medicalFirstAidBandageDesc,items,Medical,,,"Bandages coated in aloe stop bleeding, heal wounds, treat lacerations and increase abrasion healing speed.\nUse the secondary action to treat another player.",,,,,,,,,,,,,
 apparelGhillieSuitGroupDesc,items,Clothes,,,"A deep forest suit can greatly reduce your visibility when outdoors and to some degree when indoors.",,,,,,,,,,,,,

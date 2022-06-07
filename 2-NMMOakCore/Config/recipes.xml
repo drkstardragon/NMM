@@ -834,6 +834,30 @@
 		<ingredient name="resourceCoal" count="100"/>
 		<ingredient name="resourceForgedIron" count="25"/>
 	</recipe>
+	
+	<!-- Bats and Batons -->
+
+	<recipe name="HeadBat" count="1" tags="learnable,perkPummelPete">
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="1"/>
+		<ingredient name="resourceDuctTape" count="1"/>
+		<ingredient name="foodRawMeat" count="20"/>		
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="taserBaton2" count="1" craft_area="workbench" tags="learnable,perkElectrocutioner">
+		<ingredient name="FireFlyBug" count="4"/>
+		<ingredient name="resourceForgedIron" count="5"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<ingredient name="resourceElectricParts" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceLeather,resourceDuctTape,resourceElectricParts"/>
+		</effect_group>
+	</recipe>	
 
 	<!-- Fireflies -->
 	

@@ -2958,6 +2958,15 @@ If there is no hit the default quality is used.
 	<item name="bookArtOfMiningBlackStrap"/>
 	<item name="bookArtOfMiningPallets"/>
 	<item name="bookArtOfMiningAvalanche"/>
+	<item name="bookArtOfMiningLantern"/>
+
+	<item name="bookBatterUpBaseballBats"/>
+	<item name="bookBatterUpBigHits"/>
+	<item name="bookBatterUpGear"/>
+	<item name="bookBatterUpKnockdown"/>
+	<item name="bookBatterUpSlowPitch"/>
+	<item name="bookBatterUpMaintenance"/>
+	<item name="bookBatterUpMetalChain"/>	
 	
 	<item name="bookNeedleAndThreadDusters"/>
 	<item name="bookNeedleAndThreadPockets"/>
@@ -3008,6 +3017,13 @@ If there is no hit the default quality is used.
 	<item name="bookGreatHeistSafes"/>
 	<item name="bookGreatHeistSprintSneak"/>
 	
+	<item name="bookTechJunkie1Damage"/>
+	<item name="bookTechJunkie2Maintenance"/>
+	<item name="bookTechJunkie3APAmmo"/>
+	<item name="bookTechJunkie4Shells"/>
+	<item name="bookTechJunkie5Repulsor"/>
+	<item name="bookTechJunkie6BatonCharge"/>
+	<item name="bookTechJunkie7Hydraulics"/>	
 </lootgroup>
 
 <lootgroup name="perkBooks">

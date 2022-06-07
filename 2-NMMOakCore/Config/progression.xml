@@ -155,6 +155,18 @@
 			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="ArrmusSpear2"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="ArrmusSpear2"/>
 		</effect_group>		
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="HeadBat"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="HeadBat"/>
+		</effect_group>	
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="taserBaton2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="taserBaton2"/>
+		</effect_group>	
 	</append>	
 
 

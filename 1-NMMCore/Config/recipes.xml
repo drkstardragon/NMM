@@ -61,6 +61,7 @@
 <remove xpath="/recipes/recipe[@name='ceilingLight01_player']"/>
 <remove xpath="/recipes/recipe[@name='industrialLight01_player']"/>
 <remove xpath="/recipes/recipe[@name='industrialLight02_player']"/>
+<remove xpath="/recipes/recipe[@name='lanternLight_player']"/>
 <remove xpath="/recipes/recipe[@name='cementMixer']"/>
 <remove xpath="/recipes/recipe[@name='chemistryStation']"/>
 
@@ -174,7 +175,6 @@
 <remove xpath="/recipes/recipe[@name='modGunTriggerGroupAutomatic']"/>
 <remove xpath="/recipes/recipe[@name='modGunTriggerGroupBurst3']"/>
 <remove xpath="/recipes/recipe[@name='modGunTriggerGroupSemi']"/>
-<remove xpath="/recipes/recipe[@name='modMeleeStunBatonRepulsor']"/>
 <remove xpath="/recipes/recipe[@name='modShotgunSawedOffBarrel']"/>
 <remove xpath="/recipes/recipe[@name='modRoboticDroneArmorPlatingMod']"/>
 <remove xpath="/recipes/recipe[@name='modRoboticDroneCargoMod']"/>
@@ -225,6 +225,7 @@
 <remove xpath="/recipes/recipe[@name='switch']"/>
 <remove xpath="/recipes/recipe[@name='thrownGrenade']"/>
 <remove xpath="/recipes/recipe[@name='thrownGrenadeContact']"/>
+<remove xpath="/recipes/recipe[@name='thrownTimedCharge']"/>
 <remove xpath="/recipes/recipe[@name='trapGlassBusinessCTRSheet1x1']"/>
 <remove xpath="/recipes/recipe[@name='trapGlassBusinessSheet1x1']"/>
 <remove xpath="/recipes/recipe[@name='tripwirepost']"/>
