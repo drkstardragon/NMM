@@ -3834,7 +3834,7 @@
 
 	</append>
 	
-     </append>
+    
 	<append xpath="/items/item[starts-with(@name, 'food') and not(contains(@name, 'foodCan')) and not(contains(@name, 'Schematic'))]">
         <property name="Spoilable" value="true" />
         <property name="ShowQuality" value="false" />
