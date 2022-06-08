@@ -3131,6 +3131,13 @@
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3333,6 +3340,13 @@
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3361,6 +3375,13 @@
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3389,6 +3410,13 @@
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3416,6 +3444,13 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3464,6 +3499,13 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3509,6 +3551,13 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3554,6 +3603,13 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3599,6 +3655,13 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
@@ -3644,6 +3707,13 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="25"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
+    <property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false" />
+    <property name="QualityTierColor" value="1" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="168" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="3" />	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2.1"/>
