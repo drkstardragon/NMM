@@ -117,6 +117,7 @@ Additional POI submissions for CP49 are joining Medievil Village Modded.
 Prefab creators from Z - A include:
 
 Shema
+Redzero83
 Magoli (An update of Stone Henge to A20 in collaboration with arramus)
 
 ============
