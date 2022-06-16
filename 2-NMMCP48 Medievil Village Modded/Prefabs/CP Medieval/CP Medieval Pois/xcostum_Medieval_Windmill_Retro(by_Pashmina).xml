@@ -11,22 +11,22 @@
   <property name="RotationToFaceNorth" value="3" />
   <property name="YOffset" value="-1" />
   <property name="Zoning" value="Residential" />
-  <property name="SleeperVolumeSize" value="14, 4, 15#14, 8, 15#14, 9, 15#14, 14, 15#40, 8, 41" />
-  <property name="SleeperVolumeStart" value="20, 1, 21#20, 5, 21#20, 13, 21#20, 22, 21#2, 1, 1" />
-  <property name="SleeperVolumeGroupId" value="0,0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="S_-Group_NMM_Undead_All,5,6,S_-Group_NMM_Undead_All,5,6,S_-Group_NMM_Undead_All,6,9,S_-Group_NMM_Undead_All,10,14,S_-Group_NMM_Undead_All,20,25" />
-  <property name="SleeperIsLootVolume" value="True,True,False,False,False" />
-  <property name="SleeperIsQuestExclude" value="False,False,False,False,False" />
-  <property name="SleeperVolumeFlags" value="0,0,0,2,0" />
+  <property name="SleeperVolumeSize" value="22, 4, 21#14, 8, 14#14, 9, 15#14, 14, 15#20, 4, 42#22, 18, 21" />
+  <property name="SleeperVolumeStart" value="20, 1, 21#20, 5, 21#20, 13, 21#20, 22, 21#0, 1, 0#20, 1, 0" />
+  <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0" />
+  <property name="SleeperVolumeGroup" value="S_-Group_NMM_Undead_All,5,8,S_-Group_NMM_Undead_All,5,6,S_-Group_NMM_Undead_All,6,8,S_-Group_NMM_Undead_All,9,12,S_-Group_NMM_Undead_All,4,8,S_-Group_NMM_Undead_All,5,8" />
+  <property name="SleeperIsLootVolume" value="False,False,False,False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0,0,0,0" />
   <property name="Tags" value="nmmmedieval,nmmmedieval42x42" />
   <property name="QuestTags" value="clear,fetch" />
   <property name="PrefabSize" value="42, 36, 42" />
   <property class="Stats">
-    <property name="TotalVertices" value="450236" />
-    <property name="TotalTriangles" value="411392" />
+    <property name="TotalVertices" value="454664" />
+    <property name="TotalTriangles" value="414353" />
     <property class="BlockEntities">
-      <property name="Vertices" value="369349" />
-      <property name="Triangles" value="360978" />
+      <property name="Vertices" value="373779" />
+      <property name="Triangles" value="363943" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="64721" />
@@ -57,8 +57,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes7">
-      <property name="Vertices" value="4240" />
-      <property name="Triangles" value="6552" />
+      <property name="Vertices" value="4238" />
+      <property name="Triangles" value="6548" />
     </property>
     <property class="ChunkMeshes8">
       <property name="Vertices" value="0" />
