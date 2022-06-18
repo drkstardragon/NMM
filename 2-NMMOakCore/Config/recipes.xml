@@ -361,6 +361,19 @@
 	    <ingredient name="drinkJarBoiledWater" count="1"/>
     </recipe>
 	
+	<recipe name="resourceGlue" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkAdvancedEngineering">
+		<ingredient name="resourceBone" count="7"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="resourcePaint" count="100" craft_area="OaksCooker" craft_tool="toolCookingPot">
+		<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+	</recipe>		
+	
 	<recipe name="foodAcornDough" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
 		<ingredient name="foodAcornMeal" count="1"/>
 		<ingredient name="foodHoney" count="1"/>
@@ -420,6 +433,8 @@
 		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCropYuccaFruit,foodCropBlueberries"/>
 	</effect_group>
 </recipe>
+
+
 	
                              <!-- MeatGrinder Recipes -->
 

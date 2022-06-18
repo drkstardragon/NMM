@@ -1,5 +1,9 @@
 <configs>
 
+    <!-- DRAGON AIR DROP -->
+	<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/DragonAirDrop.unity3d?ArramusDragonLarge</set>
+	<set xpath="/entity_classes/entity_class[@name='sc_General']/property[@name='Mesh']/@value">#@modfolder:Resources/DragonAirDrop.unity3d?DragonAirDrop</set>
+
 	<append xpath="/entity_classes">
 
 		<!-- Beehives -->
