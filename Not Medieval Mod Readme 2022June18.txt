@@ -52,6 +52,7 @@ Oakraven Forest Collection Mod List:
 - Bee Hives
 - Chicken Coops
 - Cooking Stations
+- Dragon Air Drop
 - Dragon Beds and Stuff (A custom collection made for the NMM)
 - Dragon Blunderbuss (A custom collection made for the NMM)
 - Dragon Carts (A custom collection made for the NMM)
