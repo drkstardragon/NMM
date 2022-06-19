@@ -10,6 +10,94 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
+Version: 20.5.169.98
+
+	[ Portals ]
+		- Changed location for when animations on portal starts
+
+	[ Quests ]
+		- Changed how the EntityEnemySDX and EntityAliveSDX kills are recorded; more in line with vanilla now for MP compatibility.
+
+
+Version: 20.5.165.1145
+	[ Portals ]
+		- Fixed a bug with the dialog teleport
+
+	[ Storage ]
+		- Reduced default range from 30 to 10
+
+
+Version: 20.5.162.1349
+
+	[ Portals ]
+		- Reproduced and fixed teleporting through buff / dialog and landing on a roof
+		- Added samplePortal06 which acts like a non-powered, player-editable test portal.
+
+	[ Storage ]
+		- Highly Experimental Feature
+		- New property in blocks.xml to turn this highly experimental feature on.
+			<property class="AdvancedRecipes" >
+				<property name="ReadFromContainers" value="true"/>
+				<property name="Distance" value="30" />  <!-- This is not 30 blocks, but rather a distance between you and the container. This is roughly about 6 or 7 blocks.-->
+			</property>
+
+		- When set to true, this highly experimental feature will read from containers around the player, pulling items out, to be used in crafting recipes.
+			- If crafting is cancelled, this highly experimental feature will dump the ingredients into the player backpack, rather than their original location.
+
+		- With regards to testing this highly experimental feature, high concentrations of containers may induce lag. We may need to put in limits on how many containers it will check.
+
+		Note: This is highly experimental feature. 
+
+	[ Food Spoilage ]
+		- If the container's Preserve bonus is set to -99, no food spoilage will occur.
+			<property name="PreserveBonus" value="-99" />
+
+
+Version: 20.5.155.1359:
+
+	[ Quests ]
+		Fixed a bug with ObjectiveEntityEnemySDXKill not recording.
+
+Version: 20.5.155.1247
+
+	[ Portals ]
+		- Added ability to define a Prefab's nameon the location line. Full example in blocks.xml as samplePortal05.
+		- If the destination= portal isn't registered, and the prefab is defined on the location line, the Portal Manager
+			will search inside of the first prefab instance it finds, with that name, with that portal.
+
+			<!-- I am samplePortal05, I go to samplePortal03, which is inside a prefab called farm_02 -->
+			<property name="Location" value="source=samplePortal05,destination=samplePortal03,prefab=farm_02" />
+		
+		- Fixed a bug where requiredPower wasn't being accurately checked.
+		- Made Portals be ChunkObservers
+
+Version: 20.5.151.934
+	
+	[ Lock Picks ]
+		- Added a new property to be read from Doors. If set to false, the doors are not pickable, and revert to vanilla
+			<property name="Pickable" value="false" />
+
+		- If the door has an Owner ( Player-placed), the door will not be pickable.
+
+	[ Quests ]
+		- Added new EntityEnemySDX objective
+			<objective type="EntityEnemySDXKill, SCore" id="npcHarleyEmptyHand" value="2" phase="3"/>
+
+	[ Food Spoilage ]
+		- No code changes, documentation only:
+			- Added an example items.xml entry to show how to specify food spoilage on the food items. Turning on the food spoilage in the blocks.xml does not fully activate food spoilage.
+			- The blocks.xml needs to enable the food spoilage, and the foot items must contain new properties to allow spoiling.
+			- khzmusik has an excellent modlet for this: https://gitlab.com/karlgiesing/7d2d-a20-modlets/-/tree/main/khzmusik_Food_Spoilage
+
+	[ Portals ]
+		- Added a check to see if the teleport request is either legacy support or the newer style.
+			- This should fix the MinEvent Teleport and other one-way teleports.
+			- If a location= only contains a single value, it's determined to be legacy
+			- It will check all the portals for destination=, and then check its source=
+
+	[ Dialogs ]
+		- Added in a crude extend option which will be expanded more. I wouldn't use this yet, if I were you.
+
 Version:20.5.149.1038
 	[ Portals ]
 		- When a new portal is added, it checks if the source location already exists, and how many times. If there's already 2, the portal is marked as invalid, and is not linked in.

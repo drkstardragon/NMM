@@ -28,7 +28,7 @@ public class DialogActionTeleport : DialogActionAddBuff
         var destination = PortalManager.Instance.GetDestination(location);
         if (destination != Vector3i.zero)
         {
-            player.Teleport(destination);
+            player.SetPosition(destination);
             return;
         }
 
@@ -57,7 +57,7 @@ public class DialogActionTeleport : DialogActionAddBuff
         }
 
         if (destination == Vector3i.zero) return;
-        player.Teleport(destination);
+        player.SetPosition(destination);
     }
 
 }

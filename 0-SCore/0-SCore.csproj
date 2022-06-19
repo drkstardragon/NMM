@@ -96,7 +96,9 @@
     <Compile Include="Harmony\PrefabFeatures\RemoveTraderProtection.cs" />
     <Compile Include="Harmony\Progression\EntityAliveSDXProgressionHooks.cs" />
     <Compile Include="Harmony\Progression\Progression.cs" />
+    <Compile Include="Harmony\Quests\QuestEventManager.cs" />
     <Compile Include="Harmony\QuickContinue\QuickContinue.cs" />
+    <Compile Include="Harmony\Recipes\IngredientsFromContainers.cs" />
     <Compile Include="Harmony\SoundFeatures\AudioClientPlay.cs" />
     <Compile Include="Harmony\SoundFeatures\AudioManagerPlay.cs" />
     <Compile Include="Harmony\SoundFeatures\AudioServerPlay.cs" />
@@ -287,6 +289,7 @@
     <Compile Include="Scripts\NetPackage\NetPackageRandomTaggedPOIGotoSDX.cs" />
     <Compile Include="Scripts\ProgrammableLogic\PathingCubeParser.cs" />
     <Compile Include="Scripts\Quests\ObjectiveBuffSDX.cs" />
+    <Compile Include="Scripts\Quests\ObjectiveEntityEnemySDXKill.cs" />
     <Compile Include="Scripts\Quests\ObjectiveEntityAliveSDXKill.cs" />
     <Compile Include="Scripts\Quests\ObjectiveGotoPOISDX.cs" />
     <Compile Include="Scripts\Quests\ObjectiveRandomGotoSDX.cs" />
@@ -309,7 +312,7 @@
     <Compile Include="Scripts\Signs\ImageWrapper.cs" />
     <Compile Include="Scripts\SoundData\SoundDataNodeClass.cs" />
     <Compile Include="Scripts\TileEntities\TileEntityPoweredPortal.cs" />
-    <Compile Include="Scripts\TileEntities\TileEntityPoweredWorkstation.cs" />
+    <Compile Include="Scripts\TileEntities\TileEntityPoweredWorkstationSdx.cs" />
     <Compile Include="Scripts\UnitTests\CanDamageChecks.cs" />
     <Compile Include="Scripts\UtilityAI\Filters\IUAITargetFilter.cs" />
     <Compile Include="Scripts\UtilityAI\Filters\UAIFilterIsAlly.cs" />
