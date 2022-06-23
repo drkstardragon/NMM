@@ -1899,7 +1899,7 @@
 
 <block name="OldWell">
 	<property name="AllowAllRotations" value="true"/>
-        <property name="CustomIcon" value="wishingwell" />
+        <property name="CustomIcon" value="oldwell" />
 		<property name="DescriptionKey" value="OldWellDesc"/>		
         <property name="Material" value="Mconcrete"/>
         <property name="IsTerrainDecoration" value="true"/>
@@ -1959,7 +1959,7 @@
 
 <block name="WoodWell">
 	<property name="AllowAllRotations" value="true"/>
-        <property name="CustomIcon" value="wishingwell" />
+        <property name="CustomIcon" value="wellwell" />
 		<property name="DescriptionKey" value="WoodWellDesc"/>		
         <property name="Material" value="Mconcrete"/>
         <property name="IsTerrainDecoration" value="true"/>
