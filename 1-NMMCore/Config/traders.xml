@@ -1051,6 +1051,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="ChickenCoopEmpty" count="1,2"/>
 			<item name="TinCoopEmpty" count="1,2"/>
 			<item name="WoodCoopEmpty" count="1,2"/>
+			<item name="HouseCoopEmpty" count="1,2"/>
 			<item name="OaksCooker" count="2,4"/>
 			<item name="PotStove" count="1,2"/>
 			<item name="IronStove" count="1,2"/>

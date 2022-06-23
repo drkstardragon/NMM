@@ -86,6 +86,14 @@
 	<ingredient name="resourceLeather" count="10"/>
 	<ingredient name="resourceDuctTape" count="10"/>
 	<ingredient name="resourceWood" count="50"/>
+	</recipe>
+
+	<recipe name="HouseCoopEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="15"/>
+	<ingredient name="resourceRockSmall" count="100"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
 	</recipe>	
 	
 	<recipe name="foodEggQuiche" count="1" craft_area="campfire" craft_tool="toolCookingPot">
