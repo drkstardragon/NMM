@@ -1011,6 +1011,60 @@
 	<ingredient name="casinoCoin" count="1000"/>
 </recipe>
 
+	<!-- BUSHCRAFT BITES FOOD ITEMS - Selective -->
+
+<recipe name="foodPineConeJam" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="10"/>
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+	<!-- Giving access to OaksCooker Workstation for inclusion -->
+
+<recipe name="foodPineConeJam" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="10"/>
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+	<!-- BUSHCRAFT BITES DRINK ITEMS - Selective -->
+	
+<recipe name="drinkPineConeTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkAcornCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedOak1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkSweetMead" count="1" craft_time="180" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="foodAcornMeal" count="1"/>
+	<ingredient name="foodCropBlueberries" count="1"/>	
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+	<!-- Giving access to OaksCooker Workstation for inclusion -->
+
+<recipe name="drinkPineConeTea" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkAcornCoffee" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedOak1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkSweetMead" count="1" craft_time="180" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="foodAcornMeal" count="1"/>
+	<ingredient name="foodCropBlueberries" count="1"/>	
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
     <!-- TorchesLights -->
 
 <recipe name="BigStandingBrazier" count="1" craft_area="workbench" tags="workbenchCrafting">

@@ -308,6 +308,15 @@ ArramusOnAStickDesc,items,Item,,,"Navezgane Fish On A Stick uses farmed fish to 
 FishStick,items,Item,,,Fish Stick,,,,,,,,,,,,,
 FishStickDesc,items,Item,,,"The Fish Stick is used as part of a recipe, or can also provide players with a melee weapon.",,,,,,,,,,,,,
 
+foodPineConeJam,items,Food,,,Pine Cone Jam
+foodPineConeJamDesc,items,Food,,,"Medicinal and goes well with Acorn Bread. Cures 10% infection."
+drinkPineConeTea,items,Food,,,Pine Cone Tea
+drinkPineConeTeaDesc,items,Food,,,"A herbal tea best drunk hot. Cures 3% infection."
+drinkAcornCoffee,items,Food,,,Acorn Coffee
+drinkAcornCoffeeDesc,items,Food,,,"Bitter sweet and earthy. Cures 3% infection."
+drinkSweetMead,items,Food,,,Sweet Mead
+drinkSweetMeadDesc,items,Food,,,"An all round pick-me-up. Cures 10% infection and 20% dysentery."
+
 BigStandingBrazier,blocks,Block,,,Big Standing Brazier,,,,,,,,,,,,,
 BigStandingBrazierDesc,blocks,Block,,,"A Big Standing Brazier that provides atmospheric lighting.",,,,,,,,,,,,,
 Brazier,blocks,Block,,,Standing Brazier,,,,,,,,,,,,,
