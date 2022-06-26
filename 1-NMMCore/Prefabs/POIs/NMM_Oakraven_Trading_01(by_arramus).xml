@@ -14,10 +14,10 @@
   <property name="RotationToFaceNorth" value="0" />
   <property name="Zoning" value="none" />
   <property name="YOffset" value="-2" />
-  <property name="SleeperVolumeSize" value="6, 3, 9#5, 3, 7#4, 3, 9#14, 3, 11" />
-  <property name="SleeperVolumeStart" value="14, 2, 10#9, 2, 10#9, 5, 10#7, 8, 8" />
+  <property name="SleeperVolumeSize" value="6, 3, 9#5, 3, 8#4, 3, 9#14, 3, 11" />
+  <property name="SleeperVolumeStart" value="14, 2, 10#9, 2, 9#9, 5, 10#7, 8, 8" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="S_-Group_NMM_Undead_All,1,2,???,-1,-1,S_-Group_NMM_Undead_All,1,2,S_-Group_NMM_Undead_All,1,2" />
+  <property name="SleeperVolumeGroup" value="S_-Group_NMM_Undead_All,1,2,S_-Group_NMM_Undead_All,2,3,S_-Group_NMM_Undead_All,1,2,S_-Group_NMM_Undead_All,1,2" />
   <property name="SleeperIsLootVolume" value="False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,0,0" />
@@ -33,19 +33,19 @@
     </property>
   </property>
   <property class="Stats">
-    <property name="TotalVertices" value="226266" />
-    <property name="TotalTriangles" value="240466" />
+    <property name="TotalVertices" value="224347" />
+    <property name="TotalTriangles" value="237870" />
     <property class="BlockEntities">
-      <property name="Vertices" value="202724" />
-      <property name="Triangles" value="225747" />
+      <property name="Vertices" value="201189" />
+      <property name="Triangles" value="223343" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="19651" />
       <property name="Triangles" value="10452" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="768" />
-      <property name="Triangles" value="384" />
+      <property name="Vertices" value="384" />
+      <property name="Triangles" value="192" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="0" />
