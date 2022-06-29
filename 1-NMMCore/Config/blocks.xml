@@ -9,6 +9,13 @@
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='DisableTraderProtection']/@value">true</set>
 
+	<!-- Vanilla Tweaks and Toggles / Additional sets at the bottom -->
+	
+	<append xpath="/blocks/block[@name='treeMaster']" >
+		<drop event="Destroy" name="resourceScrapPolymers" prob=".1" count="1,2"/>
+	</append>
+	
+	<!-- NMM Content -->	
 
 	<append xpath="/blocks">	
 

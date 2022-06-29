@@ -10,6 +10,24 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
+Version:  20.5.177.1415
+
+	[ Sleepers ]
+		- Merged pull request to wake up sleepers automatically in Active sleeper volumes.
+
+Version: 20.5.174.1938
+
+	[ Portals ]
+		- Fixed an issue where the requiredPower wasn't being checked correctly for the animation.
+			- Animation may still be a bit wonky, but should be slightly improved.
+		- Fixed an issue where the sign data wasn't being saved correctly.
+
+Version: 20.5.174.218
+
+	[ Sleepers ]
+	
+		- Added the EntityEnemeySDX to the SetSleeperActive(). This was already being done for EntityAliveSDX.
+
 Version: 20.5.169.98
 
 	[ Portals ]
