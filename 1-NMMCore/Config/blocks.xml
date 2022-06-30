@@ -12,7 +12,7 @@
 	<!-- Vanilla Tweaks and Toggles / Additional sets at the bottom -->
 	
 	<append xpath="/blocks/block[@name='treeMaster']" >
-		<drop event="Destroy" name="resourceScrapPolymers" prob=".1" count="1,2"/>
+		<drop event="Destroy" name="resourceScrapPolymers" prob=".2" count="1,3"/>
 	</append>
 	
 	<!-- NMM Content -->	
