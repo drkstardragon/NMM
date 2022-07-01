@@ -265,7 +265,7 @@ noteNMMFireDragonSlayerDesc,items,item,,,"It is known that the Adventurers Guild
 noteNMMAcidDragonSlayer,items,item,,,Acid Dragon Slayer,,,,,,,,,,,,,
 noteNMMAcidDragonSlayerDesc,items,item,,,"It is known that the Adventurers Guild pays silver for the slaying of monsters. Dwarven slayers kill them free of charge but you are not expected to.",,,,,,,,,,,,,
 noteNMMDemonSlayer,items,item,,,Demon Slayer,,,,,,,,,,,,,
-noteNMMDemonSlayerDesc,items,item,,,"It is known that the Adventurers Guild pays silver for the slaying of monsters. Dwarven slayers kill them free of charge but you are not expected to.",,,,,,,,,,,,,
+noteNMMDemonSlayerDesc,items,item,,,"It is known that the Adventurers Guild pays silver for the slaying of monsters. Dwarven slayers kill them free of charge but you are not expected to. Only Biome demons are acceptable. POI demons will not register as kills.",,,,,,,,,,,,,
 noteNMMGoblinSlayer,items,item,,,Goblin Slayer,,,,,,,,,,,,,
 noteNMMGoblinSlayerDesc,items,item,,,"It is known that the Adventurers Guild pays silver for the slaying of monsters. Goblinslayer kills them free of charge but you are not expected to.",,,,,,,,,,,,,
 noteNMMOrcSlayer,items,item,,,Orc Slayer,,,,,,,,,,,,,
