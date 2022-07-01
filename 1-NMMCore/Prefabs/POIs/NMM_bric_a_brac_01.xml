@@ -22,11 +22,11 @@
   <property name="SleeperVolumeFlags" value="0,0,0" />
   <property name="YOffset" value="-1" />
   <property class="Stats">
-    <property name="TotalVertices" value="177837" />
-    <property name="TotalTriangles" value="181660" />
+    <property name="TotalVertices" value="181502" />
+    <property name="TotalTriangles" value="185802" />
     <property class="BlockEntities">
-      <property name="Vertices" value="146791" />
-      <property name="Triangles" value="162513" />
+      <property name="Vertices" value="150456" />
+      <property name="Triangles" value="166655" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="27600" />

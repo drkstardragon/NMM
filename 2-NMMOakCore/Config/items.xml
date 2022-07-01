@@ -917,7 +917,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceScrapPolymers"/>
-	<property name="Stacknumber" value="300"/> <!-- STK ammo low -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo low -->
 	<property name="EconomicValue" value="9"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 	<effect_group name="ArramusBlunderbussSlug" tiered="false">
@@ -1245,7 +1245,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?FireArrow"/>
 	<property name="UsableUnderwater" value="false"/>
 	<property name="FuelValue" value="27"/>
-	<property name="Stacknumber" value="300"/>	
+	<property name="Stacknumber" value="500"/>	
 	<property name="EconomicValue" value="45"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="Damage_type" value="Heat"/>
@@ -1287,7 +1287,7 @@
         <property name="HandMeshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
         <property name="DropMeshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
         <property name="Material" value="Mlead_scrap"/>
-        <property name="Stacknumber" value="300"/>
+        <property name="Stacknumber" value="500"/>
 		<property name="EconomicValue" value="81"/>
 		<property name="EconomicBundleSize" value="1"/>
         <property name="Group" value="Ammo/Weapons"/>
@@ -1317,7 +1317,7 @@
 	<property name="DescriptionKey" value="ArramusSteelArrowDesc"/>
 	<property name="Extends" value="ammoArrowIron"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?SteelArrow"/>
-    <property name="Stacknumber" value="300"/>	
+    <property name="Stacknumber" value="500"/>	
 	<property name="EconomicValue" value="58"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="IsSticky" value="true"/>
@@ -1341,7 +1341,7 @@
 <property name="CustomIcon" value="ironarrow"/>
 	<property name="DescriptionKey" value="ArramusIronArrowDesc"/>
 	<property name="Extends" value="ammoArrowIron"/>	
-    <property name="Stacknumber" value="300"/>	
+    <property name="Stacknumber" value="500"/>	
 	<property name="EconomicValue" value="26"/>
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?IronArrow2"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -1761,7 +1761,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceScrapPolymers"/>
-	<property name="Stacknumber" value="300"/> <!-- STK ammo low -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo low -->
 	<property name="EconomicValue" value="9"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 	<effect_group name="FlintlockPistolSlug" tiered="false">
