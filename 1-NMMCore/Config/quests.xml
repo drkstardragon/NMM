@@ -821,7 +821,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="DemonLord" value="1"/>
+		<objective type="AnimalKill" id="DemonLord,DemonLordBM" value="1"/>
 		
 	<reward type="Exp" value="10000"/>
 	<reward type="Item" id="casinoCoin" value="1000"/>
@@ -841,7 +841,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="DemonLord" value="2"/>
+		<objective type="AnimalKill" id="DemonLord,DemonLordBM" value="2"/>
 		
 	<reward type="Exp" value="10000"/>
 	<reward type="Item" id="casinoCoin" value="2000"/>
@@ -861,7 +861,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="DemonLord" value="3"/>
+		<objective type="AnimalKill" id="DemonLord,DemonLordBM" value="3"/>
 		
 	<reward type="Exp" value="10000"/>
 	<reward type="Item" id="casinoCoin" value="3000"/>
@@ -881,7 +881,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="DemonLord" value="4"/>
+		<objective type="AnimalKill" id="DemonLord,DemonLordBM" value="4"/>
 		
 	<reward type="Exp" value="10000"/>
 	<reward type="Item" id="casinoCoin" value="4000"/>
@@ -901,7 +901,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="DemonLord" value="5"/>
+		<objective type="AnimalKill" id="DemonLord,DemonLordBM" value="5"/>
 		
 	<reward type="Exp" value="10000"/>
 	<reward type="Item" id="casinoCoin" value="5000"/>
@@ -1116,7 +1116,7 @@
         <property name="offer_key" value="Accept this quest to slay dark elves for silver." />       
         <property name="name_key" value="Elf Slayer I" />
 	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
-	<property name="description_key" value="Slay 5 darkelfspear.
+	<property name="description_key" value="Slay 5 dark elf spearers.
          The Adventurers Guild will reward you handsomely." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -1136,7 +1136,7 @@
 	<property name="offer_key" value="Slay dark elves for silver." />       
         <property name="name_key" value="Elf Slayer II" />
 	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
-	<property name="description_key" value="Slay 5 darkelfsword.
+	<property name="description_key" value="Slay 5 dark elf sword wielders.
          The Adventurers Guild will reward you handsomely." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -1196,7 +1196,7 @@
 	<property name="offer_key" value="Slay dark elves for silver." />       
         <property name="name_key" value="Elf Slayer V" />
 	<property name="subtitle_key" value="You are a legendary elf slayer." />
-	<property name="description_key" value="Slay 10 darkelfsword.
+	<property name="description_key" value="Slay 10 dark elf sword wielders.
          The Adventurers Guild will reward you handsomely." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
