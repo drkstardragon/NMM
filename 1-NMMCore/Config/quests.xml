@@ -810,7 +810,7 @@
 
         <!-- DemonSlayerI -->
 	<quest id="quest_progressionDemonSlayerI">
-        <property name="offer_key" value="Accept this quest to slay demons for silver. Only Biome demons are acceptable. POI demons will not register as kills." />       
+        <property name="offer_key" value="Accept this quest to slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
         <property name="name_key" value="Demon Slayer I" />
 	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
 	<property name="description_key" value="Slay 1 demon.
@@ -830,7 +830,7 @@
 	
 	<!-- DemonSlayerII -->
 	<quest id="quest_progressionDemonSlayerII">
-	<property name="offer_key" value="Slay demons for silver. Only Biome demons are acceptable. POI demons will not register as kills." />       
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
         <property name="name_key" value="Demon Slayer II" />
 	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
 	<property name="description_key" value="Slay 2 demons.
@@ -850,7 +850,7 @@
 	
 	<!-- DemonSlayerIII -->
 	<quest id="quest_progressionDemonSlayerIII">
-	<property name="offer_key" value="Slay demons for silver. Only Biome demons are acceptable. POI demons will not register as kills." />       
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
         <property name="name_key" value="Demon Slayer III" />
 	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
 	<property name="description_key" value="Slay 3 demons.
@@ -870,7 +870,7 @@
 	
 	<!-- DemonSlayerIV -->
 	<quest id="quest_progressionDemonSlayerIV">
-	<property name="offer_key" value="Slay demons for silver. Only Biome demons are acceptable. POI demons will not register as kills." />       
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
         <property name="name_key" value="Demon Slayer IV" />
 	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
 	<property name="description_key" value="Slay 4 demons.
@@ -890,7 +890,7 @@
 	
 	<!-- DemonSlayerV -->
 	<quest id="quest_progressionDemonSlayerV">
-	<property name="offer_key" value="Slay demons for silver. Only Biome demons are acceptable. POI demons will not register as kills." />       
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
         <property name="name_key" value="Demon Slayer V" />
 	<property name="subtitle_key" value="You are a legendary demon slayer." />
 	<property name="description_key" value="Slay 5 demons.
