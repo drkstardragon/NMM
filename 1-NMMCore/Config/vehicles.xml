@@ -19,7 +19,7 @@
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
-		<property name="tiltUpForce" value="0"/>
+		<property name="tiltUpForce" value="0"/>		
 		<property name="unstickForce" value="1"/>
 		<property name="velocityMax" value="10, 14"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
