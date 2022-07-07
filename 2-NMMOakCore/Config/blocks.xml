@@ -1,5 +1,9 @@
 <configs>
 
+		<!-- Vanilla Tweaks -->
+	<remove xpath="/blocks/block[@name='cntBirdnest']" />
+	<remove xpath="/blocks/block[@name='cntBirdnestCorner']" />
+
 	<append xpath="/blocks">
 	
 		<!-- BeeHives -->	
@@ -216,6 +220,43 @@
 		</block>
 
 		<!-- ChickenCoops -->
+		
+		<block name="birdnestEmpty">
+			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/birdnest.unity3d?birdnestPrefab" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="120"/><!-- 120 minutes to reflect Coop gains -->
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.Next" value="cntBirdnest"/>
+			<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="cntBirdnest">
+			<property name="Extends" value="cntAmmoPileSmall"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/birdnest.unity3d?birdnestEggs" />
+			<property name="LootList" value="birdNest"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DowngradeBlock" value="birdnestEmpty"/>
+		</block>
+
+		<block name="cntBirdnestCorner">
+			<property name="Extends" value="cntBirdnest"/>
+			<property name="CustomIcon" value="cntBirdnest"/>
+			<property name="ModelOffset" value="0.2,0,0.2"/>
+			<property name="GndAlign" value="0"/>
+		</block>		
 		
 	<block name="ChickenCoopEmpty">
 	<property name="DescriptionKey" value="ChickenCoopEmptyDesc"/>

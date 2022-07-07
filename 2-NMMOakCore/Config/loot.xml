@@ -1,5 +1,8 @@
 <configs>
 
+	<!-- Vanilla Tweaks -->
+	<remove xpath="/lootcontainers/lootcontainer[@name='birdNest']" />
+
 	<append xpath="/lootcontainers">
 	
 	<!-- Beehives -->
@@ -9,6 +12,10 @@
 	</lootcontainer>
 	
 	<!-- ChickenCoops -->
+	
+	<lootcontainer id="25" name="birdNest" count="1" size="6,2" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<item group="groupBirdNest"/>
+	</lootcontainer>	
 
 	<lootcontainer id="772" name="EggsReady" count="1" size="6,2" destroy_on_close="true" sound_open="UseActions/Chicken6Sounds" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
 		<item name="foodEgg" count="3,5" prob="1"/>

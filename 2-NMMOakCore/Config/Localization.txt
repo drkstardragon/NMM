@@ -29,6 +29,7 @@ drinkHoneyBeerDesc,items,Food,,,"Puts a spring in your step, power in your punch
 CaughtChick,items,Item,,,Caught Chick,,,,,,,,,,,,,
 CaughtChickDesc,items,Item,,,"Use 2 Caught Chicks, with right mouse click, on an Empty Chicken Coop to populate and activate the next stage.",,,,,,,,,,,,,
 
+birdnestEmpty,blocks,Block,,,Empty Bird Nest,,,,,,,,,,,,,
 ChickenCoopEmpty,blocks,Block,,,Chicken Coop - Fancy (Needs 2 Caught Chicks),,,,,,,,,,,,,
 ChickenCoopEmptyDesc,blocks,Block,,,"Introduce 2 Caught Chicks to the Chicken Coop and over time they will grow and produce eggs and feathers. You can catch chicks in nests.",,,,,,,,,,,,,
 ChickenCoopChicks,blocks,Block,,,[66ff00]Growth Stage,,,,,,,,,,,,,
