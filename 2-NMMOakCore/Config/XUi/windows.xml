@@ -104,6 +104,55 @@
 		</rect>
 	</window>
 	
+		<window name="windowOutputForge" pos="0,135" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" >	
+	<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_point" pos="0,0"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput" pos="50,0" />
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-26" height="150" disablefallthrough="true" on_press="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+				<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-16" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+		</rect>
+	</window>
+
+	<window name="windowForgeCraftingQueue" width="397" height="78" panel="Left" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<rect depth="0" pos="0,0" width="303" controller="CraftingQueue">
+			<!-- <sprite name="background" color="[black]" type="sliced" pos="0,-10" /> -->
+			<grid name="queue" rows="1" cols="5" pos="3,-13" cell_width="75" cell_height="75" repeat_content="true">
+				<recipe_stack name="0"/>
+			</grid>
+		</rect>
+	</window>
+	
+		<window name="windowOakForgeInput" width="228" height="279" panel="Right"
+			controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
+
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
+				<label style="header.name" text="INPUT" text_key="xuiSmelting" />
+			</panel>
+
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+			<rect name="content" depth="1" pos="0,-46" height="223">
+
+				<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+
+			</rect>
+
+			<rect name="content2" depth="0" pos="78, -49" width="147" height="223">
+				<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
+				<grid rows="6" cols="1" pos="6,-12" cell_width="147" cell_height="34"  repeat_content="true">
+					<forge_material name="0"/>
+				</grid>
+		</rect>
+	</window>	
+	
 	</append>
 
 	<!-- OakDragon UI -->
