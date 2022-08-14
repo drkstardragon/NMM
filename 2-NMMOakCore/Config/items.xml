@@ -14,7 +14,7 @@
 				<property name="DescriptionKey" value="HoneyCombDesc"/>		
 				<property name="HoldType" value="31"/>
 				<property name="CustomIcon" value="honeycomb"/>
-				<property name="DisplayType" value="food"/>
+				<property name="DisplayType" value="foodCureInfection"/>
 				<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 				<property name="Material" value="Morganic"/>
@@ -73,7 +73,7 @@
 		<item name="foodHoneyBread">
 				<property name="Tags" value="food"/>
 				<property name="HoldType" value="31"/>
-				<property name="DisplayType" value="food"/>
+				<property name="DisplayType" value="foodCureInfection"/>
 				<property name="CustomIcon" value="bread2"/>
 				<property name="DescriptionKey" value="foodHoneyBreadDesc"/>
 				<property name="CustomIconTint" value="255,140,25"/>		
@@ -106,7 +106,7 @@
 		<item name="foodHoneyPumpkinPie">
 				<property name="Tags" value="food"/>
 				<property name="HoldType" value="31"/>
-				<property name="DisplayType" value="food"/>
+				<property name="DisplayType" value="foodCureInfection"/>
 				<property name="CustomIcon" value="oakpie"/>
 				<property name="DescriptionKey" value="foodHoneyPumpkinPieDesc"/>
 				<property name="CustomIconTint" value="255,140,25"/>		
@@ -247,8 +247,8 @@
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
 			<effect_group tiered="false" name="Food Tier 1">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 			</effect_group>
@@ -290,7 +290,7 @@
 <item name="foodAcornDough">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodWaterRaw"/>
+	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="dough"/>
 	<property name="DescriptionKey" value="foodAcornDoughDesc"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
@@ -324,7 +324,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<!-- <property name="DisplayType" value="food"/> -->
-	<property name="DisplayType" value="foodWaterNegative"/>
+	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="acornbread"/>
 	<property name="DescriptionKey" value="foodAcornBreadDesc"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
@@ -457,7 +457,7 @@
 
 <item name="drinkBoarberrySmoothie">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterCoffee"/>
+	<property name="DisplayType" value="drinkYuccaSmoothie"/>
 	<property name="CustomIcon" value="boardrink"/>
 	<property name="DescriptionKey" value="drinkBoarberrySmoothieDesc"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?BoarDrink"/>
@@ -466,7 +466,7 @@
 	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
-	<property name="UnlockedBy" value="perkMasterChef,drinkYuccaJuiceSmoothieSchematic"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -497,7 +497,7 @@
 
 <item name="drinkFleshCan">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterCoffee"/>
+	<property name="DisplayType" value="drinkYuccaSmoothie"/>
 	<property name="CustomIcon" value="meatcan"/>
 	<property name="DescriptionKey" value="drinkFleshCanDesc"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?meatcan"/>
@@ -506,7 +506,7 @@
 	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
-	<property name="UnlockedBy" value="perkMasterChef,drinkYuccaJuiceSmoothieSchematic"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -537,7 +537,7 @@
 
 <item name="drinkGreenHell">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterCoffee"/>
+	<property name="DisplayType" value="drinkYuccaSmoothie"/>
 	<property name="CustomIcon" value="greeneye"/>
 	<property name="DescriptionKey" value="drinkGreenHellDesc"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?GreenEye"/>
@@ -546,7 +546,7 @@
 	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
-	<property name="UnlockedBy" value="perkMasterChef,drinkYuccaJuiceSmoothieSchematic"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -577,7 +577,7 @@
 
 <item name="drinkRedWorm">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterCoffee"/>
+	<property name="DisplayType" value="drinkYuccaSmoothie"/>
 	<property name="CustomIcon" value="redworm"/>
 	<property name="DescriptionKey" value="drinkRedWormDesc"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?RedWorm"/>
@@ -586,7 +586,7 @@
 	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
-	<property name="UnlockedBy" value="perkMasterChef,drinkYuccaJuiceSmoothieSchematic"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -626,7 +626,7 @@
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="25"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
-	<property name="UnlockedBy" value="perkMasterChef,drinkJarGoldenRodTeaSchematic"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
