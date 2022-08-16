@@ -6,9 +6,38 @@
 	<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']" name="value">drinkJarBoiledWater,foodFishCurry,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,modMeleeClubBurningShaft,noteNMMZombieSlayer,qc_eliminatehorde</setattribute>
 	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>
 	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>
-	
+
+	<!-- NPC Mod Tweaks -->	
+    <set xpath="/entity_classes/entity_class/property[@name='SleeperInstantAwake']/@value">false</set>	
 	
 	<append xpath="/entity_classes">
+	
+	<!-- Vanilla PLUS -->
+
+		<entity_class name="zombieCrispyNMM" extends="zombieBurntRadiated">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+			<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBurntRadiated.prefab"/>
+			<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
+
+			<!-- Gameplay zombieBurntRadiated -->
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+			<property name="MoveSpeedAggro" value=".8, 1.5"/>
+			<property name="HandItem" value="meleeHandzombieCrispyNMM"/>			
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>			
+			<property name="LootDropProb" value=".5"/>
+			<property name="SizeScale" value="1.3"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1350"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="CrispyNMMDeco"/>				
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+			</effect_group>
+		</entity_class>	
                 
 	<!-- Orc models by Maksim Bugrimov, Female Orc by Andryuha 1981 Purchased for use in NPC Mod  -->		
 		

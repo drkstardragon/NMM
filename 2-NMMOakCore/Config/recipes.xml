@@ -694,7 +694,38 @@
 		<ingredient name="resourceScrapIron" count="1"/>
 		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourcePaper" count="1"/>		
-	</recipe>	
+	</recipe>
+
+	<!-- Dragon Cannon -->
+	
+	<recipe name="gunDragonCannon" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="25"/>
+		<ingredient name="resourceScrapBrass" count="75"/>
+		<ingredient name="resourceWood" count="100"/>		
+		<ingredient name="resourceMetalPipe" count="1"/>
+		<ingredient name="resourceRockSmall" count="1"/>
+	</recipe>			
+
+	<recipe name="ammoDragonBoomBall" count="1" craft_area="workbench" craft_time="5" tags="workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceGunPowder" count="15"/>
+		<ingredient name="resourcePaper" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>		
+	</recipe>
+	
+	<recipe name="ammoDragonFireBall" count="1" craft_area="workbench" craft_time="5" tags="workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceGunPowder" count="15"/>
+		<ingredient name="resourceGlue" count="2"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>		
+	</recipe>
+
+	<recipe name="ammoDragonShockBall" count="1" craft_area="workbench" craft_time="5" tags="workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceGunPowder" count="15"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>		
+	</recipe>
 
 	<!-- DragonWeapons -->
 

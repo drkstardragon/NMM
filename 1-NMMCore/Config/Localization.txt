@@ -511,5 +511,7 @@ DarkElfSpearBM,entityclasses,Entity,,,Dark Elf Spearer BM,,,,,,,,,,,,,
 DarkElfArcherBM,entityclasses,Entity,,,Dark Elf Archer BM,,,,,,,,,,,,,
 ChaosChampion,entityclasses,Entity,,,Chaos Champion,,,,,,,,,,,,,
 
+zombieCrispyNMM,entityclasses,Entity,,,NMM Crispy,,,,,,,,,,,,,
+
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

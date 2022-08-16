@@ -77,6 +77,21 @@
 	<MaxRepeatRate name="1.111" />
 	</SoundDataNode>
 	
+	<!-- Dragon Cannon -->	
+	
+	<SoundDataNode name="DragonCannon_fire">
+	<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+	<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="180" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/DragonCannon.unity3d?FlintockSingleFire"/>
+	<LocalCrouchVolumeScale value="1"/>
+	<CrouchNoiseScale value="1"/>
+	<NoiseScale value="1"/>
+	<MaxVoices value="20"/>
+	<MaxVoicesPerEntity value="6"/>
+	<MaxRepeatRate value="0.001"/>
+	</SoundDataNode>	
+	
 	<!-- FishFarm -->	
 
 	<SoundDataNode name="FishSounds">

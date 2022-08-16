@@ -661,6 +661,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/DragonBlunderBuss.unity3d?ArramusBlunderbuss"/>
 	<property name="CustomIcon" value="arramusblunderbuss"/>
 	<property name="DescriptionKey" value="ArramusBlunderbussDesc"/>
+	<property name="UnlockedBy" value="perkBoomstick"/>	
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceMetalPipe"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -744,7 +745,8 @@
 	<property name="HoldType" value="76"/>
 	<property name="Meshfile" value="#@modfolder:Resources/DragonBlunderBuss.unity3d?DragonBlunderbuss"/>
 	<property name="CustomIcon" value="dragonblunderbuss"/>
-	<property name="DescriptionKey" value="DragonBlunderbussDesc"/>	
+	<property name="DescriptionKey" value="DragonBlunderbussDesc"/>
+	<property name="UnlockedBy" value="perkBoomstick"/>	
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceMetalPipe"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -829,7 +831,8 @@
 	<property name="HoldType" value="83"/>
 	<property name="Meshfile" value="#@modfolder:Resources/DragonBlunderBuss.unity3d?OakHandCannon"/>
 	<property name="CustomIcon" value="oakcannon"/>
-	<property name="DescriptionKey" value="OakHandCannonDesc"/>	
+	<property name="DescriptionKey" value="OakHandCannonDesc"/>
+	<property name="UnlockedBy" value="perkBoomstick"/>	
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceMetalPipe"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -1793,7 +1796,229 @@
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkBoomstick">
 			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
 	</effect_group>
-</item>		
+</item>
+
+		<!-- Dragon Cannon -->
+
+	<item name="gunDragonCannon">
+		<property name="ItemTypeIcon" value="star"/>
+		<property name="CustomIcon" value="flintlockdragon"/>
+		<property name="DescriptionKey" value="gunDragonCannonDesc"/>			
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,stock,magazine,selfLoading,attPerception,perkDeadEye"/>
+		<property name="DisplayType" value="rangedGun"/>
+		<property name="HoldType" value="83"/>
+		<property name="Meshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannon"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannon"/>
+		<property name="Material" value="MRifleParts"/>
+		<property name="Weight" value="6"/>
+		<property name="RepairTools" value="resourceRepairKit"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="SoundJammed" value="weapon_jam"/>
+		<property name="Attachments" value="meleeToolFlashlight02"/>
+		<property name="CrosshairOnAim" value="true"/>
+		<property name="CrosshairUpAfterShot" value="true"/>
+		<property name="Sound_Sight_In" value="rifle_sight_in"/>
+		<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+		<property name="LightSource" value="lightSource"/>
+		<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+		<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+		<property name="Group" value="Ammo/Weapons"/>
+		<property name="RepairExpMultiplier" value="10.8"/>
+		<property name="LightValue" value=".45"/>
+		<property name="EconomicValue" value="1500"/>
+		<property name="UnlockedBy" value="perkDeadEye"/>
+		<property name="ShowQuality" value="true"/>
+			
+		<property class="Action0">
+			<property name="Class" value="Launcher"/>
+		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
+		<!-- <property name="Range" value="200"/> -->
+		<property name="Magazine_items" value="ammoDragonBoomBall,ammoDragonFireBall,ammoDragonShockBall"/>
+		<property name="Reload_time" value="3.1"/>
+		<property name="Sound_start" value="DragonCannon_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="m136_reload"/>
+		<property name="AutoReload" value="false"/>
+		<property name="ScopeOffset" value="-.00062,.088,.065"/>
+		<property name="SideOffset" value="0,0,0"/>
+		<property name="BarrelOffset" value="0,0,0"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+			</property>
+			
+		<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="ScopeCameraOffset" value="0,-0.025,0"/>	
+			</property>
+
+			<effect_group name="gunDragonCannon">
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="PlaySound" sound="laserrifle_idle" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="StopSound" sound="laserrifle_idle" />
+				<triggered_effect trigger="onSelfEquipStop" action="StopSound" sound="laserrifle_idle" />
+				<triggered_effect trigger="onReloadStart" action="StopSound" sound="laserrifle_idle" />
+				<triggered_effect trigger="onReloadStop" action="StopSound" sound="laserrifle_idle" />
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="gunDragonCannoncharge" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="gunDragonCannoncharge" />
+				<triggered_effect trigger="onReloadStart" action="RemoveBuff" buff="gunDragonCannoncharge" />
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="gunDragonCannoncharge" />
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$charge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$charge" operation="set" value="0"/>
+				<triggered_effect trigger="onReloadStart" action="ModifyCVar" cvar="$charge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$chargeB" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$chargeB" operation="set" value="0"/>
+				<triggered_effect trigger="onReloadStart" action="ModifyCVar" cvar="$chargeB" operation="set" value="0"/>
+				<passive_effect name="MaxRange" operation="base_set" value="200"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_subtract" value="@$charge"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="150"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/>
+				<!-- random effective rng -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="50" tags="perkDeadEye"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/>
+				<!-- 2.7s -->
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/>
+				<!-- tier bonus -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/>
+				<!-- random DegMax -->
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0,0"/>
+				<!-- random APM -->
+				<passive_effect name="MagazineSize" operation="base_add" value="0,0"/>
+				<!-- random MagazineSize -->
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkDeadEye"/>
+				<!-- random WeaponHandling -->
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".04"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".2"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
+				
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.4"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1.1"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
+				
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6" tags="perkDeadEye"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeadEye"/>
+				<passive_effect name="EntityDamage" operation="perc_subtract" value="@$chargeB"/>
+			</effect_group>
+		</item>	
+
+		
+	<item name="ammoDragonBoomBall">
+		<property name="Tags" value="ammo"/>
+		<property name="CustomIcon" value="dragoncannonsun"/>
+		<property name="DescriptionKey" value="ammoDragonBoomBallDesc"/>		
+        <property name="DisplayType" value="ammoLauncher"/>
+		<property name="Meshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonFire"/>
+		<property name="HoldType" value="45"/>
+        <property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonFire"/>
+        <property name="Material" value="Mlead_scrap"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="EconomicValue" value="250"/>
+        <property name="Group" value="Ammo/Weapons"/>
+        <property name="IsSticky" value="true"/>
+        <property class="Action1">
+        <property name="Class" value="Projectile"/>
+        <property name="Explosion.ParticleIndex" value="13"/>
+        <property name="Explosion.RadiusBlocks" value="6"/>
+        <property name="Explosion.RadiusEntities" value="8"/>
+        <property name="Explosion.DamageBonus.water" value="0"/>
+        <property name="Gravity" value="-3"/>
+        <property name="FlyTime" value=".3"/>
+        <property name="LifeTime" value="30"/>
+        </property>
+        <effect_group name="ammoDragonBoomBall" tiered="false">
+        <passive_effect name="BlockDamage" value="10" operation="base_set"/>
+        <passive_effect name="EntityDamage" value="350" operation="base_set"/>
+        <passive_effect name="ProjectileVelocity" value="40" operation="base_set"/>
+        </effect_group>
+	</item>
+		
+	<item name="ammoDragonFireBall">
+		<property name="CustomIcon" value="dragoncannonfire"/>
+		<property name="DescriptionKey" value="ammoDragonFireBallDesc"/>		
+		<property name="Tags" value="ammo,ranged"/>
+	    <property name="DisplayType" value="ammoGrenadeFire"/>
+		<property name="Group" value="Ammo/Weapons"/>	
+		<property name="Meshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonSun"/> 
+	    <property name="Material" value="Morganic" />
+		<property name="Stacknumber" value="500"/>		
+	    <property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonSun"/>
+	    <property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="30"/>
+		<property name="DamageBlock" value="30"/>
+		<property name="AlwaysActive" value="true"/>
+	    <property name="Explosion.ParticleIndex" value="10"/>
+	    <property name="Explosion.RadiusBlocks" value="2"/>
+	    <property name="Explosion.RadiusEntities" value="2"/>
+	    <property name="Explosion.BlastPower" value="35"/>
+	    <property name="Explosion.DamageBonus.stone" value=".1"/>
+	    <property name="Explosion.DamageBonus.metal" value="0"/>
+	    <property name="Explosion.DamageBonus.earth" value="0"/>
+	    <property name="Explosion.DamageBonus.water" value="0"/>
+	    <property name="Explosion.DamageBonus.wood" value="6"/>
+	    <property name="Explosion.Buff" value="buffBurningMolotov"/>	
+		<property name="Velocity" value="70"/>
+		<property name="FlyTime" value="0"/>
+		<property name="LifeTime" value="14"/>
+		<property name="CollisionRadius" value="6"/>
+		<property name="Buff" value="buffBurningMolotov"/>
+	</property>
+		<effect_group name="ammoDragonFireBall" tiered="false">	
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffBurningMolotov"/>	
+			</effect_group>
+	</item>
+		
+	<item name="ammoDragonShockBall">
+			<property name="CustomIcon" value="dragoncannonbullet"/>
+			<property name="DescriptionKey" value="ammoDragonFireBallDesc"/>
+			<property name="Tags" value="ammo,ranged"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
+			<property name="Meshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonBullet"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsSticky" value="false"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="FuelValue" value="8"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<property name="Gravity" value="-3"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<effect_group name="ammoDragonShockBall" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="200"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="30"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="180"/>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShocked"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.75"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="3"/>
+				<display_value name="dTargetPenetration" value="3"/>
+				<display_value name="dTargetArmor" value="-.75"/>
+			</effect_group>
+	</item>		
 		
 		<!-- DragonWeapons -->
 		
