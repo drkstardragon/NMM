@@ -2464,17 +2464,17 @@
 			<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsUncontrolledBurst" operation="Equals" value="1"/>
 			<requirement name="ItemHasTags" tags="perkBookAutoWeapons"/>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="add" value="1"/>
 
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="set" value=".01"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="set" value=".01"/>
 
 				<triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayMiss" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0">
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0">
 					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
 				</triggered_effect>
 
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="multiply" value="@.AutoWeaponsUBCount"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="multiply" value="@.AutoWeaponsUBCount"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="@.AutoWeaponsUBEffect"/>
 		</effect_group>
 		<effect_group>
@@ -2495,9 +2495,9 @@
 	<perk name="perkAutoWeaponsRecoil" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsRecoilDesc" long_desc_key="perkAutoWeaponsRecoilLongDesc">
 		<effect_group>
 			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
 				<requirement name="RoundsInMagazine" operation="LT" value="1"/>
 			</triggered_effect>
 		</effect_group>
@@ -2507,8 +2507,8 @@
 			<requirement name="ItemHasTags" tags="perkBookAutoWeapons"/>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
 					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
 				</triggered_effect>
 
@@ -2519,10 +2519,10 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>-->
 				 <!-- M60 <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.83"/>-->
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.015"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="multiply" value="@.AutoWeaponsRecoilCount"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.015"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="multiply" value="@.AutoWeaponsRecoilCount"/>
 
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.5">
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.5">
 					<requirement name="CVarCompare" cvar=".AutoWeaponsRecoilEffect" operation="LT" value="-.5"/>
 				</triggered_effect>
 
