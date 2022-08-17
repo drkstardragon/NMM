@@ -5,7 +5,7 @@ namespace Harmony.Blocks
     /**
      * * Adding to new blocks:
      * *
-     * <property name="ParticleName" value="#@modfolder(0-SphereIICore):Resources/PathSmoke.unity3d?P_PathSmoke_X" />
+     * <property name="ParticleName" value="#@modfolder(0-SCore):Resources/PathSmoke.unity3d?P_PathSmoke_X" />
      */
     public class Particles
     {
@@ -15,12 +15,14 @@ namespace Harmony.Blocks
         {
             public static void Postfix(ref Block __instance)
             {
-                if (!__instance.Properties.Values.ContainsKey("ParticleName"))
-                    return;
-
-                var strParticleName = __instance.Properties.Values["ParticleName"];
-                if (!ParticleEffect.IsAvailable(strParticleName))
-                    ParticleEffect.RegisterBundleParticleEffect(strParticleName);
+                var strParticleName = "";
+                if (__instance.Properties.Values.ContainsKey("ParticleName"))
+                {
+                    strParticleName = __instance.Properties.Values["ParticleName"];
+                    if (!ParticleEffect.IsAvailable(strParticleName))
+                        ParticleEffect.RegisterBundleParticleEffect(strParticleName);
+                }
+            
             }
         }
     }

@@ -33,10 +33,33 @@
 				<property name="LowOutput" value="true"/>
 				<!-- Removes the extra lines in the log out like AdvancedTroubleshootingFeatures :: UtilityAILogging -->
 			</property>
-			
+
 			<property class="AdvancedRecipes" >
 				<property name="ReadFromContainers" value="false"/>
-				<property name="Distance" value="10" />  <!-- reasonable block range seems to be around 10. -->
+				<!-- Enable Remote Crafting Feature Experimental -->
+				<property name="Distance" value="10" />
+				<!-- reasonable block range seems to be around 10. -->
+				<property name="Debug" value="false" />
+				<!-- shows name of opened container/workstation in log -->
+				<!-- Not needed for remote Crafting -->
+				<property name="BroadcastManage" value="false"/>
+				<!-- Enable Broadcast Feature Experimental -->
+				<property name="InvertBroadcast" value="false"/>
+				<!-- enables broadcasting for all but selected containers-->
+				<!-- disable remote crafing on named workstations case sensitive-->
+				<property name="disablereceiver" value="forge, tbd" />
+				<!-- disable remote crafing from named containers. case sensitive e.g storageCrate, birdNest -->
+				<property name="disablesender" value="" />
+				<property name="Invertdisable" value="false"/>
+				<!-- enables sending only from workstations in disablesender-->
+				<!-- disable remote crafing on workstation from certain containers. e.g workbench:storageCrate, birdNest;campfire:birdNest,storageCrate -->
+				<!-- sections are separated by ";" workstation and containers by ":" containers are separated by ",". workstations can be grouped by "," e.g workbench,campfire:birdNest,storageCrate -->
+				<property name="nottoWorkstation" value=""/>
+				<!-- enables remote crafing on workstations only from named containers. e.g workbench:storageCrate, birdNest;campfire:birdNest,storageCrate -->
+				<!-- binds are separated by ";" workstation and containers by ":" containers are separated by ",". workstations can be grouped by "," e.g workbench,campfire:birdNest,storageCrate -->
+				<property name="bindtoWorkstation" value=""/>
+				<property name="enforcebindtoWorkstation" value="false"/>
+				<!-- disables remote crafting if not bound -->
 			</property>
 
 			<property class="AdvancedLockpicking" >
@@ -255,7 +278,35 @@
 				<property name="CropEnable" value="false"/>
 				<property name="CheckInterval" value="600" />
 				<property name="MaxPipeLength" value="500" />
+				
+				<!-- How much damage to do to the water source when it gets consumed -->
+				<property name="WaterDamage" value="1" />
+				
 			</property>
+
+			<property class="FireManagement" >
+				<property name="Logging" value="false"/>
+				<property name="FireEnable" value="false"/> 				<!-- Enables the feature -->
+				<property name="HeatMapStrength" value="1"/> 			<!-- Determines how much each block contributes to heat -->
+				<property name="CheckInterval" value="20" /> 				<!-- How many seconds before checking blocks,spreading fire, etc -->
+				<property name="FireDamage" value="50" /> 				<!-- How much damage each time it checks will do the block. -->
+				<property name="SmokeTime" value="60" />					<!-- How long the smoke will stay on a block. -->
+				<property name="FireSound" value="FireMediumLoop" />		<!-- Sound Data Node to use. Can be over-ridden by individual block -->
+				<property name="BuffOnFire" value="buffBurningMolotov" /> <!-- The buff that is applied to the entity alive when they step into the flames -->
+				<property name="MaterialID" value="Mplants, Mcorn" /> 	<!-- Checks the material's id to see if it should ignite  -->
+				<property name="MaterialDamage" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's damage category to see if it should ignite  -->
+				<property name="MaterialSurface" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's surface category to see if it should ignite -->
+				<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />		<!-- Fire particle to use -->
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" /> <!-- Fire particle to use -->
+				<!-- Alternative included particles -->
+				<!--
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis02-CampFire" />
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis03-Cartoon" />
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis04-SlowFire" />
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" />
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis06-HeavyLight" />
+				-->
+			</property>	
 		</block>
 
 		<block name="PathingCube">
@@ -498,6 +549,26 @@
 			<property name="Model" value="#@modfolder:Resources/gupMagicPortal.unity3d?gupMagicPortal"/>
 		</block>
 		-->
+
+		<block name="sphereiiAoETest">
+			<property name="Class" value="DecoAoE, SCore" />
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Tags" value="coalBurnedDmg"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="OutdoorDecor/ember_pile_1" param1="main_mesh"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ParticleName" value="ember_pile"/>
+			<property name="ParticleOffset" value="0,0,0"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="VehicleHitScale" value="999"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+
 	</append>
 	
 	

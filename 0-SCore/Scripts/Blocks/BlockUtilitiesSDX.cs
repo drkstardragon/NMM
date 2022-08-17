@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using UnityEngine;
-
+using System.Collections.Generic;
 public static class BlockUtilitiesSDX
 {
     public static void AddRadiusEffect(string strItemClass, ref Block myBlock)
@@ -77,29 +77,44 @@ public static class BlockUtilitiesSDX
     public static void addParticles(string strParticleName, Vector3i position)
     {
         if (strParticleName == null || strParticleName == "")
-        {
             strParticleName = "#@modfolder(0-SCore):Resources/PathSmoke.unity3d?P_PathSmoke_X";
-            if (!ParticleEffect.IsAvailable(strParticleName))
-                ParticleEffect.RegisterBundleParticleEffect(strParticleName);
-            
-        }  
+
+        if (!ParticleEffect.IsAvailable(strParticleName))
+            ParticleEffect.RegisterBundleParticleEffect(strParticleName);
+
         var blockValue = GameManager.Instance.World.GetBlock(position);
         GameManager.Instance.World.GetGameManager().SpawnBlockParticleEffect(position,
             new ParticleEffect(strParticleName, position.ToVector3() + Vector3.up, blockValue.Block.shape.GetRotation(blockValue), 1f, Color.white));
     }
 
-    public static void addParticlesCentered(string strParicleName, Vector3i position)
+    public static void addParticlesCentered(string strParticleName, Vector3i position)
     {
-        var strParticleName = "#@modfolder(0-SCore):Resources/PathSmoke.unity3d?P_PathSmoke_X";
+        if (strParticleName == null || strParticleName == "")
+            strParticleName = "#@modfolder(0-SCore):Resources/PathSmoke.unity3d?P_PathSmoke_X";
+
+        if (strParticleName == "NoParticle")
+            return;
+
         if (!ParticleEffect.IsAvailable(strParticleName))
             ParticleEffect.RegisterBundleParticleEffect(strParticleName);
 
+        if (GameManager.Instance.HasBlockParticleEffect(position)) 
+            return;
+
+        if (GameManager.IsDedicatedServer) return;
+
         var centerPosition = EntityUtilities.CenterPosition(position);
-        GameManager.Instance.World.GetGameManager().SpawnBlockParticleEffect(position,
-              new ParticleEffect(strParticleName, centerPosition, 1f, Color.white, "", null, false));
+        var blockValue = GameManager.Instance.World.GetBlock(position);
+        var particle = new ParticleEffect(strParticleName, centerPosition, blockValue.Block.shape.GetRotation(blockValue), 1f, Color.white);
+        GameManager.Instance.SpawnBlockParticleEffect(position, particle);
     }
+
+   
+
+   
     public static void removeParticles(Vector3i position)
     {
+        if (GameManager.IsDedicatedServer) return;
         GameManager.Instance.World.GetGameManager().RemoveBlockParticleEffect(position);
     }
 }

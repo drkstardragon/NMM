@@ -10,6 +10,416 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
+Version: 20.6.229.2113
+
+	[ Fire Manager ]
+		- Fixed an issue where zombies do not catch fire walking through fire.
+
+
+Version: 20.6.229.2113
+	[ Fire Manager ]
+		- Hot fix to prevent crashing when adding sound (like trees)
+
+		- Exposed new properties in Config/blocks.xml
+				<property name="SmokeTime" value="60" />					<!-- How long the smoke will stay on a block. -->
+				<property name="FireSound" value="FireMediumLoop" />		<!-- Sound Data Node to use. Can be over-ridden by individual block -->
+		- FireSound can be over-written on a block by basis.		
+
+Version: 20.5.228.1520
+
+	[ Fire Manager ]
+		- Added new buff Requirement to determine if you were close to a fire block
+			<requirement name="RequirementIsNearFire, SCore" range="5" />
+
+		- Added a new MinEffect to determine how many burning blocks are within the player.
+			<triggered_effect trigger="onSelfBuffUpdate" action="CheckFireProximity, SCore" range="5"  />		
+
+			-> This sets a cvar called _closeFires with how many burning blocks are near by.
+		
+		- Added sound effects for fire.
+
+	[ Remote Storage ]
+    	- Added Invert feature to disabledsender
+			-> If Enabled only mentioned containers share inventory
+        - Added grouping of workstations to nottoworkstation and bindtoworkstation
+			-> It is now possible to group multiple workstations to a group of storages
+
+
+Version: 20.5.227.1659
+
+	[ Fire Manager ]
+		- Updated the code to set fire to players to use AddBuff instead of AddBuffNetwork
+
+	[ SpawnCube2SDX ]
+		- Added two new mineffect to set and clear owner of the SpawnCube2SDX
+
+			<triggered_effect trigger="onSelfDamagedBlock" action="ClearOwner, SCore" />
+			<triggered_effect trigger="onSelfDamagedBlock" action="SetOwner, SCore" />
+
+Version: 20.5.227.925
+	
+	[ Remote Recipes ]
+		- Merged changes from matteo
+			added features requested by pipermac...
+			updated searchnearbycontainers since checks are already done by gettileentities.
+			changed some methods to use searchnearbycontainers instead of gettileentities.
+
+Version:  20.5.227.95
+	
+	[ SpawnCube2SDX ]
+		- Added Harmony patch to preserve ownership during upgrades / downgrades
+			-> Downgrade / Upgrade targets must use the same SpawnCube2SDX class
+				<property name="Class" value="SpawnCube2SDX, SCore" />
+			-> Config property line can be ommitted, or blanked, for non-spawning spawnCube.
+				
+
+
+
+Version: 20.5.226.2037
+
+	[ Fire Manager ]
+		- Fixed an issue with the FireManager not tracking fires on dedi correctly
+		- Fixed an issue where melee attack does not set fires correctly (only partially applying fire )
+		- Updated default Config/blocks.xml's entry for what is flammable or not.
+		- Added protection gate for MinEffects when fire manager is off line.
+		
+
+Version: 20.5.226.1035
+	
+	[ Fire Manager ]
+		- Moved fire buff on walk to Entityalive patch rather than block
+		- Fire hurts now.
+
+	[ Config/blocks.xml ]
+		- Cleaned up an old Broadcastmanager node.
+
+Version: 20.5.224.1353
+	[ Broadcast feature ]
+		- Update from matteo, removing second button, updating sprites
+
+
+Version: 20.5.224.1021
+
+	[ Broadcast feature ]
+		- Fixed an issue with a null ref when the xui.currentworkstation is empty
+
+	[ Quests ]
+		- Added new ObjectiveBlockDestroySDX, SCore. Example in Config/quests.xml
+
+			<objective type="BlockDestroySDX, SCore" id="frameShapes" value="1" phase="2"/>
+
+		
+Version: 20.5.223.110
+	[ Broadcast feature ]
+		- New Broadcast Manager feature by matteo ( https://youtu.be/BGPSIc5HUgg )
+		- New NetPackages to support broadcast feature
+
+	[ Remote Containers ]
+		- Fix by matteo with regards to pulling ingredients for forge
+
+Version: 20.5.221.934
+
+	[ Remote Containers ]
+		- Merged fixes from matteo
+
+	[ EntityEnemySDX ]
+		- Merged fix for IsAlwaysAwake
+
+
+Version: 20.5.220.1149
+
+	[ Remote Containers ]
+		- Fixed an issue where items were not being removed from the container.
+
+Version: 20.5.218.1914
+
+	[ Fire Manager ]
+		- Fixed a null ref when fire manager is first started when DyanmicMesh system isn't online
+
+		- Added optional feature where randomized fire and smoke particles can be used, using a comma-seperated format.
+			If this property is not defined on the Configuration block, it uses default Fire/Smoke particle.
+
+			Example in Config/blocks.xml, but also here:
+
+					<property name="RandomFireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy,#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis02-CampFire,#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis03-Cartoon,#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis04-SlowFire,#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis06-HeavyLight" />
+
+Version: 20.5.218.174
+
+	[ Fire Manager ]
+		- Added a call to update dynamic mesh so a burned down prefab looks as you'd expect.
+		- Merged in ocbMaurice's light changes.
+			- These will turn on and off lights from the fire to improve performance
+
+	[ Portals ]
+		- Disabled ChunkObserver setting for Portals, as it was causing an error on the dedicated servers
+
+
+
+Version: 20.5.216.1632
+
+	[ Fire Manager ]
+
+		- Expanded SmokeParticle, FireParticle, and FireDamage to be read from the block's material entry.
+
+			<property name="FireDamage" value="50" /> 				<!-- How much damage each time it checks will do the block. -->
+			<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />		<!-- Fire particle to use -->
+			<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" /> <!-- Fire particle to use -->
+
+			Priority Order:  
+				Material Entry
+				Block Entry
+				Global Entry
+
+		- Added a delayTime to the MinEffectAddFireDamage. 
+			
+			The value is in milliseconds. Default is 0, with no delay.
+
+			<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" target="positionAOE" range="5" delayTime="1000" /> <!-- 1 second before fire starts -->
+		
+		
+
+Version: 20.5.216.1451
+
+	[ Entity ]
+		- New MinEffect to spawn an entity. The actual spawn location is hit position + 1 block up.
+		
+			For example, adding this to the ammo of a cross bolt will spawn an entity at the hit location.
+
+			<triggered_effect trigger="onProjectileImpact" action="SpawnEntityAtPoint, SCore" SpawnGroup="ZombiesBurntForest"  />
+
+
+Version: 20.5.215.1938
+	[ Fire Manager ]
+
+		- Removed verbose log output
+
+Version: 20.5.215.1628
+
+	[ TileEntity AOE ]
+		- Fixed an invalid cast from bad copy and paste job.
+
+	[ Fire Manager ]
+		- Added debug output to MinEffects, enabled via turning Logging on in the FireManagement
+
+
+
+Version: 20.5.214.1558
+	[ Ingredients From Container patches by matteo ]
+	
+		https://github.com/SphereII/SphereII.Mods/pull/46
+			changed some stuff to linq for better readabilty.
+
+		Note: Please report any kind of performance slows downs.	
+
+	[ Fire Manager ]
+		- Updated to use NetPackages.
+			-> Particles should work on Fires, extingusihes, and auto-expire
+
+		- Added new NetPackages to distribute the server's data to client's
+
+Version: 20.5.214.743
+	
+	[ Ingredients From Container Patches by matteo ]
+	
+		https://github.com/SphereII/SphereII.Mods/pull/45
+			fixed some issues with items not being removed correctly.
+		
+	[ Entity Swiming ]
+		- Pushed a fix to avoid spawning fish randomly in the world.
+
+	[ Fire ]
+		Note: Fire System is being refactored to fix a variety of issues.
+
+		- Fixed particles not showing on dedi / P2P clients.
+
+		- Changed Fire Instance start to ModEvent for GameStartDone.
+
+		- Added Cleanup call to clear possibly stale data on client restart.
+
+		- Added Reset() to clear all existing game blocks that are on fire or smoldering.
+		- Added new console command called:  fireclear
+			-> Removes all recorded blocks that were on fire or extinguished, and removes their particles.
+
+		- Fixed an issue with the NetPackageRemoveParticleEffect() with a useless write call.
+
+		- Explosions that cause BlockDamage -1, will extingish fires. BlockDamage other than -1 will set fires.
+			<property name="Explosion.BlockDamage" value="-1"/>
+
+		- Added new property to Config/blocks.xml to control the amount of smoke time at the end of a fire, in seconds.
+			<property name="SmokeTime" value="60" />
+
+		- Removed smoke particles from fires that burn themselves out. Reserving them now when you intentionally extinguish them.
+
+		- Modified MinEvent FireDamage / FireDamageCascade to support ranged targets.
+
+Version: 20.5.211.1016
+
+	[ Fire ]
+
+		- Added new Config/blocks.xml entry to allow filtering Material ID.				
+			<property name="MaterialID" value="Mplants, Mcorn" /> 	<!-- Checks the material's id to see if it should ignite  -->
+
+		- Order of Material Checks, in terms of priority:
+			ID
+			DamageCategory
+			DamageSurface
+
+		- New block properties have been exposed, over-riding global defaults for FireParticle / SmokeParticle
+			<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" />
+			<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />
+
+			Using NoParticle will skip the particle effect:
+				<property name="FireParticle" value="NoParticle" />
+				<property name="SmokeParticle" value="NoParticle" />
+
+			To mass add custom particles above to blocks, consider using an xpath similar to this:
+
+			<!-- Search for all blocks that have a Material property called Mcloth, and add in the properties to that block -->
+			<append xpath="/blocks/block[ property[@name='Material' and @value='Mcloth'] ]">
+				<property name="FireParticle" value=#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy"" />	
+				<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />
+			</append>
+
+		- Add new NetPackage in attempt for particles on dedi. Needs testing.
+
+		- Added new MinEvent called AddFireDamageCascade. Defaults to block type.
+			This minevent works similar to the Extinguish Minevent, in which multiple blocks of the same type around the target is affected. Rather than extinguish, it ignites those blocks instantly.
+
+			Supported formats:
+
+				<!-- The same type of block -->
+				<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamageCascade, SCore" range="4" filter="Type" />
+
+				<!-- Shares the same material -->
+				<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamageCascade, SCore" range="4" filter="Material" />
+
+				<!-- Shares the same material damage classification -->
+				<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamageCascade, SCore" range="4" filter="MaterialDamage" />
+
+				<!-- Shares the same material surface classification -->
+				<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamageCascade, SCore" range="4" filter="MaterialSurface" />
+
+			Example, if you hit a curtain block, it will catch fire. In addition, all curtain blocks in the range of 4 are also immediately lit.
+
+
+
+
+Version: 20.5.210.1950
+
+	[ Fire ]
+		- Changed default buff when you step into the fire to be buffBurningMolotov 
+		- Added new particle from guppycur ( commented in Config/blocks.xml )
+
+		- Fire will not be added to trader-protected zones. We have to protect Jen.
+
+		- Added new Config/blocks.xml properties to configure materials and surface categories to xml. Case sensitive.
+			Example, and default:
+				<property name="MaterialDamage" value="wood, cloth" /> <!-- Checks the material's damage category to see if it should ignite  -->
+				<property name="MaterialSurface" value="wood, cloth" /> <!-- Checks the material's surface category to see if it should ignite -->
+
+		- Added new Config/blocks.xml to configure heat per burning block. Default is 1. Setting to 0 disables it.
+			<property name="HeatMapStrength" value="1"/> 			<!-- Determines how much each block contributes to heat -->
+
+		- Added new block's property to control how much fire damage the block is to take. Integer.
+			This over-rides the default global configuration.
+
+			<property name="FireDamage" value="40" />
+
+
+
+Version: 20.5.210.1020
+	[ Fire ]
+		- Fixed an issue with the particles not working at all. Great job, SphereII.
+
+
+Version: 20.5.210.859
+	
+	[ Fire ]
+		- Fixed MinEvent on the RemoveFire damage to work at aim point, rather than the barrel of extinguisher
+		- Put in a potential fix for dedi particles. Unlikely to work.
+
+Version: 20.5.209.1530
+
+	[ Fire Manager ]
+		- Applying Fire Particle on hit, instead of delayed
+		- Adjusted the CheckInterval from 10 to 20
+		- Updated fire particle from guppycur
+		- Updated default fire particle to be Heavy
+
+
+Version: 20.5.209.1414
+
+	[ Fire Manager ]
+		- Added initial implementation for lighting blocks on fire.
+
+			- When a block is added to the FireManager, it is added to a loop that checks:
+				-> Is it still flammable?
+				-> Has it been extinguished?
+				-> Does damage on the block
+				-> If damage exceeds the block, it gets downgraded, or replaced with air. (uses block placeholder)
+				-> Once all blocks are checked and calculated, it updates the chunks.
+
+		What makes a block flammable or not?
+
+			If it's a child, it won't catch fire. If its air, water, or is near water, it will not catch fire.		
+			
+			If the block has a tag of 'inflammable', it will not be burnable.
+
+			If the block has a tag of 'flammable', it will be marked as burnable. 
+				<append xpath="/blocks/block[@name='terrGravel']/property[@name='Tags']/@value">,flammable</append>
+        
+			If there is not tag, and passes the other checks, it'll check the block material from materials.xml.
+				if its DamageCategory is wood, or if its SurfaceCategory is plant, it will be flammable.
+
+		- New config entry in Config/blocks.xml
+		- New Harmony patch on OnEntityWalking, which checks if the block is burning and delivers a buff to an entityalive that walks through it.
+		- New Harmony patch to Explosion to include blocks affected by them to catch fire.
+
+		- New test items:
+			sphereTorch - When a block is struck, it is lit on fire.
+			sphereExtinguish - When a block is struck, blocks in a range of 2 of the strike position is considered extinguished.
+
+	[ Triggered Effect ]
+		- Added two new triggered effects to provide support for Fire Manager
+
+			<!-- When an item has this triggered effect hits a block that is flammable, the block will catch fire -->
+			<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
+
+			<!-- When an item has this triggered effect hits a block that is on fire, the fire still be extinguished. -->
+			<triggered_effect trigger="onSelfDamagedBlock" action="RemoveFire, SCore" target="positionAOE" range="5"/>
+
+
+Version: 20.5.207.98
+
+	[ Block ]
+
+		New Block to throw an AoE at all times. Full example xml in Config/blocks.xml.
+
+			Example:
+			<block name="sphereiiAoETest">
+				<property name="Class" value="DecoAoE, SCore" />
+				<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+
+
+Version: 20.5.194.1350
+
+	[ Crop Management ]
+		- Disabled unlimited water from bedrock block
+			- If desired to have bedrock as an unlimited water source, add the following property to the bedrock block:
+				<property name="WaterSource" value="true" />
+
+		- Added new property to global crop data that determines how much damage to a water block happens when a crop consumes.
+			- This property is defined in the CropManagement block of the SCore's configuration block.
+			- Individual plants can over-ride this property if they have it defined on their block.
+				- This is done on a block by block basis. If your plant has 3 growth cycles, you will have to define it for each block, with various possible amounts.
+			- Default is 1.
+			
+			<property name="WaterDamage" value="1" />
+
+		- If a water source has a the WaterSource property, it is considered an unlimited source of water, so be mindful of this.
+
+		- When a water pipe is removed, and the particle is still enabled, the particle will now be removed.
+
 Version:  20.5.177.1415
 
 	[ Sleepers ]
