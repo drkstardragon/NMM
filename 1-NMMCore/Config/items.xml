@@ -120,6 +120,7 @@
 					<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="2400"/><!--AbrasionFeral-->
 				<passive_effect name="BuffProcChance" operation="base_set" value="0.5" tags="buffBurningZombie"/>
+				<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />				
 			</effect_group>
 		</item>		
 	
@@ -127,6 +128,174 @@
 	</append>
 	
 	<append xpath="/items">
+	
+		<!-- Guppy Fire -->	
+	
+		<item name="guppyWaterBucketEmpty">
+			<property name="Tags" value=""/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="18"/>
+			<property name="Meshfile" value="#@modfolder:Resources/gupBucketWater.unity3d?guppyBucketWater.prefab"/>
+			<property name="HandMeshfile" value="#@modfolder:Resources/gupBucketWater.unity3d?guppyBucketWater.prefab"/>			
+			<property name="Material" value="Mwood"/>
+			<property name="RepairTools" value="drinkJarRiverWater"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="EconomicValue" value="175"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			<property name="DescriptionKey" value="guppyWaterBucketEmptyDesc"/>			
+			<property name="CustomIcon" value="guppyWaterBucketEmpty"/>
+ 			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".15"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="ExchangeItem"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="guppyWaterBucket"/>
+				<property name="Do_block_action" value="deplete1"/>
+				<property name="Focused_blockname_1" value="water"/>
+				<property name="Focused_blockname_2" value="waterMoving"/>
+				<property name="Focused_blockname_3" value="waterStaticBucket"/>
+				<property name="Focused_blockname_4" value="waterMovingBucket"/>
+				<property name="Focused_blockname_5" value="terrWaterPOI"/>
+				<property name="Focused_blockname_6" value="WaterWell"/>
+				<property name="Focused_blockname_7" value="OldWell"/>
+				<property name="Focused_blockname_8" value="StoneWell"/>
+				<property name="Focused_blockname_9" value="WoodWell"/>
+				<property name="Focused_blockname_10" value="StoneStandPipe"/>
+				<property name="Focused_blockname_11" value="Stone2StandPipe"/>				
+				<property name="Sound_start" value="bucketfill_water"/>
+			</property>	
+                        <property name="Stacknumber" value="1"/>	
+			<property name="Group" value="Tools/Traps"/>
+			<property name="PickupJournalEntry" value="miningTip"/>
+			<property name="RepairExpMultiplier" value="5.5"/>			
+		</item>		
+
+		<item name="guppyWaterBucket">
+			<property name="Tags" value="guppyWaterBucket"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="18"/> <!-- 20 is Auger, 84 is Shotgun, 34 Bucket -->
+			<property name="Meshfile" value="#@modfolder:Resources/gupBucketWater.unity3d?guppyBucketWaterAnimated.prefab"/>
+			<property name="HandMeshfile" value="#@modfolder:Resources/gupBucketWater.unity3d?guppyBucketWaterAnimated.prefab"/>	
+			<property name="Material" value="Mwood"/> <property name="Weight" value="6"/>
+			<property name="CrosshairOnAim" value="true"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="RepairTools" value="RepairKitAutomaticRifles"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="crawlerstepwater"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="EconomicValue" value="65"/>
+			<property name="ShowQuality" value="false"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="DescriptionKey" value="guppyWaterBucketDesc"/>	
+			<property name="CustomIcon" value="guppyWaterBucket"/>			
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value=".150"/>
+				<property name="AutoReload" value="false"/>
+				<property name="Magazine_items" value="ammoWater"/>
+				<property name="Sound_start" value=""/>
+				<property name="Sound_loop" value=""/>
+				<property name="Sound_empty" value="crawlerstepwater"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_smoke" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_pistol"/>
+				<property name="Particles_muzzle_smoke_fpv" value="gunfire_pistol"/>
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+				<property name="Infinite_ammo" value="true"/>
+			</property>
+ 			<property class="Action1">
+				<property name="Class" value="ExchangeItem"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="guppyWaterBucketEmpty"/>
+				<property name="Do_block_action" value="deplete1"/>
+				<property name="Focused_blockname_1" value="water"/>
+				<property name="Focused_blockname_2" value="waterMoving"/>
+				<property name="Focused_blockname_3" value="waterStaticBucket"/>
+				<property name="Focused_blockname_4" value="waterMovingBucket"/>
+				<property name="Focused_blockname_5" value="terrWaterPOI"/>
+				<property name="Focused_blockname_6" value="WaterWell"/>
+				<property name="Focused_blockname_7" value="OldWell"/>
+				<property name="Focused_blockname_8" value="StoneWell"/>
+				<property name="Focused_blockname_9" value="WoodWell"/>
+				<property name="Focused_blockname_10" value="StoneStandPipe"/>
+				<property name="Focused_blockname_11" value="Stone2StandPipe"/>
+				<property name="Sound_start" value="bucketfill_water"/>
+			</property>			
+			<effect_group name="Bucket Extinguisher">
+				<passive_effect name="MaxRange" operation="base_set" value="6"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="1"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="1"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="0"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="0"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="perc_add" value="15"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".08,.08"/>				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="500"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="60"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="0"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="0"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="5.2" tags="guppyWaterBucket"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5.2" tags="guppyWaterBucket"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-3.5" tags="guppyWaterBucket"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="3.5" tags="guppyWaterBucket"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".83"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0" tier="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="Fire" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>
+				<triggered_effect trigge="onSelfItemActivate" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>
+				<triggered_effect trigge="onSelfItemDeactivate" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>		
+				<triggered_effect trigge="onSelfHoldingItemCreated" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="2,2" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffWaterSpray">
+                    <requirement name="!HoldingItemBroken"/>
+                </triggered_effect>
+			</effect_group>
+		</item>
+		
+		<item name="ammoWater">
+			<property name="Tags" value="fireretardent"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="FuelValue" value="0"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="100"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="DescriptionKey" value="ammoWaterDesc"/>
+			<property name="CustomIcon" value="ammoWater"/>		
+			<property name="CraftingIngredientTime" value=".05"/>
+			<effect_group name="CO2 Proc" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="RemoveBuff" target="other" buff="buffIsOnFire"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RemoveFire, SCore" target="positionAOE" range="3"/>				
+			</effect_group> 		
+		</item>	
 	
 		<!-- 1-OrczPackAlpha -->
 		
@@ -1040,12 +1209,10 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
 				<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInfectionCatch"/>
 				<passive_effect name="BuffProcChance" operation="base_set" value="0.90" tags="buffBurningZombie"/>
-				
-				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="selfAOE" range="12" buff="buffArchon">
-					<requirement name="EntityTagCompare" target="other" tags="zombie"/>
-				</triggered_effect>
+	
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="60"/>
 				<!--InfectionRadiated-->
+				<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />				
 			</effect_group>
 		</item>		
 		

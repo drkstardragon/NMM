@@ -272,5 +272,17 @@
 	<ingredient name="resourceMechanicalParts" count="4"/>
 </set>
 
+	<!-- Guppy Fire -->
+
+	<append xpath="/recipes">
+
+	<recipe name="guppyWaterBucketEmpty" count="1">
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceGlue" count="2"/>
+		<ingredient name="resourceWood" count="20"/>
+	</recipe>
+	
+	</append>	
+
 </Configs>
 

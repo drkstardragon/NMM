@@ -9,7 +9,27 @@
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Furniture/woodBurningStovePrefab" local_offset="0,0.15,0" local_rotation="0,0,0" parent_transform="Spine"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->				
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="0,0,0.2" local_rotation="0,0,0" parent_transform="Spine"/>
 			</effect_group>
-		</buff>	
+		</buff>
+		
+		<!-- Guppy Fire -->		
+		
+	<buff name="buffWaterSpray" name_key="a" description_key="d" tooltip_key="f">
+        <stack_type value="ignore"/>
+        <duration value="3.5"/>
+        <effect_group>
+             <triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/guppyBucketSpray.unity3d?gupBucketSpray.prefab" parent_transform="CameraNode" local_offset="-.30,-.20,-.5" local_rotation="25,-10,0">
+                <requirement name="IsFPV"/>
+                <requirement name="!HoldingItemBroken"/>
+             </triggered_effect>
+             <triggered_effect trigger="onSelfBuffStart" action="RemoveFire, SCore" target="positionAOE" range="5">
+                <requirement name="IsFPV"/>
+                <requirement name="!HoldingItemBroken"/>
+             </triggered_effect>             
+             <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="gupUseWater" operation="set" value="20"/>
+             <triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="gupBucketSpray" />    
+             <triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="gupBucketSpray" />             
+        </effect_group>
+    </buff>		
 	
 		<!-- 2-OrczPackBeta -->		
 		
