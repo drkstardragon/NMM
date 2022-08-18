@@ -105,7 +105,7 @@ MainQuestPart3,blocks,Block,,,NMM Main Quest Part 3,,,,,,,,,,,,,
 guppyWaterBucketEmpty,items,Item,,,Water Bucket (Empty - For Fire),,,,,,,,,,,,,
 guppyWaterBucketEmptyDesc,items,Item,,,"The NMM Empty Water Bucket can be filled with water at a water source and used to extinguish a fire. A gift from the Guppy Wizard.",,,,,,,,,,,,,
 guppyWaterBucket,items,Item,,,Water Bucket (Full - For Fire),,,,,,,,,,,,,
-guppyWaterBucketDesc,items,Item,,,"The NMM Full Water Bucket can be used to extinguish a fire. You have two attempts for each full bucket. However, it will also need two attempts to refill after use; one to repair and one to collect more water. A gift from the Guppy Wizard.",,,,,,,,,,,,,
+guppyWaterBucketDesc,items,Item,,,"The NMM Full Water Bucket can be used to extinguish a fire. It can be refilled repeatedly until the fire is fully extinguished. A gift from the Guppy Wizard.",,,,,,,,,,,,,
 
 RubyGemstone,items,Item,,,Ruby Gemstone,,,,,,,,,,,,,
 SapphireGemstone,items,Item,,,Sapphire Gemstone,,,,,,,,,,,,,
