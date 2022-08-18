@@ -29,7 +29,7 @@ Oakraven - Kindly provided support for the 1-NMMCore and the 2-NMMOakCore conten
 Magejosh - Kindly supported background development, such as Biome modification, xml updates, loading screen and Escape Menu logo/hyperlinking.
 mplogue - Kindly provided custom Prefabs that match the theme of the NMM. POI creator extraordinaire.
 Laz Man - Custom Quests that incorporate crafting, placement, and defense. An eclectic type of challenge. 
-KhaineGB - Thank you for sharing Lockable Inventory Slots for mod use.
+KhaineGB - Thank you for sharing Lockable Inventory Slots for mod use and 60 Slot Backpack.
 Guppycur - Kindly provided resources, and a venue for the NMM development. Thank Guppycur for the Water Buckets to put out the fires.
 Darkstardragon - NMM Creator and Overseer. Bought and brought all entities, and some models, into the NMM along with a host of other critical tasks.
 Compo Pack Team - Kindly allowed 'Medieval' type Prefab submissions to support the NMM. Stallionsden brought them all together into tiled Medieval townships. (Full list below)

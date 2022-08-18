@@ -2808,4 +2808,8 @@ exp_gain_multiplier = 0
 
 </set>
 
+	<!-- KhaineGB's 60 Slot Backpack Mod -->
+	<!-- Change Pack Mule Perk to unlock all slots -->
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='3,6,10,14,18']/@value">4,8,12,16,20</set>
+
 </configs>

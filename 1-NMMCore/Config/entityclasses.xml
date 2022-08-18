@@ -7,6 +7,11 @@
 	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>
 	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceTestosteroneExtract']/@count">0</set>
 
+	<!-- KhaineGB's 60 Slot Backpack Mod -->
+	<!-- Edit player entity to increase inventory size -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">40</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>
+
 	<!-- NPC Mod Tweaks -->	
     <set xpath="/entity_classes/entity_class/property[@name='SleeperInstantAwake']/@value">false</set>	
 	

@@ -9,12 +9,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -25,85 +25,85 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 		<!-- 1-KnightzNPeasantzPackAlpha - Survivors -->	
-	    <entity name="TemplarS" prob="0.5"/>
-		<entity name="TemplarCrossbowmanS" prob="0.5"/>
-		<entity name="TemplarBowmanS" prob="0.5"/>
-	    <entity name="AbbotS" prob="0.5"/>
-        <entity name="FriarS" prob="0.5"/>
-		<entity name="MonkS" prob="0.5"/>
-		<entity name="MedievalTFPS" prob="0.5"/>
-        <entity name="MalePeasant1S" prob="0.5"/>
-	 	<entity name="MalePeasant2S" prob="0.5"/>
-        <entity name="GreenWitchS" prob="0.5"/>
-        <entity name="BarmaidS" prob="0.5"/>
-        <entity name="FemaleCrusaderS" prob="0.5"/>
-        <entity name="ServingWenchS" prob="0.5"/>
-		<entity name="PeasantGirl1S" prob="0.5"/>
-        <entity name="PeasantGirl2S" prob="0.5"/>
-        <entity name="PeasantGirl3S" prob="0.5"/>
-		<entity name="PeasantGirl4S" prob="0.5"/>
-		<entity name="KingsKnight1SwordS" prob="0.5"/>
-        <entity name="KingsKnight2SwordS" prob="0.5"/>
-        <entity name="KingsKnight3SwordS" prob="0.5"/>
-		<entity name="KingsKnight1LBowS" prob="0.5"/>
-		<entity name="KingsKnight2LBowS" prob="0.5"/>
-        <entity name="KingsKnight1XBowS" prob="0.5"/>
-        <entity name="KingsKnight2XBowS" prob="0.5"/>
-        <entity name="KingsChampionS" prob="0.5"/>
-		<entity name="KingsAxemanS" prob="0.5"/>
-		<entity name="KingsHalberdierS" prob="0.5"/>
+	    <entity name="TemplarS" prob="0.33"/>
+		<entity name="TemplarCrossbowmanS" prob="0.33"/>
+		<entity name="TemplarBowmanS" prob="0.33"/>
+	    <entity name="AbbotS" prob="0.33"/>
+        <entity name="FriarS" prob="0.33"/>
+		<entity name="MonkS" prob="0.33"/>
+		<entity name="MedievalTFPS" prob="0.33"/>
+        <entity name="MalePeasant1S" prob="0.33"/>
+	 	<entity name="MalePeasant2S" prob="0.33"/>
+        <entity name="GreenWitchS" prob="0.33"/>
+        <entity name="BarmaidS" prob="0.33"/>
+        <entity name="FemaleCrusaderS" prob="0.33"/>
+        <entity name="ServingWenchS" prob="0.33"/>
+		<entity name="PeasantGirl1S" prob="0.33"/>
+        <entity name="PeasantGirl2S" prob="0.33"/>
+        <entity name="PeasantGirl3S" prob="0.33"/>
+		<entity name="PeasantGirl4S" prob="0.33"/>
+		<entity name="KingsKnight1SwordS" prob="0.33"/>
+        <entity name="KingsKnight2SwordS" prob="0.33"/>
+        <entity name="KingsKnight3SwordS" prob="0.33"/>
+		<entity name="KingsKnight1LBowS" prob="0.33"/>
+		<entity name="KingsKnight2LBowS" prob="0.33"/>
+        <entity name="KingsKnight1XBowS" prob="0.33"/>
+        <entity name="KingsKnight2XBowS" prob="0.33"/>
+        <entity name="KingsChampionS" prob="0.33"/>
+		<entity name="KingsAxemanS" prob="0.33"/>
+		<entity name="KingsHalberdierS" prob="0.33"/>
 		<!-- 1-KnightzNPeasantzPackAlpha - Hireable NPCs -->
-        <entity name="Templar" prob="0.5"/>
-		<entity name="TemplarCrossbowman" prob="0.5"/>
-		<entity name="TemplarBowman" prob="0.5"/>
-        <entity name="ChaosMarauder" prob="0.5"/>
-	    <entity name="Abbot" prob="0.5"/>
-        <entity name="Friar" prob="0.5"/>
-		<entity name="Monk" prob="0.5"/>
-		<entity name="MedievalTFP" prob="0.5"/>
-        <entity name="MalePeasant1" prob="0.5"/>
-	 	<entity name="MalePeasant2" prob="0.5"/>
-        <entity name="GreenWitch" prob="0.5"/>
-        <entity name="Barmaid" prob="0.5"/>
-        <entity name="FemaleCrusader" prob="0.5"/>
-        <entity name="ServingWench" prob="0.5"/>
-		<entity name="PeasantGirl1" prob="0.5"/>
-        <entity name="PeasantGirl2" prob="0.5"/>
-        <entity name="PeasantGirl3" prob="0.5"/>
-		<entity name="PeasantGirl4" prob="0.5"/>
-		<entity name="KingsKnight1Sword" prob="0.5"/>
-        <entity name="KingsKnight2Sword" prob="0.5"/>
-        <entity name="KingsKnight3Sword" prob="0.5"/>
-		<entity name="KingsKnight1LBow" prob="0.5"/>
-		<entity name="KingsKnight2LBow" prob="0.5"/>
-        <entity name="KingsKnight1XBow" prob="0.5"/>
-        <entity name="KingsKnight2XBow" prob="0.5"/>
-        <entity name="KingsChampion" prob="0.5"/>
-		<entity name="KingsAxeman" prob="0.5"/>
-		<entity name="KingsHalberdier" prob="0.5"/>
-		<entity name="MountedKnightLance" prob="0.5"/>
-		<entity name="MountedKnightSword" prob="0.5"/>		
+        <entity name="Templar" prob="0.25"/>
+		<entity name="TemplarCrossbowman" prob="0.25"/>
+		<entity name="TemplarBowman" prob="0.25"/>
+        <entity name="ChaosMarauder" prob="0.25"/>
+	    <entity name="Abbot" prob="0.25"/>
+        <entity name="Friar" prob="0.25"/>
+		<entity name="Monk" prob="0.25"/>
+		<entity name="MedievalTFP" prob="0.25"/>
+        <entity name="MalePeasant1" prob="0.25"/>
+	 	<entity name="MalePeasant2" prob="0.25"/>
+        <entity name="GreenWitch" prob="0.25"/>
+        <entity name="Barmaid" prob="0.25"/>
+        <entity name="FemaleCrusader" prob="0.25"/>
+        <entity name="ServingWench" prob="0.25"/>
+		<entity name="PeasantGirl1" prob="0.25"/>
+        <entity name="PeasantGirl2" prob="0.25"/>
+        <entity name="PeasantGirl3" prob="0.25"/>
+		<entity name="PeasantGirl4" prob="0.25"/>
+		<entity name="KingsKnight1Sword" prob="0.25"/>
+        <entity name="KingsKnight2Sword" prob="0.25"/>
+        <entity name="KingsKnight3Sword" prob="0.25"/>
+		<entity name="KingsKnight1LBow" prob="0.25"/>
+		<entity name="KingsKnight2LBow" prob="0.25"/>
+        <entity name="KingsKnight1XBow" prob="0.25"/>
+        <entity name="KingsKnight2XBow" prob="0.25"/>
+        <entity name="KingsChampion" prob="0.25"/>
+		<entity name="KingsAxeman" prob="0.25"/>
+		<entity name="KingsHalberdier" prob="0.25"/>
+		<entity name="MountedKnightLance" prob="0.25"/>
+		<entity name="MountedKnightSword" prob="0.25"/>		
 		<!-- Addon Pack -->
-		<entity name="FemaleElvenArcher" prob="0.25"/>
-		<entity name="DwarvenSlayer" prob="0.25"/>
-		<entity name="TheBarbarian" prob="0.25"/>
-		<entity name="TheHound" prob="0.25"/>
-		<entity name="PlagueDoctor" prob="0.25"/>
+		<entity name="FemaleElvenArcher" prob="0.175"/>
+		<entity name="DwarvenSlayer" prob="0.175"/>
+		<entity name="TheBarbarian" prob="0.175"/>
+		<entity name="TheHound" prob="0.175"/>
+		<entity name="PlagueDoctor" prob="0.175"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesNight">
@@ -111,12 +111,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -127,20 +127,20 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 		<!-- 1-YeOldeUndeadPack -->
 		<entity name="MedievalZombie"/>
         <entity name="AxeZombie"/>
@@ -166,70 +166,70 @@
         <entity name="FungusZombie"/>
         <entity name="FungusZombieFeral"/>
 		<!-- 1-KnightzNPeasantzPackAlpha - Survivors -->	
-	    <entity name="TemplarS" prob="0.5"/>
-		<entity name="TemplarCrossbowmanS" prob="0.5"/>
-		<entity name="TemplarBowmanS" prob="0.5"/>
-	    <entity name="AbbotS" prob="0.5"/>
-        <entity name="FriarS" prob="0.5"/>
-		<entity name="MonkS" prob="0.5"/>
-		<entity name="MedievalTFPS" prob="0.5"/>
-        <entity name="MalePeasant1S" prob="0.5"/>
-	 	<entity name="MalePeasant2S" prob="0.5"/>
-        <entity name="GreenWitchS" prob="0.5"/>
-        <entity name="BarmaidS" prob="0.5"/>
-        <entity name="FemaleCrusaderS" prob="0.5"/>
-        <entity name="ServingWenchS" prob="0.5"/>
-		<entity name="PeasantGirl1S" prob="0.5"/>
-        <entity name="PeasantGirl2S" prob="0.5"/>
-        <entity name="PeasantGirl3S" prob="0.5"/>
-		<entity name="PeasantGirl4S" prob="0.5"/>
-		<entity name="KingsKnight1SwordS" prob="0.5"/>
-        <entity name="KingsKnight2SwordS" prob="0.5"/>
-        <entity name="KingsKnight3SwordS" prob="0.5"/>
-		<entity name="KingsKnight1LBowS" prob="0.5"/>
-		<entity name="KingsKnight2LBowS" prob="0.5"/>
-        <entity name="KingsKnight1XBowS" prob="0.5"/>
-        <entity name="KingsKnight2XBowS" prob="0.5"/>
-        <entity name="KingsChampionS" prob="0.5"/>
-		<entity name="KingsAxemanS" prob="0.5"/>
-		<entity name="KingsHalberdierS" prob="0.5"/>
+	    <entity name="TemplarS" prob="0.33"/>
+		<entity name="TemplarCrossbowmanS" prob="0.33"/>
+		<entity name="TemplarBowmanS" prob="0.33"/>
+	    <entity name="AbbotS" prob="0.33"/>
+        <entity name="FriarS" prob="0.33"/>
+		<entity name="MonkS" prob="0.33"/>
+		<entity name="MedievalTFPS" prob="0.33"/>
+        <entity name="MalePeasant1S" prob="0.33"/>
+	 	<entity name="MalePeasant2S" prob="0.33"/>
+        <entity name="GreenWitchS" prob="0.33"/>
+        <entity name="BarmaidS" prob="0.33"/>
+        <entity name="FemaleCrusaderS" prob="0.33"/>
+        <entity name="ServingWenchS" prob="0.33"/>
+		<entity name="PeasantGirl1S" prob="0.33"/>
+        <entity name="PeasantGirl2S" prob="0.33"/>
+        <entity name="PeasantGirl3S" prob="0.33"/>
+		<entity name="PeasantGirl4S" prob="0.33"/>
+		<entity name="KingsKnight1SwordS" prob="0.33"/>
+        <entity name="KingsKnight2SwordS" prob="0.33"/>
+        <entity name="KingsKnight3SwordS" prob="0.33"/>
+		<entity name="KingsKnight1LBowS" prob="0.33"/>
+		<entity name="KingsKnight2LBowS" prob="0.33"/>
+        <entity name="KingsKnight1XBowS" prob="0.33"/>
+        <entity name="KingsKnight2XBowS" prob="0.33"/>
+        <entity name="KingsChampionS" prob="0.33"/>
+		<entity name="KingsAxemanS" prob="0.33"/>
+		<entity name="KingsHalberdierS" prob="0.33"/>
 		<!-- 1-KnightzNPeasantzPackAlpha - Hireable NPCs -->
-        <entity name="Templar" prob="0.5"/>
-		<entity name="TemplarCrossbowman" prob="0.5"/>
-		<entity name="TemplarBowman" prob="0.5"/>
-        <entity name="ChaosMarauder" prob="0.5"/>
-	    <entity name="Abbot" prob="0.5"/>
-        <entity name="Friar" prob="0.5"/>
-		<entity name="Monk" prob="0.5"/>
-		<entity name="MedievalTFP" prob="0.5"/>
-        <entity name="MalePeasant1" prob="0.5"/>
-	 	<entity name="MalePeasant2" prob="0.5"/>
-        <entity name="GreenWitch" prob="0.5"/>
-        <entity name="Barmaid" prob="0.5"/>
-        <entity name="FemaleCrusader" prob="0.5"/>
-        <entity name="ServingWench" prob="0.5"/>
-		<entity name="PeasantGirl1" prob="0.5"/>
-        <entity name="PeasantGirl2" prob="0.5"/>
-        <entity name="PeasantGirl3" prob="0.5"/>
-		<entity name="PeasantGirl4" prob="0.5"/>
-		<entity name="KingsKnight1Sword" prob="0.5"/>
-        <entity name="KingsKnight2Sword" prob="0.5"/>
-        <entity name="KingsKnight3Sword" prob="0.5"/>
-		<entity name="KingsKnight1LBow" prob="0.5"/>
-		<entity name="KingsKnight2LBow" prob="0.5"/>
-        <entity name="KingsKnight1XBow" prob="0.5"/>
-        <entity name="KingsKnight2XBow" prob="0.5"/>
-        <entity name="KingsChampion" prob="0.5"/>
-		<entity name="KingsAxeman" prob="0.5"/>
-		<entity name="KingsHalberdier" prob="0.5"/>
-		<entity name="MountedKnightLance" prob="0.5"/>
-		<entity name="MountedKnightSword" prob="0.5"/>		
+        <entity name="Templar" prob="0.25"/>
+		<entity name="TemplarCrossbowman" prob="0.25"/>
+		<entity name="TemplarBowman" prob="0.25"/>
+        <entity name="ChaosMarauder" prob="0.25"/>
+	    <entity name="Abbot" prob="0.25"/>
+        <entity name="Friar" prob="0.25"/>
+		<entity name="Monk" prob="0.25"/>
+		<entity name="MedievalTFP" prob="0.25"/>
+        <entity name="MalePeasant1" prob="0.25"/>
+	 	<entity name="MalePeasant2" prob="0.25"/>
+        <entity name="GreenWitch" prob="0.25"/>
+        <entity name="Barmaid" prob="0.25"/>
+        <entity name="FemaleCrusader" prob="0.25"/>
+        <entity name="ServingWench" prob="0.25"/>
+		<entity name="PeasantGirl1" prob="0.25"/>
+        <entity name="PeasantGirl2" prob="0.25"/>
+        <entity name="PeasantGirl3" prob="0.25"/>
+		<entity name="PeasantGirl4" prob="0.25"/>
+		<entity name="KingsKnight1Sword" prob="0.25"/>
+        <entity name="KingsKnight2Sword" prob="0.25"/>
+        <entity name="KingsKnight3Sword" prob="0.25"/>
+		<entity name="KingsKnight1LBow" prob="0.25"/>
+		<entity name="KingsKnight2LBow" prob="0.25"/>
+        <entity name="KingsKnight1XBow" prob="0.25"/>
+        <entity name="KingsKnight2XBow" prob="0.25"/>
+        <entity name="KingsChampion" prob="0.25"/>
+		<entity name="KingsAxeman" prob="0.25"/>
+		<entity name="KingsHalberdier" prob="0.25"/>
+		<entity name="MountedKnightLance" prob="0.25"/>
+		<entity name="MountedKnightSword" prob="0.25"/>		
 		<!-- Addon Pack -->
-		<entity name="FemaleElvenArcher" prob="0.25"/>
-		<entity name="DwarvenSlayer" prob="0.25"/>
-		<entity name="TheBarbarian" prob="0.25"/>
-		<entity name="TheHound" prob="0.25"/>
-		<entity name="PlagueDoctor" prob="0.25"/>
+		<entity name="FemaleElvenArcher" prob="0.175"/>
+		<entity name="DwarvenSlayer" prob="0.175"/>
+		<entity name="TheBarbarian" prob="0.175"/>
+		<entity name="TheHound" prob="0.175"/>
+		<entity name="PlagueDoctor" prob="0.175"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesForestDowntown">
@@ -237,12 +237,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -253,20 +253,20 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 	</entitygroup>
 
 	<entitygroup name="ZombiesForestDowntownNight">
@@ -274,12 +274,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -290,20 +290,20 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 		<!-- 1-YeOldeUndeadPack -->
 		<entity name="MedievalZombie"/>
         <entity name="AxeZombie"/>
@@ -335,12 +335,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -351,20 +351,20 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 	</entitygroup>
 
 	<entitygroup name="ZombiesWasteland">
@@ -483,14 +483,14 @@
         <entity name="KingsChampion" prob="0.05"/>
 		<entity name="KingsAxeman" prob="0.05"/>
 		<entity name="KingsHalberdier" prob="0.05"/>
-		<entity name="MountedKnightLance" prob="0.5"/>
-		<entity name="MountedKnightSword" prob="0.5"/>		
+		<entity name="MountedKnightLance" prob="0.33"/>
+		<entity name="MountedKnightSword" prob="0.33"/>		
 		<!-- Addon Pack -->
-		<entity name="FemaleElvenArcher" prob="0.25"/>
-		<entity name="DwarvenSlayer" prob="0.25"/>
-		<entity name="TheBarbarian" prob="0.25"/>
-		<entity name="TheHound" prob="0.25"/>
-		<entity name="PlagueDoctor" prob="0.25"/>
+		<entity name="FemaleElvenArcher" prob="0.175"/>
+		<entity name="DwarvenSlayer" prob="0.175"/>
+		<entity name="TheBarbarian" prob="0.175"/>
+		<entity name="TheHound" prob="0.175"/>
+		<entity name="PlagueDoctor" prob="0.175"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesWastelandNight">
@@ -609,14 +609,14 @@
         <entity name="KingsChampion" prob="0.05"/>
 		<entity name="KingsAxeman" prob="0.05"/>
 		<entity name="KingsHalberdier" prob="0.05"/>
-		<entity name="MountedKnightLance" prob="0.5"/>
-		<entity name="MountedKnightSword" prob="0.5"/>		
+		<entity name="MountedKnightLance" prob="0.33"/>
+		<entity name="MountedKnightSword" prob="0.33"/>		
 		<!-- Addon Pack -->
-		<entity name="FemaleElvenArcher" prob="0.25"/>
-		<entity name="DwarvenSlayer" prob="0.25"/>
-		<entity name="TheBarbarian" prob="0.25"/>
-		<entity name="TheHound" prob="0.25"/>
-		<entity name="PlagueDoctor" prob="0.25"/>
+		<entity name="FemaleElvenArcher" prob="0.175"/>
+		<entity name="DwarvenSlayer" prob="0.175"/>
+		<entity name="TheBarbarian" prob="0.175"/>
+		<entity name="TheHound" prob="0.175"/>
+		<entity name="PlagueDoctor" prob="0.175"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesWastelandDowntown">
@@ -868,12 +868,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -884,20 +884,20 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>
+		<entity name="DarkElfArcher" prob="0.175"/>
 	</entitygroup>
 
 	<entitygroup name="ZombieScouts">
@@ -918,12 +918,12 @@
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -934,105 +934,105 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 		<!-- 1-KnightzNPeasantzPackAlpha - Survivors -->	
-	    <entity name="TemplarS" prob="0.5"/>
-		<entity name="TemplarCrossbowmanS" prob="0.5"/>
-		<entity name="TemplarBowmanS" prob="0.5"/>
-	    <entity name="AbbotS" prob="0.5"/>
-        <entity name="FriarS" prob="0.5"/>
-		<entity name="MonkS" prob="0.5"/>
-		<entity name="MedievalTFPS" prob="0.5"/>
-        <entity name="MalePeasant1S" prob="0.5"/>
-	 	<entity name="MalePeasant2S" prob="0.5"/>
-        <entity name="GreenWitchS" prob="0.5"/>
-        <entity name="BarmaidS" prob="0.5"/>
-        <entity name="FemaleCrusaderS" prob="0.5"/>
-        <entity name="ServingWenchS" prob="0.5"/>
-		<entity name="PeasantGirl1S" prob="0.5"/>
-        <entity name="PeasantGirl2S" prob="0.5"/>
-        <entity name="PeasantGirl3S" prob="0.5"/>
-		<entity name="PeasantGirl4S" prob="0.5"/>
-		<entity name="KingsKnight1SwordS" prob="0.5"/>
-        <entity name="KingsKnight2SwordS" prob="0.5"/>
-        <entity name="KingsKnight3SwordS" prob="0.5"/>
-		<entity name="KingsKnight1LBowS" prob="0.5"/>
-		<entity name="KingsKnight2LBowS" prob="0.5"/>
-        <entity name="KingsKnight1XBowS" prob="0.5"/>
-        <entity name="KingsKnight2XBowS" prob="0.5"/>
-        <entity name="KingsChampionS" prob="0.5"/>
-		<entity name="KingsAxemanS" prob="0.5"/>
-		<entity name="KingsHalberdierS" prob="0.5"/>
+	    <entity name="TemplarS" prob="0.33"/>
+		<entity name="TemplarCrossbowmanS" prob="0.33"/>
+		<entity name="TemplarBowmanS" prob="0.33"/>
+	    <entity name="AbbotS" prob="0.33"/>
+        <entity name="FriarS" prob="0.33"/>
+		<entity name="MonkS" prob="0.33"/>
+		<entity name="MedievalTFPS" prob="0.33"/>
+        <entity name="MalePeasant1S" prob="0.33"/>
+	 	<entity name="MalePeasant2S" prob="0.33"/>
+        <entity name="GreenWitchS" prob="0.33"/>
+        <entity name="BarmaidS" prob="0.33"/>
+        <entity name="FemaleCrusaderS" prob="0.33"/>
+        <entity name="ServingWenchS" prob="0.33"/>
+		<entity name="PeasantGirl1S" prob="0.33"/>
+        <entity name="PeasantGirl2S" prob="0.33"/>
+        <entity name="PeasantGirl3S" prob="0.33"/>
+		<entity name="PeasantGirl4S" prob="0.33"/>
+		<entity name="KingsKnight1SwordS" prob="0.33"/>
+        <entity name="KingsKnight2SwordS" prob="0.33"/>
+        <entity name="KingsKnight3SwordS" prob="0.33"/>
+		<entity name="KingsKnight1LBowS" prob="0.33"/>
+		<entity name="KingsKnight2LBowS" prob="0.33"/>
+        <entity name="KingsKnight1XBowS" prob="0.33"/>
+        <entity name="KingsKnight2XBowS" prob="0.33"/>
+        <entity name="KingsChampionS" prob="0.33"/>
+		<entity name="KingsAxemanS" prob="0.33"/>
+		<entity name="KingsHalberdierS" prob="0.33"/>
 		<!-- 1-KnightzNPeasantzPackAlpha - Hireable NPCs -->
-        <entity name="Templar" prob="0.5"/>
-		<entity name="TemplarCrossbowman" prob="0.5"/>
-		<entity name="TemplarBowman" prob="0.5"/>
-        <entity name="ChaosMarauder" prob="0.5"/>
-	    <entity name="Abbot" prob="0.5"/>
-        <entity name="Friar" prob="0.5"/>
-		<entity name="Monk" prob="0.5"/>
-		<entity name="MedievalTFP" prob="0.5"/>
-        <entity name="MalePeasant1" prob="0.5"/>
-	 	<entity name="MalePeasant2" prob="0.5"/>
-        <entity name="GreenWitch" prob="0.5"/>
-        <entity name="Barmaid" prob="0.5"/>
-        <entity name="FemaleCrusader" prob="0.5"/>
-        <entity name="ServingWench" prob="0.5"/>
-		<entity name="PeasantGirl1" prob="0.5"/>
-        <entity name="PeasantGirl2" prob="0.5"/>
-        <entity name="PeasantGirl3" prob="0.5"/>
-		<entity name="PeasantGirl4" prob="0.5"/>
-		<entity name="KingsKnight1Sword" prob="0.5"/>
-        <entity name="KingsKnight2Sword" prob="0.5"/>
-        <entity name="KingsKnight3Sword" prob="0.5"/>
-		<entity name="KingsKnight1LBow" prob="0.5"/>
-		<entity name="KingsKnight2LBow" prob="0.5"/>
-        <entity name="KingsKnight1XBow" prob="0.5"/>
-        <entity name="KingsKnight2XBow" prob="0.5"/>
-        <entity name="KingsChampion" prob="0.5"/>
-		<entity name="KingsAxeman" prob="0.5"/>
-		<entity name="KingsHalberdier" prob="0.5"/>
-		<entity name="MountedKnightLance" prob="0.5"/>
-		<entity name="MountedKnightSword" prob="0.5"/>		
+        <entity name="Templar" prob="0.25"/>
+		<entity name="TemplarCrossbowman" prob="0.25"/>
+		<entity name="TemplarBowman" prob="0.25"/>
+        <entity name="ChaosMarauder" prob="0.25"/>
+	    <entity name="Abbot" prob="0.25"/>
+        <entity name="Friar" prob="0.25"/>
+		<entity name="Monk" prob="0.25"/>
+		<entity name="MedievalTFP" prob="0.25"/>
+        <entity name="MalePeasant1" prob="0.25"/>
+	 	<entity name="MalePeasant2" prob="0.25"/>
+        <entity name="GreenWitch" prob="0.25"/>
+        <entity name="Barmaid" prob="0.25"/>
+        <entity name="FemaleCrusader" prob="0.25"/>
+        <entity name="ServingWench" prob="0.25"/>
+		<entity name="PeasantGirl1" prob="0.25"/>
+        <entity name="PeasantGirl2" prob="0.25"/>
+        <entity name="PeasantGirl3" prob="0.25"/>
+		<entity name="PeasantGirl4" prob="0.25"/>
+		<entity name="KingsKnight1Sword" prob="0.25"/>
+        <entity name="KingsKnight2Sword" prob="0.25"/>
+        <entity name="KingsKnight3Sword" prob="0.25"/>
+		<entity name="KingsKnight1LBow" prob="0.25"/>
+		<entity name="KingsKnight2LBow" prob="0.25"/>
+        <entity name="KingsKnight1XBow" prob="0.25"/>
+        <entity name="KingsKnight2XBow" prob="0.25"/>
+        <entity name="KingsChampion" prob="0.25"/>
+		<entity name="KingsAxeman" prob="0.25"/>
+		<entity name="KingsHalberdier" prob="0.25"/>
+		<entity name="MountedKnightLance" prob="0.25"/>
+		<entity name="MountedKnightSword" prob="0.25"/>		
 		<!-- Addon Pack -->
-		<entity name="FemaleElvenArcher" prob="0.25"/>
-		<entity name="DwarvenSlayer" prob="0.25"/>
-		<entity name="TheBarbarian" prob="0.25"/>
-		<entity name="TheHound" prob="0.25"/>
-		<entity name="PlagueDoctor" prob="0.25"/>		
+		<entity name="FemaleElvenArcher" prob="0.175"/>
+		<entity name="DwarvenSlayer" prob="0.175"/>
+		<entity name="TheBarbarian" prob="0.175"/>
+		<entity name="TheHound" prob="0.175"/>
+		<entity name="PlagueDoctor" prob="0.175"/>		
 	</entitygroup>
 
-	<entitygroup name="zombieLumberjackGroupGS1"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.25"/><entity name="OrcCrossbowman" prob="0.25"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.25"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.25"/><entity name="GoblinCrossbowman" prob="0.25"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.25"/><entity name="OgreAxe" prob="0.25"/><entity name="OgreMace" prob="0.25"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.25"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.25"/></entitygroup>
-	<entitygroup name="zombieLumberjackGroupGS50"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.25"/><entity name="OrcCrossbowman" prob="0.25"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.25"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.25"/><entity name="GoblinCrossbowman" prob="0.25"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.25"/><entity name="OgreAxe" prob="0.25"/><entity name="OgreMace" prob="0.25"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.25"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.25"/></entitygroup>
-	<entitygroup name="zombieLumberjackGroupGS100"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.25"/><entity name="OrcCrossbowman" prob="0.25"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.25"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.25"/><entity name="GoblinCrossbowman" prob="0.25"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.25"/><entity name="OgreAxe" prob="0.25"/><entity name="OgreMace" prob="0.25"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.25"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.25"/></entitygroup>
-	<entitygroup name="zombieLumberjackGroupGS200"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.25"/><entity name="OrcCrossbowman" prob="0.25"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.25"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.25"/><entity name="GoblinCrossbowman" prob="0.25"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.25"/><entity name="OgreAxe" prob="0.25"/><entity name="OgreMace" prob="0.25"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.25"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.25"/></entitygroup>
-	<entitygroup name="zombieLumberjackGroupGS400"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.25"/><entity name="OrcCrossbowman" prob="0.25"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.25"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.25"/><entity name="GoblinCrossbowman" prob="0.25"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.25"/><entity name="OgreAxe" prob="0.25"/><entity name="OgreMace" prob="0.25"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.25"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.25"/></entitygroup>
-	<entitygroup name="zombieLumberjackGroupGS800"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.25"/><entity name="OrcCrossbowman" prob="0.25"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.25"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.25"/><entity name="GoblinCrossbowman" prob="0.25"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.25"/><entity name="OgreAxe" prob="0.25"/><entity name="OgreMace" prob="0.25"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.25"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.25"/></entitygroup>
+	<entitygroup name="zombieLumberjackGroupGS1"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.175"/><entity name="OrcCrossbowman" prob="0.175"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.175"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.175"/><entity name="GoblinCrossbowman" prob="0.175"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.175"/><entity name="OgreAxe" prob="0.175"/><entity name="OgreMace" prob="0.175"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.175"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.175"/></entitygroup>
+	<entitygroup name="zombieLumberjackGroupGS50"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.175"/><entity name="OrcCrossbowman" prob="0.175"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.175"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.175"/><entity name="GoblinCrossbowman" prob="0.175"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.175"/><entity name="OgreAxe" prob="0.175"/><entity name="OgreMace" prob="0.175"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.175"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.175"/></entitygroup>
+	<entitygroup name="zombieLumberjackGroupGS100"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.175"/><entity name="OrcCrossbowman" prob="0.175"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.175"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.175"/><entity name="GoblinCrossbowman" prob="0.175"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.175"/><entity name="OgreAxe" prob="0.175"/><entity name="OgreMace" prob="0.175"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.175"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.175"/></entitygroup>
+	<entitygroup name="zombieLumberjackGroupGS200"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.175"/><entity name="OrcCrossbowman" prob="0.175"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.175"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.175"/><entity name="GoblinCrossbowman" prob="0.175"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.175"/><entity name="OgreAxe" prob="0.175"/><entity name="OgreMace" prob="0.175"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.175"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.175"/></entitygroup>
+	<entitygroup name="zombieLumberjackGroupGS400"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.175"/><entity name="OrcCrossbowman" prob="0.175"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.175"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.175"/><entity name="GoblinCrossbowman" prob="0.175"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.175"/><entity name="OgreAxe" prob="0.175"/><entity name="OgreMace" prob="0.175"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.175"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.175"/></entitygroup>
+	<entitygroup name="zombieLumberjackGroupGS800"><entity name="OrcGurl"/><entity name="OrcBandit"/><entity name="OrcRaider"/><entity name="OrcArcher" prob="0.175"/><entity name="OrcCrossbowman" prob="0.175"/><!-- 2-OrczPackBeta --><entity name="OrcShaman"/><entity name="OrcSlavemaster"/><entity name="OrcMatron" prob="0.175"/><entity name="OrcSlaveBald"/><entity name="OrcSlaveBeard"/><entity name="OrcBerzerker"/><entity name="OrcUruk"/><!-- 2-GoblinzPack --><entity name="GoblinClub"/><entity name="GoblinShaman"/><entity name="GoblinChief"/><entity name="GoblinSpear"/><entity name="GoblinKnife"/><entity name="GoblinArcher" prob="0.175"/><entity name="GoblinCrossbowman" prob="0.175"/><entity name="GoblinGurl"/><entity name="GoblinCook"/><entity name="GoblinBaker"/><!-- Ogre - Addon --><entity name="OgreSword" prob="0.175"/><entity name="OgreAxe" prob="0.175"/><entity name="OgreMace" prob="0.175"/><!-- Dark Elf - Addon --><entity name="DarkElfCrossbowman" prob="0.175"/><entity name="DarkElfSword"/><entity name="DarkElfSpear"/><entity name="DarkElfArcher" prob="0.175"/></entitygroup>
 
 	<entitygroup name="ZombiesBoss">
 		<!-- 1-OrczPackAlpha -->
 		<entity name="OrcGurl"/>
         <entity name="OrcBandit"/>
 		<entity name="OrcRaider"/>
-		<entity name="OrcArcher" prob="0.25"/>
-		<entity name="OrcCrossbowman" prob="0.25"/>
+		<entity name="OrcArcher" prob="0.175"/>
+		<entity name="OrcCrossbowman" prob="0.175"/>
 		<!-- 2-OrczPackBeta -->
 		<entity name="OrcShaman"/>
         <entity name="OrcSlavemaster"/>
-		<entity name="OrcMatron" prob="0.25"/>
+		<entity name="OrcMatron" prob="0.175"/>
 		<entity name="OrcSlaveBald"/>
 		<entity name="OrcSlaveBeard"/>     
         <entity name="OrcBerzerker"/>
@@ -1043,20 +1043,20 @@
 		<entity name="GoblinChief"/>
 		<entity name="GoblinSpear"/>
 		<entity name="GoblinKnife"/>     
-        <entity name="GoblinArcher" prob="0.25"/>
-		<entity name="GoblinCrossbowman" prob="0.25"/>
+        <entity name="GoblinArcher" prob="0.175"/>
+		<entity name="GoblinCrossbowman" prob="0.175"/>
 		<entity name="GoblinGurl"/>     
         <entity name="GoblinCook"/>
 		<entity name="GoblinBaker"/>
 		<!-- Ogre - Addon -->
-		<entity name="OgreSword" prob="0.25"/>
-		<entity name="OgreAxe" prob="0.25"/>		
-		<entity name="OgreMace" prob="0.25"/>
+		<entity name="OgreSword" prob="0.175"/>
+		<entity name="OgreAxe" prob="0.175"/>		
+		<entity name="OgreMace" prob="0.175"/>
 		<!-- Dark Elf - Addon -->		
-		<entity name="DarkElfCrossbowman" prob="0.25"/>
+		<entity name="DarkElfCrossbowman" prob="0.175"/>
 		<entity name="DarkElfSword"/>		
 		<entity name="DarkElfSpear"/>
-		<entity name="DarkElfArcher" prob="0.25"/>		
+		<entity name="DarkElfArcher" prob="0.175"/>		
 	</entitygroup>
 
 	<entitygroup name="ZombiesCave">

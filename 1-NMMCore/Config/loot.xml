@@ -9057,6 +9057,10 @@ If there is no hit the default quality is used.
 
 </set>
 
+	<!-- KhaineGB's 60 Slot Backpack Mod -->	
+    <!-- Make player dropped bags bigger to accomodate new size-->
+	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">8,10</set>
+
 	<append xpath="/lootcontainers">
 
 		<lootgroup name="MainQuestPart1" count="all">
