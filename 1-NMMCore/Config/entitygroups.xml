@@ -3985,75 +3985,76 @@
 	<!-- 1-FantasticBeastz -->
 	
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">	
-		<entity name="Harpy" prob="0.5" />
-        <entity name="Griffon" prob="0.5" />
-		<entity name="FireBreathingDragon" prob="0.5" />
-		<entity name="AcidBreathingDragon" prob="0.5" />
-		<entity name="Pegasus" prob="0.5" />
-		<entity name="GiantBat" prob="0.5" />
-		<entity name="Gargoyle" prob="0.5" />
- 		<entity name="Manticore" prob="0.5" />	
-        <entity name="GiantRat" prob="0.5" />
- 		<entity name="GiantRatFeral" prob="0.5" />
- 		<entity name="GiantRatChaos" prob="0.5" />
- 		<entity name="GiantSpider" prob="0.5" />
- 		<entity name="GiantSpiderFeral" prob="0.5" />
- 		<entity name="GiantSpiderChaos" prob="0.5" />		
- 		<entity name="Troll" prob="0.25" />		
+		<entity name="Harpy" prob="2" />
+        <entity name="Griffon" prob="2" />
+		<entity name="FireBreathingDragon" prob="1" />
+		<entity name="AcidBreathingDragon" prob="1" />
+		<entity name="Pegasus" prob="1" />
+		<entity name="GiantBat" prob="2" />
+		<entity name="Gargoyle" prob="2" />
+ 		<entity name="Manticore" prob="1" />	
+        <entity name="GiantRat" prob="2" />
+ 		<entity name="GiantRatFeral" prob="2" />
+ 		<entity name="GiantRatChaos" prob="2" />
+ 		<entity name="GiantSpider" prob="2" />
+ 		<entity name="GiantSpiderFeral" prob="2" />
+ 		<entity name="GiantSpiderChaos" prob="2" />		
+ 		<entity name="Troll" prob="1" />
+ 		<entity name="DemonLord" prob="3" />		
 	</append>
 	
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
-		<entity name="Harpy" prob="0.5" />
-        <entity name="Griffon" prob="0.5" />
-		<entity name="FireBreathingDragon" prob="0.5" />
-		<entity name="AcidBreathingDragon" prob="0.5" />
-		<entity name="Pegasus" prob="0.5" />
-		<entity name="GiantBat" prob="0.5" />
-		<entity name="Gargoyle" prob="0.5" />
- 		<entity name="Manticore" prob="0.5" />	
-        <entity name="GiantRat" prob="0.5" />
- 		<entity name="GiantRatFeral" prob="0.5" />
- 		<entity name="GiantRatChaos" prob="0.5" />
- 		<entity name="GiantSpider" prob="0.5" />
- 		<entity name="GiantSpiderFeral" prob="0.5" />
- 		<entity name="GiantSpiderChaos" prob="0.5" />
- 		<entity name="Troll" prob="0.2" />		
+		<entity name="Harpy" prob="2" />
+        <entity name="Griffon" prob="2" />
+		<entity name="FireBreathingDragon" prob="1" />
+		<entity name="AcidBreathingDragon" prob="1" />
+		<entity name="Pegasus" prob="1" />
+		<entity name="GiantBat" prob="2" />
+		<entity name="Gargoyle" prob="2" />
+ 		<entity name="Manticore" prob="1" />	
+        <entity name="GiantRat" prob="2" />
+ 		<entity name="GiantRatFeral" prob="2" />
+ 		<entity name="GiantRatChaos" prob="2" />
+ 		<entity name="GiantSpider" prob="2" />
+ 		<entity name="GiantSpiderFeral" prob="2" />
+ 		<entity name="GiantSpiderChaos" prob="2" />		
+ 		<entity name="Troll" prob="1" />		
 	</append>
 	
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">
-		<entity name="Harpy" prob="0.5" />
-        <entity name="Griffon" prob="0.5" />
-		<entity name="FireBreathingDragon" prob="0.5" />
-		<entity name="AcidBreathingDragon" prob="0.5" />
-		<entity name="Pegasus" prob="0.5" />
-		<entity name="GiantBat" prob="0.5" />
-		<entity name="Gargoyle" prob="0.5" />
- 		<entity name="Manticore" prob="0.5" />
-        <entity name="GiantRat" prob="0.5" />
- 		<entity name="GiantRatFeral" prob="0.5" />
- 		<entity name="GiantRatChaos" prob="0.5" />
- 		<entity name="GiantSpider" prob="0.5" />
- 		<entity name="GiantSpiderFeral" prob="0.5" />
- 		<entity name="GiantSpiderChaos" prob="0.5" />
- 		<entity name="Troll" prob="0.2" />		
+		<entity name="Harpy" prob="2" />
+        <entity name="Griffon" prob="2" />
+		<entity name="FireBreathingDragon" prob="1" />
+		<entity name="AcidBreathingDragon" prob="1" />
+		<entity name="Pegasus" prob="1" />
+		<entity name="GiantBat" prob="2" />
+		<entity name="Gargoyle" prob="2" />
+ 		<entity name="Manticore" prob="1" />	
+        <entity name="GiantRat" prob="2" />
+ 		<entity name="GiantRatFeral" prob="2" />
+ 		<entity name="GiantRatChaos" prob="2" />
+ 		<entity name="GiantSpider" prob="2" />
+ 		<entity name="GiantSpiderFeral" prob="2" />
+ 		<entity name="GiantSpiderChaos" prob="2" />		
+ 		<entity name="Troll" prob="1" />		
 	</append>
 
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
-		<entity name="Harpy" prob="0.5" />
-        <entity name="Griffon" prob="0.5" />
-		<entity name="FireBreathingDragon" prob="0.5" />
-		<entity name="AcidBreathingDragon" prob="0.5" />
-		<entity name="Pegasus" prob="0.5" />
-		<entity name="GiantBat" prob="0.5" />
-		<entity name="Gargoyle" prob="0.5" />
- 		<entity name="Manticore" prob="0.5" />	
-        <entity name="GiantRat" prob="0.5" />
- 		<entity name="GiantRatFeral" prob="0.5" />
- 		<entity name="GiantRatChaos" prob="0.5" />
- 		<entity name="GiantSpider" prob="0.5" />
- 		<entity name="GiantSpiderFeral" prob="0.5" />
- 		<entity name="GiantSpiderChaos" prob="0.5" />
- 		<entity name="Troll" prob="0.2" />		
+		<entity name="Harpy" prob="2" />
+        <entity name="Griffon" prob="2" />
+		<entity name="FireBreathingDragon" prob="1" />
+		<entity name="AcidBreathingDragon" prob="1" />
+		<entity name="Pegasus" prob="1" />
+		<entity name="GiantBat" prob="2" />
+		<entity name="Gargoyle" prob="2" />
+ 		<entity name="Manticore" prob="1" />	
+        <entity name="GiantRat" prob="2" />
+ 		<entity name="GiantRatFeral" prob="2" />
+ 		<entity name="GiantRatChaos" prob="2" />
+ 		<entity name="GiantSpider" prob="2" />
+ 		<entity name="GiantSpiderFeral" prob="2" />
+ 		<entity name="GiantSpiderChaos" prob="2" />		
+ 		<entity name="Troll" prob="1" />		
 	</append>
 	
 	<!-- Sleeper Volume Groups -->

@@ -1,4 +1,4 @@
-NMM Gameplay OPTIONS readme
+NMM Gameplay OPTIONS Readme
 
 This folder contains separate mod folders.
 The mods can allow you to customise your NMM experience depending on your game style.
