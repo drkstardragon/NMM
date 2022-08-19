@@ -1,0 +1,6 @@
+﻿<configs>
+
+	<!-- Activates food spoilage dynamics -->
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='FoodSpoilage']/@value">true</set>	
+
+</configs>

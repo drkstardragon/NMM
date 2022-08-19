@@ -2,8 +2,8 @@
 
 <xml>
 	<ModInfo>
-		<Name value="1-NMMCore"/>
-		<Description value="Vanilla changes, blocks, entities, etc."/>
+		<Name value="1-NMMCore Food Spoilage"/>
+		<Description value="Activates the food spoilage dynamics."/>
 		<Author value="Darkstardragon, MageJosh, arramus, and the luminous fish"/>
 		<Version value="A20"/>
 	</ModInfo>

@@ -123,6 +123,20 @@ Redzero83
 PapyKero (Medieval house Kamelot Domo 02 from Nexus but will also be joining CP49 - Direct permission)
 Magoli (An update of Stone Henge to A20 in collaboration with arramus)
 
+=======================
+== ADDITIONAL ASSETS ==
+=======================
+
+Additional folders such as:
+0-SCore
+0-SphereII Legacy Distant Terrain
+0-XNPCCore
+2-NPCXBirdPack-NMM
+NMM Gameplay OPTIONS
+RandomMainmenuBackground
+
+complement 1-NMMCore to power NPCs, provide visual benefits, or customise gameplay.
+
 ============
 INSTALLATION
 ============

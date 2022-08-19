@@ -1,0 +1,14 @@
+<configs>
+
+	<!-- Removes fire dynamics from projectiles from Fungus entities that are connected to cop/vulture -->
+	<!-- meleeHandZombieCopFeral/ammoProjectileZombieVomitFeral for FungusZombie -->
+	<!-- meleeHandzombieMutatedFeral/ammoProjectileZombieMutated for FungusZombieFeral/FungusZombieRadiated -->
+	<append xpath="/items/item[@name='ammoProjectileZombieVomitFeral']/property[@class='Action1']">	
+	<property name="Explosion.BlockDamage" value="0"/>	
+	</append>
+	
+	<append xpath="/items/item[@name='ammoProjectileZombieMutated']/property[@class='Action1']">	
+	<property name="Explosion.BlockDamage" value="0"/>
+	</append>
+	
+</configs>

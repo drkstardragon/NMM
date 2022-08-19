@@ -1,0 +1,6 @@
+﻿<configs>
+
+	<!-- Disables all fire gameplay dynamics -->
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireEnable']/@value">false</set>	
+
+</configs>
