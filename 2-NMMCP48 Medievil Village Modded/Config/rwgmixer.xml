@@ -12,6 +12,24 @@
 	<remove xpath="/rwgmixer/district[@name='countryresidential']"/>
 	<remove xpath="/rwgmixer/district[@name='rural']"/>
 	<remove xpath="/rwgmixer/district[@name='oldwest']"/>
+	
+    <append xpath="/rwgmixer/world[@name='tiny']">
+<!-- MEDIEVAL VILLAGE -->
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- MEDIEVAL VILLAGE -->		
+			<property class="nmmmedievalvillage">
+			<property name="few" value="4"/>
+			<property name="default" value="5"/>
+			<property name="many" value="6"/>
+			
+			<property name="mintiles" value="6"/>
+			<property name="maxtiles" value="10"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>	
 
     <append xpath="/rwgmixer/world[@name='small']">
 <!-- MEDIEVAL VILLAGE -->
