@@ -1,0 +1,124 @@
+<compopack>
+
+	<remove xpath="/rwgmixer/township[@name='oldwest']"/>	
+	<remove xpath="/rwgmixer/township[@name='countrytown']"/>
+	<remove xpath="/rwgmixer/township[@name='town']"/>
+	<remove xpath="/rwgmixer/township[@name='city']"/>
+	<remove xpath="/rwgmixer/district[@name='commercial']"/>	
+	<remove xpath="/rwgmixer/district[@name='downtown']"/>
+	<remove xpath="/rwgmixer/district[@name='industrial']"/>
+	<remove xpath="/rwgmixer/district[@name='residential']"/>
+	<remove xpath="/rwgmixer/district[@name='countrytown']"/>
+	<remove xpath="/rwgmixer/district[@name='countryresidential']"/>
+	<remove xpath="/rwgmixer/district[@name='rural']"/>
+	<remove xpath="/rwgmixer/district[@name='oldwest']"/>
+	
+    <append xpath="/rwgmixer/world[@name='tiny']">
+<!-- MEDIEVAL VILLAGE -->
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- MEDIEVAL VILLAGE -->		
+			<property class="nmmmedievalvillage">
+			<property name="few" value="4"/>
+			<property name="default" value="5"/>
+			<property name="many" value="6"/>
+			
+			<property name="mintiles" value="6"/>
+			<property name="maxtiles" value="11"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>	
+
+    <append xpath="/rwgmixer/world[@name='small']">
+<!-- MEDIEVAL VILLAGE -->
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- MEDIEVAL VILLAGE -->		
+			<property class="nmmmedievalvillage">
+			<property name="few" value="5"/>
+			<property name="default" value="6"/>
+			<property name="many" value="7"/>
+			
+			<property name="mintiles" value="8"/>
+			<property name="maxtiles" value="13"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>
+	
+	<append xpath="/rwgmixer/world[@name='medium']">
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- MEDIEVAL VILLAGE -->	
+			<property class="nmmmedievalvillage">
+			<property name="few" value="6"/>
+			<property name="default" value="7"/>
+			<property name="many" value="8"/>
+			
+			<property name="mintiles" value="10"/>
+			<property name="maxtiles" value="15"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>	
+
+	<append xpath="/rwgmixer/world[@name='large']">
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- MEDIEVAL VILLAGE -->	
+			<property class="nmmmedievalvillage">
+			<property name="few" value="7"/>
+			<property name="default" value="8"/>
+			<property name="many" value="9"/>
+			
+			<property name="mintiles" value="12"/>
+			<property name="maxtiles" value="17"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>
+
+	<append xpath="/rwgmixer">
+<!-- COMPOPACK -->
+<!-- DISTRICTS -->
+<!-- SETTLEMENTS -->
+<!-- MEDIEVAL VILLAGE -->
+		<township name="nmmmedievalvillage">
+		<property name="spawn_trader" value="true"/>
+	</township>
+	
+	<district name="nmmmedievalvillage">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="nmmmedievalvillage"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		<property name="poi_required_tags_all" value="nmmmedieval"/>
+	</district>
+	
+	<streettile name="rwg_tile_nmmmedievalvillage_corner_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_nmmmedievalvillage_t_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_nmmmedievalvillage_t_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	<!-- MEDIEVAL VILLAGE -->
+<!-- SETTLEMENTS -->
+<!-- DISTRICTS -->
+<!-- COMPOPACK -->
+</append>
+</compopack>

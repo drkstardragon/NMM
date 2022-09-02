@@ -1,0 +1,128 @@
+<Configs>
+
+<!--Kill wheel bounce sounds -->
+<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/AudioClip/@ClipName">Sounds/Misc/silencefiller</set>
+<!--Kill wheel slide sounds -->
+<set xpath="/Sounds/SoundDataNode[@name='vwheel_slide']/AudioClip/@ClipName">Sounds/Misc/silencefiller</set>
+
+<append xpath="/Sounds">
+
+<SoundDataNode name="horse_gallop"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/MedievalHorse_Z.unity3d?HorseGallop" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+ <!-- sounds by Affordable Audio 4 Everyone Purchased for use in NPC Mod  -->
+
+        <SoundDataNode name="GurlzChatterRandom">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Channel name="Mouth"/>
+			<Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_BattleStart_01-Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_BattleWon_02_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_BattleWon_06_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_CannotCarry_01_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_CriticalHit_01_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_CriticalHit_06_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_DiscoveringWonderous_02_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_DiscoveringWonderous_04_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_EnteringDungeon_01_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_EnteringDungeon_06_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_EnteringDungeon_07_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Idle_01_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Idle_05_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Idle_07_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Idle_08_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Idle_09_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_JoinParty_10_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_JoinParty_12_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_JoinParty_13_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_LevelGained_01_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_LevelGained_07_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_LevelGained_09_Rina" />
+			<AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Sad_Dissapointed_01_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Sad_Dissapointed_02_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Sad_Dissapointed_04_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Sad_Dissapointed_05_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_ShadyDistrusting_01_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Snob_02_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Snob_03_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_Townsfolk_01_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_UseItem_02_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_UseItem_03_Rina" />
+            <AudioClip ClipName="#@modfolder:Resources/GurlSounds.unity3d?Female_UseItem_04_Rina" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="3.0" />
+		</SoundDataNode>
+
+        <SoundDataNode name="SlayerzChatterRandom">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Channel name="Mouth"/>
+			<Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleStart_04_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleStart_05_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleStart_06_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleWon_02_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleWon_03_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleWon_05_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_BattleWon_07_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_CannotUse_03_Jamaal5" />
+                        <AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_ChargeUp_06_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_DiscoveringWonderous_01_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_DiscoveringWonderous_02_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_DungeonCleared_04_Jamaal5" />
+                        <AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_DungeonCleared_06_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_EnteringDungeon_04_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_EnteringDungeon_06_Jamaal5" />
+			<AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_Idle_01_Jamaal5" />
+                        <AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_Idle_05_Jamaal5" />
+                        <AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_UseItem_02_Jamaal5" />
+                        <AudioClip ClipName="#@modfolder:Resources/SlayerSoundz.unity3d?Male_UseItem_04_Jamaal5" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="3.0" />
+		</SoundDataNode>
+
+        <SoundDataNode name="DoktorChatterRandom">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Channel name="Mouth"/>
+			<Noise ID="3" range="100" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_BattleStart_11_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_CannotCarry_10_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_ChargeUp_04_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_CriticalHit_08_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_DiscoveringPlace_01_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_DiscoveringPlace_06_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_Distraught_03_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_DungeonCleared_02_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_DungeonCleared_05_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_EnteringDungeon_02_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_EnteringDungeon_06_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_EnteringDungeon_08_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_EnteringDungeon_09_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_EnteringDungeon_10_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_EnteringDungeon_12_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_Idle_03_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_Idle_05_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_Idle_09_KarenK" />
+                        <AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_Idle_10_KarenK" />
+			<AudioClip ClipName="#@modfolder:Resources/PlagueDokSounds.unity3d?Female_JoinParty_14_KarenK" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="3.0" />
+		</SoundDataNode>
+
+</append>
+
+
+</Configs>	

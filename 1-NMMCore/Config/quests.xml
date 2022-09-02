@@ -1,0 +1,1800 @@
+<NMMquests>
+
+	<remove xpath="quests/quest[@id='quest_tier1complete']"/>
+	<remove xpath="quests/quest[@id='quest_tier2complete']"/>
+	<remove xpath="quests/quest[@id='quest_tier3complete']"/>
+	<remove xpath="quests/quest[@id='quest_tier4complete']"/>
+	<remove xpath="quests/quest[@id='quest_tier5complete']"/>
+	
+	<!-- Example for setting a single replacement -->	
+	<!-- <set xpath="/quests/quest[@id='quest_tier1complete']/reward[@type='LootItem']/id[@type='groupQuestBicycle']">vehicleMedievalHorsePlaceable</set> -->	
+
+	<!-- Uncomment to reduce quests per tier to 1, or a value you want to test -->
+	<!-- <set xpath="/quests/@quests_per_tier">1</set> -->
+	
+	<!-- Quest is given to player after completing basic survival questline 8/8 for Laz Man's Blood Moon Vanguard -->
+	<insertAfter xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']" >
+		<reward type="Quest" id="challenge_bloodmoonvanguard">
+			<property name="chainquest" value="false"/>
+		</reward>
+	</insertAfter>	
+	
+	<!-- Adding Quest Completion Back - NMM Tier Completion Changes to Vanilla -->
+
+	<insertAfter xpath="/quests/quest[@id='test_nexttrader']">
+	<quest id="quest_tier1complete">
+		<property name="name_key" value="quest_tier1_complete"/>
+		<property name="subtitle_key" value="quest_tier1_complete"/>
+		<property name="description_key" value="quest_tier1_complete_description"/>
+		<property name="icon" value="ui_game_symbol_loot_sack"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="reward"/>
+		<property name="difficulty" value="easy"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
+		<property name="reward_choices_count" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="2000"/>
+		<reward type="Item" id="vehicleMedievalHorsePlaceable" ischosen="true" isfixed="true" value="1"/> <!-- groupQuestBicycle -->
+		<reward type="LootItem" id="groupQuestcasinoCoinT1" ischosen="true" value="2"/>
+		<reward type="Item" id="FireFlyJar" ischosen="true" value="1"/> <!-- groupQuestHelmetLightSchematic -->
+		<reward type="LootItem" id="groupQuestForge" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestFarmPlotsT1" ischosen="true" value="2"/>
+		<!-- reward type="LootItem" id="groupQuestAmmoCraftingBundle" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT0Firearms" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT0LightArmor" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT0HeavyArmor" ischosen="true" value="2"/ -->
+		<reward type="LootItem" id="groupQuestWoodShapes" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestWrench" ischosen="true" value="2"/>
+		<!-- reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT1Traps" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT1MeleeMods" ischosen="true" value="2"/ -->
+		<!-- reward type="LootItem" id="groupQuestT1RangedMods" ischosen="true" value="2"/ -->
+<!-- Increasing choice with Oaks Stuff -->
+		<reward type="Item" id="WaterWell" ischosen="true" value="1"/>
+		<reward type="Item" id="WoodCoopEmpty" ischosen="true" value="1"/>
+		<reward type="Item" id="StoneStove" ischosen="true" value="1"/>
+		<reward type="Item" id="FishGrowingKit" ischosen="true" value="1"/>
+		<reward type="Item" id="QueenBee" ischosen="true" value="1"/>		
+	</quest>
+
+	<quest id="quest_tier2complete">
+		<property name="name_key" value="quest_tier2_complete"/>
+		<property name="subtitle_key" value="quest_tier2_complete"/>
+		<property name="description_key" value="quest_tier2_complete_description"/>
+		<property name="icon" value="ui_game_symbol_loot_sack"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="reward"/>
+		<property name="difficulty" value="easy"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
+		<property name="reward_choices_count" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="2000"/>
+		<reward type="Item" id="vehicleMedievalHorsePlaceable" ischosen="true" value="1"/> <!-- groupQuestMinibikeParts -->
+		<reward type="LootItem" id="groupQuestcasinoCoinT2" ischosen="true" value="3"/>
+		<!-- reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="3"/ -->
+		<reward type="LootItem" id="groupQuestFarmPlotsT2" ischosen="true" value="3"/>
+		<!-- reward type="LootItem" id="groupQuestT1Firearms" ischosen="true" value="3"/ -->
+		<reward type="Item" id="Dragonworkbench" ischosen="true" value="1"/> <!-- groupQuestWorkbench -->
+		<!-- reward type="LootItem" id="groupQuestNailgun" ischosen="true" value="3"/ -->
+		<!-- reward type="LootItem" id="groupQuestT0LightArmorBonus" ischosen="true" value="3"/ -->
+		<!-- reward type="LootItem" id="groupQuestT0HeavyArmorBonus" ischosen="true" value="3"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2Traps" ischosen="true" value="3"/ -->
+		<reward type="LootItem" id="groupQuestForgedIron" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestLockPicks" ischosen="true" value="3"/>
+		<!-- reward type="LootItem" id="groupQuestT3Food" ischosen="true" value="3"/ -->
+		<reward type="LootItem" id="groupQuestCobblestoneShapes" ischosen="true" value="3"/>
+		<!-- reward type="LootItem" id="groupQuestT2MeleeMods" ischosen="true" value="3"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2RangedMods" ischosen="true" value="3"/ -->
+<!-- Increasing choice with Oaks Stuff -->
+		<reward type="Item" id="WaterWell" ischosen="true" value="1"/>
+		<reward type="Item" id="WoodCoopEmpty" ischosen="true" value="1"/>
+		<reward type="Item" id="StoneStove" ischosen="true" value="1"/>
+		<reward type="Item" id="FishGrowingKit" ischosen="true" value="1"/>
+		<reward type="Item" id="QueenBee" ischosen="true" value="1"/>		
+	</quest>
+
+	<quest id="quest_tier3complete">
+		<property name="name_key" value="quest_tier3_complete"/>
+		<property name="subtitle_key" value="quest_tier3_complete"/>
+		<property name="description_key" value="quest_tier3_complete_description"/>
+		<property name="icon" value="ui_game_symbol_loot_sack"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="reward"/>
+		<property name="difficulty" value="easy"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
+		<property name="reward_choices_count" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="2000"/>
+		<reward type="Item" id="vehicleMedievalHorsePlaceable" ischosen="true" value="1"/> <!-- groupQuestMotorcycleParts -->
+		<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="4"/>
+		<!-- reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="4"/ -->
+		<reward type="LootItem" id="groupQuestFarmPlotsT3" ischosen="true" value="4"/>
+		<!-- reward type="LootItem" id="groupQuestT1LightArmor" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestT1HeavyArmor" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestDartTrap" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestSecuritySystem" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestGeneratorBank" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2Firearms" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestTimedCharges" ischosen="true" value="4"/ -->
+		<reward type="Item" id="OakChemistryStation" ischosen="true" value="1"/> <!-- groupQuestChemistryStation -->
+		<!-- reward type="LootItem" id="groupQuestT3MeleeMods" ischosen="true" value="4"/ -->
+		<!-- reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="4"/ -->
+<!-- Increasing choice with Oaks Stuff -->
+		<reward type="Item" id="WaterWell" ischosen="true" value="1"/>
+		<reward type="Item" id="WoodCoopEmpty" ischosen="true" value="1"/>
+		<reward type="Item" id="StoneStove" ischosen="true" value="1"/>
+		<reward type="Item" id="FishGrowingKit" ischosen="true" value="1"/>
+		<reward type="Item" id="QueenBee" ischosen="true" value="1"/>		
+	</quest>
+
+	<quest id="quest_tier4complete">
+		<property name="name_key" value="quest_tier4_complete"/>
+		<property name="subtitle_key" value="quest_tier4_complete"/>
+		<property name="description_key" value="quest_tier4_complete_description"/>
+		<property name="icon" value="ui_game_symbol_loot_sack"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="reward"/>
+		<property name="difficulty" value="easy"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_tier_complete_completion"/>
+		<property name="reward_choices_count" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="2000"/>
+		<reward type="Item" id="vehiclePegasusPlaceable" ischosen="true" value="1"/> <!-- groupQuest4x4Parts -->
+		<reward type="LootItem" id="groupQuestcasinoCoinT4" ischosen="true" value="5"/>
+		<!-- reward type="LootItem" id="groupQuestBatteryBank" ischosen="true" value="5"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2LightArmor" ischosen="true" value="5"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2HeavyArmor" ischosen="true" value="5"/ -->
+		<!-- reward type="LootItem" id="groupQuestT3Firearms" ischosen="true" value="5"/ -->
+		<reward type="LootItem" id="groupQuestConcreteShapes" ischosen="true" value="5"/>
+		<!-- reward type="LootItem" id="groupQuestBladeTrap" ischosen="true" value="5"/ -->
+		<!-- reward type="LootItem" id="groupQuestT4Food" ischosen="true" value="5"/ -->
+		<!-- reward type="LootItem" id="groupQuestT3MeleeMods" ischosen="true" value="5"/ -->
+		<!-- reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="5"/ -->
+<!-- Increasing choice with Oaks Stuff -->
+		<reward type="Item" id="WaterWell" ischosen="true" value="1"/>
+		<reward type="Item" id="WoodCoopEmpty" ischosen="true" value="1"/>
+		<reward type="Item" id="StoneStove" ischosen="true" value="1"/>
+		<reward type="Item" id="FishGrowingKit" ischosen="true" value="1"/>
+		<reward type="Item" id="QueenBee" ischosen="true" value="1"/>		
+	</quest>
+
+	<quest id="quest_tier5complete">
+		<property name="name_key" value="quest_tier5_complete"/>
+		<property name="subtitle_key" value="quest_tier5_complete"/>
+		<property name="description_key" value="quest_tier5_complete_description"/>
+		<property name="icon" value="ui_game_symbol_loot_sack"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="reward"/>
+		<property name="difficulty" value="easy"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_tier5_complete_completion"/>
+		<property name="reward_choices_count" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="2000"/>
+		<reward type="Item" id="vehiclePegasusPlaceable" ischosen="true" value="1"/> <!-- groupQuestGyrocopterParts -->
+		<reward type="LootItem" id="groupQuestcasinoCoinT5" ischosen="true" value="6"/>
+		<!-- reward type="LootItem" id="groupQuestSolarBank" ischosen="true" value="6"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2LightArmorBonus" ischosen="true" value="6"/ -->
+		<!-- reward type="LootItem" id="groupQuestT2HeavyArmorBonus" ischosen="true" value="6"/ -->
+		<!-- reward type="LootItem" id="groupQuestShotgunTurret" ischosen="true" value="6"/ -->
+		<!-- reward type="LootItem" id="groupQuestAutoTurret" ischosen="true" value="6"/ -->
+		<reward type="LootItem" id="groupQuestForgedSteel" ischosen="true" value="6"/>
+		<!-- reward type="LootItem" id="groupQuestT3LegendaryFirearms" ischosen="true" value="6"/ -->
+		<reward type="LootItem" id="groupQuestSteelShapes" ischosen="true" value="6"/>
+		<!-- reward type="LootItem" id="groupQuestT3MeleeMods" ischosen="true" value="6"/ -->
+		<!-- reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="6"/ -->
+		<!-- reward type="LootItem" id="groupQuestAmmoCraftingBundle" ischosen="true" value="6"/ -->
+<!-- Increasing choice with Oaks Stuff -->
+		<reward type="Item" id="WaterWell" ischosen="true" value="1"/>
+		<reward type="Item" id="WoodCoopEmpty" ischosen="true" value="1"/>
+		<reward type="Item" id="StoneStove" ischosen="true" value="1"/>
+		<reward type="Item" id="FishGrowingKit" ischosen="true" value="1"/>
+		<reward type="Item" id="QueenBee" ischosen="true" value="1"/>		
+	</quest>
+	</insertAfter>
+	
+	<append xpath="/quests">
+
+	<!-- Slayer Quests -->
+
+	<!-- ZombieSlayerI -->
+	<quest id="quest_progressionZombieSlayerI">
+        <property name="offer_key" value="Accept this quest to slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 5 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerII"/>
+	</quest>
+	
+	<!-- ZombieSlayerII -->
+	<quest id="quest_progressionZombieSlayerII">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 10 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="10"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerIII"/>
+	</quest>
+	
+	<!-- ZombieSlayerIII -->
+	<quest id="quest_progressionZombieSlayerIII">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 25 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="25"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerIV"/>
+	</quest>
+	
+	<!-- ZombieSlayerIV -->
+	<quest id="quest_progressionZombieSlayerIV">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 50 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="50"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerV"/>
+	</quest>
+	
+	<!-- ZombieSlayerV -->
+	<quest id="quest_progressionZombieSlayerV">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer V" />
+	<property name="subtitle_key" value="You are a legendary zombie slayer." />
+	<property name="description_key" value="Slay 100 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="100"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+	
+	<!-- ZombieSlayerEliteI -->
+	<quest id="quest_progressionZombieSlayerEliteI">
+        <property name="offer_key" value="Accept this quest to slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer Elite I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 500 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="500"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="3000"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerEliteII"/>
+	</quest>
+	
+	<!-- ZombieSlayerEliteII -->
+	<quest id="quest_progressionZombieSlayerEliteII">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer Elite II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 666 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="666"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="3333"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerEliteIII"/>
+	</quest>
+	
+	<!-- ZombieSlayerEliteIII -->
+	<quest id="quest_progressionZombieSlayerEliteIII">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer Elite III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 777 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="777"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="3777"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerEliteIV"/>
+	</quest>
+	
+	<!-- ZombieSlayerEliteIV -->
+	<quest id="quest_progressionZombieSlayerEliteIV">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer Elite IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 888 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="888"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="3888"/>
+	<reward type="Quest" id="quest_progressionZombieSlayerEliteV"/>
+	</quest>
+	
+	<!-- ZombieSlayerEliteV -->
+	<quest id="quest_progressionZombieSlayerEliteV">
+	<property name="offer_key" value="Slay zombies for silver." />       
+        <property name="name_key" value="Zombie Slayer Elite V" />
+	<property name="subtitle_key" value="You are a legendary zombie slayer." />
+	<property name="description_key" value="Slay 1000 zombies.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" value="1000"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="4000"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+	<!-- TrollSlayerI -->
+	<quest id="quest_progressionTrollSlayerI">
+        <property name="offer_key" value="Accept this quest to slay trolls for silver." />       
+        <property name="name_key" value="Troll Slayer I" />
+	<property name="subtitle_key" value="Remember to bring fire the nasty things regenerate." />
+	<property name="description_key" value="Slay 1 troll.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="AnimalKill" id="Troll" value="1" />
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionTrollSlayerII"/>
+	</quest>
+
+        <!-- TrollSlayerII -->
+	<quest id="quest_progressionTrollSlayerII">
+	<property name="offer_key" value="Slay trolls for silver." />       
+        <property name="name_key" value="Troll Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 2 trolls.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Troll" value="2"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionTrollSlayerIII"/>
+	</quest>
+	
+	<!-- TrollSlayerIII -->
+	<quest id="quest_progressionTrollSlayerIII">
+	<property name="offer_key" value="Slay trolls for silver." />       
+        <property name="name_key" value="Troll Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 3 trolls.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Troll" value="3"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionTrollSlayerIV"/>
+	</quest>
+	
+	<!-- TrollSlayerIV -->
+	<quest id="quest_progressionTrollSlayerIV">
+	<property name="offer_key" value="Slay trolls for silver." />       
+        <property name="name_key" value="Troll Slayer IV" />
+	<property name="subtitle_key" value="It is rumored that Gortrek slayed a two headed chaos troll." />
+	<property name="description_key" value="Slay 4 trolls.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Troll" value="4"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionTrollSlayerV"/>
+	</quest>
+	
+	<!-- TrollSlayerV -->
+	<quest id="quest_progressionTrollSlayerV">
+	<property name="offer_key" value="Slay trolls for silver." />       
+        <property name="name_key" value="Troll Slayer V" />
+	<property name="subtitle_key" value="You are a legendary troll slayer." />
+	<property name="description_key" value="Slay 5 trolls.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Troll" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- BeastSlayerI -->
+	<quest id="quest_progressionBeastSlayerI">
+        <property name="offer_key" value="Accept this quest to slay beasts for silver." />       
+        <property name="name_key" value="Beast Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 5 giant rats.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="GiantRat" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionBeastSlayerII"/>
+	</quest>
+	
+	<!-- BeastSlayerII -->
+	<quest id="quest_progressionBeastSlayerII">
+	<property name="offer_key" value="Slay beasts for silver." />       
+        <property name="name_key" value="Beast Slayer II" />
+	<property name="subtitle_key" value="Doing your part to eradicate vermin." />
+	<property name="description_key" value="Slay 10 giant spiders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="GiantSpider" value="10"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionBeastSlayerIII"/>
+	</quest>
+	
+	<!-- BeastSlayerIII -->
+	<quest id="quest_progressionBeastSlayerIII">
+	<property name="offer_key" value="Slay beasts for silver." />       
+        <property name="name_key" value="Beast Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be accepted into the royal sewerjacks." />
+	<property name="description_key" value="Slay 5 harpys.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="Harpy" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionBeastSlayerIV"/>
+	</quest>
+	
+	<!-- BeastSlayerIV -->
+	<quest id="quest_progressionBeastSlayerIV">
+	<property name="offer_key" value="Slay beasts for silver." />       
+        <property name="name_key" value="Beast Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 5 giant bats.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="GiantBat" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionBeastSlayerV"/>
+	</quest>
+	
+	<!-- BeastSlayerV -->
+	<quest id="quest_progressionBeastSlayerV">
+	<property name="offer_key" value="Slay beasts for silver." />       
+        <property name="name_key" value="Beast Slayer V" />
+	<property name="subtitle_key" value="You are a legendary beast slayer." />
+	<property name="description_key" value="Slay 5 manticores.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Manticore" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- FireDragonSlayerI -->
+	<quest id="quest_progressionFireDragonSlayerI">
+        <property name="offer_key" value="Accept this quest to slay fire breathing dragons for silver." />       
+        <property name="name_key" value="Fire Dragon Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 1 fire breathing dragon.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="FireBreathingDragon" value="1"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionFireDragonSlayerII"/>
+	</quest>
+	
+	<!-- FireDragonSlayerII -->
+	<quest id="quest_progressionFireDragonSlayerII">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Fire Dragon Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 2 fire breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="FireBreathingDragon" value="2"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionFireDragonSlayerIII"/>
+	</quest>
+	
+	<!-- FireDragonSlayerIII -->
+	<quest id="quest_progressionFireDragonSlayerIII">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Fire Dragon Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 3 fire breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="FireBreathingDragon" value="3"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="3000"/>
+	<reward type="Quest" id="quest_progressionFireDragonSlayerIV"/>
+	</quest>
+	
+	<!-- FireDragonSlayerIV -->
+	<quest id="quest_progressionFireDragonSlayerIV">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Fire Dragon Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 4 fire breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="FireBreathingDragon" value="4"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="4000"/>
+	<reward type="Quest" id="quest_progressionFireDragonSlayerV"/>
+	</quest>
+	
+	<!-- FireDragonSlayerV -->
+	<quest id="quest_progressionFireDragonSlayerV">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Fire Dragon Slayer V" />
+	<property name="subtitle_key" value="You are a legendary dragon slayer." />
+	<property name="description_key" value="Slay 5 fire breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="FireBreathingDragon" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- AcidDragonSlayerI -->
+	<quest id="quest_progressionAcidDragonSlayerI">
+        <property name="offer_key" value="Accept this quest to slay acid breathing dragons for silver." />       
+        <property name="name_key" value="Acid Dragon Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 1 acid breathing dragon.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="AcidBreathingDragon" value="1"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionAcidDragonSlayerII"/>
+	</quest>
+	
+	<!-- AcidDragonSlayerII -->
+	<quest id="quest_progressionAcidDragonSlayerII">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Acid Dragon Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 2 acid breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="AcidBreathingDragon" value="2"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionAcidDragonSlayerIII"/>
+	</quest>
+	
+	<!-- AcidDragonSlayerIII -->
+	<quest id="quest_progressionAcidDragonSlayerIII">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Acid Dragon Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 3 acid breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="AcidBreathingDragon" value="3"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="3000"/>
+	<reward type="Quest" id="quest_progressionAcidDragonSlayerIV"/>
+	</quest>
+	
+	<!-- AcidDragonSlayerIV -->
+	<quest id="quest_progressionAcidDragonSlayerIV">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Acid Dragon Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 4 acid breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="AcidBreathingDragon" value="4"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="4000"/>
+	<reward type="Quest" id="quest_progressionAcidDragonSlayerV"/>
+	</quest>
+	
+	<!-- AcidDragonSlayerV -->
+	<quest id="quest_progressionAcidDragonSlayerV">
+	<property name="offer_key" value="Slay dragons for silver." />       
+        <property name="name_key" value="Acid Dragon Slayer V" />
+	<property name="subtitle_key" value="You are a legendary dragon slayer." />
+	<property name="description_key" value="Slay 5 acid breathing dragons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="AcidBreathingDragon" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- DemonSlayerI -->
+	<quest id="quest_progressionDemonSlayerI">
+        <property name="offer_key" value="Accept this quest to slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
+        <property name="name_key" value="Demon Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 1 demon.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="DemonLord" value="1"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionDemonSlayerII"/>
+	</quest>
+	
+	<!-- DemonSlayerII -->
+	<quest id="quest_progressionDemonSlayerII">
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
+        <property name="name_key" value="Demon Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 2 demons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="DemonLord" value="2"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionDemonSlayerIII"/>
+	</quest>
+	
+	<!-- DemonSlayerIII -->
+	<quest id="quest_progressionDemonSlayerIII">
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
+        <property name="name_key" value="Demon Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 3 demons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="DemonLord" value="3"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="3000"/>
+	<reward type="Quest" id="quest_progressionDemonSlayerIV"/>
+	</quest>
+	
+	<!-- DemonSlayerIV -->
+	<quest id="quest_progressionDemonSlayerIV">
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
+        <property name="name_key" value="Demon Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 4 demons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="DemonLord" value="4"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="4000"/>
+	<reward type="Quest" id="quest_progressionDemonSlayerV"/>
+	</quest>
+	
+	<!-- DemonSlayerV -->
+	<quest id="quest_progressionDemonSlayerV">
+	<property name="offer_key" value="Slay demons for silver. Only Biome demons and the 'Nest' are acceptable. POI demons will not register as kills." />       
+        <property name="name_key" value="Demon Slayer V" />
+	<property name="subtitle_key" value="You are a legendary demon slayer." />
+	<property name="description_key" value="Slay 5 demons.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="DemonLord" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+	
+        <!-- GoblinSlayerI -->
+	<quest id="quest_progressionGoblinSlayerI">
+        <property name="offer_key" value="Accept this quest to slay goblins for silver." />       
+        <property name="name_key" value="Goblin Slayer I" />
+	<property name="subtitle_key" value="There isnt one good reason to let them live." />
+	<property name="description_key" value="Slay 5 goblinclub.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="GoblinClub" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionGoblinSlayerII"/>
+	</quest>
+	
+	<!-- GoblinSlayerII -->
+	<quest id="quest_progressionGoblinSlayerII">
+	<property name="offer_key" value="Slay goblins for silver." />       
+        <property name="name_key" value="Goblin Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 5 goblinspear.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="GoblinSpear" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionGoblinSlayerIII"/>
+	</quest>
+	
+	<!-- GoblinSlayerIII -->
+	<quest id="quest_progressionGoblinSlayerIII">
+	<property name="offer_key" value="Slay goblins for silver." />       
+        <property name="name_key" value="Goblin Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 5 goblin archers.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="GoblinArcher" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionGoblinSlayerIV"/>
+	</quest>
+	
+	<!-- GoblinSlayerIV -->
+	<quest id="quest_progressionGoblinSlayerIV">
+	<property name="offer_key" value="Slay goblins for silver." />       
+        <property name="name_key" value="Goblin Slayer IV" />
+	<property name="subtitle_key" value="THE goblinslayer would be proud." />
+	<property name="description_key" value="Slay 5 goblin shaman.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="GoblinShaman" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionGoblinSlayerV"/>
+	</quest>
+	
+	<!-- GoblinSlayerV -->
+	<quest id="quest_progressionGoblinSlayerV">
+	<property name="offer_key" value="Slay goblins for silver." />       
+        <property name="name_key" value="Goblin Slayer V" />
+	<property name="subtitle_key" value="You are a legendary goblin slayer." />
+	<property name="description_key" value="Slay 5 goblin chief.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="GoblinChief" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- OrcSlayerI -->
+	<quest id="quest_progressionOrcSlayerI">
+        <property name="offer_key" value="Accept this quest to slay orcs for silver." />       
+        <property name="name_key" value="Orc Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 5 orc bandits.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="OrcBandit" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionOrcSlayerII"/>
+	</quest>
+	
+	<!-- OrcSlayerII -->
+	<quest id="quest_progressionOrcSlayerII">
+	<property name="offer_key" value="Slay orcs for silver." />       
+        <property name="name_key" value="Orc Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 5 orc raiders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="OrcRaider" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionOrcSlayerIII"/>
+	</quest>
+	
+	<!-- OrcSlayerIII -->
+	<quest id="quest_progressionOrcSlayerIII">
+	<property name="offer_key" value="Slay orcs for silver." />       
+        <property name="name_key" value="Orc Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 5 orc archers.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="OrcArcher" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionOrcSlayerIV"/>
+	</quest>
+	
+	<!-- OrcSlayerIV -->
+	<quest id="quest_progressionOrcSlayerIV">
+	<property name="offer_key" value="Slay orcs for silver." />       
+        <property name="name_key" value="Orc Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 5 orc shaman.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="OrcShaman" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionOrcSlayerV"/>
+	</quest>
+	
+	<!-- OrcSlayerV -->
+	<quest id="quest_progressionOrcSlayerV">
+	<property name="offer_key" value="Slay orcs for silver." />       
+        <property name="name_key" value="Orc Slayer V" />
+	<property name="subtitle_key" value="You are a legendary orc slayer." />
+	<property name="description_key" value="Slay 5 orc berzerkers.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="OrcBerzerker" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- ElfSlayerI -->
+	<quest id="quest_progressionElfSlayerI">
+        <property name="offer_key" value="Accept this quest to slay dark elves for silver." />       
+        <property name="name_key" value="Elf Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 5 dark elf spearers.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="DarkElfSpear" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionElfSlayerII"/>
+	</quest>
+	
+	<!-- ElfSlayerII -->
+	<quest id="quest_progressionElfSlayerII">
+	<property name="offer_key" value="Slay dark elves for silver." />       
+        <property name="name_key" value="Elf Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 5 dark elf sword wielders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="DarkElfSword" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionElfSlayerIII"/>
+	</quest>
+	
+	<!-- ElfSlayerIII -->
+	<quest id="quest_progressionElfSlayerIII">
+	<property name="offer_key" value="Slay dark elves for silver." />       
+        <property name="name_key" value="Elf Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 5 dark elf archers.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="DarkElfArcher" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionElfSlayerIV"/>
+	</quest>
+	
+	<!-- ElfSlayerIV -->
+	<quest id="quest_progressionElfSlayerIV">
+	<property name="offer_key" value="Slay dark elves for silver." />       
+        <property name="name_key" value="Elf Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 5 dark elf crossbowmen.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="DarkElfCrossbowman" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionElfSlayerV"/>
+	</quest>
+	
+	<!-- ElfSlayerV -->
+	<quest id="quest_progressionElfSlayerV">
+	<property name="offer_key" value="Slay dark elves for silver." />       
+        <property name="name_key" value="Elf Slayer V" />
+	<property name="subtitle_key" value="You are a legendary elf slayer." />
+	<property name="description_key" value="Slay 10 dark elf sword wielders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="DarkElfSword" value="10"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>
+
+        <!-- ManSlayerI -->
+	<quest id="quest_progressionManSlayerI">
+        <property name="offer_key" value="Accept this quest to slay chaos marauders for silver." />       
+        <property name="name_key" value="Man Slayer I" />
+	<property name="subtitle_key" value="Dwarven slayers aren't the only ones who can slay things." />
+	<property name="description_key" value="Slay 1 chaos marauder.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="ChaosMarauder" value="1"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="quest_progressionManSlayerII"/>
+	</quest>
+	
+	<!-- ManSlayerII -->
+	<quest id="quest_progressionManSlayerII">
+	<property name="offer_key" value="Slay chaos marauders for silver." />       
+        <property name="name_key" value="Man Slayer II" />
+	<property name="subtitle_key" value="Doing your part to stem the tide of chaos." />
+	<property name="description_key" value="Slay 2 chaos marauders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="ChaosMarauder" value="2"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="quest_progressionManSlayerIII"/>
+	</quest>
+	
+	<!-- ManSlayerIII -->
+	<quest id="quest_progressionManSlayerIII">
+	<property name="offer_key" value="Slay chaos marauders for silver." />       
+        <property name="name_key" value="Man Slayer III" />
+	<property name="subtitle_key" value="Keep this up and you'll be welcome at Slayer Keep." />
+	<property name="description_key" value="Slay 3 chaos marauders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="ChaosMarauder" value="3"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="quest_progressionManSlayerIV"/>
+	</quest>
+	
+	<!-- ManSlayerIV -->
+	<quest id="quest_progressionManSlayerIV">
+	<property name="offer_key" value="Slay chaos marauders for silver." />       
+        <property name="name_key" value="Man Slayer IV" />
+	<property name="subtitle_key" value="Gortrek Gurnsson would be proud." />
+	<property name="description_key" value="Slay 4 chaos marauders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="ChaosMarauder" value="4"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="quest_progressionManSlayerV"/>
+	</quest>
+	
+	<!-- ManSlayerV -->
+	<quest id="quest_progressionManSlayerV">
+	<property name="offer_key" value="Slay chaos marauders for silver." />       
+        <property name="name_key" value="Man Slayer V" />
+	<property name="subtitle_key" value="You are a legendary man slayer." />
+	<property name="description_key" value="Slay 5 chaos marauders.
+         The Adventurers Guild will reward you handsomely." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+
+	        <objective type="EntityAliveSDXKill, SCore" id="ChaosMarauder" value="5"/>
+		
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Level" value="1"/>
+	<reward type="SkillPoints" value="2"/>
+	</quest>	
+
+	<!-- POI Find Quest -->
+	
+	<!-- Beasts Nest POI -->
+		<quest id="questFindBeastsNest">
+			<property name="offer_key" value="Read this scroll to learn the location of a Beasts Nest."/>
+			<property name="name_key" value="Find Beasts Nest"/>
+			<property name="subtitle_key" value="Find Beasts Nest"/>
+			<property name="description_key" value="Visit the Beasts Nest and mark it on your map. Enter at your own peril. A Demon Lord is guaranteed."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="NMM_beasts_nest_01"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1500"/>
+		</quest>
+	
+	</append>	
+	
+	<!-- NMM Trader Baker -->
+	
+	<append xpath="/quests">
+	
+		<quest id="questNMMCollectHoneyErrand">
+      
+			<property name="offer_key" value="Accept this errand to collect and return honey for a random farm reward." />
+			<property name="name_key" value="Collect Honey Errand" />
+			<property name="subtitle_key" value="Collect Honey Errand" />
+			<property name="description_key" value="Collect 3 jars of honey and return to any Trader. The Baker will use them and you will receive a random farm reward." />
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false"/>
+			<objective type="Fetch" id="foodHoney" value="3" phase="1" />			
+			<property name="completiontype" value="TurnIn" />			
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />			
+		</objective>		
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />			
+		</objective>
+
+			<reward type="Exp" value="1500" />
+			<reward type="Item" id="casinoCoin" value="250" />
+			<reward type="LootItem" id="groupNMMQuestBakerFarmPlotsT1" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupNMMQuestBakerFarmPlotsT2" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupNMMQuestBakerFarmPlotsT3" ischosen="true" value="4"/>			
+		</quest>
+		
+		<quest id="questNMMCollectEggsErrand">
+      
+			<property name="offer_key" value="Accept this errand to collect and return eggs for a random farm reward." />
+			<property name="name_key" value="Collect Eggs Errand" />
+			<property name="subtitle_key" value="Collect Eggs Errand" />
+			<property name="description_key" value="Collect a Baker's Dozen eggs and return to any Trader. The Baker will use them and you will receive a random farm reward." />
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false"/>
+			<objective type="Fetch" id="foodEgg" value="13" phase="1" />			
+			<property name="completiontype" value="TurnIn" />			
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />			
+		</objective>		
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />			
+		</objective>
+
+			<reward type="Exp" value="1500" />
+			<reward type="Item" id="casinoCoin" value="250" />
+			<reward type="LootItem" id="groupNMMQuestBakerFarmPlotsT1" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupNMMQuestBakerFarmPlotsT2" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupNMMQuestBakerFarmPlotsT3" ischosen="true" value="4"/>			
+		</quest>
+
+	<!-- NMM Trader Alchemist -->
+
+		<quest id="questNMMCollectEmeraldGSErrand">
+      
+			<property name="offer_key" value="Accept this errand to collect and return Emerald Gemstones for first aid bandages, gunpowder, or food rewards." />
+			<property name="name_key" value="Collect Emerald Gemstones" />
+			<property name="subtitle_key" value="Collect Emerald Gemstones Errand" />
+			<property name="description_key" value="Collect 3 Emerald Gemstones and return to any Trader. The Alchemist will use them and you will receive first aid bandages, gunpowder, or food rewards." />
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false"/>
+			<objective type="Fetch" id="EmeraldGemstone" value="3" phase="1" />			
+			<property name="completiontype" value="TurnIn" />			
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />			
+		</objective>		
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />			
+		</objective>
+
+			<reward type="Exp" value="1500" />
+			<reward type="Item" id="casinoCoin" value="250" />
+			<reward type="Item" id="medicalFirstAidBandage" ischosen="true" value="25"/>
+			<reward type="Item" id="resourceGunPowder" ischosen="true" value="300"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>			
+		</quest>
+		
+	<!-- Laz Man - Elimintate the Hordes -->		
+
+		<quest id="challenge_eliminatehorde01">
+
+			<property name="name_key" value="challenge_eliminatehorde01"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde01_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde01_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="challenge_eliminatehorde01_offer"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde01_completion"/>
+			<action type="TrackQuest"/>
+			<action type="ShowTip" value="tutorialTip_eliminatehorde">
+					<property name="delay" value="3"/>
+			</action>
+
+			<objective type="Goto" id="trader" value="5" phase="1"/>
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<reward type="Exp" value="500"/>
+			<reward type="Quest" id="challenge_eliminatehorde02"/>
+			<reward type="Item" id="resourceWood" value="300"/>			
+			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
+			
+		</quest>
+			
+		<quest id="challenge_eliminatehorde02">
+
+			<property name="name_key" value="challenge_eliminatehorde02"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde02_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde02_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="challenge_eliminatehorde02_description"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde02_completion"/>
+			<action type="TrackQuest"/>
+<!--		<action type="ShowTip" value="tutorialTip_eliminatehorde"/> -->
+		
+			<!-- Phase 1: Travel -->  
+			<objective type="RandomGoto" value="500-600" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			
+			<!-- Phase 2: Start Quest -->
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>			
+
+			<!-- Phase 3: Build and Fortify -->			
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>			
+			
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="frameShapes:VariantHelper"/>
+				<property name="count" value="10"/>
+			</objective>
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="trapSpikesWoodDmg0"/>
+				<property name="count" value="10"/>
+			</objective>		
+			
+			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="10" phase="3"/>
+			<objective type="BlockUpgrade" id="frameShapes" value="10" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="10" phase="3"/>
+			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
+		
+			<!-- Phase 4: Defend Against Horde -->			
+			
+			<action type="SpawnEnemy" id="qc_OrcBanditBMFeral,OrcRaiderBM,OrcBerzerkerBM,GoblinSpearBM,GoblinChiefBM,MedievalZombie,Skeleton" value="20" phase="4"/>
+			<action type="SpawnEnemy" id="qc_OrcBanditBMFeral,OrcRaiderBMFeral" value="4" phase="4"/>
+			<objective type="ZombieKill" id="qc_OrcBanditBMFeral,OrcRaiderBM,OrcBerzerkerBM,GoblinSpearBM,GoblinChiefBM,MedievalZombie,Skeleton,OrcBanditBMFeral,OrcRaiderBMFeral" value="16" phase="4"/>
+			
+			<!-- Phase 5: Quest turn in -->
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+			</objective>
+			
+			<reward type="Item" id="casinoCoin" value="1000"/>
+
+			
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+			<reward type="Quest" id="challenge_eliminatehorde03"/>
+			<reward type="Item" id="resourceWood" value="500"/>
+			<reward type="Item" id="resourceCobblestones" value="200"/>				
+			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
+
+			
+		</quest>
+		
+		<quest id="challenge_eliminatehorde03">
+
+			<property name="name_key" value="challenge_eliminatehorde03"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde03_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde03_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="challenge_eliminatehorde03_description"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde03_completion"/>
+			<action type="TrackQuest"/>
+
+			<!-- Phase 1: Travel -->
+			
+			<objective type="RandomGoto" value="400-500" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			
+			<!-- Phase 2: Start Quest --> 
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<!-- Phase 3: Build and Fortify -->
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>			
+			
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="cobblestoneShapes:VariantHelper"/>
+				<property name="count" value="20"/>
+			</objective>
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="trapSpikesWoodDmg0"/>
+				<property name="count" value="20"/>
+			</objective>		
+			
+			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="20" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="20" phase="3"/>
+			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
+		
+			<!-- Phase 4: Defend Against Horde -->		
+			
+			<action type="SpawnEnemy" id="qc_AxeZombieFeral,MedievalZombieFeral,MaceZombieFeral,SwordZombieFeral,HelmetZombieFeral,ArmorZombieFeral,SkeletonFeral" value="20" phase="4"/>
+			<action type="SpawnEnemy" id="DeathKnight,ChaosMarauderBM" value="4" phase="4"/>
+			<objective type="ZombieKill" id="qc_AxeZombieFeral,MedievalZombieFeral,MaceZombieFeral,SwordZombieFeral,HelmetZombieFeral,ArmorZombieFeral,SkeletonFeral,DeathKnight,ChaosMarauderBM" value="16" phase="4"/>
+			
+			<!-- Phase 5: Quest turn in --> 
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+			</objective>
+			
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+			<reward type="Quest" id="challenge_eliminatehorde04"/>
+			<reward type="Item" id="resourceWood" value="500"/>
+			<reward type="Item" id="resourceCobblestones" value="400"/>				
+			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
+
+		</quest>
+ 
+		<quest id="challenge_eliminatehorde04">
+
+			<property name="name_key" value="challenge_eliminatehorde04"/>
+			<property name="subtitle_key" value="challenge_eliminatehorde04_subtitle"/>
+			<property name="description_key" value="challenge_eliminatehorde04_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="insane"/>
+			<property name="offer_key" value="challenge_eliminatehorde04_description"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_eliminatehorde04_completion"/>
+			<action type="TrackQuest"/>
+
+			<!-- Phase 1: Travel -->
+
+			<objective type="RandomGoto" value="250-400" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			
+			<!-- Phase 2: Start Quest -->
+			
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<!-- Phase 3: Build and Fortify -->
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>			
+			
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="cobblestoneShapes:VariantHelper"/>
+				<property name="count" value="40"/>
+			</objective>
+			<objective type="Craft">
+				<property name="phase" value="3"/>
+				<property name="item" value="trapSpikesWoodDmg0"/>
+				<property name="count" value="20"/>
+			</objective>		
+			
+			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="40" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="20" phase="3"/>
+			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
+	
+			<!-- Phase 4: Defend Against Horde --> 		
+			
+			<action type="SpawnEnemy" id="qc_FungusZombie,FungusZombieFeral,OgreAxeBM,OgreMaceBM,OgreSwordBM,DarkElfSwordBMFeral,SkeletonMonkFeral" value="20" phase="4"/>
+			<action type="SpawnEnemy" id="DeathKnightFeral,ChaosMarauderBMFeral" value="4" phase="4"/>
+			<objective type="ZombieKill" id="qc_FungusZombie,FungusZombieFeral,OgreAxeBM,OgreMaceBM,OgreSwordBM,DarkElfSwordBMFeral,SkeletonMonkFeral,DeathKnightFeral,ChaosMarauderBMFeral" value="16" phase="4"/>
+			
+			<!-- Phase 5: Quest turn in -->
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+			</objective>
+			
+			<reward type="SkillPoints" value="1" chainreward="true"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+						
+		</quest>
+		
+	<!-- Laz Man - Blood Moon Vanguard -->
+
+		<quest id="challenge_bloodmoonvanguard">
+
+			<property name="name_key" value="challenge_bloodmoonvanguard"/>
+			<property name="subtitle_key" value="challenge_bloodmoonvanguard_subtitle"/>
+			<property name="description_key" value="challenge_bloodmoonvanguard_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="category_key" value="quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="challenge_bloodmoonvanguard_description"/>
+
+			<action type="ShowTip" value="BloodmoonVanguardTip">
+				<property name="delay" value="15"/>
+			</action>
+			
+			<objective type="ZombieKill" id="qc_OrcBanditBM,OrcBanditBMFeral,OrcRaiderBM,OrcRaiderBMFeral,
+                                                         OrcBerzerkerBM,OrcBerzerkerBMFeral,
+                                                         GoblinChiefBM,GoblinChiefBMFeral,GoblinSpearBM,GoblinSpearBMFeral,
+                                                         ChaosMarauderBM,ChaosMarauderBMFeral,OgreSwordBM,OgreSwordBMFeral,OgreAxeBM,
+                                                         OgreAxeBMFeral,OgreMaceBM,OgreMaceBMFeral,DarkElfSwordBM,DarkElfSwordBMFeral,
+														 ManticoreBM,DemonLordBM,GiantSpiderBM,GiantSpiderFeralBM,GiantSpiderChaosBM,
+														 GiantRatBM,GiantRatFeralBM,GiantRatChaosBM,ChaosMarauderBM,ChaosMarauderBMFeral,
+														 TrollBM,OgreSwordBM,OgreSwordBMFeral,OgreAxeBM,OgreAxeBMFeral,OgreMaceBM,
+														 OgreMaceBMFeral,DarkElfSwordBM,DarkElfSwordBMFeral"
+                                                         value="222" phase="1"/>
+			
+			<!-- Rewards -->
+			<reward type="Quest" id="challenge_bloodmoonvanguard">
+				<property name="chainquest" value="false"/>
+			</reward>
+			<reward type="SkillPoints" value="1"/>
+
+		</quest>
+
+        <!-- Main Quest -->
+
+	<quest id="questFindRoseAbbey">
+			<property name="offer_key" value="The King commands you to reach the Abbey and find out what the monks have discovered."/>
+			<property name="name_key" value="Find the Abbey."/>
+			<property name="subtitle_key" value="Find the Abbey."/>
+			<property name="description_key" value="The monks have likely perished. You need to purge the Abbey and find the Abbot's quarters. If there is any information, that is where you will find it."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="_Rose_Abby_byMPLogue"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+		</quest>
+
+		<quest id="questFindPetraTemple">
+			<property name="offer_key" value="The King commands you to reach the Ruins and find the source of the Chaos incursion."/>
+			<property name="name_key" value="Find the Elven Ruins."/>
+			<property name="subtitle_key" value="Find the Elven Ruins."/>
+			<property name="description_key" value="The monks gave their lives finding this information. Purge the ruins and find more information, else their deaths be for naught."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="_Petra_Indiana_Jones_by_MPLogue"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+		</quest>
+
+		<quest id="questFindKarakUngol">
+			<property name="offer_key" value="It is fitting that Karak Ungol be the lair of our enemy. The Dwarven Hold was the first to perish in the Chaos incursion."/>
+			<property name="name_key" value="Find Karak Ungol."/>
+			<property name="subtitle_key" value="Find Karak Ungol."/>
+			<property name="description_key" value="Find this faceless master. Cut the head from the snake."/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1"/>
+			<property name="login_rally_reset" value="true"/>
+			<objective type="GotoPOISDX, SCore" value="1-6000" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="phase" value="1"/>
+				<property name="PrefabName" value="NMM_Chicken_Itza(by_Mexico664)"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+		</quest>		
+
+	</append>
+
+</NMMquests>

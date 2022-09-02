@@ -1,0 +1,1791 @@
+﻿<configs>
+
+	<!-- Score Tweaks and Toggles -->
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='FoodSpoilage']/@value">false</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='RequiredModlet']/@value">1-NMMCore</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='AdvancedLocks']/@value">true</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedLockpicking']/property[@name='LockPrefab']/@value">#@modfolder:Resources/Locks.unity3d?Lockset01</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='OneBlockCrouch']/@value">false</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='DisableTraderProtection']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedNPCFeatures']/property[@name='AttackVolumeInstantAwake']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireEnable']/@value">true</set>	
+	<!-- Vanilla Tweaks and Toggles / Additional sets at the bottom -->
+	
+	<append xpath="/blocks/block[@name='treeMaster']" >
+		<drop event="Destroy" name="resourceScrapPolymers" prob=".2" count="1,3"/>
+	</append>
+	
+	<!-- NMM Content -->	
+
+	<append xpath="/blocks">	
+
+     <block name="Manacle">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="Manacle"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ChainPrefabDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalCup">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="MedievalCup"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?CupPrefabDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalSkull">
+	<property name="Material" value="MresourceBone"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="SkullPrefabDark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?SkullPrefabDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceBone" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="WeaponRack">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="WeaponRack"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?WeaponRackPrefab"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+    <block name="MedievalPlate">
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="MedievalPlate"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PlatePrefabDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalCherubPainting">
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="PaintingADark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PaintingADark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+        <property name="CanPickup" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalHoundsPainting">
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="PaintingADark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PaintingBDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+        <property name="CanPickup" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalBattlePainting">
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="PaintingADark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PaintingCDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+        <property name="CanPickup" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalDecanter">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="MedievalDecanter"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DecanterPrefabDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="ScorpionStatue">
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="ScorpionStatue"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ScorpionStatueDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+        <property name="CanPickup" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceGoldNugget" count="4" tag="allHarvest"/>
+        <drop event="Harvest" name="resourceSilverNugget" count="6" tag="allHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+    </block>
+
+    <block name="MedievalDoubleBed">
+	<property name="DescriptionKey" value="bedGroupDesc"/>
+	<property name="Class" value="SleepingBag"/>
+	<property name="Material" value="Mwood"/>
+        <property name="CustomIcon" value="MedievalDoubleBed"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DoubleBedPrefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,3"/>
+	<property name="FallDamage" value=".6"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="FuelValue" value="6"/>
+	<!-- <property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/> -->
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="5"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="FilterTags" value="MC_building,SC_decor"/>
+    </block>
+
+    <block name="MedievalSingleBed">
+	<property name="DescriptionKey" value="bedGroupDesc"/>
+	<property name="Class" value="SleepingBag"/>
+	<property name="Material" value="Mwood"/>
+        <property name="CustomIcon" value="MedievalSingleBed"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?SingleBedPrefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,3"/>
+	<property name="FallDamage" value=".6"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="FuelValue" value="6"/>
+	<!-- <property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/> -->
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="5"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="FilterTags" value="MC_building,SC_decor"/>
+    </block>
+
+    <block name="ChurchChair">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="ChurchChair"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ChurchChairDark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+    <block name="FancyMedievalChair">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="FancyChairB"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?FancyChairBDark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+    <block name="TallMedievalChair">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="FancyChairA"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?FancyChairADark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+                <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+    <block name="MedievalBookshelf">
+        <property name="Extends" value="cntBookShelfSingleBottomEmpty"/>
+        <property name="Model" value="Entities/Commercial/bookshelfBottomFullPrefab"/>
+        <property name="Class" value="Loot"/>
+        <property name="CustomIcon" value="Bookcase1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Bookcase1Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+		<property name="OnlySimpleRotations" value="true"/>
+        <property name="LootList" value="crackabookShelves"/>
+    </block>
+
+    <block name="MedievalCabinet1">
+        <property name="Extends" value="cntCabinetBottomRandomLootHelper"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="CabinetADark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?CabinetADark"/>
+        <property name="DescriptionKey" value="furnitureGroupDesc"/>
+        <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+        <property name="SortOrder1" value="cb02"/>
+    </block>
+
+    <block name="MedievalCabinet2">
+        <property name="Extends" value="cntCabinetBottomRandomLootHelper"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="CabinetBDark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?CabinetBDark"/>
+        <property name="DescriptionKey" value="furnitureGroupDesc"/>
+        <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+        <property name="SortOrder1" value="cb02"/>
+    </block>
+
+    <block name="MedievalWardrobe">
+        <property name="Extends" value="cntNightstandOpen"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="Wardrobe1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Wardrobe1Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="nightstand"/>
+    </block>
+
+    <block name="MedievalOpenBook">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="OpenBookDark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?OpenBookDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalDragonBook">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="DragonBookDark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DragonBookDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalHeroCrateTier1">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate3Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate3Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="reinforcedChestT1"/>
+    </block>
+
+    <block name="MedievalHeroCrateTier2">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate3Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate3Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="reinforcedChestT2"/>
+    </block>
+
+    <block name="MedievalHeroCrateTier3">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate3Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate3Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="reinforcedChestT3"/>
+    </block>
+
+    <block name="MedievalHeroCrateTier4">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate3Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate3Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="hardenedChestT4"/>
+    </block>
+
+    <block name="MedievalHeroCrateTier5">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate3Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate3Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="hardenedChestT5"/>
+    </block>
+
+    <block name="MedievalAmmoCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate2Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate2Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="munitions"/>
+    </block>
+
+    <block name="MedievalHealingCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate2Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate2Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="popnpillsCrate"/>
+    </block>
+
+    <block name="MedievalFoodCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate2Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate2Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="shamwayCrate"/>
+    </block>
+
+    <block name="MedievalTreasureCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate2Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate2Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="hiddenStash"/>
+    </block>
+
+    <block name="MedievalRandomLootCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate1Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="savageCountryCrate"/>
+    </block>
+
+    <block name="MedievalWeaponsCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate1Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="shotgunMessiahCrate"/>
+    </block>
+
+    <block name="MedievalToolsCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate1Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="workingStiffsCrate"/>
+    </block>
+
+    <block name="MedievalBuildingCrate">
+        <property name="Extends" value="cntGarageStorage"/>
+        <property name="CustomIcon" value="Crate1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Crate1Dark"/>
+        <property name="Material" value="Mwood_regular"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="4"/>
+	        </property>
+        <drop event="Destroy" name="resourceWood" count="2,8"/>
+        <property name="LootList" value="constructionCrate"/>
+    </block>
+
+    <block name="MedievalTreasureChest1">
+	<property name="Class" value="SecureLoot"/>
+	<property name="Tags" value="door"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="2000"/>
+	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ItemTypeIcon" value="lock"/>
+	<property name="LootList" value="buriedTreasure"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<property name="DowngradeBlock" value="MedievalTreasureChest1Insecure"/>
+		<property name="LockPickItem" value="resourceLockPick"/>
+		<property name="LockPickTime" value="15"/>
+		<property name="LockPickBreakChance" value="0.75"/>
+	<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="156"/>
+	<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
+    </block>
+
+     <block name="MedievalTreasureChest1Insecure">
+	<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="buriedTreasure"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="5"/>
+        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+    </block>
+
+    <block name="MedievalTreasureChest2">
+	<property name="Class" value="SecureLoot"/>
+	<property name="Tags" value="door"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="2000"/>
+	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="Chest2Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest2Dark"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ItemTypeIcon" value="lock"/>
+	<property name="LootList" value="buriedTreasure"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<property name="DowngradeBlock" value="MedievalTreasureChest2Insecure"/>
+		<property name="LockPickItem" value="resourceLockPick"/>
+		<property name="LockPickTime" value="15"/>
+		<property name="LockPickBreakChance" value="0.75"/>
+	<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="156"/>
+	<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
+    </block>
+
+     <block name="MedievalTreasureChest2Insecure">
+	<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="Chest2Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest2Dark"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="buriedTreasure"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="5"/>
+        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+    </block>
+
+    <block name="MedievalThrone">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="ThroneDark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ThroneDark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="ElvenTablet">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="ElvenTablet"/>
+        <property name="Shape" value="ModelEntity"/>                         
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ElvenTabletDark"/>
+        <property name="CanPickup" value="true"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+        </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="4" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>
+	
+    <block name="ElvenPictTablet">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="ElvenTabletB"/>
+        <property name="Shape" value="ModelEntity"/>  
+        <property name="CanPickup" value="true"/>                       
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ElvenTabletBDark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+        </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="4" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="ClubsWallDeco">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="ClubsWallDeco"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?WallDecoClubs"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="InquisitionWallDeco">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="InquisitionWallDeco"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?WallDecoInquisition"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="GargoyleStatue">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="GargoyleStatue"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?GargoyleStatuePrefab"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,2,3"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+        </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+	<block name="GlowingOrangeFlower">
+		<property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+		<property name="CustomIcon" value="OrangeFlower"/>
+		<property name="Class" value="Deadgrass"/>
+		<property name="Material" value="Mtallgrass"/>
+		<property name="StabilitySupport" value="false"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?OrangeFlowerPrefab"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="CanDecorateOnSlopes" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="IsDecoration" value="true"/>
+		<property name="CanPickup" value="true"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceYuccaFibers" count="0" prob="1" stick_chance="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_crops"/>
+		<property name="SortOrder1" value="a030"/>
+		<property name="SortOrder2" value="0002"/>
+    </block>
+
+    <block name="GlowingPurpleFlower">
+		<property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+		<property name="CustomIcon" value="PurpleFlower"/>
+		<property name="Class" value="Deadgrass"/>
+		<property name="Material" value="Mtallgrass"/>
+		<property name="StabilitySupport" value="false"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PurpleFlowerPrefab"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="CanDecorateOnSlopes" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="IsDecoration" value="true"/>
+        <property name="CanPickup" value="true"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceYuccaFibers" count="0" prob="1" stick_chance="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_crops"/>
+		<property name="SortOrder1" value="a030"/>
+		<property name="SortOrder2" value="0002"/>
+    </block>
+
+<block name="MushroomA">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+        <property name="CustomIcon" value="MushroomA"/>
+		<property name="Path" value="solid"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MushroomADark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,2,3"/> 
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+                <drop event="Harvest" name="foodCropMushrooms" count="1,3" prob="0.5" tag="allHarvest"/>
+		<drop event="Destroy" name="foodCropMushrooms" count="1,3" prob="0.6" tag="allHarvest"/>
+		<drop event="Destroy" name="foodCropMushrooms" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
+    </block>
+
+<block name="MushroomB">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+        <property name="CustomIcon" value="MushroomB"/>
+		<property name="Path" value="solid"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MushroomBDark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,3,3"/> 
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+                <drop event="Harvest" name="foodCropMushrooms" count="1,3" prob="0.5" tag="allHarvest"/>
+		<drop event="Destroy" name="foodCropMushrooms" count="1,3" prob="0.6" tag="allHarvest"/>
+		<drop event="Destroy" name="foodCropMushrooms" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
+    </block>
+
+	<block name="Wheelbarrow">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+        <property name="CustomIcon" value="Wheelbarrow"/>
+		<property name="Path" value="solid"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?WheelbarrowPrefab"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,1,1"/> 
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+    <block name="MedievalWallPanel">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="MedievalWallPanel"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?WallPanelDark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+	<block name="MedievalCart">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+        <property name="CustomIcon" value="MedievalCart"/>
+		<property name="Path" value="solid"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?CartPrefab"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="4,2,3"/> 
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+	<block name="cntMedievalTrashPile01">
+		<property name="Tags" value="trashPile"/>
+		<property name="Material" value="Mtrash"/>
+		<property name="Shape" value="ModelEntity"/>
+        <property name="CustomIcon" value="FoodBagClosed"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="ImposterExchange" value="imposterCTREighth" param1="29"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="VehicleHitScale" value="999"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="junk"/>
+		<drop event="Harvest" name="resourceCloth" count="1,3" prob="0.5" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceCloth" count="1,3" prob="0.6" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceCloth" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
+		<property name="ShowModelOnFall" value="false"/>
+		<property name="FilterTags" value="MC_building,SC_loot"/>
+	</block>
+
+	<block name="cntMedievalTrashPile02">
+		<property name="Extends" value="cntMedievalTrashPile01"/>
+		<property name="CustomIcon" value="FoodBagOpen"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?FoodBagOpenDark"/>
+	</block>
+
+	<block name="cntMedievalTrashPile03">
+		<property name="Extends" value="cntMedievalTrashPile01"/>
+		<property name="CustomIcon" value="BonePile"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?BonePilePrefab"/>
+        <drop event="Harvest" name="resourceBone" count="1,3" prob="0.5" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceBone" count="1,3" prob="0.6" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceBone" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
+	</block>
+
+	<block name="cntMedievalTrashPile04">
+		<property name="Extends" value="cntMedievalTrashPile01"/>
+		<property name="CustomIcon" value="PackageA"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PackageADark"/>
+	</block>
+
+	<block name="cntMedievalTrashPile05">
+		<property name="Extends" value="cntMedievalTrashPile01"/>
+		<property name="CustomIcon" value="PackageB"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PackageBDark"/>
+	</block>
+
+	<block name="cntMedievalTrashPile06">
+		<property name="Extends" value="cntMedievalTrashPile01"/>
+		<property name="CustomIcon" value="ForestCrate"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ForestCratePrefab"/>
+        <drop event="Harvest" name="resourceWood" count="1,3" prob="0.5" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="1,3" prob="0.6" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" prob="0.02" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
+	</block>
+
+	<block name="DwarvenDragonStatue">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenDragonStatue"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenDragonStatue"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,3"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenKnightStatue">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenKnightStatue"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenKnightStatue"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenStatue2">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenStatue2"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenStatue2Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenStatue5">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenStatue5"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenStatue5Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenTotem1">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenTotem1"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenTotem1Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenTotem2">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenTotem2"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenTotem2Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenTotem5">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenTotem5"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenTotem5Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="ElvenStatue">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="ElvenStatue"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?ElvenStatueDark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceGoldNugget" count="8" tag="allHarvest"/>
+        <drop event="Harvest" name="resourceSilverNugget" count="12" tag="allHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" count="4" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenObelisk1">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenObelisk1"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenObelisk1Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenObelisk2">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenObelisk2"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenObelisk2Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenObelisk3">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenObelisk3"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenObelisk3Dark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="1,2,1"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenAxes">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenAxes"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenAxesDark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenShield">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenShield"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenShieldDark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenAnvil">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenAnvil"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenAnvil1Dark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenHead">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenHead"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenHeadDark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenHead2">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenHead2"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenHead2Dark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="DwarvenHead3">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenHead3"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenHead3Dark"/>
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>
+	
+    <block name="GoldIngot">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="GoldIngot"/>
+        <property name="CanPickup" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?GoldIngotDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceGoldNugget" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+        <property name="EconomicValue" value="1400"/>
+    </block>
+
+    <block name="SilverIngot">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="SilverIngot"/>
+        <property name="CanPickup" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?SilverIngotDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+        <property name="EconomicValue" value="500"/>
+    </block>
+
+    <block name="GoldCoinPile">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="GoldCoinPile"/>
+        <property name="CanPickup" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?GoldCoinPileDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="GoldCoin" count="20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+        <property name="EconomicValue" value="200"/>
+    </block>
+
+    <block name="SilverCoinPile">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="SilverCoinPile"/>
+        <property name="CanPickup" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?SilverCoinPileDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Harvest" name="casinoCoin" count="20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+        <property name="EconomicValue" value="20"/>
+    </block>
+
+    <block name="PlatinumIngot">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/>
+        <property name="CustomIcon" value="PlatinumIngot"/>
+        <property name="CanPickup" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?PlatinumIngotDark"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <drop event="Harvest" name="resourceGoldNugget" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="MC_building,SC_construction,SC_destruction"/>
+        <property name="EconomicValue" value="1900"/>
+    </block>
+
+    <block name="MedievalMapA">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalMapA"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalMapADark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalMapB">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalMapB"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalMapBDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalWorldMap">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalWorldMap"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalMapWorldDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalScroll">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalScroll"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalScrollDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalScrollOpen">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalScrollOpen"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalScrollOpenDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalOpenBookB">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalBookOpenB"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalBookOpenBDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalBookA">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalBookA"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalBookADark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalBookB">
+        <property name="Extends" value="decoEntityClothMaster"/>
+        <property name="Material" value="Mpaper"/>
+        <property name="CustomIcon" value="MedievalBookB"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalBookBDark"/>
+        <property name="Class" value="Loot"/>
+        <property name="LootList" value="bookPile"/>
+        <property name="FilterTags" value="MC_building,SC_loot,SC_commercial"/>
+    </block>
+
+    <block name="MedievalJewelryBox">
+	<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="CustomIcon" value="MedievalJewelryBox"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?JewelryBoxDark"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="jewelryBox"/>
+        <property class="RepairItems">
+	<property name="resourceWood" value="3"/>
+	</property>
+        <drop event="Harvest" name="resourceWood" count="3,6" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2"/>
+        <drop event="Fall" name="terrDestroyedWood" count="1" prob="0.75" stick_chance="1"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+    </block>
+
+    <block name="AlchemyPouch">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="AlchemyPouch"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?AlchemyPouchDark"/>
+	<property name="LootList" value="cntBackpack"/>
+    </block>
+
+    <block name="MedPouch">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="MedPouch"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedPouchDark"/>
+	<property name="LootList" value="cntBackpack"/>
+    </block>
+
+    <block name="MedPouchCross">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="MedPouchCross"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedPouchCrossDark"/>
+	<property name="LootList" value="popnpillsCrate"/>
+    </block>
+
+    <block name="MedievalBag">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="MedievalBag"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalBagDark"/>
+	<property name="LootList" value="cntBackpack"/>
+    </block>
+
+    <block name="MedievalSackA">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="MedievalSackA"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalSackADark"/>
+	<property name="LootList" value="cntBackpack"/>
+    </block>
+
+    <block name="MedievalSackB">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Player"/>
+        <property name="CustomIcon" value="MedievalSackB"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalSackBDark"/>
+	<property name="LootList" value="cntBackpack"/>
+    </block>
+
+    <block name="DwarvenTreasureChest">
+	<property name="Class" value="SecureLoot"/>
+	<property name="Tags" value="door"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="2000"/>
+	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="DwarvenChest"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenChestDark"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ItemTypeIcon" value="lock"/>
+	<property name="LootList" value="buriedTreasure"/>
+	<property class="RepairItems">
+		<property name="resourceConcreteMix" value="10"/>
+	</property>
+	<property name="DowngradeBlock" value="DwarvenTreasureChestInsecure"/>
+		<property name="LockPickItem" value="resourceLockPick"/>
+		<property name="LockPickTime" value="15"/>
+		<property name="LockPickBreakChance" value="0.75"/>
+	<drop event="Harvest" name="resourceRockSmall" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="156"/>
+	<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
+    </block>
+
+     <block name="DwarvenTreasureChestInsecure">
+	<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="DwarvenChest"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenChestDark"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="buriedTreasure"/>
+        <property class="RepairItems">
+		<property name="resourceConcreteMix" value="10"/>
+	</property>
+        <drop event="Harvest" name="resourceRockSmall" count="10,20" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="5"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+    </block>
+
+    <block name="MedievalUrn">
+	<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="CustomIcon" value="MedievalUrn"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalUrnDark"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="junk"/>
+        <property class="RepairItems">
+	<property name="resourceConcreteMix" value="5"/>
+	</property>
+        <drop event="Harvest" name="resourceRockSmall" count="5,10" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+    </block>
+
+    <block name="AncientDwarvenForge">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenForge"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenForgeDark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,3,2"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="MedievalLectern">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="MedievalLecturn"/>
+        <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalLecturnDark"/>
+        <property class="RepairItems">
+	<property name="resourceCement" value="4"/>
+        </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="10" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="GreenCaveCrystal">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="GreenCaveCrystal"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?GreenCrystalDark"/>
+        <drop event="Harvest" name="resourceRockSmall" count="8" tag="allHarvest"/>
+        <drop event="Harvest" name="EmeraldGemstone" count="2" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="AncientDwarvenThrone">
+        <property name="Group" value="Building,advBuilding"/>
+        <property name="Material" value="Mstone"/>                                      
+        <property name="CustomIcon" value="DwarvenThrone"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?DwarvenThroneDark"/>
+        <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,3,3"/> 
+        <property class="RepairItems">
+		<property name="resourceCement" value="7"/>
+               </property> 
+        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" count="8" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+        <property name="FilterTags" value="MC_building"/>
+    </block>	
+
+    <block name="MedievalTableA">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="MedievalTableA"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?MedievalTableADark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+                <property name="DisplayType" value="blockMulti"/> 
+		<property name="MultiBlockDim" value="3,1,1"/> 
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+
+    <block name="MedievalBrokenBarrel">
+		<property name="Extends" value="woodNoUpgradeMaster"/>
+		<property name="Shape" value="ModelEntity"/>
+                <property name="CustomIcon" value="MedievalBrokenBarrel"/>
+		<property name="Path" value="solid"/>
+                <property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?BrokenBarrelDark"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+		<property name="Group" value="Decor/Miscellaneous"/>
+		<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+		<property name="CreativeMode" value="Player"/>
+    </block>
+	
+	<!-- NMM Main Quest Parts -->	
+	
+    <block name="MainQuestPart1">
+		<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mqPart1"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		</property>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="5"/>
+		<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    </block>
+
+    <block name="MainQuestPart2">
+		<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mqPart2"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		</property>
+        <drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="5"/>
+        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    </block>
+
+    <block name="MainQuestPart3">
+		<property name="Extends" value="cntLootChestHero" param1="DowngradeBlock"/>
+        <property name="Material" value="Mwood"/>
+		<property name="MaxDamage" value="1000"/>
+		<property name="CustomIcon" value="Chest1Dark"/>
+        <property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="#@modfolder:Resources/NotMedModBlocks.unity3d?Chest1Dark"/>
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mqPart3"/>
+        <property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		</property>
+        <drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" name="resourceWood" count="5"/>
+        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    </block>	
+
+	<!-- NMM Trader Baker -->
+	
+	<block name="spawnTraderBakerNMM">
+		<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+		<property name="CustomIcon" value="metalTrussingRampOld"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="SpawnEntity"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+		<property name="HandleFace" value="Bottom"/>		
+		<property name="SpawnClass" value="npcTraderBakerNMM"/>
+		<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+		<property name="Collide" value="sight"/>
+		<property name="IndexName" value="Trader"/>
+	</block>
+	
+	<!-- NMM Trader Blacksmith -->	
+
+	<block name="spawnTraderBlacksmithNMM">
+		<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+		<property name="CustomIcon" value="metalTrussingRampOld"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="SpawnEntity"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+		<property name="HandleFace" value="Bottom"/>		
+		<property name="SpawnClass" value="npcTraderBlacksmithNMM"/>
+		<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+		<property name="Collide" value="sight"/>
+		<property name="IndexName" value="Trader"/>
+	</block>
+
+	<!-- NMM Trader Alchemist -->	
+
+	<block name="spawnTraderAlchemistNMM">
+		<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+		<property name="CustomIcon" value="metalTrussingRampOld"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="SpawnEntity"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+		<property name="HandleFace" value="Bottom"/>		
+		<property name="SpawnClass" value="npcTraderAlchemistNMM"/>
+		<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+		<property name="Collide" value="sight"/>
+		<property name="IndexName" value="Trader"/>
+	</block>
+
+	<!-- NMM Trader Tavern Master -->	
+
+	<block name="spawnTraderTavernMasterNMM">
+		<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+		<property name="CustomIcon" value="metalTrussingRampOld"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="SpawnEntity"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+		<property name="HandleFace" value="Bottom"/>		
+		<property name="SpawnClass" value="npcTraderTavernMasterNMM"/>
+		<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+		<property name="Collide" value="sight"/>
+		<property name="IndexName" value="Trader"/>
+	</block>
+
+	<!-- NMM Trader Armor Keeper -->	
+
+	<block name="spawnTraderArmorKeeperNMM">
+		<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+		<property name="CustomIcon" value="metalTrussingRampOld"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="SpawnEntity"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+		<property name="HandleFace" value="Bottom"/>		
+		<property name="SpawnClass" value="npcTraderArmorKeeperNMM"/>
+		<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+		<property name="Collide" value="sight"/>
+		<property name="IndexName" value="Trader"/>
+	</block>	
+	
+	</append>	
+	
+		<!-- Vanilla Tweaks for Biome/POI Replacement Models -->
+	<set xpath="/blocks/block[@name='cntTrashPile01']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntTrashPile02']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?FoodBagOpenDark</set>
+	<set xpath="/blocks/block[@name='cntTrashPile03']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntTrashPile04']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?FoodBagOpenDark</set>	
+	<set xpath="/blocks/block[@name='cntTrashPile05']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntTrashPile06']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?ForestCratePrefab</set>
+	<set xpath="/blocks/block[@name='cntTrashPile07']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntTrashPile08']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?FoodBagOpenDark</set>
+	<set xpath="/blocks/block[@name='cntTrashPile09']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?ForestCratePrefab</set>	
+	<set xpath="/blocks/block[@name='cntBackpack01']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?PackageADark</set>
+	<set xpath="/blocks/block[@name='cntBackpack03']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?PackageBDark</set>
+	<!--set xpath="/blocks/block[@name='cntSportsBag01']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BonePilePrefab</set>
+	<set xpath="/blocks/block[@name='cntSportsBag02']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BonePilePrefab</set-->	
+	<set xpath="/blocks/block[@name='cntSportsBag01']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?ForestCratePrefab</set>
+	<set xpath="/blocks/block[@name='cntSportsBag02']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?ForestCratePrefab</set>
+
+	<set xpath="/blocks/block[@name='cntShoppingCart']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?PackageADark</set>
+	<set xpath="/blocks/block[@name='cntShoppingCartEmpty']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?PackageBDark</set>
+
+	<set xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/OldVendingMachine.unity3d?VendingMachineOld</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineTrader']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/OldVendingMachine.unity3d?VendingMachineOld</set>
+	<set xpath="/blocks/block[@name='cntVendingMachine2Broken']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/OldVendingMachine.unity3d?VendingMachineOld</set>
+	<set xpath="/blocks/block[@name='cntVendingMachine2']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/OldVendingMachine.unity3d?VendingMachineOld</set>
+<!-- Fetch Bag Replacement -->
+	<set xpath="/blocks/block[@name='cntAmmoPileSmall']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntChemPileSmall']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntMedicLootPileA']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+	<set xpath="/blocks/block[@name='cntFoodPileSmall']/property[@name='Model']/@value">#@modfolder:Resources/NotMedModBlocks.unity3d?BagClosedDark</set>
+
+		<!-- Vanilla Tweaks for Road Replacement Car/Asset Models. Additional added to Biomes.xml -->
+<!-- Master -->
+<!-- 01 -->
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage0Master']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/cartComplete.unity3d?cartComplete</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage0Master']/drop[@name='resourceHeadlight']/@count">0</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage0Master']/drop[@name='resourceScrapIron']/@count">40,80</set> <!-- Default 10,20 -->
+<!-- 02 -->
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/CartChest.unity3d?CartChest</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/drop[@name='smallEngine']/@count">0</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/drop[@name='carBattery']/@count">0</set>	
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/drop[@name='resourceRadiator']/@count">0</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/drop[@name='ammoGasCan']/@count">0</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/drop[@name='resourceScrapIron']/@count">68,140</set> <!-- Default 17,35 -->
+<!-- 03 -->
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage2Master']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/SmallSackCart.unity3d?SmallSackCart</set>	
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage2Master']/drop[@name='ammoGasCan']/@count">0</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage2Master']/drop[@name='resourceHeadlight']/@count">0</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage2Master']/drop[@name='resourceScrapIron']/@count">48,80</set> <!-- Default 12,20 -->
+<!-- Mixed -->
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage0v03']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/cartComplete.unity3d?cartComplete</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1v03']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/CartChest.unity3d?CartChest</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage2v03']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/SmallSackCart.unity3d?SmallSackCart</set>
+<!-- Cop -->
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage0v08']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/cartComplete.unity3d?cartComplete</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage1v08']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/CartChest.unity3d?CartChest</set>
+	<set xpath="/blocks/block[@name='cntCar03SedanDamage2v08']/property[@name='Model']/@value">#@modfolder(2-NMMOakCore):Resources/SmallSackCart.unity3d?SmallSackCart</set>
+<!-- There are additional vehicles for flat bed trailers and buses, etc. They may need changing if they appear -->
+	<set xpath="/blocks/block[@name='decoCarTireSmallFlat']/property[@name='Model']/@value">Entities/OutdoorDecor/wildWestWagonWheelFrontPrefab</set>
+
+<!-- Laz Man Eliminate Wandering Hordes -->
+ 	<append xpath="/blocks/block[contains(@name,'flagPoleWhiteRiver')]">
+		<property name="OnlySimpleRotations" value="true"/>
+	</append>
+
+</configs>
