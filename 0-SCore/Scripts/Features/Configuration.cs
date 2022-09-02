@@ -2,6 +2,16 @@
 
 public static class Configuration
 {
+  
+    //public static object GetCustomMenu()
+    //{
+    //    var strNamespace = "";
+    //    var strClass = "";
+    //    var myClassType = Type.GetType(String.Format("{0}.{1}", strNamespace, strClass));
+
+    //}
+
+    
     public static bool CheckFeatureStatus(string strFeature)
     {
         var ConfigurationFeatureBlock = Block.GetBlockValue("ConfigFeatureBlock");
@@ -39,9 +49,9 @@ public static class Configuration
     {
         var ConfigurationFeatureBlock = Block.GetBlockValue("ConfigFeatureBlock");
         if (ConfigurationFeatureBlock.type == 0)
-            //   UnityEngine.Debug.Log("Feature Block not found: " + strClass + " " + strFeature);
             return false;
 
+        
         var result = false;
         if (ConfigurationFeatureBlock.Block.Properties.Classes.ContainsKey(strClass))
         {

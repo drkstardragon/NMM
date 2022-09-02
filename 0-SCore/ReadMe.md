@@ -10,6 +10,135 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
+Version: 20.6.242.1151
+
+	[ Cave Manager ]
+		- Adjusted math for Heigh map
+
+Version: 20.6.240.913
+
+	[ Fire Manager ]
+		- Potential fix for stack error on Linux
+
+	[ Cave Manager ]
+		- Adjusted math for HeightMap mode
+		- Added new default height map as cave1.png.
+
+Version: 20.6.238.1937
+
+	[ Cave System ]
+		- Initial implementation of Heighmap cave system.
+		- Samples under 0-SCore/Caves/Stamps
+		- To enable Height Map Caves using xpath:
+
+			<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CaveEnabled']/@value">true</set>
+			<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='GenerationType']/@value">HeightMap</set>
+			<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CavePath']/@value">@modfolder:/Caves/Stamps/cave11.png</set>
+			<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CavePrefab']/@value">Large</set>
+
+		- Default is cave11.png
+
+		- Teleport to 0 0, then look for underground. The top corner of your target png is currently set to 0,0
+			-> You can also look at the log for:
+				Cave Teleport: 
+
+				This will give you the coordinates to teleport to. Example:
+					Cave Teleport: 57 0
+
+					teleport 57 0
+
+		- Log file is kind of spammy.
+			- During initial load up, it will display lines of numbers for the cave mapping as the system sees it.
+			- When a cave is being drawn, it'll display Target Depth.
+
+		- The CavePrefabs placeholders are currently defined as follows:
+			Large:  3x4x3 block of air
+			Medium: roughly 3x1x3
+			Small:	1x1x1
+
+			- This will be fleshed out more, but this is what you can start off with. I don't find Medium and Small very useful, but your heightmaps may need adjustments
+
+
+Version: 20.6.238.1305
+
+	[ Fire Manager ]
+		- Updated two Harmony patches that give buffs to check if the block is on fire and has a particle.
+
+	[ Random Death Spawn ]
+		- Removed blocking Check:
+			if (__instance.Buffs.HasCustomVar("NoSpawnOnDeath")) return true ;
+		
+			- Added another line of guppy code to prevent spawns:
+			if (strSpawnGroup == "SpawnNothing") return true;
+
+		- Resynced Guppycur's changes
+
+		- If an entity has a custom cvar called RandomSize, and a custom cvar called SpawnCopyScale, the newly spawned entity will spawn with the same scale as the original
+
+	[ UMA ]
+		- Brought forward some UMA patches that are disabled by default; toggle in Config/blocks.xml
+			-> If UMAs are set to type="Zombie", create the Data/UMATextures Folder
+				-> If UMATweaks is enabled, this folder is created when a type is Zombie.
+			-> If UMAs are set to type="Player", you do not need a Data/UMATextures folder
+
+Version: 20.6.235.1604
+
+	[ ObjectiveBlockDestroySDX ]
+		-> Added support for a comma-delimited list for the block names that are valid.
+			<objective type="BlockDestroySDX, SCore" id="woodChair1,officeChair01VariantHelper,woodChair1Broken" value="1" phase="2"/>
+		
+		-> Added support for comma-delimited list of tags. If the objective's ID does not match any known block, the objective will assume the id is a potential comma-delimited list of tags.
+			<objective type="BlockDestroySDX, SCore" id="ore,deepOre" value="1" phase="2"/>
+
+		-> Note: Order of checks is: comma-delimited block name, block name, comma-delimited tag. This is important because some tags will match a block name (terrGravel, wha u doin')
+
+		-> Note: Count is unified, so a woodChair1 and woodChair1Broken counts as 2 towards this objective 
+
+	[ XUI Menu ]
+		-> Added a Config/XUi_Menu/windows-Template.xm to expose over-ride options using w00kie n00kie's Custom Game Option mod: https://gitlab.com/wookienookie/CustomGameOptions.git
+			-> other settings can be exposed with just XML settings. Some documentation exists in the windows.xml on how to map the settings to the xui.
+			-> This file is just a template file. Using it as-is is NOT recommended, as it will not display properply.
+		-> This is an optional feature that will not work without the CustomGameOptions.
+
+Version: 20.6.234.911
+
+	[ EntityAlive Patch ]
+		- Added a chunk of Guppycode I missed
+
+	[ SpawnCubeSDX ]
+		- If the keep variable is on the Config line (the value does not matter.. keep=0), then it will not self-destroy
+			-> When keep is available, it'll set a scheduled update into the future.
+
+	[ Entity Swimming ]
+		- Fixed an issue where fish were outside of water
+
+	[ A Better Life ]
+		- Adjusted spawn rate in the biomes.xml for fish spawns.
+
+Version: 20.6.233.1938
+
+	[ Entity Alive Patch ]
+		- Added new cvar check to disable SpawnOnDeath
+			-> If a particular entity has a cvar called: NoSpawnOnDeath, then it will skip the SpawnOnDeath
+
+	[ Headshot Only Patch ]
+		- Fixed typos
+
+	[ Fire Manager ]
+		- If SmokeTime is set to 0 or below, no smoke will be placed.
+
+	[ 0-SCore Development ]
+		- Re-visited AssemblyInfo.tt and fixed up a issues, simplyfing it and adding leading 0s
+
+	[ SpawnCubeSDX ]
+		- Added new property called keep=0. This will keep the spawn block from destorying itself, which was affecting water spawned entities.
+
+		<block name="terrWaterSpawner">
+		  <property name="Extends" value="SpawnCube"/>
+		  <property name="Class" value="SpawnCube2SDX, SCore" />
+		  <property name="Config" value="eg=AnimalSwiming;buff=buffOrderStay;pc=0;keep=0" />
+	  </block>
+
 Version: 20.6.231.98
 
 	[ Entity Alive Patch ]
