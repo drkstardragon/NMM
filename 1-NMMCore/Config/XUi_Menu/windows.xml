@@ -1,6 +1,0 @@
-<mjedit>
-	<!-- ===mjedit=== -->
-
-<set xpath="/windows/window[@name='loadingScreen']/texture[@name='loading_image']/@texture">@modfolder:UIAtlases/ItemIconAtlas/NMMBackground01.png</set>
-
-</mjedit>

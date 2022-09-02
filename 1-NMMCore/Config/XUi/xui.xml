@@ -1,5 +1,0 @@
-<mjedit>
-	<append xpath="/xui/ruleset/window_group[@name='ingameMenu']" >
-			<window name="btnNMM" />
-	</append>
-</mjedit>

@@ -1,5 +1,0 @@
-<configs>
-    <append xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']">
-		<property name="EconomicValue" value="440"/>	
-	</append>
-</configs>
