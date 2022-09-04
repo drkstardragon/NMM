@@ -165,7 +165,7 @@
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />
 <texture depth="1" pos="440,-45" width="146" height="101" pivot="center" texture="@modfolder:Textures/DragonComp.png"/>
 			<texture depth="1" pos="40,-45" width="146" height="101" pivot="center" texture="@modfolder:Textures/DragonComp2.png"/>
-			<texture depth="1" pos="227,-5" width="55" height="30" pivot="center" texture="@modfolder:Textures/clockpointer2.png"/>
+			<texture depth="1" pos="240,-5" width="55" height="30" pivot="center" texture="@modfolder:Textures/clockpointer2.png"/>
 			<texture pos="242,-20" depth="0" width="455" height="70" pivot="center" texture="@modfolder:Textures/dragonframe2.png"/>
 		<sprite pos="240,-65" sprite="" color="255,255,255,255" globalopacitymod="1.8">
 			<label depth="2" width="300" height="30" text="{daytitle}: [{daycolor}]{day}[-] {timetitle}: {time}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
