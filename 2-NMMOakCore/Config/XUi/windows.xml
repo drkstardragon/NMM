@@ -186,8 +186,12 @@
 			<rect>
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 				<grid depth="10" name="inventory" rows="1" cols="10" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
+					<item_stack name="0"/>					
+				</grid>
+				<grid depth="10" name="inventory2" rows="1" cols="10" pos="0,100" cell_width="75" cell_height="75" repeat_content="true" visible="{secondrow}">
 					<item_stack name="0"/>
-				</grid>				
+				</grid>
+			</rect>				
 		
 				<grid name="AmuNum" depth="16" pos="47,0" rows="1" cols="10" cell_width="75" cell_height="70" repeat_content="false">
 					<label name="Slot1" depth="20" size="22,22" text="1" font_size="18" color="[black]" crispness="Never" effect="outline" effect_distance="1,1" pivot="center" />
