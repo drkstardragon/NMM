@@ -1271,6 +1271,14 @@
 	    <ingredient name="drinkJarRiverWater" count="1"/>
     </recipe>
 	
+	<!-- Storage Crates -->
+
+	<recipe name="OakravenStorageVariantHelper" count="1">
+		<ingredient name="resourceNail" count="10"/>
+		<ingredient name="resourceWood" count="12"/>
+		<ingredient name="resourceForgedIron" count="2"/>	
+	</recipe>	
+	
 	</append>
 	
 </configs>

@@ -2203,6 +2203,375 @@
 	<property name="SortOrder1" value="70i0"/>
 </block>
 
+		<!-- Storage Crates -->
+		
+		<block name="OakravenStorageMaster">
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="woodchest1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodChest1"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>	
+		
+		<block name="WoodChestSign1">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="woodchest1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodChest1"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="WoodChestSign1Insecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="WoodChestSign1Insecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="woodchest1"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodChest1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+		<block name="OakravenStorageVariantHelper">
+	<property name="Extends" value="WoodChestSign1"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="woodchest1"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="WoodChestSign1,WoodChestSign2,WoodBoxSign1,DisplayCaseSign1,BookCabinetSign,WallBookCase,DisplayCase2,WoodCrateSign2"/>
+</block>
+
+		<block name="WoodChestSign2">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="woodchest2"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?woodchest2"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="WoodChestSign2Insecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="WoodChestSign2Insecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="woodchest2"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?woodchest2"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+	<block name="WoodBoxSign1">
+	<property name="Extends" value="OakravenStorageMaster"/>	
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="woodbox1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodBox1"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="WoodBoxSign1Insecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="WoodBoxSign1Insecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="woodbox1"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodBox1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="DisplayCaseSign1">
+	<property name="Extends" value="OakravenStorageMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="displaycase1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?DisplayCase1"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="DisplayCaseSign1Insecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="DisplayCaseSign1Insecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="displaycase1"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?DisplayCase1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+	<block name="BookCabinetSign">
+	<property name="Extends" value="OakravenStorageMaster"/>	
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="bookscabinet"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?BooksCabinet"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="BookCabinetSignInsecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="BookCabinetSignInsecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="bookscabinet"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?BooksCabinet"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+	<block name="WallBookCase">
+	<property name="Extends" value="OakravenStorageMaster"/>	
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="wallbookcase"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WallBookCase"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="WallBookCaseInsecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="WallBookCaseInsecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="wallbookcase"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WallBookCase"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+	<block name="DisplayCase2">
+	<property name="Extends" value="OakravenStorageMaster"/>	
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="displaycase2"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?DisplayCase2"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="DisplayCase2Insecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="DisplayCase2Insecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="displaycase2"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?DisplayCase2"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+<block name="WoodCrateSign2">
+	<property name="Extends" value="OakravenStorageMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="woodcrate2"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodCrate2"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLootSigned"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="WoodCrateSign2Insecure"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+</block>
+
+<block name="WoodCrateSign2Insecure">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="woodcrate2"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/SignableCabanets.unity3d?WoodCrate2"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Destroy" name="resourceWood" count="1,3"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
 	</append>
 
 </configs>
