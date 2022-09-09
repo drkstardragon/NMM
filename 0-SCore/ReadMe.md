@@ -10,6 +10,19 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
+Version: 20.6.250.1020
+
+	[ Fire Manager ]
+		- Fixed a potential null ref when the fire check is firing before the game is fully loaded.
+
+Version: 20.6.249.1333
+
+	[ Random Death Spawn ]
+		- Updated spawn code to reflect the changes from SpawnEntity MinEffect to avoid duplicating entities
+
+	[ Linux Fixes ]
+		- Fixed null reference errors when running on Linux client for crop trample and IsAlwaysActive
+
 Version: 20.6.247.1047
 
 	[ Entity Stats ]

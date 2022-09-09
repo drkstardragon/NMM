@@ -5,6 +5,9 @@
 <remove xpath="/items/item[@name='drinkJarEmpty']"></remove>
 <remove xpath="/items/item[@name='bucketEmpty']"></remove>
 
+	<!-- Tweaks to Vanilla -->
+	<set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
+
 	<append xpath="/items">
 
 		<!-- BeeHives -->
@@ -2025,7 +2028,7 @@
 		
 <item name="SkullSword">
 <property name="ItemTypeIcon" value="star"/>
-	<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,attStrength,perkSkullCrusher"/>
+	<property name="Tags" value="knife,blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,attStrength,perkSkullCrusher"/>
 	<property name="DisplayType" value="meleeHeavy"/>
 	<property name="HoldType" value="47"/>
 	<property name="CustomIcon" value="skullsword"/>

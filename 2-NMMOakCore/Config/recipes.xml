@@ -108,6 +108,11 @@
 	<ingredient name="foodEggBoiled" count="2"/>
 	<ingredient name="foodPumpkinBread" count="1"/>		
 	</recipe>
+	
+	<recipe name="resourceScrapPolymers" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="CaughtChick" count="1"/>
+	<ingredient name="resourceGlue" count="1"/>		
+	</recipe>	
 
     <!-- CookingStations -->
 
@@ -386,6 +391,11 @@
 		<ingredient name="foodAcornMeal" count="1"/>
 		<ingredient name="foodHoney" count="1"/>
 		<ingredient name="foodEgg" count="2"/>
+	</recipe>
+	
+	<recipe name="resourceScrapPolymers" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot">
+	<ingredient name="CaughtChick" count="1"/>
+	<ingredient name="resourceGlue" count="1"/>		
 	</recipe>
 	
                               <!-- OaksCooker Recipes -->
