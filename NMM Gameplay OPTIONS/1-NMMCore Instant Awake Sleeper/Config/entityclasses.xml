@@ -1,0 +1,6 @@
+<configs>
+
+	<!-- NPC Mod Tweaks -->	
+    <set xpath="/entity_classes/entity_class/property[@name='SleeperInstantAwake']/@value">true</set>
+
+</configs>

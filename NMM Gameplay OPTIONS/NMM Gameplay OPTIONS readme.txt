@@ -8,13 +8,17 @@ Simply remove them from the Mods folder to deactivate them if they are no longer
 
 A) 1-NMMCore Food Spoilage
 This mod activates food spoilage for NMM.
-This allows any food you have (except for fish and honeycomb) to degrade over time. 
+This allows any food you have (except for fish and honeycomb) to degrade over time.
 
-B) 1-NMMCore No Fire
+B) 1-NMMCore Instant Awake Sleeper
+This mod turns on hyper vigilance and arousal of 'sleeping' entities in POIs.
+This means they will wake up faster and possibly attack a player as larger groups at the same time.  
+
+C) 1-NMMCore No Fire
 This mod turns off all fire features for NMM.
 This means entities and selective ammo cannot burn wooden buildings, etc.
 
-C) 1-NMMCore No Fungus Fire
+D) 1-NMMCore No Fungus Fire
 This mod turns off the fire feature for the 3 Fungus entities.
 This means the acid vomit and globules cannot burn wooden buildings, etc.
 All other fire features will remain active, such as Fire Breathing Dragon attacks.

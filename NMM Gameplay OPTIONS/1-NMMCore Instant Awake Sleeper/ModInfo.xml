@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="1-NMMCore Instant Awake Sleeper"/>
+		<Description value="Activates POI Sleeper Volume hyper vigilance and arousal."/>
+		<Author value="Darkstardragon, MageJosh, arramus, and the luminous fish"/>
+		<Version value="A20"/>
+	</ModInfo>
+</xml>
