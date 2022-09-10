@@ -22,7 +22,7 @@ In addition, some content such as models, have been purchased and credited accor
 'Not Medieval Mod' (NMM) Creators and Developers in Alphabtical Order from Z - A:
 
 Zilox - Kindly provided the Medieval Horse.
-Xyth - Kindly developed the 0-XNPCCore, along with the team. The 0-XNPCCore is a complete bundle of models, code, and other game assets.
+Xyth - Kindly developed the 0-XNPCCore, along with the team, and 2-NPCXBirdPack which has been embedded. The 0-XNPCCore is a complete bundle of models, code, and other game assets.
 Xyth/SphereII/Mumpfy - Kindly developed 'Locks' mod powered by Score.
 sphereii - Kindly developed the 0-Score, along with the team. Also provided the 0-SphereII Legacy Distant Terrain.
 Oakraven - Kindly provided support for the 1-NMMCore and the 2-NMMOakCore content, consisting of multiple released and NMM standalone modlets. (Full list below)
@@ -132,7 +132,6 @@ Additional folders such as:
 0-SCore
 0-SphereII Legacy Distant Terrain
 0-XNPCCore
-2-NPCXBirdPack-NMM
 NMM Gameplay OPTIONS
 RandomMainmenuBackground
 

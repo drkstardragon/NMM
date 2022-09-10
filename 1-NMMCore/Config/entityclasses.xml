@@ -5060,7 +5060,28 @@
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="130"/>
 			</effect_group>  
-        </entity_class>		
+        </entity_class>
+		
+		<!-- 2-NPCXBirdPack-NMM -->
+
+		<entity_class name="animalBats" extends="animalTemplateTimidFlying"> <!-- has a particle of...Bats!  -->
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Bats_X" />	
+			<property name="Tags" value="entity,cp,animal,timid,animalBats"/>
+			<property name="Faction" value="animals"/>		
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="BatRandom" />
+			<property name="SoundAlert" value="BatRandom"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value=""/>
+			<property name="SoundAttack" value="BatRandom"/>
+			<property name="SoundSense" value="BatRandom"/>
+			<property name="SoundGiveUp" value="BatRandom"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>			
+		</entity_class>		
 		
 		<!-- Laz Man - Eliminate the Hordes Starter Entities -->		
 

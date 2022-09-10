@@ -1121,6 +1121,7 @@
 		<entity name="animalStag" prob="1"/>
 		<entity name="animalDoe" prob="1"/>
 		<entity name="animalWolf" prob="1"/>
+		<entity name="animalBats" prob="5"/> <!-- Passive feature from 2-NPCXBirdPack-NMM -->		
 		<entity name="none" prob="50"/>
 	</entitygroup>
 
@@ -1135,6 +1136,7 @@
 		<entity name="animalZombieDog" prob="9"/>
 		<entity name="animalZombieBear" prob="3"/>
 		<entity name="animalDireWolf" prob="3"/>
+        <entity name="animalBats" prob="3" /> <!-- Purely for Navezgane unless custom RWG tool offers standalone -->		
 		<entity name="none" prob="85"/>
 	</entitygroup>
 
@@ -1143,6 +1145,7 @@
 		<entity name="animalZombieVulture" prob="30"/>
 		<entity name="animalZombieDog" prob="30"/>
 		<entity name="animalZombieBear" prob="20"/>
+		<entity name="animalBats" prob="20"/> <!-- Passive feature from 2-NPCXBirdPack-NMM -->		
 	</entitygroup>
 
 	<entitygroup name="ZombieDogGroup">
@@ -3982,7 +3985,7 @@
 	</append>
 
 	<!-- BIOME Spawning Animals -->
-	<!-- 1-FantasticBeastz -->
+	<!-- 1-FantasticBeastz and friends -->
 	
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">	
 		<entity name="Harpy" prob="2" />

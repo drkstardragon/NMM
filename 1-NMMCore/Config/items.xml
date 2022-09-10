@@ -1650,6 +1650,23 @@
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="3200"/><!--AbrasionRadiated-->
 			</effect_group>
 		</item>
+		
+		<!-- 2-NPCXBirdPack-NMM Load Hack -->		
+		
+		<item name="AnimalXBirdsLoadingHack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Resources/XythBirds.unity3d?Robin_X"/>
+			<property name="DropMeshfile"  value="#@modfolder:Resources/XythBirds.unity3d?Robin_X"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>		
 
 		<!-- VEHICLES -->
 		
