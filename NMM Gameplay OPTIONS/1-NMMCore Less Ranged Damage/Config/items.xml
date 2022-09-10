@@ -1,0 +1,6 @@
+<configs>
+
+	<set xpath="/items/item[@name='gunNPCXBow']/property[@class='Action1']/property[@name='DamageEntity']/@value">20</set><!-- Default 35 -->
+	<set xpath="/items/item[@name='gunNPCLBow']/property[@class='Action1']/property[@name='DamageEntity']/@value">20</set><!-- Default 35 -->
+	
+</configs>

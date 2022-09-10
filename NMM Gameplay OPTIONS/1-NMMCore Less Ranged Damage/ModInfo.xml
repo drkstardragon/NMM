@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <ModInfo>
+    <Name value="1-NMMCore Less Ranged Damage" />
+    <Description value="Reduces damage from the ranged XBow and LBow Sharpshooters" />
+    <Author value="NPCMod Community" />
+    <Version value="A20" />
+    <Website value="" />
+  </ModInfo>
+</xml>
