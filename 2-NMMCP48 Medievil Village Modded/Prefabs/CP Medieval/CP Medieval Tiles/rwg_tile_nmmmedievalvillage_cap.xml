@@ -29,15 +29,15 @@
   <property name="POIMarkerTags" value="nmmmedieval60x60#nmmmedieval42x42#nmmmedieval42x42#nmmmedieval42x42#nmmmedieval42x42#nmmmedieval42x42#nmmmedieval25x25#nmmmedieval25x25#nmmmedieval25x25" />
   <property name="POIMarkerType" value="POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn,POISpawn" />
   <property class="Stats">
-    <property name="TotalVertices" value="185610" />
-    <property name="TotalTriangles" value="190770" />
+    <property name="TotalVertices" value="195871" />
+    <property name="TotalTriangles" value="197656" />
     <property class="BlockEntities">
-      <property name="Vertices" value="81651" />
-      <property name="Triangles" value="73028" />
+      <property name="Vertices" value="89678" />
+      <property name="Triangles" value="78430" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="45923" />
-      <property name="Triangles" value="23478" />
+      <property name="Vertices" value="47355" />
+      <property name="Triangles" value="24202" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -52,8 +52,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
+      <property name="Vertices" value="802" />
+      <property name="Triangles" value="760" />
     </property>
     <property class="ChunkMeshes5">
       <property name="Vertices" value="0" />
@@ -74,11 +74,6 @@
     <property class="ChunkMeshes9">
       <property name="Vertices" value="0" />
       <property name="Triangles" value="0" />
-    </property>
-  </property>
-  <property class="IndexedBlockOffsets">
-    <property class="quest_feather">
-      <property name="0" value="73, 2, 65" />
     </property>
   </property>
 </prefab>
