@@ -1666,7 +1666,17 @@
 			<property name="EconomicValue" value="1"/>
 			<property name="EconomicBundleSize" value="1000"/>
 			<property name="Group" value="Resources"/>
-		</item>		
+		</item>
+
+		<item name="meleeHandAnimalRobin">
+			<property name="Tags" value="melee"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="9"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Canhold" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+		</item> <!-- no Attack0, no attack -->		
 
 		<!-- VEHICLES -->
 		
