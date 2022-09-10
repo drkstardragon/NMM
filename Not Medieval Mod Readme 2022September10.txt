@@ -121,7 +121,7 @@ Prefab creators from Z - A include:
 
 Shema
 Redzero83
-PapyKero (Medieval house Kamelot Domo 02 from Nexus but will also be joining CP49 - Direct permission)
+PapyKero (Medieval house Kamelot Domo 02 and Med from Nexus but will also be joining CP49 - Direct permission)
 Magoli (An update of Stone Henge to A20 in collaboration with arramus)
 
 =======================
