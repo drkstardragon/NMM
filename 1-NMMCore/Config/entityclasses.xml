@@ -5002,12 +5002,12 @@
             <property name="HideInSpawnMenu" value="false"/>    
             <property name="SizeScale" value=".5"/> 
 			<property name="Tags" value="entity,animal,zombie,hostile,vulture,UMA2"/>
-            <property name="HasRagdoll" value="true"/>
+            <property name="HasRagdoll" value="false"/>
             <property name="HasDeathAnim" value="true"/>
             <property name="RootMotion" value="true"/>
             <property name="IsEnemyEntity" value="true"/>             
             <property name="AvatarController" value="AvatarAnimalController"/> 
-            <property name="Mesh" value="#@modfolder:Resources/guppyVultureBurnt.unity3d?gupBurnedVultureHumanoid"/>
+            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureHumanoid"/>
             <property name="ExperienceGain" value="300"/>
             <property name="DeadBodyHitPoints" value="200"/>
 			<property name="PhysicsBody" value="zombieStandard"/>			
@@ -5040,16 +5040,6 @@
             <property name="MoveSpeedPanic" value="1.5"/>
 			<property name="ParticleOnDeath" value="blood_death"/>
 			<property name="RotateToGround" value="true"/>
-			
-		  <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
-		  <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
-		  <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
-		  <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
-		  <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
-		  <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
-		  <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
-		  <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
-		  <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
   
 			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>

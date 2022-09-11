@@ -4063,7 +4063,7 @@
 		<!-- Guppycur - Burnt Vulture Entity -->	
 	
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
-		<entity name="guppyVultureBurnt" prob="0" /> <!-- 15 when spike is resolved -->		
+		<entity name="guppyVultureBurnt" prob="15" />		
 	</append>	
 	
 	<!-- Sleeper Volume Groups -->
