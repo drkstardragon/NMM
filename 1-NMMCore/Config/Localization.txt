@@ -518,6 +518,8 @@ ChaosChampion,entityclasses,Entity,,,Chaos Champion,,,,,,,,,,,,,
 
 zombieCrispyNMM,entityclasses,Entity,,,NMM Crispy,,,,,,,,,,,,,
 guppyVultureBurnt,entityclasses,Entity,,,Plague Fowl,,,,,,,,,,,,,
+gupReaperBoss,entityclasses,Entity,,,Chaos Grim Reaper,,,,,,,,,,,,,
+gupReaper,entityclasses,Entity,,,Grim Reaper,,,,,,,,,,,,,
 
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,
