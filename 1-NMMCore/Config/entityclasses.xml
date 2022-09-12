@@ -4996,7 +4996,7 @@
             </effect_group>
 		</entity_class>
 		
-		<!-- Guppycur - Burnt Vulture Entity -->		
+		<!-- Guppycur - Burnt Vulture Entity and Friends -->		
 
 		<entity_class name="guppyVultureBurnt" extends="zombieTemplateMale">
             <property name="HideInSpawnMenu" value="false"/>    
@@ -5049,6 +5049,178 @@
 			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="130"/>
+			</effect_group>  
+        </entity_class>
+		
+		<entity_class name="gupReaperBoss" extends="zombieTemplateMale">
+            <property name="HideInSpawnMenu" value="false"/>    
+            <property name="SizeScale" value="1.2"/> 
+			<property name="Tags" value="entity,animal,zombie,hostile,reaper,boss,UMA2"/>
+            <property name="HasRagdoll" value="true"/>
+            <property name="HasDeathAnim" value="true"/>
+            <property name="RootMotion" value="true"/>
+            <property name="IsEnemyEntity" value="true"/>             
+            <property name="AvatarController" value="AvatarAnimalController"/> 
+            <property name="Mesh" value="#@modfolder:Resources/a20reapers.unity3d?gupReaperBossHumanoid"/>
+            <property name="ExperienceGain" value="1500"/>
+            <property name="DeadBodyHitPoints" value="200"/>
+			<property name="PhysicsBody" value="gupReaperStandard"/>
+            <property name="Mass" value="35"/>
+            <property name="Weight" value="80"/>            
+            <property name="HandItem" value="meleeHandgupBurntVulture"/>
+			<property name="SoundRandom" value="gupReaperSoundsIdle"/>
+			<property name="SoundAlert" value="gupReaperSoundsAlert"/>
+			<property name="SoundHurt" value="gupReaperSoundsDeath"/>
+			<property name="SoundDeath" value="gupReaperSoundsDeath"/>
+			<property name="SoundAttack" value="gupReaperSoundsAttack"/>
+			<property name="SoundSense" value="gupReaperSoundsAttack"/>
+			<property name="SoundGiveUp" value="gupReaperSoundsIdle"/>	
+			<property name="AIFeralSense" value=".1"/>
+			<property name="WalkType" value="7"/>			
+			<property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+			<property name="AITask-2" value="ApproachSpot"/>
+			<property name="AITask-3" value="Look"/>
+			<property name="AITask-4" value="Wander"/>
+			<property name="AITask-5" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityNPC,0,0"/>
+			<property name="AITarget-5" value=""/>			
+            <property name="MaxViewAngle" value="360"/>
+			<property name="LookAtAngle" value="0"/>
+            <property name="MoveSpeed" value=".28"/>
+            <property name="MoveSpeedAggro" value="1.25, 1.25"/> 
+            <property name="MoveSpeedPanic" value="1.5"/>
+			<property name="ParticleOnDeath" value="blood_death"/>
+			<property name="RotateToGround" value="true"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1300"/>
+			</effect_group>  
+        </entity_class> 
+
+		<entity_class name="gupReaper" extends="zombieTemplateMale">
+            <property name="HideInSpawnMenu" value="false"/>    
+            <property name="SizeScale" value="1.2"/> 
+			<property name="Tags" value="entity,animal,zombie,hostile,reaper,boss,UMA2"/>
+            <property name="HasRagdoll" value="true"/>
+            <property name="HasDeathAnim" value="true"/>
+            <property name="RootMotion" value="true"/>
+            <property name="IsEnemyEntity" value="true"/>             
+            <property name="AvatarController" value="AvatarAnimalController"/> 
+            <property name="Mesh" value="#@modfolder:Resources/a20reapers.unity3d?gupReaperHumanoid"/>
+            <property name="ExperienceGain" value="900"/>
+            <property name="DeadBodyHitPoints" value="600"/>
+			<property name="PhysicsBody" value="zombieStandard"/>
+			<!--<property name="PhysicsBody" value="gupReaperStandard"/> -->
+            <property name="Mass" value="35"/>
+            <property name="Weight" value="80"/>            
+            <property name="HandItem" value="meleeHandgupBurntVulture"/>
+			<property name="SoundRandom" value="gupReaperSoundsIdle"/>
+			<property name="SoundAlert" value="gupReaperSoundsAlert"/>
+			<property name="SoundHurt" value="gupReaperSoundsDeath"/>
+			<property name="SoundDeath" value="gupReaperSoundsDeath"/>
+			<property name="SoundAttack" value="gupReaperSoundsAttack"/>
+			<property name="SoundSense" value="gupReaperSoundsAttack"/>
+			<property name="SoundGiveUp" value="gupReaperSoundsIdle"/>	
+			<property name="AIFeralSense" value=".1"/>
+			<property name="WalkType" value="7"/>			
+			<property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+			<property name="AITask-2" value="ApproachSpot"/>
+			<property name="AITask-3" value="Look"/>
+			<property name="AITask-4" value="Wander"/>
+			<property name="AITask-5" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityNPC,0,0"/>
+			<property name="AITarget-5" value=""/>			
+            <property name="MaxViewAngle" value="360"/>
+			<property name="LookAtAngle" value="0"/>
+            <property name="MoveSpeed" value=".28"/>
+            <property name="MoveSpeedAggro" value="1.25, 1.25"/> 
+            <property name="MoveSpeedPanic" value="1.5"/>
+			<property name="ParticleOnDeath" value="blood_death"/>
+			<property name="RotateToGround" value="true"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			</effect_group>  
+        </entity_class> 	
+		
+		<entity_class name="gupWerewolf" extends="zombieTemplateMale">
+            <property name="HideInSpawnMenu" value="false"/>    
+            <property name="SizeScale" value="1.1"/> 
+			<property name="Tags" value="entity,animal,zombie,hostile,werewolf,boss,UMA2"/>
+            <property name="HasRagdoll" value="false"/>
+            <property name="HasDeathAnim" value="true"/>
+            <property name="RootMotion" value="true"/>
+            <property name="IsEnemyEntity" value="true"/>             
+            <property name="AvatarController" value="AvatarAnimalController"/> 
+            <property name="Mesh" value="#@modfolder:Resources/guppyWerewolf.unity3d?gupWerewolf"/>
+            <property name="ExperienceGain" value="900"/>
+            <property name="DeadBodyHitPoints" value="600"/>
+			<property name="PhysicsBody" value="guppymixamoConvertedStandard"/>
+			<!--<property name="PhysicsBody" value="gupReaperStandard"/> -->
+            <property name="Mass" value="35"/>
+            <property name="Weight" value="80"/>            
+            <property name="HandItem" value="meleeHandWerewolf"/>
+			<property name="SoundRandom" value="gupReaperSoundsIdle"/>
+			<property name="SoundAlert" value="gupReaperSoundsAlert"/>
+			<property name="SoundHurt" value="gupReaperSoundsDeath"/>
+			<property name="SoundDeath" value="gupReaperSoundsDeath"/>
+			<property name="SoundAttack" value="gupReaperSoundsAttack"/>
+			<property name="SoundSense" value="gupReaperSoundsAttack"/>
+			<property name="SoundGiveUp" value="gupReaperSoundsIdle"/>	
+			<property name="AIFeralSense" value=".1"/>
+			<property name="WalkType" value="7"/>			
+			<property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+			<property name="AITask-2" value="ApproachSpot"/>
+			<property name="AITask-3" value="Look"/>
+			<property name="AITask-4" value="Wander"/>
+			<property name="AITask-5" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityNPC,0,0"/>
+			<property name="AITarget-5" value=""/>			
+            <property name="MaxViewAngle" value="360"/>
+			<property name="LookAtAngle" value="0"/>
+            <property name="MoveSpeed" value=".28"/>
+            <property name="MoveSpeedAggro" value="1.25, 1.5"/> <!-- 1.5 in xml is .312 in unity speed-->
+            <property name="MoveSpeedPanic" value="1.75"/>
+			<property name="ParticleOnDeath" value="blood_death"/>
+			<property name="RotateToGround" value="true"/>
+			
+		  <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore"/>
+		  <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+		  <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/LowerLegGore"/>
+		  <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+		  <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/LowerLegGore"/>
+		  <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+		  <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/LowerArmGore"/>
+		  <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+		  <property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/LowerArmGore"/>
+  
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="500"/>
 			</effect_group>  
         </entity_class>
 		

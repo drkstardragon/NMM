@@ -12,6 +12,34 @@
 	<set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group/passive_effect[@name='SpreadMultiplierAiming'][@value='.26']/@value">.1</set>
 	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group/passive_effect[@name='SpreadMultiplierCrouching'][@value='.8']/@value">.55</set>
+	<!-- Food and Drink to offset Coops/Mincer, etc -->
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">1000</set><!-- To offset Coops and Mincer -->
+	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">1000</set><!-- To offset Coops and Mincer -->
+	<set xpath="/items/item[@name='foodEgg']/property[@name='Stacknumber']/@value">500</set><!-- To offset Coops and Mincer -->	
+	<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">100</set>
+	<!-- Resources to offset increased Trader sales , etc -->
+	<set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">200</set><!-- x10 of default -->
+	<set xpath="/items/item[@name='resourceBone']/property[@name='Stacknumber']/@value">2500</set><!-- x2.1 of default -->
+	<set xpath="/items/item[@name='resourceLeather']/property[@name='Stacknumber']/@value">1000</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='resourceAnimalFat']/property[@name='Stacknumber']/@value">1000</set><!-- x2 of default -->
+	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">6000</set><!-- x6 of default -->
+	<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">3000</set><!-- x3 of default -->
+	<set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">1000</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">2000</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">2000</set><!-- x8 of default -->
+	<set xpath="/items/item[@name='resourceGunPowder']/property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='resourceBuckshot']/property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='Stacknumber']/@value">50</set><!-- x2 of default -->
+	<set xpath="/items/item[@name='resourceOil']/property[@name='Stacknumber']/@value">250</set><!-- x5 of default -->	
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">25000</set><!-- x1.25 of default -->
+	<!-- Ammo Stacking due to loot container increases -->
+	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">600</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">600</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">600</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">600</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">600</set>	
+
 	
 	<append xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[1]">	
 	<passive_effect name="ProjectileVelocity" operation="perc_add" value="1.5" tags="perkArchery"/>
@@ -1629,7 +1657,7 @@
 		</effect_group>
 	</item>
 	
-		<!-- Guppycur - Burnt Vulture Entity -->
+		<!-- Guppycur - Burnt Vulture Entity and Friends -->
 		
 		<item name="meleeHandgupBurntVulture">
 			<property name="Extends" value="meleeHandMaster"/>
@@ -1650,6 +1678,30 @@
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="3200"/><!--AbrasionRadiated-->
 			</effect_group>
 		</item>
+		
+		<item name="meleeHandWerewolf">
+			<property name="Tags" value="blunt,melee,light,perkFlurryOfBlows"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="9"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Canhold" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action0"><!-- AttackAction -->
+				<property name="Class" value="Melee"/>
+				<property name="Delay" value=".9"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Range" value="1.95"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
+				<property name="Sphere" value=".1"/>
+				<property name="Block_range" value="2.5"/>
+				<property name="DamageEntity" value="10"/>
+				<property name="DamageBlock" value="16"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<effect_group name="meleeHandMaster" tiered="false">
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+			</effect_group>
+		</item>		
 		
 		<!-- 2-NPCXBirdPack-NMM Load Hack -->		
 		

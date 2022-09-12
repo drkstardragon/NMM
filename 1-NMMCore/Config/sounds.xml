@@ -155,6 +155,48 @@
 			<HighestPitch name="1.05"/>
 			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
 		</SoundDataNode>
+		
+		<!-- Guppycur - Burnt Vulture Entity and Friends -->
+		
+	<SoundDataNode name="gupReaperSoundsAlert"> <AudioSource name="Sounds/AudioSource_Amb_Small"/>
+		<AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostAlert01" Loop="false"/>
+		<LocalCrouchVolumeScale value="1.0"/> 
+		<CrouchNoiseScale value="0.5"/> 
+		<NoiseScale value="1"/> 
+		<MaxVoices value="18"/> 
+		<MaxRepeatRate value="0.0001"/> 
+	</SoundDataNode>
+
+	<SoundDataNode name="gupReaperSoundsAttack"> <AudioSource name="Sounds/AudioSource_Amb_Small"/>
+		<AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostAttack01" Loop="false"/>
+		<!--AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostAttack02" Loop="false"/-->
+		<!--AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostAttack03" Loop="false"/-->		
+		<LocalCrouchVolumeScale value="1.0"/> 
+		<CrouchNoiseScale value="0.5"/> 
+		<NoiseScale value="1"/> 
+		<MaxVoices value="18"/> 
+		<MaxRepeatRate value="0.0001"/> 
+	</SoundDataNode>
+
+	<SoundDataNode name="gupReaperSoundsDeath"> <AudioSource name="Sounds/AudioSource_Amb_Small"/>
+		<AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostDeath01" Loop="false"/>
+		<LocalCrouchVolumeScale value="1.0"/> 
+		<CrouchNoiseScale value="0.5"/> 
+		<NoiseScale value="1"/> 
+		<MaxVoices value="18"/> 
+		<MaxRepeatRate value="0.0001"/> 
+	</SoundDataNode>
+
+	<SoundDataNode name="gupReaperSoundsIdle"> <AudioSource name="Sounds/AudioSource_Amb_Small"/>
+		<AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostIdle01" Loop="false"/>
+		<AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostIdle02" Loop="false"/>
+		<!--AudioClip ClipName="#@modfolder:Resources/guppyReaperSounds.unity3d?GhostIdle03" Loop="false"/-->
+		<LocalCrouchVolumeScale value="1.0"/> 
+		<CrouchNoiseScale value="0.5"/> 
+		<NoiseScale value="1"/> 
+		<MaxVoices value="18"/> 
+		<MaxRepeatRate value="0.001"/> 
+	</SoundDataNode>		
 
 </append>
 
