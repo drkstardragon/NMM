@@ -19,7 +19,7 @@ Additional supporting assets have also been shared through other areas of the co
 
 In addition, some content such as models, have been purchased and credited accordingly within the xml files.
 
-'Not Medieval Mod' (NMM) Creators and Developers in Alphabtical Order from Z - A:
+'Not Medieval Mod' (NMM) Creators and Developers in Alphabetical Order from Z - A:
 
 Zilox - Kindly provided the Medieval Horse.
 Xyth - Kindly developed the 0-XNPCCore, along with the team, and 2-NPCXBirdPack which has been embedded. The 0-XNPCCore is a complete bundle of models, code, and other game assets.
@@ -30,6 +30,7 @@ Magejosh - Kindly supported background development, such as Biome modification, 
 mplogue - Kindly provided custom Prefabs that match the theme of the NMM. POI creator extraordinaire.
 Laz Man - Custom Quests that incorporate crafting, placement, and defense. An eclectic type of challenge. 
 KhaineGB - Thank you for sharing Lockable Inventory Slots for mod use and 60 Slot Backpack.
+JaxTeller718 - Bigger Wandering Hordes Mod. (Customised expansion to Wandering Hordes)
 Guppycur - Kindly provided resources, and a venue for the NMM development. Thank you Guppycur for the Water Buckets to put out the fires and the toasty Guppy Vulture and Friends.
 Darkstardragon - NMM Creator and Overseer. Bought and brought all entities, and some models, into the NMM along with a host of other critical tasks.
 Compo Pack Team - Kindly allowed 'Medieval' type Prefab submissions to support the NMM. Stallionsden brought them all together into tiled Medieval townships. (Full list below)

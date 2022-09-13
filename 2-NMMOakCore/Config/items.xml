@@ -21,7 +21,7 @@
 				<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 				<property name="Material" value="Morganic"/>
-				<property name="Stacknumber" value="25"/> <!-- STK food -->
+				<property name="Stacknumber" value="250"/> <!-- STK food -->
 				<property name="EconomicValue" value="20"/>
 				<property class="Action0">
 						<property name="Class" value="Eat"/>
@@ -50,7 +50,7 @@
 				<property name="Material" value="Morganic" />
 				<property name="HoldType" value="21" />
 				<property name="CraftingIngredientTime" value="8" />
-				<property name="Stacknumber" value="25" />
+				<property name="Stacknumber" value="250" />
 				<property class="Action1">
 				<property name="Class" value="Repair"/>
 				<property name="Repair_amount" value="50"/>
@@ -83,7 +83,7 @@
 				<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 				<property name="Material" value="Morganic"/>
-				<property name="Stacknumber" value="25"/> <!-- STK food -->
+				<property name="Stacknumber" value="50"/> <!-- STK food -->
 				<property name="EconomicValue" value="80"/>
 				<property class="Action0">
 						<property name="Class" value="Eat"/>
@@ -116,7 +116,7 @@
 				<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 				<property name="Material" value="Morganic"/>
-				<property name="Stacknumber" value="25"/> <!-- STK food -->
+				<property name="Stacknumber" value="50"/> <!-- STK food -->
 				<property name="EconomicValue" value="124"/>
 				<property class="Action0">
 						<property name="Class" value="Eat"/>
@@ -178,7 +178,7 @@
 		<property name="Material" value="Morganic" />
 		<property name="HoldType" value="21" />
 		<property name="CraftingIngredientTime" value="8" />
-		<property name="Stacknumber" value="20" />
+		<property name="Stacknumber" value="250" />
 		<property class="Action1">
 		<property name="Class" value="Repair"/>
 		<property name="Repair_amount" value="50"/>
@@ -210,7 +210,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="25"/> <!-- STK food -->
+			<property name="Stacknumber" value="50"/> <!-- STK food -->
 			<property name="EconomicValue" value="124"/>
 			<property class="Action0">
 			<property name="Class" value="Eat"/>
@@ -238,7 +238,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="25"/> <!-- STK food -->
+			<property name="Stacknumber" value="50"/> <!-- STK food -->
 			<property name="EconomicValue" value="124"/>
 			<property class="Action0">
 			<property name="Class" value="Eat"/>
@@ -270,7 +270,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -300,7 +300,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -334,7 +334,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="20"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -369,7 +369,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
-	<property name="Stacknumber" value="125"/> <!-- STK food -->
+	<property name="Stacknumber" value="1000"/> <!-- STK food -->
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="3"/>
@@ -404,7 +404,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
-	<property name="Stacknumber" value="125"/> <!-- STK food -->
+	<property name="Stacknumber" value="1000"/> <!-- STK food -->
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -439,7 +439,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -467,7 +467,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?BoarDrink"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?BoarDrink"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -507,7 +507,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?meatcan"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?meatcan"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -547,7 +547,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?GreenEye"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?GreenEye"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -587,7 +587,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?RedWorm"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?RedWorm"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -628,7 +628,7 @@
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?masonjar"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -924,7 +924,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceScrapPolymers"/>
-	<property name="Stacknumber" value="500"/> <!-- STK ammo low -->
+	<property name="Stacknumber" value="600"/> <!-- STK ammo low -->
 	<property name="EconomicValue" value="9"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 	<effect_group name="ArramusBlunderbussSlug" tiered="false">
@@ -1252,7 +1252,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?FireArrow"/>
 	<property name="UsableUnderwater" value="false"/>
 	<property name="FuelValue" value="27"/>
-	<property name="Stacknumber" value="500"/>	
+	<property name="Stacknumber" value="600"/>	
 	<property name="EconomicValue" value="45"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="Damage_type" value="Heat"/>
@@ -1294,7 +1294,7 @@
         <property name="HandMeshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
         <property name="DropMeshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?BoomArrow"/>
         <property name="Material" value="Mlead_scrap"/>
-        <property name="Stacknumber" value="500"/>
+        <property name="Stacknumber" value="600"/>
 		<property name="EconomicValue" value="81"/>
 		<property name="EconomicBundleSize" value="1"/>
         <property name="Group" value="Ammo/Weapons"/>
@@ -1324,7 +1324,7 @@
 	<property name="DescriptionKey" value="ArramusSteelArrowDesc"/>
 	<property name="Extends" value="ammoArrowIron"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?SteelArrow"/>
-    <property name="Stacknumber" value="500"/>	
+    <property name="Stacknumber" value="600"/>	
 	<property name="EconomicValue" value="58"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="IsSticky" value="true"/>
@@ -1348,7 +1348,7 @@
 <property name="CustomIcon" value="ironarrow"/>
 	<property name="DescriptionKey" value="ArramusIronArrowDesc"/>
 	<property name="Extends" value="ammoArrowIron"/>	
-    <property name="Stacknumber" value="500"/>	
+    <property name="Stacknumber" value="600"/>	
 	<property name="EconomicValue" value="26"/>
 	<property name="Meshfile" value="#@modfolder:Resources/DragonCrossBows.unity3d?IronArrow2"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -1768,7 +1768,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceScrapPolymers"/>
-	<property name="Stacknumber" value="500"/> <!-- STK ammo low -->
+	<property name="Stacknumber" value="600"/> <!-- STK ammo low -->
 	<property name="EconomicValue" value="9"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 	<effect_group name="FlintlockPistolSlug" tiered="false">
@@ -1928,7 +1928,7 @@
 		<property name="HoldType" value="45"/>
         <property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonFire"/>
         <property name="Material" value="Mlead_scrap"/>
-        <property name="Stacknumber" value="500"/>
+        <property name="Stacknumber" value="600"/>
         <property name="EconomicValue" value="250"/>
         <property name="Group" value="Ammo/Weapons"/>
         <property name="IsSticky" value="true"/>
@@ -1957,7 +1957,7 @@
 		<property name="Group" value="Ammo/Weapons"/>	
 		<property name="Meshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonSun"/> 
 	    <property name="Material" value="Morganic" />
-		<property name="Stacknumber" value="500"/>		
+		<property name="Stacknumber" value="600"/>		
 	    <property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonSun"/>
 	    <property class="Action1">
 		<property name="Class" value="Projectile"/>
@@ -1998,7 +1998,7 @@
 			<property name="DropMeshfile" value="#@modfolder:Resources/DragonCannon.unity3d?DragonCannonBullet"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="IsSticky" value="false"/>
-			<property name="Stacknumber" value="500"/>
+			<property name="Stacknumber" value="600"/>
 			<property name="FuelValue" value="8"/>
 			<property name="EconomicValue" value="12"/>
 			<property name="EconomicBundleSize" value="5"/>
@@ -3291,7 +3291,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/MushroomsNight.unity3d?FireFlyBug2"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/MushroomsNight.unity3d?FireFlyBug2"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -3324,7 +3324,7 @@
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="21" />
 	<property name="CraftingIngredientTime" value="8" />
-	<property name="Stacknumber" value="25" />
+	<property name="Stacknumber" value="50" />
         <property name="EconomicValue" value="54"/>
 	<property class="Action1">
 		<property name="Class" value="Repair"/>
@@ -3357,7 +3357,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
     <property name="Spoilable" value="true" />
@@ -3392,7 +3392,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?Fishmeringue"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?Fishmeringue"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -3421,7 +3421,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSpinePie"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSpinePie"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -3450,7 +3450,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSoup"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSoup"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -3479,7 +3479,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishStew"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishStew"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -3508,7 +3508,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchPie"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchPie"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -3537,7 +3537,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishCurry"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishCurry"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -3566,7 +3566,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
     <property name="Spoilable" value="true" />
@@ -3601,7 +3601,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
     <property name="Spoilable" value="true" />
@@ -3636,7 +3636,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
     <property name="Spoilable" value="true" />
@@ -3671,7 +3671,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?mutantpiranhaStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?mutantpiranhaStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
     <property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false" />
@@ -3726,7 +3726,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
     <property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false" />
@@ -3778,7 +3778,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?barramundiStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?barramundiStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
     <property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false" />
@@ -3830,7 +3830,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ShinerFishStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ShinerFishStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
     <property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false" />
@@ -3882,7 +3882,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?tangfishStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?tangfishStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
     <property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false" />
@@ -3934,7 +3934,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ArramusFishStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ArramusFishStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
     <property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false" />
