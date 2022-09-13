@@ -2,4 +2,89 @@
     <append xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']">
 		<property name="EconomicValue" value="440"/>	
 	</append>
+	
+	<!-- Smitty's Armor and Masks Mod -->
+	
+	<append xpath="/item_modifiers" >
+		<item_modifier name="Mask1" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="SmittyMaskDesc" />
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyMasks.unity3d?Mask1" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="0.2,0,0.075" local_rotation="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Mask1">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Mask1"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="Mask4" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Extends" value="Mask1"/>
+			<property name="CustomIcon" value="Mask4"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyMasks.unity3d?Mask4" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="-0.095,0,-0.09" local_rotation="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Mask4">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Mask4"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="Mask6" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Extends" value="Mask1"/>
+			<property name="CustomIcon" value="Mask6"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyMasks.unity3d?Mask6" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="-0.085,0,-0.09" local_rotation="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Mask6">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Mask6"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="Mask9" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Extends" value="Mask1"/>
+			<property name="CustomIcon" value="Mask9"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/SmittyMasks.unity3d?Mask9" parent_transform="Hips/LowerBack/Spine/Spine1/Neck/Head" local_offset="-0.075,0,-0.09" local_rotation="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Mask9">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Mask9"/>
+			</effect_group>
+		</item_modifier>
+
+	</append>	
 </configs>

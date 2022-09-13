@@ -25,6 +25,7 @@ Zilox - Kindly provided the Medieval Horse.
 Xyth - Kindly developed the 0-XNPCCore, along with the team, and 2-NPCXBirdPack which has been embedded. The 0-XNPCCore is a complete bundle of models, code, and other game assets.
 Xyth/SphereII/Mumpfy - Kindly developed 'Locks' mod powered by Score.
 sphereii - Kindly developed the 0-Score, along with the team. Also provided the 0-SphereII Legacy Distant Terrain.
+Smitty - Thank you for giving your kind permission to use Smitty's Armor and Mask Mod within NMM.
 Oakraven - Kindly provided support for the 1-NMMCore and the 2-NMMOakCore content, consisting of multiple released and NMM standalone modlets. (Full list below)
 Magejosh - Kindly supported background development, such as Biome modification, xml updates, loading screen and Escape Menu logo/hyperlinking.
 mplogue - Kindly provided custom Prefabs that match the theme of the NMM. POI creator extraordinaire.
@@ -69,13 +70,6 @@ Oakraven Forest Collection Mod List:
 - Torches and Lights
 - Water Wells
 - Work Stations
-
-=======================
-== 1-NMMSmittysArmor ==
-=======================
-
-This 1-NMMSmittysArmor Mod compiles assets provided by Smitty from the Smitty's Armor mod.
-Thank you for giving your kind permission.
 
 =======================================
 == 2-NMMCP48 Medievil Village Modded ==
