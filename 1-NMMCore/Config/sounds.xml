@@ -196,7 +196,16 @@
 		<NoiseScale value="1"/> 
 		<MaxVoices value="18"/> 
 		<MaxRepeatRate value="0.001"/> 
-	</SoundDataNode>		
+	</SoundDataNode>
+	
+		<!-- Zilox's Horse Horn -->	
+
+	<SoundDataNode name="horseHorn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Horse.unity3d?neigh"/>
+	<AudioClip ClipName="#@modfolder:Resources/Horse.unity3d?snort"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="1"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/>
+	</SoundDataNode>	
 
 </append>
 

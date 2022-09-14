@@ -20,13 +20,13 @@
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="1"/>
-		<property name="hopForce" value="8.5, .025"/>		
+		<property name="hopForce" value="9.0, .025"/>		
 		<property name="unstickForce" value="1"/>
 		<property name="velocityMax" value="10, 15"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 		
-		<property name="hornSound" value="stagdeath"/>		
+		<property name="hornSound" value="horseHorn"/>		
 
 		<property class="battery">
 			<property name="class" value="Battery"/>
