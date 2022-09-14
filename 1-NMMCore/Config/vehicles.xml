@@ -11,17 +11,18 @@
 		<property name="motorTorqueMinQ" value="5000"/>
 		<property name="motorTorqueMaxQ" value="5000"/>
 		<property name="brakeTorque" value="5000"/>
-		<property name="upAngleMax" value="70"/>
+		<property name="upAngleMax" value="50"/>
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
 		<property name="steerCenteringRate" value="90"/>
-		<property name="tiltAngleMax" value="80"/>
+		<property name="tiltAngleMax" value="15"/>		
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
-		<property name="tiltUpForce" value="0"/>		
+		<property name="tiltUpForce" value="1"/>
+		<property name="hopForce" value="8.5, .025"/>		
 		<property name="unstickForce" value="1"/>
-		<property name="velocityMax" value="10, 14"/>
+		<property name="velocityMax" value="10, 15"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 		
